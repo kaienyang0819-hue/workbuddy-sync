@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-04-27",
+  "total_patterns": 2,
+  "categories": [
+    "game_design",
+    "ai_integration",
+    "document_generation",
+    "research_workflow",
+    "data_analysis",
+    "coding",
+    "debugging",
+    "architecture",
+    "project_management",
+    "ux_interaction",
+    "general"
+  ],
+  "patterns": {
+    "pat-verify-before-trust": {
+      "id": "pat-verify-before-trust",
+      "name": "验证先于信任",
+      "category": "architecture",
+      "confidence": 0.5,
+      "use_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": "2026-04-14",
+      "created": "2026-04-14",
+      "problem": "安装的组件/skill看似文档完整、架构精美，但可能完全没有实际实现",
+      "solution": "对任何声称有功能的组件，检查实际数据文件（是否有非空数据）、执行记录、运行环境兼容性",
+      "pitfalls": "不要只看文档描述和架构图，必须验证实际产出",
+      "target_skills": [
+        "skill-vetter",
+        "agf-quality-gate"
+      ],
+      "source_episodes": [
+        "ep-2026-04-14-115921"
+      ],
+      "status": "candidate"
+    },
+    "pat-system-capability-over-skill": {
+      "id": "pat-system-capability-over-skill",
+      "name": "系统能力优于独立技能",
+      "category": "architecture",
+      "confidence": 0.5,
+      "use_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": "2026-04-14",
+      "created": "2026-04-14",
+      "problem": "将核心基础能力（如学习、评估）封装为独立skill会导致需要手动加载才生效",
+      "solution": "核心能力嵌入SOUL.md或系统配置中，让它始终在线自动运行",
+      "pitfalls": "并非所有能力都适合全局化——领域专用能力仍应是独立skill",
+      "target_skills": [],
+      "source_episodes": [
+        "ep-2026-04-14-115921"
+      ],
+      "status": "candidate"
+    }
+  }
+}

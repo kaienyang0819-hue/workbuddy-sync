@@ -1,0 +1,38 @@
+#!/bin/bash
+# ReqSpec session-start hook
+# 在每次会话启动时注入 using-reqspec 技能
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT_DIR="$(dirname "$SCRIPT_DIR")"
+
+SKILL_FILE="$ROOT_DIR/skills/using-reqspec/SKILL.md"
+
+if [ ! -f "$SKILL_FILE" ]; then
+  echo '{"error": "using-reqspec skill not found"}'
+  exit 1
+fi
+
+SKILL_CONTENT=$(cat "$SKILL_FILE")
+
+# 转义 JSON 特殊字符
+SKILL_CONTENT=$(echo "$SKILL_CONTENT" | python3 -c "import sys,json; print(json.dumps(sys.stdin.read()))" 2>/dev/null || echo "$SKILL_CONTENT" | sed 's/\\/\\\\/g; s/"/\\"/g; s/\t/\\t/g' | sed ':a;N;$!ba;s/\n/\\n/g')
+
+CONTEXT="<EXTREMELY_IMPORTANT>
+你拥有 ReqSpec 需求文档生成技能。
+
+**以下是你的 'reqspec:using-reqspec' 技能的完整内容。仔细阅读并遵循。**
+
+$SKILL_CONTENT
+</EXTREMELY_IMPORTANT>"
+
+# 转义完整上下文
+CONTEXT_JSON=$(echo "$CONTEXT" | python3 -c "import sys,json; print(json.dumps(sys.stdin.read()))" 2>/dev/null || echo "$CONTEXT" | sed 's/\\/\\\\/g; s/"/\\"/g; s/\t/\\t/g' | sed ':a;N;$!ba;s/\n/\\n/g')
+
+# 根据平台输出不同格式
+if [ -n "$CLAUDE_PLUGIN_ROOT" ]; then
+  # Claude Code 格式
+  echo "{\"hookSpecificOutput\": {\"additionalContext\": $CONTEXT_JSON}}"
+else
+  # 通用格式
+  echo "{\"additional_context\": $CONTEXT_JSON}"
+fi

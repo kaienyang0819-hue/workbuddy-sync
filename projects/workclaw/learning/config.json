@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "created": "2026-04-14",
+  "description": "WorkBuddy Learning Loop Configuration",
+
+  "evaluator": {
+    "enabled": true,
+    "min_steps_for_evaluation": 2,
+    "weights": {
+      "completion": 0.30,
+      "quality": 0.30,
+      "efficiency": 0.20,
+      "satisfaction": 0.20
+    }
+  },
+
+  "router": {
+    "skill_creation_threshold": {
+      "min_score": 7.0,
+      "min_steps": 3,
+      "require_no_existing_skill": true
+    },
+    "skill_improvement_threshold": {
+      "require_existing_skill": true,
+      "require_issues": true
+    },
+    "pattern_extraction_threshold": {
+      "require_reusable_insight": true
+    }
+  },
+
+  "patterns": {
+    "candidate_initial_confidence": 0.50,
+    "confidence_cap": 0.99,
+    "confidence_floor": 0.0,
+    "decay_per_month_unused": 0.02,
+    "deprecation_threshold": 0.30,
+    "deprecation_months_unused": 6,
+    "boost_on_success": 0.05,
+    "boost_on_positive_feedback": 0.10,
+    "penalty_on_failure": -0.10,
+    "penalty_on_negative_feedback": -0.15,
+    "promotion": {
+      "min_hits": 2,
+      "min_success_rate": 0.75,
+      "min_confidence": 0.65
+    }
+  },
+
+  "episodes": {
+    "archive_after_days": 30,
+    "max_episodes_per_month": 200
+  },
+
+  "skills": {
+    "auto_create_requires_confirmation": true,
+    "auto_improve_gotchas": true,
+    "gotchas_candidate_mode": true,
+    "gotchas_promotion_min_occurrences": 2,
+    "track_usage_stats": true
+  },
+
+  "nudge": {
+    "enabled": true,
+    "frequency": "weekly",
+    "day": "monday",
+    "pattern_dedup_similarity": 0.85,
+    "generate_weekly_report": true
+  }
+}

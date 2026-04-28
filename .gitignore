@@ -1,0 +1,19 @@
+# WorkBuddy Sync - 只同步经验资产，排除一切过程数据
+# ===================================================
+
+# Node.js 依赖（家里重新 npm install）
+node_modules/
+package-lock.json
+
+# Python 编译缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# OS 文件
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# 同步脚本自身的日志
+sync.log

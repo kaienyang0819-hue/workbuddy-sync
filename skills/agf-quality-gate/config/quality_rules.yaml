@@ -1,0 +1,29 @@
+# AGF Quality Gate 质量规则配置
+# 根据团队需求调整阈值
+
+# 默认模式（推荐）
+default:
+  rule_coverage_min: 0.90        # 规则覆盖率 ≥ 90%
+  content_line_ratio_min: 0.70   # 内容行比例 ≥ 70%
+  table_coverage_min: 0.90       # 表格覆盖率 ≥ 90%
+  numeric_drift_max: 0.0         # 数值偏差 = 0（严格）
+  format_score_min: 80           # 格式评分 ≥ 80
+  pending_items_flagged: true    # 待决策项必须标注
+
+# 严格模式（正式发版前）
+strict:
+  rule_coverage_min: 0.95
+  content_line_ratio_min: 0.85
+  table_coverage_min: 0.95
+  numeric_drift_max: 0.0
+  format_score_min: 90
+  pending_items_flagged: true
+
+# 宽松模式（快速迭代/草稿阶段）
+loose:
+  rule_coverage_min: 0.80
+  content_line_ratio_min: 0.60
+  table_coverage_min: 0.80
+  numeric_drift_max: 0.05
+  format_score_min: 70
+  pending_items_flagged: false

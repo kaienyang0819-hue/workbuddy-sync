@@ -92,7 +92,7 @@ ls "$env:USERPROFILE\.workbuddy\skills\" | Measure-Object
 ```
 帮我创建一个自动化任务：
 - 名称：WorkBuddy Sync
-- 每2小时执行一次
+- 每2周（周五18:00）执行一次
 - 工作目录：D:\workbuddy-sync（改成你的实际路径）
 - 执行命令：powershell -ExecutionPolicy Bypass -File "D:\workbuddy-sync\sync.ps1" sync
 ```
@@ -105,9 +105,9 @@ ls "$env:USERPROFILE\.workbuddy\skills\" | Measure-Object
 
 ```
 公司电脑改了 Skill / 记忆 / 知识卡片
-  ↓ (每2小时自动 push)
+  ↓ (每2周周五18:00自动 push)
 GitHub 私有仓库
-  ↓ (家里电脑每2小时自动 pull)
+  ↓ (家里电脑每2周自动 pull)
 家里电脑获得最新资产
   ↓ 反过来也一样
 ```
@@ -149,6 +149,6 @@ git rebase --continue
 ## 注意事项
 
 1. **不要在两台电脑同时编辑同一个文件**——这是冲突的唯一来源
-2. **离开工位前手动 push 一下**比等2小时更靠谱：`.\sync.ps1 push`
+2. **离开工位前手动 push 一下**比等自动任务更靠谱：`.\sync.ps1 push`
 3. **新增 Skill 后**记得两边都会自动同步，不需要手动安装
 4. **sync.ps1 的修改不会同步**——因为两台电脑的路径不同，各自维护自己的版本

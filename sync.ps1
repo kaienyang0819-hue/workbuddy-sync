@@ -20,28 +20,45 @@ $RepoRoot = $PSScriptRoot
 
 $WB = "$env:USERPROFILE\.workbuddy"
 
-$SyncMap = [ordered]@{
+# --- A: Identity ---
+$StaticMap = [ordered]@{
     "global\SOUL.md"                  = "$WB\SOUL.md"
     "global\IDENTITY.md"              = "$WB\IDENTITY.md"
     "global\USER.md"                  = "$WB\USER.md"
+}
+
+# --- B: Memory ---
+$MemoryMap = [ordered]@{
     "global\memery"                   = "$WB\memery"
     "global\memory"                   = "$WB\memory"
-    "skills\mygamedesignhelper"       = "$WB\skills\mygamedesignhelper"
-    "skills\game-design-doc-template" = "$WB\skills\game-design-doc-template"
-    "skills\aippt-maker"              = "$WB\skills\aippt-maker"
-    "skills\reqspec"                  = "$WB\skills\reqspec"
-    "skills\agf-quality-gate"         = "$WB\skills\agf-quality-gate"
-    "skills\agf-orchestrator"         = "$WB\skills\agf-orchestrator"
-    "skills\agf-research-workflow"    = "$WB\skills\agf-research-workflow"
-    "skills\team-kb"                  = "$WB\skills\team-kb"
-    "skills\westock-data"             = "$WB\skills\westock-data"
-    "skills\wechat-article-spider"    = "$WB\skills\wechat-article-spider"
+}
+
+# --- C: Skills (auto-scan, no manual list needed) ---
+# Gather: scan local skills dir -> repo
+# Scatter: scan repo skills dir -> local
+$SkillsLocalDir = "$WB\skills"
+$SkillsRepoDir  = Join-Path $RepoRoot "skills"
+
+# --- D: Project-level knowledge ---
+$ProjectMap = [ordered]@{
     "projects\workclaw\memory"        = "G:\workclaw\.workbuddy\memory"
     "projects\workclaw\learning"      = "G:\workclaw\.workbuddy\learning"
     "projects\workclaw\scripts"       = "G:\workclaw\.workbuddy\scripts"
     "projects\stock_output\memory"    = "G:\stock_output\.workbuddy\memory"
     "projects\gpt_test\memory"        = "G:\gpt_test\.workbuddy\memory"
+}
+
+# --- E: Knowledge base ---
+$KnowledgeMap = [ordered]@{
     "knowledge\game-design-kb"        = "G:\project_output\game-design-kb"
+}
+
+# Combined static map (A+B+D+E, skills handled separately)
+$SyncMap = [ordered]@{}
+foreach ($m in @($StaticMap, $MemoryMap, $ProjectMap, $KnowledgeMap)) {
+    foreach ($entry in $m.GetEnumerator()) {
+        $SyncMap[$entry.Key] = $entry.Value
+    }
 }
 
 function Write-Log($msg) {
@@ -79,21 +96,63 @@ function Copy-SyncItem($src, $dst) {
 
 function Invoke-Gather {
     Write-Log "=== GATHER: local -> repo ==="
+
+    # Static items (A+B+D+E)
     foreach ($entry in $SyncMap.GetEnumerator()) {
         $repoDst = Join-Path $RepoRoot $entry.Key
         $localSrc = $entry.Value
         Copy-SyncItem $localSrc $repoDst
     }
+
+    # Auto-scan skills (C)
+    Write-Log "--- Scanning skills ---"
+    if (Test-Path $SkillsLocalDir) {
+        $localSkills = Get-ChildItem $SkillsLocalDir -Directory
+        $existingRepoSkills = @()
+        if (Test-Path $SkillsRepoDir) {
+            $existingRepoSkills = (Get-ChildItem $SkillsRepoDir -Directory).Name
+        }
+        foreach ($skill in $localSkills) {
+            $repoDst = Join-Path $SkillsRepoDir $skill.Name
+            if ($skill.Name -notin $existingRepoSkills) {
+                Write-Log "  [NEW SKILL] $($skill.Name)"
+            }
+            Copy-SyncItem $skill.FullName $repoDst
+        }
+        Write-Log "  Total skills: $($localSkills.Count)"
+    }
+
     Write-Log "=== GATHER done ==="
 }
 
 function Invoke-Scatter {
     Write-Log "=== SCATTER: repo -> local ==="
+
+    # Static items (A+B+D+E)
     foreach ($entry in $SyncMap.GetEnumerator()) {
         $repoSrc = Join-Path $RepoRoot $entry.Key
         $localDst = $entry.Value
         Copy-SyncItem $repoSrc $localDst
     }
+
+    # Auto-scan skills (C)
+    Write-Log "--- Distributing skills ---"
+    if (Test-Path $SkillsRepoDir) {
+        $repoSkills = Get-ChildItem $SkillsRepoDir -Directory
+        $existingLocalSkills = @()
+        if (Test-Path $SkillsLocalDir) {
+            $existingLocalSkills = (Get-ChildItem $SkillsLocalDir -Directory).Name
+        }
+        foreach ($skill in $repoSkills) {
+            $localDst = Join-Path $SkillsLocalDir $skill.Name
+            if ($skill.Name -notin $existingLocalSkills) {
+                Write-Log "  [NEW SKILL] $($skill.Name)"
+            }
+            Copy-SyncItem $skill.FullName $localDst
+        }
+        Write-Log "  Total skills: $($repoSkills.Count)"
+    }
+
     Write-Log "=== SCATTER done ==="
 }
 

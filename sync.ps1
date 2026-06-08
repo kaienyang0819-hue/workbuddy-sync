@@ -18,6 +18,12 @@ param(
 $ErrorActionPreference = "Continue"
 $RepoRoot = $PSScriptRoot
 
+# Ensure Git is in PATH (PowerShell may not inherit full system PATH in automation)
+$GitCmd = "C:\Program Files\Git\cmd"
+if ($env:PATH -notlike "*$GitCmd*") {
+    $env:PATH = "$GitCmd;$env:PATH"
+}
+
 $WB = "$env:USERPROFILE\.workbuddy"
 
 # --- A: Identity ---

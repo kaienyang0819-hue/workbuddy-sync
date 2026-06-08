@@ -255,7 +255,17 @@ function Invoke-GitPull {
     try {
         $branchExists = git ls-remote --heads origin main 2>&1
         if ($branchExists) {
+            # Stash local changes before pull to avoid rebase conflict
+            $dirty = git status --porcelain
+            if ($dirty) {
+                git stash push -m "auto-stash before pull" 2>&1 | Out-Null
+                Write-Log "  Stashed local changes"
+            }
             git pull --rebase origin main 2>&1
+            if ($dirty) {
+                git stash pop 2>&1 | Out-Null
+                Write-Log "  Restored stashed changes"
+            }
             Write-Log "  Pulled latest"
         } else {
             Write-Log "  Remote branch not found, skip pull (first run)"

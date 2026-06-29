@@ -374,10 +374,28 @@ $PROJECT_ROOT/
 
 > 此章节汇总所有子模块间的调用方式，作为编排时的快速参考。
 
-### C-01：知识库查找
+### C-01：知识库查找（支持双知识库同步检索）
 
 **调用方**：04-脑暴 / 05-策划案生成 / 06-专家 Review
 **调用方式**：通过 `execute_command` 调用脚本
+
+#### 📌 推荐：统一检索（同时查询 Team-KB + 游戏设计知识库）
+
+```powershell
+# 统一检索：同时查询两个知识库，合并结果（默认 Top-10）
+python "$SKILL_ROOT/scripts/unified-kb-search.py" search "关键词1 关键词2"
+
+# 按标签过滤
+python "$SKILL_ROOT/scripts/unified-kb-search.py" search --tags "标签1,标签2"
+
+# 关键词 + 分类过滤
+python "$SKILL_ROOT/scripts/unified-kb-search.py" search "关键词" --category "系统设计"
+
+# JSON 输出模式（供程序调用）
+python "$SKILL_ROOT/scripts/unified-kb-search.py" --json search "关键词"
+```
+
+#### 📚 单独检索：Team-KB
 
 ```powershell
 # 关键词搜索（默认 Top-5，不传 --kb-path 让脚本自动从配置获取）
@@ -396,10 +414,37 @@ python ~/.workbuddy/skills/team-kb/scripts/kb-search.py get KB-015
 python ~/.workbuddy/skills/team-kb/scripts/kb-search.py get KB-015 --full
 ```
 
-**知识库路径解析优先级**：
+**Team-KB 路径解析优先级**：
 1. `--kb-path` 命令行参数
 2. `~/.workbuddy/skills/team-kb/.kb-config.json` 的 `repo_path` 字段
 3. 环境变量 `TEAM_KB_PATH`
+
+#### 🎮 单独检索：游戏设计知识库
+
+```powershell
+# 关键词搜索
+python "$SKILL_ROOT/scripts/game-kb-search.py" search "关键词"
+
+# 按标签过滤（标签用反引号标注，如：核心循环、反馈系统）
+python "$SKILL_ROOT/scripts/game-kb-search.py" search --tags "乐趣理论,核心循环"
+
+# 按能力分类过滤（如：系统设计、数值设计、战斗设计、玩家心理）
+python "$SKILL_ROOT/scripts/game-kb-search.py" search --category "系统设计"
+
+# 获取单条知识点全文
+python "$SKILL_ROOT/scripts/game-kb-search.py" get "C01-system-design/001-游戏乐趣的本质-认知成长双循环" --full
+```
+
+**游戏设计知识库路径解析优先级**：
+1. `--kb-path` 命令行参数
+2. `~/.workbuddy/skills/mygamedesignhelper/.game-kb-config.json`
+3. 环境变量 `GAME_DESIGN_KB_PATH`
+4. 默认路径 `G:/project_output/game-design-kb`
+
+**游戏设计知识库内容概览**：
+- 约 250 张知识卡片，覆盖 13 个能力维度
+- 分类体系：C01-系统设计、C02-数值设计、C03-商业化、C04-玩家心理、C05-战斗设计、C06-关卡设计、C07-叙事设计...
+- 每张卡片包含：核心观点、关键方法论/框架、案例参考、设计检查清单、金句摘录
 
 **降级**：脚本报错/路径不存在/无结果 → 跳过，不中断主流程。
 
@@ -722,7 +767,10 @@ function backup_before_update(filepath):
 | 04-脑暴 SKILL | `sub-skills/04-brainstorming/SKILL.md` | 脑暴子技能指令 |
 | 05-策划案生成 SKILL | `sub-skills/05-spec-generation/SKILL.md` | 策划案生成子技能指令 |
 | 06-专家 Review SKILL | `sub-skills/06-expert-review/SKILL.md` | 专家 Review 子技能指令 |
-| team-kb 检索脚本 | `~/.workbuddy/skills/team-kb/scripts/kb-search.py` | 01-知识库查找（外部依赖） |
+| **统一知识库检索脚本** | `scripts/unified-kb-search.py` | **01-知识库同步检索（Team-KB + 游戏设计KB）** |
+| **游戏设计知识库检索脚本** | `scripts/game-kb-search.py` | **01-游戏设计知识库单独检索** |
+| **游戏设计知识库配置** | `.game-kb-config.json` | **游戏设计知识库路径配置** |
+| team-kb 检索脚本 | `~/.workbuddy/skills/team-kb/scripts/kb-search.py` | 01-Team-KB 单独检索（外部依赖） |
 | team-kb 查询指南 | `~/.workbuddy/skills/team-kb/references/kb-search-guide.md` | 知识库查询使用指南 |
 | XMind 工具包 | `scripts/xmind_toolkit/` | 02-XMind 处理 |
 | md2xmind 入口 | `scripts/md2xmind.py` | 02-XMind MD→XMind CLI |

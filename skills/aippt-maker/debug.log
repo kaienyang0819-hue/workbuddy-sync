@@ -1,0 +1,102 @@
+[10404:29336:0608/110059.803:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_rank_1
+[10404:29336:0608/110059.803:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_type_1
+[10404:29336:0608/110059.804:WARNING:data_router_sender.cpp(44)] [DataRouterSender] RegisterReceiver not supported on sender side, route=/sg_tool/./slo_data_receiver
+[10404:29336:0608/110100.022:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v79.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v79.filemap.sogouime34525dc5087
+[10404:29336:0608/110100.023:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[10404:29336:0608/110100.024:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[10404:29336:0608/110100.085:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v79.filemap.sogouime
+[10404:29336:0608/110100.085:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:79
+[10404:29336:0608/110100.085:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[53724:24500:0608/123204.772:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_rank_1
+[53724:24500:0608/123204.773:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_type_1
+[53724:24500:0608/123204.773:WARNING:data_router_sender.cpp(44)] [DataRouterSender] RegisterReceiver not supported on sender side, route=/sg_tool/./slo_data_receiver
+[53724:24500:0608/123204.975:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v79.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v79.filemap.sogouime34525dc5087
+[53724:24500:0608/123204.975:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[53724:24500:0608/123204.975:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[53724:24500:0608/123205.009:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v79.filemap.sogouime
+[53724:24500:0608/123205.009:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:79
+[53724:24500:0608/123205.009:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[23328:38888:0608/162021.555:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_rank_1
+[23328:38888:0608/162021.555:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_type_1
+[23328:38888:0608/162021.556:WARNING:data_router_sender.cpp(44)] [DataRouterSender] RegisterReceiver not supported on sender side, route=/sg_tool/./slo_data_receiver
+[23328:38888:0608/162021.793:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v79.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v79.filemap.sogouime34525dc5087
+[23328:38888:0608/162021.793:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[23328:38888:0608/162021.793:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[23328:38888:0608/162021.861:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v79.filemap.sogouime
+[23328:38888:0608/162021.861:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:79
+[23328:38888:0608/162021.861:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[39752:69992:0608/162235.745:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_rank_1
+[39752:69992:0608/162235.745:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_type_1
+[39752:69992:0608/162235.745:WARNING:data_router_sender.cpp(44)] [DataRouterSender] RegisterReceiver not supported on sender side, route=/sg_tool/./slo_data_receiver
+[39752:69992:0608/162235.889:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v79.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v79.filemap.sogouime34525dc5087
+[39752:69992:0608/162235.889:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[39752:69992:0608/162235.889:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[39752:69992:0608/162235.915:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v79.filemap.sogouime
+[39752:69992:0608/162235.915:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:79
+[39752:69992:0608/162235.915:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[78260:67008:0608/162447.476:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_rank_1
+[78260:67008:0608/162447.476:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_type_1
+[78260:67008:0608/162447.476:WARNING:data_router_sender.cpp(44)] [DataRouterSender] RegisterReceiver not supported on sender side, route=/sg_tool/./slo_data_receiver
+[78260:67008:0608/162447.651:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v79.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v79.filemap.sogouime34525dc5087
+[78260:67008:0608/162447.651:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[78260:67008:0608/162447.651:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[78260:67008:0608/162447.678:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v79.filemap.sogouime
+[78260:67008:0608/162447.678:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:79
+[78260:67008:0608/162447.678:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[34348:79220:0608/162658.678:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_rank_1
+[34348:79220:0608/162658.678:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_type_1
+[34348:79220:0608/162658.678:WARNING:data_router_sender.cpp(44)] [DataRouterSender] RegisterReceiver not supported on sender side, route=/sg_tool/./slo_data_receiver
+[34348:79220:0608/162658.822:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v79.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v79.filemap.sogouime34525dc5087
+[34348:79220:0608/162658.822:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[34348:79220:0608/162658.822:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[34348:79220:0608/162658.850:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v79.filemap.sogouime
+[34348:79220:0608/162658.850:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:79
+[34348:79220:0608/162658.850:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[42516:30756:0608/164944.768:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_rank_1
+[42516:30756:0608/164944.768:WARNING:kernel_switch.cc(95)] [Engine] GetProductDataInfo failed for: input_cloud_request_type_1
+[42516:30756:0608/164944.769:WARNING:data_router_sender.cpp(44)] [DataRouterSender] RegisterReceiver not supported on sender side, route=/sg_tool/./slo_data_receiver
+[42516:30756:0608/164944.974:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v79.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v79.filemap.sogouime34525dc5087
+[42516:30756:0608/164944.974:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[42516:30756:0608/164944.974:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[42516:30756:0608/164945.010:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v79.filemap.sogouime
+[42516:30756:0608/164945.010:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:79
+[42516:30756:0608/164945.010:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:79
+[53276:77368:0615/190116.611:WARNING:kernel_parameter_setter.cc(150)] [KernelParameterSetter] NotifyDoublePinyinSchemeChanged failed, scheme=Sogou status=1
+[53276:77368:0615/190116.612:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v94.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v94.filemap.sogouime39845dc5087
+[53276:77368:0615/190116.612:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[53276:77368:0615/190116.612:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:94
+[53276:77368:0615/190116.676:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v94.filemap.sogouime
+[53276:77368:0615/190116.676:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:94
+[53276:77368:0615/190116.676:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:94
+[32740:24564:0615/190158.896:WARNING:kernel_parameter_setter.cc(150)] [KernelParameterSetter] NotifyDoublePinyinSchemeChanged failed, scheme=Sogou status=1
+[32740:24564:0615/190158.897:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v94.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v94.filemap.sogouime39845dc5087
+[32740:24564:0615/190158.897:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[32740:24564:0615/190158.897:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:94
+[32740:24564:0615/190158.924:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v94.filemap.sogouime
+[32740:24564:0615/190158.924:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:94
+[32740:24564:0615/190158.924:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:94
+[39140:72436:0615/191610.698:WARNING:kernel_parameter_setter.cc(150)] [KernelParameterSetter] NotifyDoublePinyinSchemeChanged failed, scheme=Sogou status=1
+[39140:72436:0615/191610.698:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v94.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v94.filemap.sogouime39845dc5087
+[39140:72436:0615/191610.698:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[39140:72436:0615/191610.698:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:94
+[39140:72436:0615/191610.769:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v94.filemap.sogouime
+[39140:72436:0615/191610.769:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:94
+[39140:72436:0615/191610.769:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:94
+[60232:77424:0615/191939.804:WARNING:kernel_parameter_setter.cc(150)] [KernelParameterSetter] NotifyDoublePinyinSchemeChanged failed, scheme=Sogou status=1
+[60232:77424:0615/191939.805:WARNING:t_skinfilemap.cpp(56)] SGRenderLog:CheckUpdate newMem.OpenMem failed, szNewMem:Local\sgime_skin.v94.filemap.sogouime err:系统错误2: 系统找不到指定的文件。  
+打开Filemap失败: Local\sgime_skin.v94.filemap.sogouime39845dc5087
+[60232:77424:0615/191939.805:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:1
+[60232:77424:0615/191939.805:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:94
+[60232:77424:0615/191939.858:WARNING:t_skinfilemap.cpp(63)] SGRenderLog:CheckUpdate newMem.OpenMem Suc, szNewMem:Local\sgime_skin.Dpi144.v94.filemap.sogouime
+[60232:77424:0615/191939.858:WARNING:t_skinfilemap.cpp(65)] SGRenderLog:CheckUpdate finish: old version:94
+[60232:77424:0615/191939.858:WARNING:t_skinfilemap.cpp(67)] SGRenderLog:CheckUpdate finish: new version:94

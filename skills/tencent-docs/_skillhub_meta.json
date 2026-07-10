@@ -1,0 +1,13 @@
+{
+  "name": "腾讯文档",
+  "installedAt": 1775615665176,
+  "source": "marketplace",
+  "iconSource": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/tencent-docs.png",
+  "version": "1.0.36",
+  "skillId": "skill_2053084036212973568",
+  "skillName": "tencent-docs",
+  "description_zh": "腾讯文档在线云文档平台，创建、编辑、管理多种类型文档",
+  "description_en": "Tencent Docs cloud platform for creating, editing & managing online documents",
+  "iconLocalPath": "C:\\Users\\kaienyang\\.workbuddy\\skills\\tencent-docs\\_icon.png",
+  "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/tencent-docs.png"
+}

@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "last_updated": "2026-06-08",
+  "last_updated": "2026-07-06",
   "total_patterns": 2,
   "categories": [
     "game_design",
@@ -20,7 +20,7 @@
       "id": "pat-verify-before-trust",
       "name": "验证先于信任",
       "category": "architecture",
-      "confidence": 0.331,
+      "confidence": 0.276,
       "use_count": 0,
       "success_count": 0,
       "failure_count": 0,
@@ -42,7 +42,7 @@
       "id": "pat-system-capability-over-skill",
       "name": "系统能力优于独立技能",
       "category": "architecture",
-      "confidence": 0.331,
+      "confidence": 0.276,
       "use_count": 0,
       "success_count": 0,
       "failure_count": 0,

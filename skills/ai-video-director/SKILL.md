@@ -18,6 +18,7 @@ triggers:
   - video director
   - 导演包
   - 视频制作
+disable: true
 ---
 
 # AI 视频导演助手

@@ -3,6 +3,7 @@ name: design-md-apply
 description: 读取项目根目录的 DESIGN.md 设计规范，将设计 token 应用到所有 HTML 产出中。确保风格一致性。
 user: false
 agent_created: true
+disable: true
 ---
 
 # DESIGN.md 设计规范应用

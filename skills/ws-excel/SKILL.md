@@ -2,19 +2,18 @@
 name: excel
 version: 1.1.0
 description: >
-  Excel 操作技能。数据处理、公式计算、表格操作、数据清洗。
-  当用户提到 Excel、xlsx、csv、表格处理、数据分析等场景时触发。
-  底层使用 minimax-xlsx 技能引擎处理。
-  触发关键词: "Excel", "xlsx", "csv", "表格", "数据分析", "电子表格"
+  Excel 操作技能。数据处理、公式计算、表格操作、数据清洗。 当用户提到 Excel、xlsx、csv、表格处理、数据分析等场景时触发。 底层使用
+  minimax-xlsx 技能引擎处理。 触发关键词: "Excel", "xlsx", "csv", "表格", "数据分析", "电子表格"
 metadata:
   category: 数据分析
-  emoji: "\U0001F4D7"
+  emoji: 📗
   triggers:
     - Excel
     - excel
     - 表格
     - csv
     - xlsx
+disable: true
 ---
 
 # Excel 技能 — 电子表格处理

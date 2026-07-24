@@ -1,6 +1,7 @@
 ---
 name: agf-orchestrator
 description: AGF 技能编排引擎 — 根据用户意图自动路由到正确的 skill 组合，管理多 skill 管道执行、状态持久化和数据桥接。说一句话，自动走完全流程。
+disable: true
 ---
 
 # AGF Orchestrator — 多技能协作编排引擎

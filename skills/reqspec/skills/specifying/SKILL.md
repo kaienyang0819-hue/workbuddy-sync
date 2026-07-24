@@ -1,6 +1,7 @@
 ---
 name: specifying
 description: 当想法已经清晰（来自头脑风暴或用户直接描述），需要生成结构化的需求规格说明书时使用
+disable: true
 ---
 
 # 需求规格化

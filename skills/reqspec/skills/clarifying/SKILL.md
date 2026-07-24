@@ -1,6 +1,7 @@
 ---
 name: clarifying
 description: 在需求规格说明书已生成后使用——当文档中有待澄清项、模糊描述或潜在遗漏需要通过与用户对话逐一消除时
+disable: true
 ---
 
 # 澄清补全

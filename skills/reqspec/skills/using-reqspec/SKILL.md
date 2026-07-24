@@ -1,6 +1,7 @@
 ---
 name: using-reqspec
 description: 在每次会话开始时使用——建立如何查找和使用需求规格化技能的方法
+disable: true
 ---
 
 # 使用 ReqSpec

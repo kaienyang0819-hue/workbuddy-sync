@@ -4,14 +4,15 @@ description: 知识入库 — 将KM文章、网页、手动内容结构化写入
 agent_created: true
 version: "2.0"
 triggers:
-  - "入库"
-  - "知识库"
-  - "knowledge"
-  - "存到知识库"
-  - "记一下"
-  - "这个值得记录"
-  - "投资库"
-  - "游戏库"
+  - 入库
+  - 知识库
+  - knowledge
+  - 存到知识库
+  - 记一下
+  - 这个值得记录
+  - 投资库
+  - 游戏库
+disable: true
 ---
 
 # 知识入库 Skill v2.0

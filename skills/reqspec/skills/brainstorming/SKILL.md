@@ -1,6 +1,7 @@
 ---
 name: brainstorming
 description: 在任何需求文档工作之前使用——当用户有模糊的想法、功能概念或改进意图，需要通过对话探索和提炼出清晰的需求方向
+disable: true
 ---
 
 # 头脑风暴

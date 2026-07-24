@@ -1,6 +1,7 @@
 ---
 name: finalizing
 description: 在质量审查完成且关键问题已解决后使用——将需求规格说明书定稿、版本化并归档
+disable: true
 ---
 
 # 定稿归档

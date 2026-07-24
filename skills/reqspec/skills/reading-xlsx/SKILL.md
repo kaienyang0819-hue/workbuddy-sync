@@ -1,6 +1,7 @@
 ---
 name: reading-xlsx
 description: 当需要从 xlsx/Excel 文件中提取文本内容或图片时使用——作为需求文档工作流的数据源读取工具
+disable: true
 ---
 
 # 读取 Excel 文件

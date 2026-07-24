@@ -1,6 +1,7 @@
 ---
 name: reviewing
 description: 在需求规格说明书生成并完成澄清后使用——对文档进行六维质量审查，检测遗漏、矛盾和不可验证的需求
+disable: true
 ---
 
 # 质量审查

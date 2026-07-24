@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "last_updated": "2026-07-06",
+  "last_updated": "2026-07-20",
   "total_patterns": 2,
   "categories": [
     "game_design",
@@ -20,7 +20,7 @@
       "id": "pat-verify-before-trust",
       "name": "验证先于信任",
       "category": "architecture",
-      "confidence": 0.276,
+      "confidence": 0.151,
       "use_count": 0,
       "success_count": 0,
       "failure_count": 0,
@@ -36,13 +36,15 @@
       "source_episodes": [
         "ep-2026-04-14-115921"
       ],
-      "status": "candidate"
+      "status": "deprecated",
+      "deprecated_reason": "candidate 超3月未验证(创建后 3月, 0次使用)",
+      "deprecated_date": "2026-07-20"
     },
     "pat-system-capability-over-skill": {
       "id": "pat-system-capability-over-skill",
       "name": "系统能力优于独立技能",
       "category": "architecture",
-      "confidence": 0.276,
+      "confidence": 0.151,
       "use_count": 0,
       "success_count": 0,
       "failure_count": 0,
@@ -55,7 +57,9 @@
       "source_episodes": [
         "ep-2026-04-14-115921"
       ],
-      "status": "candidate"
+      "status": "deprecated",
+      "deprecated_reason": "candidate 超3月未验证(创建后 3月, 0次使用)",
+      "deprecated_date": "2026-07-20"
     }
   }
 }

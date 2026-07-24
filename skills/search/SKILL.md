@@ -2,11 +2,12 @@
 name: search
 version: 1.0.0
 description: >
-  Search the web using Tavily's LLM-optimized search API. Returns relevant results
-  with content snippets, scores, and metadata. Use when you need to find web content
-  on any topic without writing code.
-  触发关键词: "搜索", "search", "查一下", "找一下", "网上搜", "web search"
+  Search the web using Tavily's LLM-optimized search API. Returns relevant
+  results with content snippets, scores, and metadata. Use when you need to find
+  web content on any topic without writing code. 触发关键词: "搜索", "search", "查一下",
+  "找一下", "网上搜", "web search"
 homepage: https://tavily.com
+disable: true
 ---
 
 # Search Skill — 网络搜索工具

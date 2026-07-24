@@ -1,3 +1,7 @@
+---
+disable: true
+---
+
 # 05-策划案生成子技能（spec-generation）SKILL.md
 
 > **模块编号**：05

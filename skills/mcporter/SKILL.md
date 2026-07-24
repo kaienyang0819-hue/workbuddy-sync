@@ -2,12 +2,12 @@
 name: mcporter
 version: 1.0.0
 description: >
-  使用 mcporter CLI 管理和调用 MCP 服务器与工具。支持 HTTP 和 stdio 协议，
-  包括临时服务器连接、配置编辑、OAuth 认证、CLI 和类型生成。
-  当用户需要列出 MCP 工具、调用 MCP 服务端工具、管理 MCP 配置时触发。
-  触发关键词: "MCP", "mcporter", "MCP服务器", "MCP工具", "调用工具"
-description_zh: "管理和调用 MCP 服务器与工具"
-description_en: "Manage and call MCP servers & tools"
+  使用 mcporter CLI 管理和调用 MCP 服务器与工具。支持 HTTP 和 stdio 协议， 包括临时服务器连接、配置编辑、OAuth
+  认证、CLI 和类型生成。 当用户需要列出 MCP 工具、调用 MCP 服务端工具、管理 MCP 配置时触发。 触发关键词: "MCP",
+  "mcporter", "MCP服务器", "MCP工具", "调用工具"
+description_zh: 管理和调用 MCP 服务器与工具
+description_en: Manage and call MCP servers & tools
+disable: true
 ---
 
 # mcporter — MCP 服务器管理与调用工具

@@ -1,15 +1,16 @@
 ---
 name: expert-review
 description: >
-  06-专家 Review 子技能。多角色专家评审策划案，从客户端/服务器/UI/策划设计四个专业角度产出 P0-P3 分级审查报告。
-  作为游戏策划 AI 工作流（reqspec）的子技能模块，由主编排调度，可独立运行。
-  消费 $PROJECT_ROOT/drafts/requirements.md，产出 $PROJECT_ROOT/reviews/review.md，可选调用知识库查找辅助评审。
+  06-专家 Review 子技能。多角色专家评审策划案，从客户端/服务器/UI/策划设计四个专业角度产出 P0-P3 分级审查报告。 作为游戏策划 AI
+  工作流（reqspec）的子技能模块，由主编排调度，可独立运行。 消费 $PROJECT_ROOT/drafts/requirements.md，产出
+  $PROJECT_ROOT/reviews/review.md，可选调用知识库查找辅助评审。
   触发关键词："专家审查"、"专家Review"、"策划案评审"、"挑战策"、"挑战克"、"挑战侯"、"挑战绘"、"评审报告"。
 metadata:
   module_id: "06"
   module_type: 业务层
   version: "0.1"
-  date: "2026-03-28"
+  date: 2026-03-28
+disable: true
 ---
 
 # 06-专家 Review 子技能

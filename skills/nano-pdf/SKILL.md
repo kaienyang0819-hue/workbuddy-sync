@@ -2,11 +2,11 @@
 name: nano-pdf
 version: 1.0.0
 description: >
-  用自然语言编辑 PDF 文件，使用 nano-pdf CLI 工具。
-  当用户需要修改 PDF 内容（改标题、修错字、调整文本）时触发。
-  触发关键词: "编辑PDF", "修改PDF", "PDF改标题", "edit PDF", "fix PDF"
-description_zh: "用自然语言编辑 PDF 文件"
-description_en: "Edit PDFs with natural language"
+  用自然语言编辑 PDF 文件，使用 nano-pdf CLI 工具。 当用户需要修改 PDF 内容（改标题、修错字、调整文本）时触发。 触发关键词:
+  "编辑PDF", "修改PDF", "PDF改标题", "edit PDF", "fix PDF"
+description_zh: 用自然语言编辑 PDF 文件
+description_en: Edit PDFs with natural language
+disable: true
 ---
 
 # nano-pdf — 自然语言 PDF 编辑器

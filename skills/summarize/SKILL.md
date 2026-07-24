@@ -3,11 +3,23 @@ name: summarize
 version: 1.1.0
 description: >
   使用 summarize CLI 总结 URL 或文件内容（支持网页、PDF、图片、音频、YouTube）。
-  当用户说"总结这个链接"、"帮我看看这篇文章讲了什么"、"summarize this"、"概括一下"等，
-  或提供 URL/文件要求提取摘要时触发。
+  当用户说"总结这个链接"、"帮我看看这篇文章讲了什么"、"summarize this"、"概括一下"等， 或提供 URL/文件要求提取摘要时触发。
   触发关键词: "总结", "summarize", "概括", "摘要", "看看这篇", "这个链接讲了什么"
 homepage: https://summarize.sh
-metadata: {"clawdbot":{"emoji":"🧾","requires":{"bins":["summarize"]},"install":[{"id":"brew","kind":"brew","formula":"steipete/tap/summarize","bins":["summarize"],"label":"Install summarize (brew)"}]}}
+metadata:
+  clawdbot:
+    emoji: 🧾
+    requires:
+      bins:
+        - summarize
+    install:
+      - id: brew
+        kind: brew
+        formula: steipete/tap/summarize
+        bins:
+          - summarize
+        label: Install summarize (brew)
+disable: true
 ---
 
 # Summarize — 多格式内容总结工具

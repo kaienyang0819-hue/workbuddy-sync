@@ -2,12 +2,13 @@
 name: skill-vetter
 version: 1.0.0
 description: >
-  Security-first skill vetting for AI agents. Use before installing any skill from
-  community, GitHub, or other sources. Checks for red flags, permission scope,
-  and suspicious patterns.
-  触发关键词: "安全审查", "vetting", "审查技能", "skill安全", "安装前检查"
-description_zh: "安装前审查技能的安全性"
-description_en: "Security-first skill vetting before install"
+  Security-first skill vetting for AI agents. Use before installing any skill
+  from community, GitHub, or other sources. Checks for red flags, permission
+  scope, and suspicious patterns. 触发关键词: "安全审查", "vetting", "审查技能", "skill安全",
+  "安装前检查"
+description_zh: 安装前审查技能的安全性
+description_en: Security-first skill vetting before install
+disable: true
 ---
 
 # Skill Vetter — 技能安全审查协议

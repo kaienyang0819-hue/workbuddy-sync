@@ -1,3 +1,7 @@
+---
+disable: true
+---
+
 # 04-脑暴子技能（agent-04-brainstorming）SKILL.md
 
 > **模块编号**：04

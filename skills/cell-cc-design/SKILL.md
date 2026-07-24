@@ -1,7 +1,19 @@
 ---
 name: cc-design
-description: "High-fidelity HTML design and prototype skill for landing pages, slide decks, mobile mockups, interactive prototypes, dashboard explorations, design-direction advising, and design review work. Use when Codex needs to design a screen, make an interface look polished, explore multiple visual directions, recommend a style direction before building, adapt an existing brand style, critique a design, or deliver a reviewable HTML-based visual artifact. Also use when the user mentions presentations, design systems, wireframes, UI mockups, motion studies, design philosophy, style selection, or asks to 'make it look good'. Do not trigger for pure content strategy, pure writing, or bitmap image generation alone."
-metadata: {"openclaw":{"homepage":"https://github.com/cellinlab/cell-skills/tree/main/skills/cc-design"}}
+description: High-fidelity HTML design and prototype skill for landing pages,
+  slide decks, mobile mockups, interactive prototypes, dashboard explorations,
+  design-direction advising, and design review work. Use when Codex needs to
+  design a screen, make an interface look polished, explore multiple visual
+  directions, recommend a style direction before building, adapt an existing
+  brand style, critique a design, or deliver a reviewable HTML-based visual
+  artifact. Also use when the user mentions presentations, design systems,
+  wireframes, UI mockups, motion studies, design philosophy, style selection, or
+  asks to 'make it look good'. Do not trigger for pure content strategy, pure
+  writing, or bitmap image generation alone.
+metadata:
+  openclaw:
+    homepage: https://github.com/cellinlab/cell-skills/tree/main/skills/cc-design
+disable: true
 ---
 
 # CC Design

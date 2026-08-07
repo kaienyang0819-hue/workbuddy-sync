@@ -11,6 +11,16 @@
 - 2026-04-22：面向业内人士做分享时，用户更强调“思路、判断、体验洞察”，不希望内容过多落到具体设计细节、工程做法或教学式拆解；表达要站在分享观点而非教别人怎么做的口径上。
 - 2026-04-22：在分享材料中，数据可以作为支撑，但不要求每一页都用量化证明，重点是把价值判断和体验认知讲透。
 
+## GitHub Trending 监控报告格式要求（2026-08-03）
+- 报告输出路径：`G:\project_output\github-trending\github_trending_YYYY-MM-DD.md`
+- 报告结构要求：
+  1. 先给高匹配仓库的精华摘要（3-5句话概括今日最值得关注的方向）
+  2. 对高匹配（score ≥ 5）仓库逐个给出一句话价值判断：对用户（游戏策划 + AI 产品经理）的具体用处
+  3. 如果发现特别值得关注的项目（score ≥ 8 或今日 stars ≥ 500），用醒目方式标注
+  4. 每个高匹配仓库加「与你相关」的点评
+- 脚本路径：`g:\gpt_test\github_trending_monitor.py`
+- JSON缓存：`g:\gpt_test\github_trending_latest.json`
+
 ## 个人知识库（2026-06-24搭建，2026-06-29升级多库架构）
 - 架构：WorkBuddy加工 + Obsidian可视化，.md文件为桥梁，多知识库独立管理
 - **游戏+AI库**：`D:/obsidian/knowledge-gamedesign/`（00-inbox / 01-ai-gaming / 02-llm-tech / 03-competitive / 04-game-design / 05-industry / 06-patterns）

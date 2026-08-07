@@ -12,3 +12,8 @@
 - 新增 skill（从本地→repo）：design-md-apply、drawio-skill、mcporter、mermaid-skill、nano-pdf、tencent-docs
 - 新增 project（从本地→repo）：data_analysis
 - 无冲突，推送成功
+
+## 2026-07-24 17:55
+- 执行 sync，Pull→Scatter(51 skills, 7 projects)→Gather(51 skills, 9 project dirs)→Push 成功
+- 新增 skill（从 repo→本地）：ima笔记（标记 NEW SKILL）
+- 无新增 project 变动，无冲突，推送成功

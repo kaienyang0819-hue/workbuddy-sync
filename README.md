@@ -23,6 +23,9 @@ powershell -File "G:\workbuddy-sync\sync.ps1" push
 
 # 只下载（GitHub→本机）
 powershell -File "G:\workbuddy-sync\sync.ps1" pull
+
+# 通过 Pull Request 同步（推送到 sync/ 分支并创建/更新 PR，需要 gh CLI）
+powershell -File "G:\workbuddy-sync\sync.ps1" pr
 ```
 
 ## 家里电脑部署
@@ -31,6 +34,9 @@ powershell -File "G:\workbuddy-sync\sync.ps1" pull
 2. 修改 `sync.ps1` 中的 `$SyncMap` 路径映射（适配家里的目录结构）
 3. 运行 `.\sync.ps1 pull` 首次拉取
 4. 设置 WorkBuddy automation 定时同步
+
+> 如果希望同步经过 PR 审查而不是直接 push 到 main，把自动化任务的执行命令换成 `sync.ps1 pr`，
+> 并确保已安装 GitHub CLI（`winget install GitHub.cli`）且完成 `gh auth login`。
 
 ## 不同步的内容
 

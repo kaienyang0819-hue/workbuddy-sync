@@ -11,7 +11,7 @@
 
 param(
     [Parameter(Position=0)]
-    [ValidateSet("gather","scatter","push","pull","sync")]
+    [ValidateSet("gather","scatter","push","pull","sync","pr")]
     [string]$Action = "sync"
 )
 
@@ -259,6 +259,60 @@ function Invoke-GitPull {
     }
 }
 
+function Invoke-GitPr {
+    Write-Log "=== GIT PULL REQUEST ==="
+    if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
+        Write-Log "  gh CLI not found, cannot create pull request"
+        Write-Log "  Install with: winget install GitHub.cli"
+        return
+    }
+    Push-Location $RepoRoot
+    try {
+        $status = git status --porcelain
+        if (-not $status) {
+            Write-Log "  No changes, skip PR"
+            return
+        }
+        $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+        $hostname = $env:COMPUTERNAME
+        $branchPrefix = "sync/$hostname/"
+
+        # Reuse an existing open sync PR from this host if present, so the PR gets updated instead of duplicated.
+        $existing = $null
+        try {
+            $openPrs = gh pr list --base main --state open --json headRefName,url 2>$null | ConvertFrom-Json
+            $existing = $openPrs | Where-Object { $_.headRefName -like "$branchPrefix*" } | Select-Object -First 1
+        } catch {
+            Write-Log "  Could not list open PRs: $($_.Exception.Message)"
+        }
+
+        if ($existing) {
+            Write-Log "  Updating existing PR branch: $($existing.headRefName)"
+            git checkout $existing.headRefName 2>&1 | Out-Null
+        } else {
+            $branchName = "$branchPrefix" + (Get-Date -Format "yyyyMMdd-HHmm")
+            Write-Log "  Creating branch: $branchName"
+            git checkout -b $branchName 2>&1 | Out-Null
+        }
+
+        git add -A 2>&1 | Out-Null
+        git commit -m "sync from $hostname at $timestamp" 2>&1 | Out-Null
+        $currentBranch = git rev-parse --abbrev-ref HEAD
+        git push -u origin $currentBranch 2>&1
+
+        if ($existing) {
+            Write-Log "  PR updated: $($existing.url)"
+        } else {
+            $prUrl = gh pr create --base main --head $branchName --title "Sync from $hostname at $timestamp" --body "Automated WorkBuddy sync from $hostname. Review and merge to update main."
+            Write-Log "  PR created: $prUrl"
+        }
+
+        git checkout main 2>&1 | Out-Null
+    } finally {
+        Pop-Location
+    }
+}
+
 Write-Log "WorkBuddy Sync - Action: $Action"
 
 switch ($Action) {
@@ -266,6 +320,7 @@ switch ($Action) {
     "scatter" { Invoke-Scatter }
     "push"    { Invoke-Gather; Invoke-GitPush }
     "pull"    { Invoke-GitPull; Invoke-Scatter }
+    "pr"      { Invoke-GitPull; Invoke-Gather; Invoke-GitPr }
     "sync"    { Invoke-GitPull; Invoke-Scatter; Invoke-Gather; Invoke-GitPush }
 }
 

@@ -7,6 +7,7 @@
 - [x] 家里电脑已安装 WorkBuddy
 - [x] 家里电脑已安装 Git（如未安装：`winget install Git.Git`，安装后**重启终端**）
 - [x] 公司电脑已完成首次 push（已完成 ✅）
+- [ ] 如需通过 Pull Request 同步：安装 GitHub CLI（`winget install GitHub.cli`）并登录 `gh auth login`
 
 ## 第一步：Clone 仓库
 
@@ -99,6 +100,10 @@ ls "$env:USERPROFILE\.workbuddy\skills\" | Measure-Object
 
 或者手动在 WorkBuddy 的 Automations 面板中创建。
 
+> **可选：让同步走 Pull Request。** 如果希望每次同步推送到分支并创建/更新 PR（而不是直接 push 到 main），
+> 把上面的执行命令换成 `powershell -ExecutionPolicy Bypass -File "D:\workbuddy-sync\sync.ps1" pr`，
+> 前提是已安装 GitHub CLI 并完成 `gh auth login`。PR 合并后 main 才会更新。
+
 ## 完成！🎉
 
 配置完成后，两台电脑的同步流程是：
@@ -123,6 +128,9 @@ GitHub 私有仓库
 
 # 只拉取远程更新
 .\sync.ps1 pull
+
+# 通过 Pull Request 上传（创建或更新 PR，代替直接 push）
+.\sync.ps1 pr
 
 # 查看同步状态
 cd D:\workbuddy-sync

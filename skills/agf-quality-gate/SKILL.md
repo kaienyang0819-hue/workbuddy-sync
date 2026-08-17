@@ -1,7 +1,7 @@
 ---
 name: agf-quality-gate
 description: AGF 质量门禁 — 策划文档生成的自动化质量校验系统。在文档生成前提取源文档指纹，生成后自动对比并输出质量报告。检测规则丢失、数值偏差、格式异常等问题。
-disable: true
+disable-model-invocation: true
 ---
 
 # AGF Quality Gate — 策划文档质量门禁

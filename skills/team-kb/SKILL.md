@@ -6,7 +6,7 @@ description: >
   工作流的外部依赖，提供知识库检索服务（只读消费）。 触发关键词: "知识库", "team-kb", "知识点", "知识检索", "查知识库"
 metadata:
   date: 2026-03-30
-disable: true
+disable-model-invocation: true
 ---
 
 # Team-KB — 团队知识库管理工具

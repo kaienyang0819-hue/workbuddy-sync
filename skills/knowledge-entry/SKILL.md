@@ -12,7 +12,7 @@ triggers:
   - 这个值得记录
   - 投资库
   - 游戏库
-disable: true
+disable-model-invocation: true
 ---
 
 # 知识入库 Skill v2.0

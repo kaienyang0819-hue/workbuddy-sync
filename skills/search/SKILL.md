@@ -7,7 +7,7 @@ description: >
   web content on any topic without writing code. 触发关键词: "搜索", "search", "查一下",
   "找一下", "网上搜", "web search"
 homepage: https://tavily.com
-disable: true
+disable-model-invocation: true
 ---
 
 # Search Skill — 网络搜索工具

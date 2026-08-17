@@ -1,7 +1,7 @@
 ---
 name: skill-creator
 description: 技能创建指南。当用户希望创建新技能或更新现有技能，以扩展 CodeBuddy 的专业知识、工作流程或工具集成能力时使用。
-disable: true
+disable-model-invocation: true
 ---
 
 # Skill Creator

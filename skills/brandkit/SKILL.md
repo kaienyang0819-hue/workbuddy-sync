@@ -7,7 +7,7 @@ description: Premium brand-kit image generation skill for creating high-end
   systems. Optimized for intentional logo concepting, refined composition,
   sparse typography, strong symbolic meaning, premium mockups, art-directed
   imagery, and flexible grid layouts.
-disable: true
+disable-model-invocation: true
 ---
 
 # BRANDKIT IMAGE GENERATION SKILL

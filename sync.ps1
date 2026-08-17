@@ -242,7 +242,11 @@ function Invoke-GitPush {
         $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
         $hostname = $env:COMPUTERNAME
         git commit -m "sync from $hostname at $timestamp" 2>&1 | Out-Null
-        git push origin main 2>&1
+        git -c credential.helper=wincred push origin main 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Write-Log "  ERROR: git push failed (exit $LASTEXITCODE)"
+            exit 1
+        }
         Write-Log "  Pushed to GitHub"
     } finally {
         Pop-Location
@@ -261,7 +265,11 @@ function Invoke-GitPull {
                 git stash push -m "auto-stash before pull" 2>&1 | Out-Null
                 Write-Log "  Stashed local changes"
             }
-            git pull --rebase origin main 2>&1
+            git -c credential.helper=wincred pull --rebase origin main 2>&1
+            if ($LASTEXITCODE -ne 0) {
+                Write-Log "  ERROR: git pull failed (exit $LASTEXITCODE)"
+                exit 1
+            }
             if ($dirty) {
                 git stash pop 2>&1 | Out-Null
                 Write-Log "  Restored stashed changes"

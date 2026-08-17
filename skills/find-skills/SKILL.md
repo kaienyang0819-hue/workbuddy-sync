@@ -2,7 +2,7 @@
 name: find-skills
 description: 帮助用户发现和安装智能体技能。当用户提出「如何做
   X」、「查找某个技能」、「有没有能做……的技能」等问题，或表示希望扩展功能时使用。当用户正在寻找可能作为可安装技能存在的功能时，应使用此技能。
-disable: true
+disable-model-invocation: true
 ---
 
 # Find Skills

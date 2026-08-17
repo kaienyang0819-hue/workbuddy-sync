@@ -8,7 +8,7 @@ description: >
   "安装前检查"
 description_zh: 安装前审查技能的安全性
 description_en: Security-first skill vetting before install
-disable: true
+disable-model-invocation: true
 ---
 
 # Skill Vetter — 技能安全审查协议

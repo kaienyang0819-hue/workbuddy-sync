@@ -3,7 +3,7 @@ name: elite-frontend-design
 description: >
   前端 UI 界面设计。当用户要创建网页、landing page、dashboard、React/Vue 组件、前端页面时触发。 输出
   HTML/CSS/JS 代码。不适用于：静态图片设计（用 canvas-design）、公众号配图（用 weixin-canvas-design）。
-disable: true
+disable-model-invocation: true
 ---
 
 # Elite Frontend Design

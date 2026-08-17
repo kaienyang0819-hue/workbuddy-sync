@@ -8,7 +8,7 @@ description: Elite website image-to-code skill for Codex. For visually important
   views instead of cropping old ones, avoid lazy under-generation, avoid
   cards-inside-cards-inside-cards UI, and keep the hero clean, spacious,
   readable, and visible on a small laptop.
-disable: true
+disable-model-invocation: true
 ---
 
 # CORE DIRECTIVE: IMAGE-FIRST WEBSITE DESIGN TO CODE

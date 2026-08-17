@@ -1,7 +1,7 @@
 ---
 name: agf-research-workflow
 description: AGF 调研标准化工作流 — 将调研任务从"随机发挥"转为"标准化流程"。5阶段流程（定义→采集→验证→分析→交付），内置信源管理、质量评分和结构化报告模板。
-disable: true
+disable-model-invocation: true
 ---
 
 # AGF Research Workflow — 调研任务标准化工作流

@@ -7,7 +7,7 @@ description: >
   "mcporter", "MCP服务器", "MCP工具", "调用工具"
 description_zh: 管理和调用 MCP 服务器与工具
 description_en: Manage and call MCP servers & tools
-disable: true
+disable-model-invocation: true
 ---
 
 # mcporter — MCP 服务器管理与调用工具

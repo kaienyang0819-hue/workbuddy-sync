@@ -6,7 +6,7 @@ description: >
   "编辑PDF", "修改PDF", "PDF改标题", "edit PDF", "fix PDF"
 description_zh: 用自然语言编辑 PDF 文件
 description_en: Edit PDFs with natural language
-disable: true
+disable-model-invocation: true
 ---
 
 # nano-pdf — 自然语言 PDF 编辑器

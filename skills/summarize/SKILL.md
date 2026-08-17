@@ -19,7 +19,7 @@ metadata:
         bins:
           - summarize
         label: Install summarize (brew)
-disable: true
+disable-model-invocation: true
 ---
 
 # Summarize — 多格式内容总结工具

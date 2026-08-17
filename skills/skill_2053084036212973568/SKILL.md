@@ -20,7 +20,7 @@ display_name_en: Tencent Docs
 description_zh: 腾讯文档在线云文档平台，创建、编辑、管理多种类型文档
 description_en: Tencent Docs cloud platform for creating, editing & managing online documents
 visibility: public
-disable: true
+disable-model-invocation: true
 ---
 
 # 腾讯文档 MCP 使用指南

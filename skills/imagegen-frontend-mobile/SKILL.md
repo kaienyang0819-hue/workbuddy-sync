@@ -9,7 +9,7 @@ description: Elite mobile app image-generation skill for creating premium,
   screens should be shown inside a subtle premium iPhone or similar phone mockup
   with a visible frame, while the main focus stays on the app content itself.
   This skill generates images only. It does not write code.
-disable: true
+disable-model-invocation: true
 ---
 
 # CORE DIRECTIVE: PREMIUM MOBILE APP IMAGE DIRECTION

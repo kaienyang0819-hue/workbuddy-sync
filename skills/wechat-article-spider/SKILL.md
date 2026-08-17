@@ -4,7 +4,7 @@ version: 1.0.0
 description: >
   微信公众号文章爬虫——将微信公号文章转换为 Markdown + 本地图片。 当用户提供微信公众号文章链接，或要求抓取/保存/下载微信文章时触发。
   触发关键词: "微信文章", "公众号", "mp.weixin.qq.com", "抓取微信", "下载公号文章"
-disable: true
+disable-model-invocation: true
 ---
 
 # wechat-article-spider — 微信公众号文章爬虫

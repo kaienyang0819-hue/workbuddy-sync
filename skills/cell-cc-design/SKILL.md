@@ -13,7 +13,7 @@ description: High-fidelity HTML design and prototype skill for landing pages,
 metadata:
   openclaw:
     homepage: https://github.com/cellinlab/cell-skills/tree/main/skills/cc-design
-disable: true
+disable-model-invocation: true
 ---
 
 # CC Design

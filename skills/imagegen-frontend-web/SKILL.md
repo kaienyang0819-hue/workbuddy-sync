@@ -10,7 +10,7 @@ description: Elite frontend image-direction skill for generating premium,
   consistent palette across all images. Optimized for landing pages, marketing
   sites, and product comps that developers or coding models can accurately
   recreate.
-disable: true
+disable-model-invocation: true
 ---
 
 # HARD OUTPUT RULE — READ FIRST

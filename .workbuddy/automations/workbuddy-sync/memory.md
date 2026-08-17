@@ -19,3 +19,4 @@
 - 无新增 project 变动，无冲突，推送成功
 -2026-08-07 17:55 | sync OK — pull(up-to-date), scatter(51 skills, 7 projects, new: ima笔记), gather(51 skills, 9 dirs), push OK
 -2026-08-17 14:52 | verification run: sync.ps1 push path check
+-2026-08-17 15:15 | verify bash-wrapped sync

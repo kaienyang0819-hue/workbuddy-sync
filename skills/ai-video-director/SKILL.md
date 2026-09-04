@@ -18,7 +18,6 @@ triggers:
   - video director
   - 导演包
   - 视频制作
-disable-model-invocation: true
 ---
 
 # AI 视频导演助手

@@ -1,0 +1,4 @@
+requests>=2.25.0                  # HTTP 请求（API 调用，必需）
+python-dotenv>=0.19.0            # .env 文件加载（可选，缺失时降级）
+langchain-text-splitters>=0.0.1  # Markdown 文本分块（可选，缺失时降级为简单切分）
+markitdown[pdf,docx,xlsx]>=0.0.1 # PDF/Word/Excel 转 Markdown（可选，缺失时跳过转换类文件）

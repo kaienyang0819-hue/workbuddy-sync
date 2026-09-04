@@ -1,7 +1,6 @@
 ---
 name: game-design-doc-template
 description: 系统策划文档标准格式生成器,提供通用API和样式规范,支持根据需求动态生成各类系统策划文档
-disable-model-invocation: true
 ---
 
 # 系统策划文档标准格式生成器

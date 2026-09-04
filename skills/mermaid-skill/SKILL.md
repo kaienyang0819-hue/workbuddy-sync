@@ -14,7 +14,6 @@ metadata:
       bins:
         - curl
     emoji: 📊
-disable-model-invocation: true
 ---
 
 # Mermaid Diagrams

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeShellExecution": [
+      {
+        "command": "py -3 \"%USERPROFILE%\\.cursor\\hooks\\aibox_hooks.py\" beforeShellExecution"
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": "py -3 \"%USERPROFILE%\\.cursor\\hooks\\aibox_hooks.py\" afterShellExecution"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "py -3 \"%USERPROFILE%\\.cursor\\hooks\\aibox_hooks.py\" afterFileEdit"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "py -3 \"%USERPROFILE%\\.cursor\\hooks\\aibox_hooks.py\" beforeSubmitPrompt"
+      }
+    ]
+  }
+}

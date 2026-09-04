@@ -1,11 +1,11 @@
 ---
 name: wecom-unified
 description: 企业微信 CLI 全能套件，覆盖通讯录、文档、在线表格、智能表格、智能文档、日程、会议、待办、微盘、邮件、消息、媒体文件等业务域。支持按姓名/拼音/英文名/别名查找联系人与 userid，搜索、重命名和授权文档，新建与读写 doc 在线文档，创建与修改在线表格，创建/导入并读写智能表格的子表/字段/记录/视图/图表及填色、高亮等样式，创建与编辑智能文档（含表单和数据看板），创建/查询/修改/取消日程并查询闲忙、办公楼和会议室，预约与管理在线会议（含纪要、待办与转写原文），创建/查询/修改/完成/删除或退出待办，搜索和上传微盘文件、下载离线文件、重命名支持的文件及新建文件夹，发送/回复/转发与搜索阅读邮件，向当前授权人或最近活跃会话发送文本/Markdown/图片/文件/语音/视频消息，以及上传下载媒体文件。用户给出 doc.weixin.qq.com、page.weixin.qq.com、drive.weixin.qq.com 链接时必定触发；即使未明确提到「企业微信」，只要涉及找人/文档/表格/日程/会议/待办/微盘/邮件/发消息等办公场景，也应触发本技能。未指定类型的「文档」默认使用智能文档；未明确「在线表格」的「表格」默认使用智能表格。
-version: 1.0.3
+version: 1.0.4
 allowed-tools: Bash, Read
 display_name: "企业微信套件"
 display_name_en: "Wecom Unified"
-description_zh: "企业微信 CLI 套件，覆盖文档/消息/日程/会议/待办/通讯录等业务功能。10人以上规模的企业，支持新建和读取文档/智能表格/智能文档；10人及以下个人及小团队，支持文档读写、收发单聊/群聊消息、日程/会议/待办管理、获取通讯录等能力。"
+description_zh: "企业微信官方 CLI 套件，覆盖消息、邮件、文档、待办、日程、会议、微盘、通讯录等业务功能。支持机器人主动通知、新建与读取文档、文档搜索、新建与管理日程、预约与获取会议信息、新建与跟进待办、上传与获取微盘文件、发送与获取邮件、获取通讯录成员信息，以提升企业办公效率"
 description_en: "WeCom CLI suite covering docs, messages, calendars, meetings, todos, and contacts. For organizations with 10+ members: create and read docs, smart sheets, and smart docs. For individuals and small teams (10 or fewer): read/write docs, send/receive direct and group messages, manage calendars, meetings, and todos, and look up contacts."
 visibility: "public"
 ---
@@ -43,7 +43,7 @@ wecom-cli auth show --status
 ### Step 3: 配置凭证（仅未授权时执行）
 
 ```bash
-wecom-cli auth init
+wecom-cli auth init --noninteractive
 ```
 
 > ⚠️ 该命令会输出一个授权链接和二维码，并阻塞等待用户扫码完成验证。授权成功后命令会自动退出，仅需执行一次。

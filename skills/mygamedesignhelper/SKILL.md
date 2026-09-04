@@ -13,7 +13,6 @@ metadata:
   module_type: 编排层
   version: "1.0"
 allowed-tools: null
-disable-model-invocation: true
 ---
 
 # 游戏系统策划 AI 工作流 — 主编排

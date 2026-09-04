@@ -1,0 +1,13 @@
+{
+  "headers": ["请求时间", "产品", "模型", "提问", "总TOKENS", "费用", "观测"],
+  "rows": [
+    ["2026-06-05 15:24:36", "CodeBuddy IDE/WorkBuddy", "Claude-Opus-4.8", "仅入口删除", "6,826,151", "¥38.89", "-"],
+    ["2026-06-05 11:18:11", "CodeBuddy IDE/WorkBuddy", "Claude-Opus-4.8", "继续做面板对接子模块", "5,100,346", "¥37.10", "-"],
+    ["2026-06-05 16:42:00", "CodeBuddy IDE/WorkBuddy", "Claude-Opus-4.8", "没看到任务tab呀", "1,848,020", "¥22.33", "-"],
+    ["2026-06-03 15:58:10", "CodeBuddy IDE/WorkBuddy", "Claude-Opus-4.8-1m", "删除", "953,189", "¥16.02", "-"],
+    ["2026-06-04 15:02:23", "CodeBuddy IDE/WorkBuddy", "Claude-Opus-4.8", "需要", "1,111,741", "¥8.04", "-"],
+    ["2026-06-05 10:21:35", "CodeBuddy IDE/WorkBuddy", "Claude-Opus-4.8", "空仓库, 你使用mcp在这里面建立 https://git.example.com/...", "12,018,058", "¥57.35", "-"],
+    ["2026-06-05 18:01:42", "CodeBuddy IDE/WorkBuddy", "Claude-Opus-4.8", "User's input is: 查看JSON数据结构，特别是符文ID作为key的格式", "3,231", "¥0.29", "-"],
+    ["2026-06-04 10:23:46", "IMate", "Claude-4.5-Sonnet", "[cron] 每日股价与金价查询，请发送到群里", "976,008", "¥4.90", "-"]
+  ]
+}

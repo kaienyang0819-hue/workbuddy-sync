@@ -5,7 +5,6 @@ description: Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven
   editorial typography (bans 6-line wraps), gapless bento grids, strict GSAP
   ScrollTriggers (pinning, stacking, scrubbing), inline micro-images, and
   massive section spacing.
-disable-model-invocation: true
 ---
 
 # CORE DIRECTIVE: AWWWARDS-LEVEL DESIGN ENGINEERING

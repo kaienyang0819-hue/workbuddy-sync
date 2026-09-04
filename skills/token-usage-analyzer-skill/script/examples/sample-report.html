@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Token 使用分析报告</title>
+<style>
+  :root{--bg:#0f1220;--card:#181c2e;--card2:#1f2438;--txt:#e8eaf2;--sub:#9aa3c0;--acc:#6c8cff;--warn:#ff6b6b;--hi:#ffb454;--ok:#3ddc97;--line:#2a3050;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(160deg,#0f1220,#141832);color:var(--txt);line-height:1.6;padding:32px 18px}
+  .wrap{max-width:1080px;margin:0 auto}
+  header{margin-bottom:28px}
+  h1{font-size:30px;font-weight:700;letter-spacing:.5px}
+  h1 .em{background:linear-gradient(90deg,#6c8cff,#a77bff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .meta{color:var(--sub);font-size:14px;margin-top:8px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-bottom:22px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+  h2{font-size:20px;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  h2::before{content:"";width:6px;height:20px;border-radius:3px;background:linear-gradient(180deg,#6c8cff,#a77bff)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+  .stat{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .stat .label{color:var(--sub);font-size:13px}
+  .stat .val{font-size:24px;font-weight:700;margin-top:6px}
+  .stat .val.warn{color:var(--warn)}.stat .val.hi{color:var(--hi)}.stat .val.ok{color:var(--ok)}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--sub);font-weight:600;font-size:13px;letter-spacing:.4px}
+  tbody tr:hover{background:rgba(108,140,255,.06)}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .tk{color:var(--hi);font-weight:600}
+  .fee{color:var(--warn);font-weight:700}
+  .q{max-width:380px}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:rgba(108,140,255,.15);color:#9fb4ff;border:1px solid rgba(108,140,255,.3)}
+  .tag.m1{background:rgba(255,107,107,.13);color:#ff9b9b;border-color:rgba(255,107,107,.3)}
+  .reason{counter-reset:r;list-style:none;display:grid;gap:14px}
+  .reason li{background:var(--card2);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:10px;padding:14px 16px 14px 50px;position:relative}
+  .reason li::before{counter-increment:r;content:counter(r);position:absolute;left:14px;top:14px;width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#6c8cff,#a77bff);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .reason b,.tip b{color:#fff}
+  .tips{display:grid;gap:12px}
+  .tip-cat{margin:14px 0 2px;font-size:14px;font-weight:700;color:#9fb4ff;letter-spacing:.3px}
+  .tip-cat:first-child{margin-top:0}
+  .tip{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+  .tip .ic{flex:none;width:30px;height:30px;border-radius:8px;background:rgba(61,220,151,.15);color:var(--ok);display:flex;align-items:center;justify-content:center;font-weight:700}
+  .note{color:var(--sub);font-size:13px;margin-top:10px;padding:10px 14px;border-radius:8px;background:rgba(255,180,84,.08);border:1px solid rgba(255,180,84,.25)}
+  .conclusion{background:linear-gradient(135deg,rgba(108,140,255,.14),rgba(167,123,255,.14));border:1px solid rgba(108,140,255,.3)}
+  .rec{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px;border-left:4px solid var(--acc)}
+  .rec.sev-high{border-left-color:var(--warn)}.rec.sev-medium{border-left-color:var(--hi)}.rec.sev-low{border-left-color:var(--ok)}
+  .rec-head{display:flex;align-items:flex-start;gap:10px}
+  .rec-idx{flex:none;width:22px;height:22px;border-radius:50%;background:rgba(108,140,255,.2);color:#9fb4ff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .rec-q{font-weight:600;color:#fff;word-break:break-all}
+  .rec-meta{display:flex;flex-wrap:wrap;gap:14px;color:var(--sub);font-size:13px;margin:8px 0 10px 32px}
+  .rec-body{display:grid;grid-template-columns:1fr 1.4fr;gap:14px;margin-left:32px}
+  .rec-col{background:rgba(0,0,0,.15);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+  .rec-label{color:var(--sub);font-size:12px;margin-bottom:8px}
+  .rtag{display:inline-block;font-size:12px;padding:3px 9px;margin:0 6px 6px 0;border-radius:6px;background:rgba(255,180,84,.13);color:#ffce8a;border:1px solid rgba(255,180,84,.3)}
+  .rtips{margin:0;padding-left:18px}.rtips li{margin-bottom:5px;font-size:13px}
+  .rtips.none{padding-left:0;color:var(--sub);font-size:13px}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:10px}
+  @media (max-width:640px){.q{max-width:160px}h1{font-size:24px}.rec-body{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Token 使用<span class="em">分析报告</span></h1>
+    <div class="meta">用户：demo&nbsp;·&nbsp;数据来源：Token 看板（共 8 条记录）&nbsp;·&nbsp;生成时间：6/26/2026, 9:26:30 PM</div>
+  </header>
+
+  <section>
+    <h2>概览</h2>
+    <div class="cards">
+      <div class="stat"><div class="label">本月费用</div><div class="val warn">¥1294.89</div></div>
+      <div class="stat"><div class="label">额度</div><div class="val">¥10000.00</div></div>
+      <div class="stat"><div class="label">已用占比</div><div class="val hi">12.9%</div></div>
+      <div class="stat"><div class="label">记录数</div><div class="val">8</div></div>
+      <div class="stat"><div class="label">总 Tokens</div><div class="val">28,836,744</div></div>
+      <div class="stat"><div class="label">总费用</div><div class="val warn">¥184.92</div></div>
+      <div class="stat"><div class="label">单条均价</div><div class="val hi">¥23.12</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>一、提问很短，但 Token / 费用很高（≤ 20 字，按费用排序）</h2>
+    <table>
+      <thead><tr><th>时间</th><th class="q">提问</th><th class="num">总 Tokens</th><th class="num">费用</th><th>模型</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>2026-06-05 15:24:36</td>
+          <td class="q">仅入口删除</td>
+          <td class="num tk">6,826,151</td>
+          <td class="num fee">¥38.89</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-05 11:18:11</td>
+          <td class="q">继续做面板对接子模块</td>
+          <td class="num tk">5,100,346</td>
+          <td class="num fee">¥37.10</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-05 16:42:00</td>
+          <td class="q">没看到任务tab呀</td>
+          <td class="num tk">1,848,020</td>
+          <td class="num fee">¥22.33</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-03 15:58:10</td>
+          <td class="q">删除</td>
+          <td class="num tk">953,189</td>
+          <td class="num fee">¥16.02</td>
+          <td><span class="tag m1">Claude-Opus-4.8-1m</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-04 15:02:23</td>
+          <td class="q">需要</td>
+          <td class="num tk">1,111,741</td>
+          <td class="num fee">¥8.04</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">说明：「提问」列只显示最后输入的一句话，并不代表本次请求实际发送给模型的内容量。</div>
+  </section>
+
+  <section>
+    <h2>二、绝对费用最高的记录</h2>
+    <table>
+      <thead><tr><th>时间</th><th class="q">提问（节选）</th><th class="num">总 Tokens</th><th class="num">费用</th><th>模型</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>2026-06-05 10:21:35</td>
+          <td class="q">空仓库, 你使用mcp在这里面建立 https://git.example.com/...</td>
+          <td class="num tk">12,018,058</td>
+          <td class="num fee">¥57.35</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-05 15:24:36</td>
+          <td class="q">仅入口删除</td>
+          <td class="num tk">6,826,151</td>
+          <td class="num fee">¥38.89</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-05 11:18:11</td>
+          <td class="q">继续做面板对接子模块</td>
+          <td class="num tk">5,100,346</td>
+          <td class="num fee">¥37.10</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-05 16:42:00</td>
+          <td class="q">没看到任务tab呀</td>
+          <td class="num tk">1,848,020</td>
+          <td class="num fee">¥22.33</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-03 15:58:10</td>
+          <td class="q">删除</td>
+          <td class="num tk">953,189</td>
+          <td class="num fee">¥16.02</td>
+          <td><span class="tag m1">Claude-Opus-4.8-1m</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-04 15:02:23</td>
+          <td class="q">需要</td>
+          <td class="num tk">1,111,741</td>
+          <td class="num fee">¥8.04</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-04 10:23:46</td>
+          <td class="q">[cron] 每日股价与金价查询，请发送到群里</td>
+          <td class="num tk">976,008</td>
+          <td class="num fee">¥4.90</td>
+          <td><span class="tag">Claude-4.5-Sonnet</span></td>
+        </tr>
+        <tr>
+          <td>2026-06-05 18:01:42</td>
+          <td class="q">User's input is: 查看JSON数据结构，特别是符文ID作为key的格式</td>
+          <td class="num tk">3,231</td>
+          <td class="num fee">¥0.29</td>
+          <td><span class="tag">Claude-Opus-4.8</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>三、逐条诊断与针对性节约建议</h2>
+    <p style="color:var(--sub);margin-bottom:14px">对高消耗记录逐条推断成因并给出对应建议（启发式，仅供定位方向）。左边框颜色表示费用严重度：<span style="color:var(--warn)">红=高</span> / <span style="color:var(--hi)">黄=中</span> / <span style="color:var(--ok)">绿=低</span>。</p>
+      <div class="rec sev-high">
+        <div class="rec-head">
+          <span class="rec-idx">1</span>
+          <span class="rec-q">空仓库, 你使用mcp在这里面建立 https://git.example.com/...</span>
+        </div>
+        <div class="rec-meta">
+          <span>2026-06-05 10:21:35</span>
+          <span><span class="tag">Claude-Opus-4.8</span></span>
+          <span class="tk">12,018,058 tokens</span>
+          <span class="fee">¥57.35</span>
+        </div>
+        <div class="rec-body">
+          <div class="rec-col"><div class="rec-label">可能原因</div><span class="rtag">抓取外部 URL（网页/JSON/仓库）</span><span class="rtag">触发 MCP 大体积返回（浏览器/快照等）</span></div>
+          <div class="rec-col"><div class="rec-label">节约建议</div><ul class="rtips"><li>只取需要的关键片段或字段，设置 maxOutputLength；大 JSON 先用脚本预处理。</li><li>限制 MCP 返回量：页面快照/网页内容只取关键区域，设置 maxOutputLength。</li></ul></div>
+        </div>
+      </div>
+      <div class="rec sev-high">
+        <div class="rec-head">
+          <span class="rec-idx">2</span>
+          <span class="rec-q">仅入口删除</span>
+        </div>
+        <div class="rec-meta">
+          <span>2026-06-05 15:24:36</span>
+          <span><span class="tag">Claude-Opus-4.8</span></span>
+          <span class="tk">6,826,151 tokens</span>
+          <span class="fee">¥38.89</span>
+        </div>
+        <div class="rec-body">
+          <div class="rec-col"><div class="rec-label">可能原因</div><span class="rtag">模糊/续作指令，主要消耗在历史上下文</span></div>
+          <div class="rec-col"><div class="rec-label">节约建议</div><ul class="rtips"><li>一次讲清对象与范围（哪个文件、哪段、改什么），减少模型翻历史和来回轮次。</li></ul></div>
+        </div>
+      </div>
+      <div class="rec sev-high">
+        <div class="rec-head">
+          <span class="rec-idx">3</span>
+          <span class="rec-q">继续做面板对接子模块</span>
+        </div>
+        <div class="rec-meta">
+          <span>2026-06-05 11:18:11</span>
+          <span><span class="tag">Claude-Opus-4.8</span></span>
+          <span class="tk">5,100,346 tokens</span>
+          <span class="fee">¥37.10</span>
+        </div>
+        <div class="rec-body">
+          <div class="rec-col"><div class="rec-label">可能原因</div><span class="rtag">模糊/续作指令，主要消耗在历史上下文</span></div>
+          <div class="rec-col"><div class="rec-label">节约建议</div><ul class="rtips"><li>一次讲清对象与范围（哪个文件、哪段、改什么），减少模型翻历史和来回轮次。</li></ul></div>
+        </div>
+      </div>
+      <div class="rec sev-high">
+        <div class="rec-head">
+          <span class="rec-idx">4</span>
+          <span class="rec-q">没看到任务tab呀</span>
+        </div>
+        <div class="rec-meta">
+          <span>2026-06-05 16:42:00</span>
+          <span><span class="tag">Claude-Opus-4.8</span></span>
+          <span class="tk">1,848,020 tokens</span>
+          <span class="fee">¥22.33</span>
+        </div>
+        <div class="rec-body">
+          <div class="rec-col"><div class="rec-label">可能原因</div><span class="rtag">提问很短但上下文累积大</span></div>
+          <div class="rec-col"><div class="rec-label">节约建议</div><ul class="rtips"><li>任务切换时开新会话，避免历史无限叠加（收益最大）。</li></ul></div>
+        </div>
+      </div>
+      <div class="rec sev-medium">
+        <div class="rec-head">
+          <span class="rec-idx">5</span>
+          <span class="rec-q">删除</span>
+        </div>
+        <div class="rec-meta">
+          <span>2026-06-03 15:58:10</span>
+          <span><span class="tag m1">Claude-Opus-4.8-1m</span></span>
+          <span class="tk">953,189 tokens</span>
+          <span class="fee">¥16.02</span>
+        </div>
+        <div class="rec-body">
+          <div class="rec-col"><div class="rec-label">可能原因</div><span class="rtag">模糊/续作指令，主要消耗在历史上下文</span><span class="rtag">使用 1m 上下文版（单价更高）</span></div>
+          <div class="rec-col"><div class="rec-label">节约建议</div><ul class="rtips"><li>一次讲清对象与范围（哪个文件、哪段、改什么），减少模型翻历史和来回轮次。</li><li>日常/小操作切换到普通或更便宜的模型，仅超长上下文才用 1m 版。</li></ul></div>
+        </div>
+      </div>
+      <div class="rec sev-medium">
+        <div class="rec-head">
+          <span class="rec-idx">6</span>
+          <span class="rec-q">需要</span>
+        </div>
+        <div class="rec-meta">
+          <span>2026-06-04 15:02:23</span>
+          <span><span class="tag">Claude-Opus-4.8</span></span>
+          <span class="tk">1,111,741 tokens</span>
+          <span class="fee">¥8.04</span>
+        </div>
+        <div class="rec-body">
+          <div class="rec-col"><div class="rec-label">可能原因</div><span class="rtag">模糊/续作指令，主要消耗在历史上下文</span></div>
+          <div class="rec-col"><div class="rec-label">节约建议</div><ul class="rtips"><li>一次讲清对象与范围（哪个文件、哪段、改什么），减少模型翻历史和来回轮次。</li></ul></div>
+        </div>
+      </div>
+      <div class="rec sev-low">
+        <div class="rec-head">
+          <span class="rec-idx">7</span>
+          <span class="rec-q">[cron] 每日股价与金价查询，请发送到群里</span>
+        </div>
+        <div class="rec-meta">
+          <span>2026-06-04 10:23:46</span>
+          <span><span class="tag">Claude-4.5-Sonnet</span></span>
+          <span class="tk">976,008 tokens</span>
+          <span class="fee">¥4.90</span>
+        </div>
+        <div class="rec-body">
+          <div class="rec-col"><div class="rec-label">可能原因</div><span class="rtag">定时任务自动消耗</span></div>
+          <div class="rec-col"><div class="rec-label">节约建议</div><ul class="rtips"><li>评估触发频率与每次拉取的数据量；只查必要数据，精简输出格式。</li></ul></div>
+        </div>
+      </div>
+      <div class="rec sev-low">
+        <div class="rec-head">
+          <span class="rec-idx">8</span>
+          <span class="rec-q">User's input is: 查看JSON数据结构，特别是符文ID作为key的格式</span>
+        </div>
+        <div class="rec-meta">
+          <span>2026-06-05 18:01:42</span>
+          <span><span class="tag">Claude-Opus-4.8</span></span>
+          <span class="tk">3,231 tokens</span>
+          <span class="fee">¥0.29</span>
+        </div>
+        <div class="rec-body">
+          <div class="rec-col"><div class="rec-label">可能原因</div><span class="rtag">读取/分析大数据结构</span><span class="rtag">携带大量注入上下文/工具结果</span></div>
+          <div class="rec-col"><div class="rec-label">节约建议</div><ul class="rtips"><li>别整份丢给模型，用脚本只提取需要的字段或前几条样例。</li><li>这是系统/工具注入内容；重点检查会话是否过长，必要时开新会话。</li></ul></div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <h2>四、按产品 / 模型聚合</h2>
+    <table>
+      <thead><tr><th>产品</th><th class="num">次数</th><th class="num">Tokens</th><th class="num">费用</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>CodeBuddy IDE/WorkBuddy</td>
+          <td class="num">7</td>
+          <td class="num tk">27,860,736</td>
+          <td class="num fee">¥180.02</td>
+        </tr>
+        <tr>
+          <td>IMate</td>
+          <td class="num">1</td>
+          <td class="num tk">976,008</td>
+          <td class="num fee">¥4.90</td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="margin-top:16px">
+      <thead><tr><th>模型</th><th class="num">次数</th><th class="num">Tokens</th><th class="num">费用</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Claude-Opus-4.8</td>
+          <td class="num">6</td>
+          <td class="num tk">26,907,547</td>
+          <td class="num fee">¥164.00</td>
+        </tr>
+        <tr>
+          <td>Claude-Opus-4.8-1m</td>
+          <td class="num">1</td>
+          <td class="num tk">953,189</td>
+          <td class="num fee">¥16.02</td>
+        </tr>
+        <tr>
+          <td>Claude-4.5-Sonnet</td>
+          <td class="num">1</td>
+          <td class="num tk">976,008</td>
+          <td class="num fee">¥4.90</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>五、为什么"短提问"会这么贵</h2>
+    <p style="color:var(--sub);margin-bottom:14px">核心结论：<b style="color:#fff">计费按"整次请求发给模型的全部上下文"算，不是按你打的那几个字算。</b></p>
+    <ol class="reason">
+      <li><b>历史对话累积（最主要）</b>：每轮请求都会把之前所有对话重新发一遍。短指令往往出现在长会话后期，此时历史最长，单次最贵。</li>
+      <li><b>大文件 / 大数据读取</b>：读取大 JSON、整份代码文件、设计稿数据等，会瞬间灌入几十万~几百万 token。</li>
+      <li><b>MCP 工具返回体积巨大</b>：figma 数据、chrome 页面快照、网页内容动辄几十万 token。</li>
+      <li><b>Agent 多轮工具循环</b>：一句简短指令会触发"读文件→改文件→再读→验证"多步，每步工具结果都累计到同一条记录。</li>
+      <li><b>模型与计费差异</b>：1m 上下文版单价更高；费用还区分输入/输出、cache 写入(贵)/读取(便宜)。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>六、节省 Token 的办法（按收益排序，通用）</h2>
+    <div class="tips">
+      <div class="tip-cat">A. 会话与上下文管理（收益最大）</div>
+      <div class="tip"><div class="ic">1</div><div><b>任务切换就开新会话</b><br>每轮请求都会重发全部历史，换需求/模块时开新会话，能把单次基础体积大幅降下来。</div></div>
+      <div class="tip"><div class="ic">2</div><div><b>长会话定期重开</b><br>同一会话越聊越贵；阶段性任务完成后，用一句话总结结论带入新会话，而不是拖着长历史继续。</div></div>
+      <div class="tip"><div class="ic">3</div><div><b>不在一个会话里塞多个无关任务</b><br>无关任务混在一起会让彼此的上下文互相计费，拆分到不同会话更省。</div></div>
+      <div class="tip-cat">B. 文件与数据读取</div>
+      <div class="tip"><div class="ic">4</div><div><b>避免整文件读取</b><br>用搜索/grep 先定位，再按需读取相关行范围（offset/limit），不要一次性读整份大文件。</div></div>
+      <div class="tip"><div class="ic">5</div><div><b>大 JSON / 数据先用脚本预处理</b><br>只提取需要的字段或前几条样例喂给模型，不要把几 MB 的原始数据整份贴进来。</div></div>
+      <div class="tip"><div class="ic">6</div><div><b>日志 / 命令输出先过滤</b><br>长日志、构建输出先 grep / head 截取关键部分，再交给模型分析。</div></div>
+      <div class="tip"><div class="ic">7</div><div><b>避免重复粘贴同一段内容</b><br>同一文件/数据多次贴入会反复计费；让模型记住一次即可。</div></div>
+      <div class="tip-cat">C. 指令表达</div>
+      <div class="tip"><div class="ic">8</div><div><b>指令一次讲清对象与范围</b><br>"改哪个文件、哪一段、改成什么"，避免模型反复翻历史猜测。</div></div>
+      <div class="tip"><div class="ic">9</div><div><b>少用"继续/删除/需要/ok"等模糊词</b><br>模糊指令会触发模型重读大量上下文并增加来回轮次。</div></div>
+      <div class="tip"><div class="ic">10</div><div><b>批量需求一次说清</b><br>把相关的多个小要求合并成一条清晰指令，减少多轮交互累积。</div></div>
+      <div class="tip"><div class="ic">11</div><div><b>给精确路径 / 行号</b><br>直接 @文件 或给出行号，省去模型全局搜索定位的开销。</div></div>
+      <div class="tip-cat">D. 工具与 MCP</div>
+      <div class="tip"><div class="ic">12</div><div><b>控制 MCP 返回量</b><br>调用时设置 maxOutputLength；优先用精确查询而非拉全量。</div></div>
+      <div class="tip"><div class="ic">13</div><div><b>Figma 只取目标节点</b><br>用具体 node-id 提取，避免拉取整页/整文件的庞大图层数据。</div></div>
+      <div class="tip"><div class="ic">14</div><div><b>浏览器快照 / 网页只取关键区域</b><br>a11y 快照、网页正文很大，只抓需要的部分或用选择器定位。</div></div>
+      <div class="tip"><div class="ic">15</div><div><b>减少不必要的探索轮次</b><br>明确告诉模型改哪、不要全局乱搜，能显著减少工具调用与结果累积。</div></div>
+      <div class="tip-cat">E. 模型与多媒体</div>
+      <div class="tip"><div class="ic">16</div><div><b>按需选模型</b><br>日常小问答 / 简单改动用便宜模型，复杂重构才用高价模型。</div></div>
+      <div class="tip"><div class="ic">17</div><div><b>谨慎使用 1m 上下文版</b><br>单价更高，小操作用它很不划算；仅在确需超长上下文时用。</div></div>
+      <div class="tip"><div class="ic">18</div><div><b>图片 / 截图按需传</b><br>图片 token 开销大，能用文字 / 坐标 / 报错文本描述就别截图。</div></div>
+      <div class="tip-cat">F. 工程化沉淀</div>
+      <div class="tip"><div class="ic">19</div><div><b>重复说明沉淀成规则 / Skill</b><br>把每次都要重复输入的背景、规范固化为项目规则或 skill，避免反复贴。</div></div>
+      <div class="tip"><div class="ic">20</div><div><b>保持稳定前缀以命中缓存</b><br>系统提示 / 固定上下文尽量稳定，cache 读取远比重新写入便宜。</div></div>
+    </div>
+  </section>
+
+  <section class="conclusion">
+    <h2>结论</h2>
+    <p>费用高的根因不是"问得多"，而是 <b>长会话 + 大文件/MCP 数据 + Agent 多轮工具调用</b> 三者叠加。最立竿见影的两招：<b style="color:var(--ok)">勤开新会话</b> 与 <b style="color:var(--ok)">少读整文件/整数据</b>。</p>
+  </section>
+
+  <footer>本报告由 token-usage-analyzer-skill 自动生成 · 仅供内部成本优化参考</footer>
+</div>
+</body>
+</html>

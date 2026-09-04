@@ -13,7 +13,6 @@ metadata:
     - 表格
     - csv
     - xlsx
-disable-model-invocation: true
 ---
 
 # Excel 技能 — 电子表格处理

@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
-  "last_updated": "2026-08-10",
-  "total_patterns": 2,
+  "last_updated": "2026-09-03",
+  "total_patterns": 3,
   "categories": [
     "game_design",
     "ai_integration",
@@ -60,6 +60,27 @@
       "status": "deprecated",
       "deprecated_reason": "candidate 超3月未验证(创建后 3月, 0次使用)",
       "deprecated_date": "2026-07-20"
+    },
+    "competitor-monetization-induction": {
+      "id": "competitor-monetization-induction",
+      "name": "竞品付费归纳四步法",
+      "category": "product_strategy",
+      "confidence": 0.5,
+      "use_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": "2026-09-03",
+      "created": "2026-09-03",
+      "problem": "商业化研究容易预设付费分类后找竞品填表，造成遗漏与逻辑倒置",
+      "solution": "先定义准入边界，再穷举竞品原始付费内容，区分付费内容/玩家追求/售卖方式，最后归纳分类并映射人群",
+      "pitfalls": "不要把月卡抽卡DLC当付费内容；不要用无内部数据的行业比例直接预测流水；逐项检查商品是否满足用户前提条件",
+      "target_skills": [
+        "agent-reach"
+      ],
+      "source_episodes": [
+        "ep-2026-09-03-200547"
+      ],
+      "status": "candidate"
     }
   }
 }

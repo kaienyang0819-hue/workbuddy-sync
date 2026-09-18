@@ -6,7 +6,7 @@ read_when:
 
 # USER.md - About Your Human
 
-_Learn about the person you're helping. Update this as you go._
+_已建立的协作档案；随长期合作补充，但避免收集无关个人信息。_
 
 - **Name:** 杨凯 (kaienyang)
 - **What to call them:** 凯

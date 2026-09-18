@@ -9,3 +9,13 @@
 - 结果：成功
 - 方式：wecom-cli message aibot send（markdown 文本消息），目标为授权人杨凯
 - 备注：首次执行，无历史记录
+
+### 2026-09-07 11:00
+- 结果：成功
+- 方式：wecom-cli message aibot send（markdown 文本消息），目标为授权人杨凯
+- 备注：常规周期提醒，正常发送
+
+### 2026-09-14 11:00
+- 结果：成功
+- 方式：wecom-cli message aibot send（markdown 文本消息），目标为授权人杨凯
+- 备注：常规周期提醒，正常发送

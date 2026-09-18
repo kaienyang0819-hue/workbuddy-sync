@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roadmap 矩阵</title>
+<style>
+  /* ===== 全局基调：浅底深字 ===== */
+  :root {
+    --ink: #1a2233;
+    --muted: #7a8499;
+    --accent: #2f6bbf;
+    /* ★ 阶段数：有 N 个阶段就填 N。改这里即可，时间轴与泳道网格会自动对齐 */
+    --cols: 3;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: linear-gradient(180deg, #e9eff8 0%, #f5f8fc 100%);
+    color: var(--ink);
+    padding: 36px 28px 60px;
+    line-height: 1.6;
+  }
+  .page {
+    max-width: 1560px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 14px 44px rgba(23, 43, 77, 0.10);
+    overflow: hidden;
+  }
+
+  /* ===== 头部 ===== */
+  .doc-header {
+    padding: 28px 36px 24px;
+    border-bottom: 1px solid #eef2f8;
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
+    background: linear-gradient(135deg, #ffffff 0%, #f6faff 100%);
+  }
+  .title-wrap { display: flex; gap: 16px; align-items: flex-start; }
+  .title-bar {
+    width: 6px; align-self: stretch;
+    background: linear-gradient(180deg, #2f6bbf, #6aa5f0);
+    border-radius: 6px; min-height: 56px;
+    box-shadow: 0 2px 10px rgba(47, 107, 191, 0.35);
+  }
+  .doc-title { font-size: 24px; font-weight: 800; letter-spacing: 0.5px; color: #16233d; }
+  .doc-sub { font-size: 13px; color: var(--muted); margin-top: 8px; }
+
+  .toggle-all {
+    font-size: 13px; font-weight: 600; color: #fff;
+    background: linear-gradient(135deg, #2f6bbf, #4a86d6);
+    border: none; border-radius: 20px;
+    padding: 8px 20px; cursor: pointer;
+    box-shadow: 0 4px 12px rgba(47, 107, 191, 0.30);
+    transition: transform .15s, box-shadow .15s;
+    letter-spacing: 0.3px;
+  }
+  .toggle-all:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(47, 107, 191, 0.40); }
+
+  /* ===== 时间轴（横轴）===== */
+  .timeline {
+    display: grid;
+    grid-template-columns: 150px repeat(var(--cols), 1fr);
+    background: linear-gradient(180deg, #dbe7f5 0%, #c9daf0 100%);
+    border-bottom: 1px solid #dfe7f3;
+  }
+  .tl-corner {
+    padding: 20px 14px;
+    font-size: 11.5px; color: #9aa7bd;
+    display: flex; align-items: center; letter-spacing: 1px;
+  }
+  .tl-cell {
+    padding: 16px 12px 15px;
+    text-align: center;
+    border-left: 1px solid #c2d3ea;
+    position: relative;
+  }
+  .tl-ver { font-size: 17px; font-weight: 800; color: #1d3a6e; letter-spacing: 0.5px; }
+  .tl-tag {
+    display: inline-block; margin-top: 7px; font-size: 11px;
+    padding: 3px 12px; border-radius: 20px;
+    color: #3d5a8f; background: #ffffff;
+    font-weight: 600; border: 1px solid #d5e0f0;
+  }
+
+  /* ===== 泳道（纵轴）维度色 ===== */
+  .swim { display: grid; grid-template-columns: 150px repeat(var(--cols), 1fr); }
+  .dim-1 { --c: #3b82f6; --c-bg: #eef5ff; --c-line: #a8c8f8; }
+  .dim-2 { --c: #8b5cf6; --c-bg: #f4efff; --c-line: #c9b4f6; }
+  .dim-3 { --c: #0891b2; --c-bg: #e8f9fd; --c-line: #8fd9e8; }
+  .dim-4 { --c: #f59e0b; --c-bg: #fff6e6; --c-line: #f3d08a; }
+  .dim-5 { --c: #10b981; --c-bg: #e9fbf3; --c-line: #93e0bf; }
+  /* ★ 超过 5 个维度时，新增 dim-6/dim-7…，自定 --c/--c-bg/--c-line，色相要拉开 */
+
+  .lane-label {
+    padding: 18px 16px;
+    border-top: 1px solid #dfe7f3;
+    border-right: 1px solid #dfe7f3;
+    background: linear-gradient(180deg, var(--c-bg), #ffffff 78%);
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+  }
+  .lane-label::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; background: var(--c);
+  }
+  .lane-name { font-size: 15px; font-weight: 800; color: #16233d; }
+
+  .cell {
+    padding: 14px 13px;
+    border-top: 1px solid #dfe7f3;
+    border-left: 1px solid #dfe7f3;
+    display: flex; flex-direction: column; gap: 10px;
+    min-height: 96px;
+    background: linear-gradient(180deg, var(--c-bg) 0%, #fdfeff 100%);
+    align-content: flex-start;
+  }
+  .cell-empty {
+    color: #cfd7e4; font-size: 14px; text-align: center; padding-top: 26px;
+    height: 100%; display: flex; align-items: center; justify-content: center;
+  }
+
+  /* ===== 地块卡片 ===== */
+  .block {
+    border-radius: 10px;
+    border: 1px solid #d8e1ef;
+    border-left: 4px solid var(--c);
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(23, 43, 77, 0.09);
+    transition: box-shadow .18s, border-color .18s, transform .18s;
+  }
+  .block:hover { transform: translateY(-1px); border-color: var(--c-line); border-left-color: var(--c); box-shadow: 0 4px 14px rgba(23, 43, 77, 0.10); }
+  .block[open] { border-color: var(--c-line); border-left-color: var(--c); box-shadow: 0 4px 16px rgba(23, 43, 77, 0.10); }
+
+  .block summary {
+    cursor: pointer; list-style: none;
+    padding: 10px 13px;
+    font-weight: 700; font-size: 13.5px;
+    display: flex; align-items: center; gap: 8px;
+    user-select: none; color: #1c2a47;
+    background: linear-gradient(180deg, #ffffff 30%, var(--c-bg) 160%);
+  }
+  .block summary::-webkit-details-marker { display: none; }
+  .block summary::before {
+    content: "\25B8";
+    font-size: 11px; color: var(--c);
+    transition: transform .15s;
+    flex: none; width: 14px; text-align: center;
+  }
+  .block[open] summary::before { transform: rotate(90deg); }
+  .block summary .txt { flex: 1; }
+  .block summary .cnt {
+    flex: none; font-size: 11px; font-weight: 700;
+    color: var(--c); background: var(--c-bg);
+    border: 1px solid var(--c-line);
+    border-radius: 10px; padding: 1px 8px;
+  }
+
+  .block-body { padding: 5px 13px 11px 27px; background: #fff; }
+  /* ★ 子项必须用块级 .item 分隔，禁用 <br> 和 white-space:pre-line */
+  .block .item { font-size: 12.5px; line-height: 1.75; padding: 4px 0; display: block; color: #2f3d59; }
+  .block .item + .item { border-top: 1px dashed #e6edf7; }
+
+  .tag-risk {
+    display: inline-block; flex: none; font-size: 10px; font-weight: 700; color: #fff;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border-radius: 8px; padding: 1px 8px; letter-spacing: 0.5px;
+    box-shadow: 0 1px 4px rgba(220, 38, 38, 0.35);
+  }
+  .tag-free {
+    display: inline-block; font-size: 10px; font-weight: 700; color: #0891b2;
+    background: #ecfbff; border: 1px solid #a5e3f2; border-radius: 8px;
+    padding: 0 6px; margin-left: 5px; vertical-align: 1px;
+  }
+
+  .foot-note {
+    padding: 16px 36px 24px; font-size: 12px; color: var(--muted);
+    border-top: 1px solid #eef2f8; background: #fafcff;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ===== 头部 ===== -->
+  <div class="doc-header">
+    <div class="title-wrap">
+      <div class="title-bar"></div>
+      <div>
+        <div class="doc-title">Roadmap 矩阵</div>
+        <!-- 副标题：写清「泳道维度 × 阶段」两个轴，帮助读者秒懂 -->
+        <div class="doc-sub">维度一 × 维度二 × 维度三　｜　拆解节奏：阶段1 → 阶段2 → 阶段3</div>
+      </div>
+    </div>
+    <div class="legend">
+      <button class="toggle-all" onclick="toggleAll()">展开全部</button>
+    </div>
+  </div>
+
+  <!-- ===== 时间轴：一个 corner + N 个 tl-cell，N 必须等于 --cols ===== -->
+  <div class="timeline">
+    <div class="tl-corner">内容维度 ＼ 版本</div>
+    <div class="tl-cell"><div class="tl-ver">阶段1</div><div class="tl-tag">主题标签</div></div>
+    <div class="tl-cell"><div class="tl-ver">阶段2</div><div class="tl-tag">主题标签</div></div>
+    <div class="tl-cell"><div class="tl-ver">阶段3</div><div class="tl-tag">主题标签</div></div>
+  </div>
+
+  <!-- ===== 泳道 1（蓝）===== -->
+  <!-- 每个泳道：一个 lane-label + N 个 cell，N 必须等于 --cols -->
+  <div class="swim dim-1">
+    <div class="lane-label"><div class="lane-name">① 维度一</div></div>
+    <div class="cell">
+      <details class="block">
+        <summary><span class="txt">地块标题</span><span class="cnt">2项</span></summary>
+        <div class="block-body">
+          <span class="item">① 子项一</span>
+          <span class="item">② 子项二</span>
+        </div>
+      </details>
+    </div>
+    <div class="cell">
+      <details class="block">
+        <summary><span class="txt">高风险地块</span><span class="cnt">1项</span><span class="tag-risk">高风险</span></summary>
+        <div class="block-body">
+          <span class="item">① 子项一</span>
+        </div>
+      </details>
+    </div>
+    <div class="cell"><div class="cell-empty">—</div></div>
+  </div>
+
+  <!-- ===== 泳道 2（紫）===== -->
+  <div class="swim dim-2">
+    <div class="lane-label"><div class="lane-name">② 维度二</div></div>
+    <div class="cell"><div class="cell-empty">—</div></div>
+    <div class="cell">
+      <details class="block">
+        <summary><span class="txt">地块标题</span><span class="cnt">2项</span></summary>
+        <div class="block-body">
+          <span class="item">① 子项一</span>
+          <span class="item">② 子项二<span class="tag-free">For全体</span></span>
+        </div>
+      </details>
+    </div>
+    <div class="cell">
+      <details class="block">
+        <summary><span class="txt">地块标题</span><span class="cnt">1项</span></summary>
+        <div class="block-body">
+          <span class="item">① 子项一</span>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- ===== 泳道 3（青）===== -->
+  <div class="swim dim-3">
+    <div class="lane-label"><div class="lane-name">③ 维度三</div></div>
+    <div class="cell"><div class="cell-empty">—</div></div>
+    <div class="cell"><div class="cell-empty">—</div></div>
+    <div class="cell">
+      <details class="block">
+        <summary><span class="txt">地块标题</span><span class="cnt">3项</span></summary>
+        <div class="block-body">
+          <span class="item">① 子项一</span>
+          <span class="item">② 子项二</span>
+          <span class="item">③ 子项三</span>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div class="foot-note">说明：每个地块默认收起，点击标题可展开查阅具体子项；「展开全部 / 收起全部」可一键切换。</div>
+
+</div>
+
+<script>
+  function toggleAll() {
+    const blocks = document.querySelectorAll('details.block');
+    const anyClosed = Array.from(blocks).some(function (b) { return !b.open; });
+    blocks.forEach(function (b) { b.open = anyClosed; });
+    document.querySelector('.toggle-all').textContent = anyClosed ? '收起全部' : '展开全部';
+  }
+</script>
+
+</body>
+</html>

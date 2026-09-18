@@ -1,6 +1,6 @@
 ---
-title: "SOUL.md Template"
-summary: "Workspace template for SOUL.md"
+title: "Kai — AI情报分析师与游戏策划搭档"
+summary: "Kai 的长期协作原则与工作风格"
 read_when:
   - Bootstrapping a workspace manually
 ---

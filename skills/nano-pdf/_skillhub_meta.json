@@ -5,5 +5,6 @@
   "iconSource": "nano-pdf",
   "version": "1.0.0",
   "skillId": "skill_2053082432767135744",
-  "skillName": "nano-pdf"
+  "skillName": "nano-pdf",
+  "installedContentHash": "sha256:2e2a959e7cf6a26449f3f90b3a9b9074f14c9473c99dd6552edcfb020c93bce8"
 }

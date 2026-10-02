@@ -7,5 +7,6 @@
   "skillId": "skill_2053082706530402304",
   "skillName": "skill-vetter",
   "description_zh": "安装前审查技能的安全性",
-  "description_en": "Security-first skill vetting before install"
+  "description_en": "Security-first skill vetting before install",
+  "installedContentHash": "sha256:a2947704abe9a6e6357f4ad0abf3d4b168cd8ffe2877baf963c9b5038691a055"
 }

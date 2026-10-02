@@ -27,7 +27,8 @@
     background: #fff;
     border-radius: 18px;
     box-shadow: 0 14px 44px rgba(23, 43, 77, 0.10);
-    overflow: hidden;
+    /* ★ 冻结版本行依赖：必须用 clip，不能 hidden（hidden 会阻断 position:sticky） */
+    overflow: clip;
   }
 
   /* ===== 头部 ===== */
@@ -47,6 +48,7 @@
   }
   .doc-title { font-size: 24px; font-weight: 800; letter-spacing: 0.5px; color: #16233d; }
   .doc-sub { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
 
   .toggle-all {
     font-size: 13px; font-weight: 600; color: #fff;
@@ -59,12 +61,16 @@
   }
   .toggle-all:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(47, 107, 191, 0.40); }
 
-  /* ===== 时间轴（横轴）===== */
+  /* ===== 时间轴（横轴，冻结版本行：滚动时固定在顶部） ===== */
   .timeline {
     display: grid;
     grid-template-columns: 150px repeat(var(--cols), 1fr);
     background: linear-gradient(180deg, #dbe7f5 0%, #c9daf0 100%);
     border-bottom: 1px solid #dfe7f3;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    box-shadow: 0 6px 18px rgba(23, 43, 77, 0.12);
   }
   .tl-corner {
     padding: 20px 14px;
@@ -180,6 +186,73 @@
     padding: 16px 36px 24px; font-size: 12px; color: var(--muted);
     border-top: 1px solid #eef2f8; background: #fafcff;
   }
+
+  /* ===== 编辑模式与拖拽 ===== */
+  .tool-btn {
+    font-size: 12.5px; font-weight: 700; color: #31517f;
+    background: #fff; border: 1px solid #cbd9ec; border-radius: 18px;
+    padding: 7px 14px; cursor: pointer; transition: all .15s;
+  }
+  .tool-btn:hover { border-color: #7da5d8; background: #f3f8ff; transform: translateY(-1px); }
+  .tool-btn.primary { color: #fff; background: linear-gradient(135deg, #2f6bbf, #4a86d6); border-color: transparent; }
+  .tool-btn.primary:hover { background: linear-gradient(135deg, #285fae, #407bc8); }
+  /* ★ 编辑模式内才显示的控件（增删泳道/阶段） */
+  .edit-action { display: none; }
+  body.edit-mode .edit-action { display: inline-flex; }
+  /* ★ 保存按钮按需显示：默认隐藏，有改动（markDirty）才出现 */
+  .save-btn { display: none; }
+  .save-btn.visible { display: inline-flex; }
+  body.edit-mode .editable {
+    outline: 1px dashed #7da5d8; outline-offset: 3px; border-radius: 4px;
+    background: #f7fbff; cursor: text; min-width: 18px;
+  }
+  body.edit-mode .doc-title.editable,
+  body.edit-mode .doc-sub.editable,
+  body.edit-mode .tl-ver.editable,
+  body.edit-mode .tl-tag.editable,
+  body.edit-mode .lane-name.editable { padding: 1px 4px; }
+  .save-hint { font-size: 11px; color: #6c7890; align-self: center; }
+
+  .inline-editor { display: none; align-items: center; justify-content: center; gap: 5px; }
+  body.edit-mode .inline-editor { display: flex; }
+  .tl-cell > .inline-editor { position: absolute; top: 6px; right: 6px; }
+  .lane-label > .inline-editor { position: absolute; top: 7px; right: 7px; }
+  .icon-btn {
+    width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 7px; border: 1px solid #cbd9ec; background: rgba(255,255,255,.92);
+    color: #526986; cursor: pointer; font-size: 14px; line-height: 1;
+  }
+  .icon-btn:hover { background: #eef5ff; border-color: #8fb0dc; color: #234f8d; }
+  .icon-btn.danger:hover { color: #b42318; background: #fff0ee; border-color: #efaaa3; }
+
+  .cell-add {
+    display: none; width: 100%; padding: 6px 8px; border-radius: 8px;
+    border: 1px dashed var(--c-line); background: rgba(255,255,255,.72);
+    color: var(--c); font-size: 12px; font-weight: 700; cursor: pointer;
+  }
+  body.edit-mode .cell-add { display: block; }
+  .cell-add:hover { background: #fff; }
+
+  body.edit-mode .item { display: flex; align-items: flex-start; gap: 7px; }
+  .item-text { flex: 1; min-width: 0; }
+  .item-actions { display: none; flex: none; padding-top: 1px; }
+  body.edit-mode .item-actions { display: inline-flex; }
+  .item-actions .icon-btn { width: 20px; height: 20px; font-size: 12px; border-radius: 6px; }
+
+  .block-tools { display: none; justify-content: flex-end; padding: 5px 13px 10px 27px; background: #fff; }
+  body.edit-mode .block-tools { display: flex; }
+  .mini-btn {
+    padding: 4px 9px; border-radius: 12px; border: 1px dashed var(--c-line);
+    color: var(--c); background: var(--c-bg); font-size: 11px; font-weight: 700; cursor: pointer;
+  }
+  .mini-btn:hover { background: #fff; }
+  .mini-btn.danger { color: #b42318; border-color: #efaaa3; background: #fff5f4; margin-left: 7px; }
+  .mini-btn.danger:hover { background: #fff0ee; border-color: #df7d73; }
+
+  /* ===== 卡片拖拽 ===== */
+  details.block[draggable="true"] { cursor: grab; }
+  details.block.dragging { opacity: .45; }
+  .cell.drag-over { outline: 2px dashed var(--c); outline-offset: -4px; }
 </style>
 </head>
 <body>
@@ -195,8 +268,14 @@
         <div class="doc-sub">维度一 × 维度二 × 维度三　｜　拆解节奏：阶段1 → 阶段2 → 阶段3</div>
       </div>
     </div>
+    <!-- 工具栏：编辑内容常显；新增泳道/阶段在编辑模式内才显示；保存 HTML 有改动才出现 -->
     <div class="legend">
       <button class="toggle-all" onclick="toggleAll()">展开全部</button>
+      <button class="tool-btn primary edit-toggle" type="button" onclick="toggleEditMode()">编辑内容</button>
+      <button class="tool-btn edit-action" type="button" onclick="addLane()">新增泳道</button>
+      <button class="tool-btn edit-action" type="button" onclick="addColumn()">新增阶段</button>
+      <button id="save-btn" class="tool-btn primary save-btn" type="button" onclick="saveHtml()">保存 HTML</button>
+      <span class="save-hint">卡片可直接拖到其他版本列；改完请保存落盘</span>
     </div>
   </div>
 
@@ -272,17 +351,415 @@
     </div>
   </div>
 
-  <div class="foot-note">说明：每个地块默认收起，点击标题可展开查阅具体子项；「展开全部 / 收起全部」可一键切换。</div>
+  <div class="foot-note">说明：每个地块默认收起，点击标题可展开；「展开全部 / 收起全部」一键切换。点右上「编辑内容」可改标题/阶段/泳道/卡片/子项文字并增删结构；卡片可直接拖到其他版本列。</div>
 
 </div>
 
 <script>
+  var roadmapDirty = false;
+  var draggedBlock = null;
+  var circledNumbers = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩','⑪','⑫','⑬','⑭','⑮','⑯','⑰','⑱','⑲','⑳'];
+
+  function numberLabel(index) { return circledNumbers[index] || ((index + 1) + '.'); }
+  /* 任何内容改动都走 markDirty：置脏 + 让「保存 HTML」按钮出现 */
+  function markDirty() { roadmapDirty = true; var sb = document.getElementById('save-btn'); if (sb) sb.classList.add('visible'); }
+  function isEditMode() { return document.body.classList.contains('edit-mode'); }
+
   function toggleAll() {
-    const blocks = document.querySelectorAll('details.block');
-    const anyClosed = Array.from(blocks).some(function (b) { return !b.open; });
-    blocks.forEach(function (b) { b.open = anyClosed; });
+    var blocks = document.querySelectorAll('details.block');
+    var anyClosed = Array.prototype.some.call(blocks, function (b) { return !b.open; });
+    Array.prototype.forEach.call(blocks, function (b) { b.open = anyClosed; });
     document.querySelector('.toggle-all').textContent = anyClosed ? '收起全部' : '展开全部';
   }
+
+  function getColumnCount() { return document.querySelectorAll('.timeline .tl-cell').length; }
+  function syncColumns() { document.documentElement.style.setProperty('--cols', getColumnCount()); }
+
+  function normalizeItem(item) {
+    var text = item.querySelector(':scope > .item-text');
+    if (text) return text;
+    text = document.createElement('span');
+    text.className = 'item-text';
+    var movable = Array.prototype.filter.call(item.childNodes, function (node) {
+      return !(node.nodeType === 1 && (node.classList.contains('tag-free') || node.classList.contains('item-actions')));
+    });
+    movable.forEach(function (node) { text.appendChild(node); });
+    item.insertBefore(text, item.firstChild);
+    return text;
+  }
+
+  function updateBlock(block, renumber) {
+    var items = block.querySelectorAll('.block-body > .item');
+    Array.prototype.forEach.call(items, function (item, index) {
+      var text = normalizeItem(item);
+      if (renumber) {
+        var cleanText = text.textContent.replace(/^[①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳]\s*/, '').replace(/^\d+\.\s*/, '');
+        text.textContent = numberLabel(index) + ' ' + (cleanText || '新条目');
+      }
+    });
+    var count = block.querySelector('summary .cnt');
+    if (count) count.textContent = items.length + '项';
+  }
+
+  function ensureCellEmptyState(cell) {
+    if (!cell) return;
+    var hasBlock = !!cell.querySelector('details.block');
+    var empty = cell.querySelector('.cell-empty');
+    if (hasBlock && empty) empty.remove();
+    if (!hasBlock && !empty) {
+      empty = document.createElement('div');
+      empty.className = 'cell-empty';
+      empty.textContent = '—';
+      cell.insertBefore(empty, cell.firstChild);
+    }
+  }
+
+  function makeIconButton(text, title, handler, extraClass) {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'icon-btn' + (extraClass ? ' ' + extraClass : '');
+    button.textContent = text;
+    button.title = title;
+    button.setAttribute('aria-label', title);
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      handler();
+    });
+    return button;
+  }
+
+  function refreshDraggables() {
+    Array.prototype.forEach.call(document.querySelectorAll('details.block'), function (block) {
+      block.setAttribute('draggable', 'true');
+    });
+  }
+
+  function refreshEditorControls() {
+    Array.prototype.forEach.call(document.querySelectorAll('.editor-generated'), function (node) { node.remove(); });
+
+    /* 阶段列：删除按钮 */
+    Array.prototype.forEach.call(document.querySelectorAll('.timeline .tl-cell'), function (cell, index) {
+      var tools = document.createElement('div');
+      tools.className = 'inline-editor editor-generated';
+      tools.appendChild(makeIconButton('×', '删除这个阶段', function () { removeColumn(index); }, 'danger'));
+      cell.appendChild(tools);
+    });
+
+    /* 泳道：删除按钮 + 每格「新增卡片」 */
+    Array.prototype.forEach.call(document.querySelectorAll('.swim'), function (lane) {
+      var label = lane.querySelector('.lane-label');
+      var laneTools = document.createElement('div');
+      laneTools.className = 'inline-editor editor-generated';
+      laneTools.appendChild(makeIconButton('×', '删除这条泳道', function () { removeLane(lane); }, 'danger'));
+      label.appendChild(laneTools);
+
+      Array.prototype.forEach.call(lane.querySelectorAll(':scope > .cell'), function (cell) {
+        ensureCellEmptyState(cell);
+        var addCardButton = document.createElement('button');
+        addCardButton.type = 'button';
+        addCardButton.className = 'cell-add editor-generated';
+        addCardButton.textContent = '+ 新增卡片';
+        addCardButton.addEventListener('click', function () { addCard(cell); });
+        cell.appendChild(addCardButton);
+      });
+    });
+
+    /* 卡片：条目删除 + 新增条目/删除卡片 */
+    Array.prototype.forEach.call(document.querySelectorAll('details.block'), function (block) {
+      updateBlock(block, false);
+      var body = block.querySelector('.block-body');
+      Array.prototype.forEach.call(body.querySelectorAll(':scope > .item'), function (item) {
+        normalizeItem(item);
+        var itemActions = document.createElement('span');
+        itemActions.className = 'item-actions editor-generated';
+        itemActions.appendChild(makeIconButton('×', '删除这条内容', function () { deleteItem(item); }, 'danger'));
+        item.appendChild(itemActions);
+      });
+
+      var blockTools = document.createElement('div');
+      blockTools.className = 'block-tools editor-generated';
+      var addItemButton = document.createElement('button');
+      addItemButton.type = 'button';
+      addItemButton.className = 'mini-btn';
+      addItemButton.textContent = '+ 新增条目';
+      addItemButton.addEventListener('click', function () { addItem(block); });
+      var deleteCardButton = document.createElement('button');
+      deleteCardButton.type = 'button';
+      deleteCardButton.className = 'mini-btn danger';
+      deleteCardButton.textContent = '删除卡片';
+      deleteCardButton.addEventListener('click', function () { deleteCard(block); });
+      blockTools.appendChild(addItemButton);
+      blockTools.appendChild(deleteCardButton);
+      block.appendChild(blockTools);
+    });
+
+    refreshDraggables();
+  }
+
+  function setEditable(enabled) {
+    var selectors = '.doc-title, .doc-sub, .tl-ver, .tl-tag, .lane-name, .block summary .txt, .item-text';
+    Array.prototype.forEach.call(document.querySelectorAll(selectors), function (node) {
+      if (enabled) {
+        node.classList.add('editable');
+        node.setAttribute('contenteditable', 'true');
+        node.setAttribute('spellcheck', 'false');
+      } else {
+        node.classList.remove('editable');
+        node.removeAttribute('contenteditable');
+        node.removeAttribute('spellcheck');
+      }
+    });
+  }
+
+  function toggleEditMode() {
+    var enabled = !isEditMode();
+    document.body.classList.toggle('edit-mode', enabled);
+    document.querySelector('.edit-toggle').textContent = enabled ? '完成编辑' : '编辑内容';
+    if (enabled) refreshEditorControls();
+    setEditable(enabled);
+  }
+
+  function addLane() {
+    var page = document.querySelector('.page');
+    var footNote = document.querySelector('.foot-note');
+    var laneCount = document.querySelectorAll('.swim').length;
+    var lane = document.createElement('div');
+    lane.className = 'swim dim-' + ((laneCount % 5) + 1);
+    lane.innerHTML = '<div class="lane-label"><div class="lane-name">' + numberLabel(laneCount) + ' 新泳道</div></div>';
+    for (var index = 0; index < getColumnCount(); index += 1) {
+      var cell = document.createElement('div');
+      cell.className = 'cell';
+      cell.innerHTML = '<div class="cell-empty">—</div>';
+      lane.appendChild(cell);
+    }
+    page.insertBefore(lane, footNote);
+    markDirty();
+    refreshEditorControls();
+    setEditable(true);
+  }
+
+  function removeLane(lane) {
+    if (!window.confirm('删除后，这条泳道及其中所有卡片都会移除。确定删除吗？')) return;
+    lane.remove();
+    markDirty();
+    refreshEditorControls();
+    setEditable(true);
+  }
+
+  function addColumn() {
+    var timeline = document.querySelector('.timeline');
+    var nextIndex = getColumnCount() + 1;
+    var stage = document.createElement('div');
+    stage.className = 'tl-cell';
+    stage.innerHTML = '<div class="tl-ver">阶段' + nextIndex + '</div><div class="tl-tag">主题标签</div>';
+    timeline.appendChild(stage);
+    Array.prototype.forEach.call(document.querySelectorAll('.swim'), function (lane) {
+      var cell = document.createElement('div');
+      cell.className = 'cell';
+      cell.innerHTML = '<div class="cell-empty">—</div>';
+      lane.appendChild(cell);
+    });
+    syncColumns();
+    markDirty();
+    refreshEditorControls();
+    setEditable(true);
+  }
+
+  function removeColumn(index) {
+    if (getColumnCount() <= 1) { window.alert('至少需要保留一个阶段。'); return; }
+    if (!window.confirm('删除后，这个阶段及该列所有卡片都会移除。确定删除吗？')) return;
+    var stage = document.querySelectorAll('.timeline .tl-cell')[index];
+    if (stage) stage.remove();
+    Array.prototype.forEach.call(document.querySelectorAll('.swim'), function (lane) {
+      var cell = lane.querySelectorAll(':scope > .cell')[index];
+      if (cell) cell.remove();
+    });
+    syncColumns();
+    markDirty();
+    refreshEditorControls();
+    setEditable(true);
+  }
+
+  function addCard(cell) {
+    var empty = cell.querySelector('.cell-empty');
+    if (empty) empty.remove();
+    var block = document.createElement('details');
+    block.className = 'block';
+    block.open = true;
+    block.innerHTML = '<summary><span class="txt">新卡片</span><span class="cnt">1项</span></summary>' +
+      '<div class="block-body"><span class="item"><span class="item-text">① 新条目</span></span></div>';
+    cell.appendChild(block);
+    markDirty();
+    refreshEditorControls();
+    setEditable(true);
+  }
+
+  function deleteCard(block) {
+    if (!window.confirm('确定删除这张卡片吗？')) return;
+    var cell = block.closest('.cell');
+    block.remove();
+    ensureCellEmptyState(cell);
+    markDirty();
+    refreshEditorControls();
+    setEditable(true);
+  }
+
+  function addItem(block) {
+    var body = block.querySelector('.block-body');
+    var item = document.createElement('span');
+    item.className = 'item';
+    item.innerHTML = '<span class="item-text">新条目</span>';
+    body.appendChild(item);
+    updateBlock(block, true);
+    markDirty();
+    refreshEditorControls();
+    setEditable(true);
+  }
+
+  function deleteItem(item) {
+    var block = item.closest('.block');
+    item.remove();
+    updateBlock(block, true);
+    markDirty();
+    refreshEditorControls();
+    setEditable(true);
+  }
+
+  function saveHtml() {
+    setEditable(false);
+    var clone = document.documentElement.cloneNode(true);
+    clone.querySelector('body').classList.remove('edit-mode');
+    Array.prototype.forEach.call(clone.querySelectorAll('.editor-generated'), function (node) { node.remove(); });
+    Array.prototype.forEach.call(clone.querySelectorAll('[contenteditable]'), function (node) {
+      node.removeAttribute('contenteditable');
+      node.removeAttribute('spellcheck');
+      node.classList.remove('editable');
+    });
+    var editButton = clone.querySelector('.edit-toggle');
+    if (editButton) editButton.textContent = '编辑内容';
+    var cloneSaveBtn = clone.querySelector('#save-btn');
+    if (cloneSaveBtn) cloneSaveBtn.classList.remove('visible');
+    clone.removeAttribute('class');
+    clone.setAttribute('style', '--cols: ' + getColumnCount());
+    Array.prototype.forEach.call(clone.querySelectorAll('[draggable]'), function (node) { node.removeAttribute('draggable'); });
+    var title = document.querySelector('.doc-title').textContent.trim() || 'roadmap';
+    var safeTitle = title.replace(/[\\/:*?"<>|]/g, '-').slice(0, 60);
+    var html = '<!DOCTYPE html>\n' + clone.outerHTML;
+    var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = safeTitle + '.html';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+    roadmapDirty = false;
+    var saveBtn = document.getElementById('save-btn'); if (saveBtn) saveBtn.classList.remove('visible');
+    setEditable(isEditMode());
+  }
+
+  /* ===== 卡片拖拽：跨版本列移动 / 同列内排序 ===== */
+  document.addEventListener('dragstart', function (event) {
+    if (event.target.closest && event.target.closest('[contenteditable="true"]')) {
+      event.preventDefault();
+      return;
+    }
+    var block = event.target.closest ? event.target.closest('details.block') : null;
+    if (!block) return;
+    draggedBlock = block;
+    block.classList.add('dragging');
+    try { event.dataTransfer.setData('text/plain', block.textContent.slice(0, 50)); } catch (e) {}
+    event.dataTransfer.effectAllowed = 'move';
+  });
+
+  document.addEventListener('dragover', function (event) {
+    if (!draggedBlock) return;
+    var cell = event.target.closest ? event.target.closest('.cell') : null;
+    if (!cell) return;
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'move';
+    Array.prototype.forEach.call(document.querySelectorAll('.cell.drag-over'), function (c) {
+      if (c !== cell) c.classList.remove('drag-over');
+    });
+    cell.classList.add('drag-over');
+  });
+
+  document.addEventListener('drop', function (event) {
+    if (!draggedBlock) return;
+    var cell = event.target.closest ? event.target.closest('.cell') : null;
+    if (!cell) return;
+    event.preventDefault();
+    var block = draggedBlock;
+    var originCell = block.parentNode;
+    var targets = Array.prototype.filter.call(cell.querySelectorAll(':scope > details.block'), function (b) { return b !== block; });
+    var insertBefore = null;
+    for (var i = 0; i < targets.length; i += 1) {
+      var rect = targets[i].getBoundingClientRect();
+      if (event.clientY < rect.top + rect.height / 2) { insertBefore = targets[i]; break; }
+    }
+    if (insertBefore) cell.insertBefore(block, insertBefore);
+    else {
+      var addBtn = cell.querySelector('.cell-add');
+      if (addBtn) cell.insertBefore(block, addBtn); else cell.appendChild(block);
+    }
+    ensureCellEmptyState(originCell);
+    ensureCellEmptyState(cell);
+    cell.classList.remove('drag-over');
+    draggedBlock = null;
+    markDirty();
+  });
+
+  document.addEventListener('dragend', function () {
+    Array.prototype.forEach.call(document.querySelectorAll('details.block.dragging'), function (b) { b.classList.remove('dragging'); });
+    draggedBlock = null;
+    Array.prototype.forEach.call(document.querySelectorAll('.cell.drag-over'), function (c) { c.classList.remove('drag-over'); });
+  });
+
+  /* ===== 编辑输入事件 ===== */
+  document.addEventListener('input', function (event) {
+    if (!isEditMode()) return;
+    if (event.target.closest && event.target.closest('.editable')) {
+      markDirty();
+      if (event.target.classList.contains('doc-title')) {
+        document.title = event.target.textContent.trim() || 'Roadmap 矩阵';
+      }
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.target.matches && event.target.matches('[contenteditable="true"]') && event.key === 'Enter') {
+      event.preventDefault();
+      event.target.blur();
+    }
+  });
+
+  document.addEventListener('paste', function (event) {
+    if (!event.target.matches || !event.target.matches('[contenteditable="true"]')) return;
+    event.preventDefault();
+    var text = (event.clipboardData || window.clipboardData).getData('text/plain');
+    document.execCommand('insertText', false, text);
+  });
+
+  document.addEventListener('click', function (event) {
+    var summary = event.target.closest && event.target.closest('summary');
+    if (summary && isEditMode() && event.target.closest('.editable')) {
+      event.preventDefault();
+    }
+  });
+
+  window.addEventListener('beforeunload', function (event) {
+    if (!roadmapDirty) return;
+    event.preventDefault();
+    event.returnValue = '';
+  });
+
+  /* ===== 初始化 ===== */
+  syncColumns();
+  Array.prototype.forEach.call(document.querySelectorAll('details.block'), function (block) { updateBlock(block, false); });
+  refreshDraggables();
+  setEditable(false);
 </script>
 
 </body>

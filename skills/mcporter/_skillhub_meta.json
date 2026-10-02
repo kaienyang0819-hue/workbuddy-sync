@@ -7,5 +7,6 @@
   "skillId": "skill_2053082370941849600",
   "skillName": "mcporter",
   "description_zh": "管理和调用 MCP 服务器与工具",
-  "description_en": "Manage and call MCP servers & tools"
+  "description_en": "Manage and call MCP servers & tools",
+  "installedContentHash": "sha256:4416685788d75d9f621116b88d1f51878178a08280b44351585d6039243ebb8d"
 }

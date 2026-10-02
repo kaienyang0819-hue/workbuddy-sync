@@ -29,3 +29,22 @@
 - 明细：Episodes 2 条、Skills 56 个（较 W37 的 53 个 +3），有使用记录仅 1 个（agent-reach）
 - 无 ⚠️ 异常，无需下次对话主动提醒
 - 长期观察项：候选 pattern 若持续 0 引用，预计 2026-12-03 前后被"candidate 超3月未验证"规则自动降级
+
+### 2026-09-21（W39）
+- 剪枝候选：0（pattern 库无变化：2 deprecated + 1 candidate；competitor-monetization-induction 仍 use_count=0）
+- 归档候选：1（ep-2026-04-14-115921，桩函数未实际归档，文件仍在，非异常）
+- 周报：`learning/reports/weekly-2026-W39.md`
+- 健康度：记忆膨胀 🟢 安全 (2/200)；Pattern 质量 🔴 需改进（平均置信度 0.5）；活跃度 🟡 较安静
+- 明细：Episodes 2 条（本周 +0）、Skills 59 个（较 W38 的 56 个 +3），有使用记录仅 1 个（agent-reach）
+- 无 ⚠️ 异常，无需下次对话主动提醒
+- 长期观察项不变：候选 pattern 若持续 0 引用，预计 2026-12-03 前后自动降级
+- 趋势提示：Skills 数量连续两周增长（53→56→59），而使用记录仅 1 个，安装/使用比持续走低
+
+### 2026-09-28（W40）
+- 剪枝候选：0（Pattern 库无变化：2 deprecated + 1 candidate；competitor-monetization-induction 仍 use_count=0）
+- 归档候选：1（ep-2026-04-14-115921，桩函数未实际归档，episodes/archive/ 未创建，文件仍在，非异常）
+- 周报：`learning/reports/weekly-2026-W40.md`
+- 健康度：记忆膨胀 🟢 安全 (2/200)；Pattern 质量 🔴 需改进（平均置信度 0.5）；活跃度 🟡 较安静
+- 明细：Episodes 2 条（本周 +0）、Skills 59 个（与 W39 持平，连续两周增长后首次停增）、有使用记录仅 1 个（agent-reach，评分 8.75）
+- 无 ⚠️ 异常，无需下次对话主动提醒
+- 长期观察项不变：候选 pattern 若持续 0 引用，预计 2026-12-03 前后自动降级

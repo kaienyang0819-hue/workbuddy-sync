@@ -3,5 +3,6 @@
   "installedAt": 1775615665176,
   "source": "marketplace",
   "iconSource": "tencent-docs",
-  "version": "1.0.31"
+  "version": "1.0.31",
+  "installedContentHash": "sha256:02f3fbaa620fbd701d4ba3144c63067bec29fe68ec8e7fb5de72fcc8d62eda1a"
 }

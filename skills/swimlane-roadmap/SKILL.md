@@ -1,6 +1,6 @@
 ---
 name: swimlane-roadmap
-description: Generate an interactive "swimlane × timeline" roadmap matrix as a single self-contained HTML file, for multi-dimensional phased product/feature planning. Use when the user asks to lay out a roadmap where several content dimensions (e.g. gameplay scenarios, assistant capabilities, system features, characters, model abilities) each evolve across versions or stages (CG milestones, quarters, phases), rendered as collapsible blocks per cell with an expand/collapse-all control. Produces light-theme high-readability HTML following a fixed visual spec: colored swimlane lanes, medium-light-blue timeline header, white cards with colored left borders, inline For-all and risk tags.
+description: Generate an interactive "swimlane × timeline" roadmap matrix as a single self-contained HTML file, for multi-dimensional phased product/feature planning. Use when the user asks to lay out a roadmap where several content dimensions (e.g. gameplay scenarios, assistant capabilities, system features, characters, model abilities) each evolve across versions or stages (CG milestones, quarters, phases), rendered as collapsible blocks per cell with an expand/collapse-all control. Produces light-theme high-readability HTML following a fixed visual spec: colored swimlane lanes, medium-light-blue timeline header, white cards with colored left borders, inline For-all and risk tags, plus a built-in edit mode (click-to-edit all text, add/remove lanes/columns/cards/items with auto renumbering), drag-and-drop cards across columns, a sticky frozen version header, and an on-demand save button that appears only after content changes.
 description_zh: 泳道式Roadmap矩阵（维度×阶段）
 description_en: Swimlane roadmap matrix
 disable: false
@@ -64,11 +64,27 @@ agent_created: true
 4. **空格子**：放 `<div class="cell-empty">—</div>`。
 5. **标签**：需要强调「全体玩家可用」的子项，末尾加 `<span class="tag-free">For全体</span>`；高风险地块在 summary 里加 `<span class="tag-risk">高风险</span>`。
 6. **交付**：单文件自包含 HTML，保存到用户指定目录；需要时用 `present_files` 预览。
+7. **发布提醒**：交付后主动问用户「是否同步发布到 OA Pages（pages.woa.com）内网链接」；用户同意则调用 `oa-pages-deploy` skill 部署（API Key 已存在用户记忆，无需再问）。
+
+## 内置交互能力（模板已含，直接复用）
+
+模板 `templates/roadmap-template.html` 已经内置一套完整的编辑/交互 JS，生成时**原样保留**，不要删：
+
+| 能力 | 行为 |
+|---|---|
+| 编辑内容 | 右上「编辑内容」按钮常显；点击后大标题/副标题/阶段名/阶段标签/泳道名/卡片标题/子项文字全部可点击直接改；卡片带「+ 新增条目 / 删除卡片」，每条子项右侧 × 删除，序号①②③和「N项」计数自动维护 |
+| 卡片拖移 | 不进编辑模式也能用：按住卡片拖到目标版本列松手即移动；松手位置按鼠标纵向插入，同列内也能上下排序；空格子自动恢复「—」占位 |
+| 结构调整 | 编辑模式下「新增泳道 / 新增阶段」按钮出现；删除按钮挂在每列/泳道/卡片右上角 |
+| 冻结版本行 | 时间轴 `position:sticky`，向下滚动时版本行固定在页面顶部 |
+| 保存 HTML | 默认隐藏，**只有内容改动后才出现**（markDirty 触发）；点保存下载改后的文件，之后按钮再次隐藏 |
+| 未保存提醒 | 有改动时关页面会弹「确定离开」确认 |
+
+要点：拖动（按住移动）与点击展开（轻点）是区分的；编辑模式下从卡片文字起手是文本拖选，从卡片边缘/空白起手才是拖卡。
 
 ## 模板
 
 - 黄金模板：`templates/roadmap-template.html`（含完整 CSS/JS 与结构示例，含注释说明如何扩展维度与阶段）。
-- 生成时**务必以模板为准**，不要凭记忆重写 CSS——视觉一致性和换行问题都靠模板保证。
+- 生成时**务必以模板为准**，不要凭记忆重写 CSS——视觉一致性、换行问题、编辑/拖拽/冻结行/保存按钮都靠模板保证。
 
 ## Pitfalls（踩坑清单，来自实战）
 
@@ -79,6 +95,11 @@ agent_created: true
 5. **时间轴存在感**：时间轴背景别用近白（`#f7fafd` 级别太浅，存在感丢失），保持在中等浅蓝 `#dbe7f5→#c9daf0`。
 6. **维度色区分**：相邻泳道不要用相近色（蓝/青、橙/黄容易混）。优先用模板里现成的 5 色，尽量拉开色相。
 7. **命名接地气**：这是向上汇报材料，术语要面向决策者（如「订阅权益」而非「对外统一心智」），去掉生造词。
+8. **资料库/平台导出会杀拖拽**：某些平台（如 WorkBuddy 资料库）导出 HTML 时会注入 `<style id="__dm_no_drag_style__">*{-webkit-user-drag:none!important}</style>`，Chrome 里直接禁掉一切拖拽。凡要交互的 HTML，导出后必须删掉这类注入样式。
+9. **overflow 别用 hidden 阻断 sticky**：冻结版本行依赖 `position:sticky`，但任何 `overflow:hidden` 的祖先会把它退化回普通定位。页面容器用 `overflow: clip` 替代（clip 不阻断 sticky）。
+10. **模式入口按钮别挂「模式内才显示」类**：`.edit-action{display:none}` 是「编辑模式内才显示」的类，绝不能挂在「编辑内容」入口按钮自己身上，否则入口永远隐藏、进不去编辑模式。
+11. **保存按钮按需显示**：保存按钮默认 `display:none`，靠 `markDirty()` 加 `.visible` 类点亮、`saveHtml()` 后熄灭。所有改动操作（增删结构、拖拽 drop、编辑 input）必须统一走 `markDirty()`，才能自动覆盖「有改动才出现」。
+12. **saveHtml 序列化必须清运行态**：`saveHtml()` 里对 `documentElement.cloneNode(true)` 除既有清理外，还必须：① 移除 `#save-btn` 的 `.visible`（否则下载的文件一打开保存按钮常显）；② `clone.removeAttribute('class')` + `clone.setAttribute('style','--cols:'+getColumnCount())`（浏览器翻译插件等会往 `<html>` 上注入 class/style，列数变量必须保留）；③ 移除所有 `[draggable]`（编辑模式注入的，打开文件后进入编辑会自动补回）。漏掉任何一项，导出的文件都会带「脏状态」。
 
 ## Verification
 
@@ -89,5 +110,9 @@ agent_created: true
 - [ ] 每个地块标题带数量徽标，数量与实际子项数一致。
 - [ ] 子项用块级 `.item` 分隔，无 `<br>` 残留，无粘连。
 - [ ] 「展开全部 / 收起全部」按钮能一键切换，单个地块点击可展开。
+- [ ] 「编辑内容」按钮常显、点击能进/出编辑模式、所有文字可改、增删泳道/阶段/卡片/条目正常且计数自动更新。
+- [ ] 卡片可拖到其他版本列、同列可排序、空格子自动恢复占位、拖完无半透明残留。
+- [ ] 时间轴滚动时冻结在顶部（`position:sticky` + 页面容器 `overflow:clip`）。
+- [ ] 保存按钮默认隐藏，改动后出现，保存后再次隐藏。
 - [ ] 浏览器打开无 JS 报错、无样式错乱。
 - [ ] 维度命名互斥且覆盖完整，无重复归类。

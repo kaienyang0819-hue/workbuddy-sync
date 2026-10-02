@@ -3,5 +3,6 @@
   "installedAt": 1775615664615,
   "source": "marketplace",
   "iconSource": "mcporter",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "installedContentHash": "sha256:1d6798195d7d45474b687b7ef692a4db38f04b24ba790fe4eec818b9cf1024d6"
 }

@@ -4,5 +4,6 @@
   "source": "marketplace",
   "iconSource": "nano-pdf",
   "version": "1.0.0",
-  "skillId": "skill_2053082432767135744"
+  "skillId": "skill_2053082432767135744",
+  "installedContentHash": "sha256:7abbfea9a60374cb4fe94a251f1ccffa0d2c47ac1d3235538b63f90ae5ae3aba"
 }

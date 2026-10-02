@@ -4,5 +4,6 @@
   "source": "marketplace",
   "iconSource": "tencent-docs",
   "version": "1.0.36",
-  "skillId": "skill_2053084036212973568"
+  "skillId": "skill_2053084036212973568",
+  "installedContentHash": "sha256:8673d95f4d4e74ca052bbb0ab664991173a60a5394e7371a90ac37a06ad18942"
 }

@@ -9,5 +9,6 @@
   "description_zh": "腾讯文档在线云文档平台，创建、编辑、管理多种类型文档",
   "description_en": "Tencent Docs cloud platform for creating, editing & managing online documents",
   "iconLocalPath": "C:\\Users\\kaienyang\\.workbuddy\\skills\\tencent-docs\\_icon.png",
-  "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/tencent-docs.png"
+  "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/skills/icons/tencent-docs.png",
+  "installedContentHash": "sha256:61908ccb6b310ea99e1d55211a15f2104770aa4a30e729c8ee1a44df4b171322"
 }

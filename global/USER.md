@@ -10,6 +10,7 @@ _已建立的协作档案；随长期合作补充，但避免收集无关个人�
 
 - **Name:** 杨凯 (kaienyang)
 - **What to call them:** 凯
+- **Occupation:**
 - **Pronouns:** he/him
 - **City:** _(待确认)_
 - **Notes:** 游戏策划设计师 + AI大模型产品经理

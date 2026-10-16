@@ -31,3 +31,15 @@
 - ⚠️ 踩坑：用 `--json '{"chat_id":...}'` 传参会返回 40073「非法 chat_id」；改用显式参数 `--chat-id ... --msg-type markdown --markdown '{...}'` 后发送成功
 - 另注：`message send`（纯 text）返回 853006「this tool is not available for your corporation」，本企业仅可用 `message aibot send`（markdown）通道
 - 发送结果：success=true，消息内容「需要同步本周AI大事件到老板群」
+
+### 2026-10-05
+- 前置检查：wecom-cli 1.3.4（wecom 2026-09-23），授权状态 authorized，授权人杨凯
+- ⚠️ 环境变化：`wecom-cli` 不再在 PATH 上，需用绝对路径 `C:\Users\kaienyang\.workbuddy\binaries\node\cli-connector-packages\wecom-cli.cmd` 调用
+- ⚠️ 踩坑：旧版 `--chat-id ... --msg-type markdown --markdown '{...}'` 分离参数会报 893001 JSON 非法；需改用 `--json '<完整JSON>'`（含 chat_id/msg_type/markdown.content），与 SKILL.md 一致
+- 发送结果：success=true，消息内容「需要同步本周AI大事件到老板群」
+
+### 2026-10-12
+- 前置检查：wecom-cli 1.3.4，授权状态 authorized，授权人杨凯
+- ⚠️ 重大环境变化：wecom-cli 1.3.4 已移除 `message` 子命令（`--help` 顶层命令列表中无 message），消息发送能力已完全迁移到 A2A 的 wecom_message_agent（Dayuan）通道
+- A2A 通道发送结果：任务被用户取消（CANCELED），原因「企业微信确认面板打开失败：企业微信版本过低，请升级后重试」
+- 结论：本次发送失败，非脚本问题，阻塞在客户端版本过低；待用户升级企业微信后重试

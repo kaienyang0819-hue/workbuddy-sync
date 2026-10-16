@@ -35,6 +35,14 @@
 - 入库Skill：`knowledge-entry` v2.0（支持多库自动路由，KM链接/网页URL/手动内容/westock数据）
 - 每个知识库可作为独立Obsidian Vault打开
 
+## KM MCP 风控现状（2026-10-12）
+- `mcp__km__show-article` 对部分文章返回「无权访问该文章」，提示风控策略升级、需企业微信联系 2000；WebFetch 走 passport 登录页被拦；`import_urls` 虽返回成功但抓取内容为空（标题仍为 URL）。遇到此情况优先让用户粘贴正文。
+
+## ima 知识库 markdown 笔记导入流程（2026-10-12 跑通，可复用）
+- 目标库：`yangkai的知识库`（id `001a705103c07b7f`）
+- 流程：`create_media`（file_size 需精确字节数，content_type=text/markdown）→ 用 **cos-python-sdk-v5**（隔离 venv `C:\Users\kaienyang\.workbuddy\binaries\python\envs\default` 已装）以 `CosConfig(SecretId, SecretKey, Token)` 直接 `put_object` 上传 → `add_knowledge`（可选 folder_id 放入指定文件夹）
+- 教训：手写 COS V5 签名（含 x-cos-security-token 参与签名）StringToSign 能算对，但临时密钥处理易错（secret_key 需 base64 解码），直接用 SDK 最稳。
+
 ## AI事件雷达任务口径（2026-09-07）
 - 目标是扩展用户的 AI 能力与应用视野，不以游戏迁移性作为事件筛选门槛；游戏关联仅在自然成立时作为补充注释。
 - 不预设四类内容配比：先尽量广地收集，再按“热点度 + 应用价值”为主给出优先级，最终由用户决定关注重心。

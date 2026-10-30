@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "last_updated": "2026-10-12",
+  "last_updated": "2026-10-26",
   "total_patterns": 3,
   "categories": [
     "game_design",
@@ -65,7 +65,7 @@
       "id": "competitor-monetization-induction",
       "name": "竞品付费归纳四步法",
       "category": "product_strategy",
-      "confidence": 0.453,
+      "confidence": 0.387,
       "use_count": 0,
       "success_count": 0,
       "failure_count": 0,

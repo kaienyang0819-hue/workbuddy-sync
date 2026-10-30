@@ -1,0 +1,25 @@
+{
+  "id": "km-ai",
+  "name": "KM AI文章日报",
+  "prompt": "每天自动抓取KM上过去24小时内与AI相关的高价值文章，生成结构化日报。\n\n## 执行步骤\n\n1. 使用KM MCP的list-articles工具，分5组关键词查询前24小时创建的文章（created_after为昨天此时），按热度排序，每组取limit=10：\n   - A组：keywords=[\"AI\", \"大模型\", \"LLM\"]\n   - B组：keywords=[\"Agent\", \"多智能体\", \"Copilot\"]\n   - C组：keywords=[\"AIGC\", \"生成式\", \"NPC\", \"AI游戏\"]\n   - D组：keywords=[\"Harness\", \"AI工程\", \"MCP\"]\n   - E组：keywords=[\"多模态\", \"视觉模型\", \"语音模型\"]\n\n2. 合并结果，按文章链接去重。\n\n3. 质量过滤，文章需满足至少一条：\n   - KM推荐 = 是\n   - KM头条 = 是\n   - 热度 ≥ 500\n   - 阅读 ≥ 500\n   - 点赞 ≥ 20\n\n4. 按热度降序排序，取Top 10。\n\n5. 对每篇文章，用show-article获取AI摘要（full_content=false），基于摘要+导语+标签生成\"价值\"和\"概括\"字段。价值判断基于用户关注领域：AI NPC群聊设计、Harness Engineering、AI+游戏落地、大模型产品化、情报视角。\n\n6. 输出到 G:\\project_output\\km_ai_digest\\YYYY-MM-DD.md，格式如下：\n\n```markdown\n# KM AI高价值文章日报 — YYYY-MM-DD\n\n> 自动抓取过去24小时内KM上与AI相关的高价值文章，按热度排序。\n\n## 今日精选（共N篇）\n\n### 1. [文章标题](链接)\n- **作者**：xxx | **标签**：xxx\n- **数据**：阅读 xxx / 点赞 xxx / 收藏 xxx / 热度 xxx\n- **价值**：对当前工作的具体启发或可落地点\n- **概括**：2-3句话核心内容和结论\n\n...\n```\n\n7. 如果当天没有符合条件的文章，输出一份简短的\"今日无新增高价值AI文章\"说明即可，不要输出空模板。",
+  "status": "ACTIVE",
+  "scheduleType": "recurring",
+  "nextRunAt": 1787792431748,
+  "lastRunAt": 1787706274811,
+  "cwds": [
+    "g:\\others"
+  ],
+  "rrule": "FREQ=DAILY;BYHOUR=9;BYMINUTE=0",
+  "modelId": "custom-local:mimo-v2.5-pro",
+  "modelIsThinking": true,
+  "skills": [],
+  "pushToWeChat": false,
+  "pushToWecomBot": false,
+  "ownerUserId": "8f943414-6a26-4aa0-9c0c-9fcb7e59a6c6",
+  "ownerStatus": "inferred",
+  "ownerSource": "history_unique",
+  "connectorIds": [],
+  "permissionMode": "fullAccess",
+  "createdAt": 1779711596847,
+  "updatedAt": 1787706274815
+}

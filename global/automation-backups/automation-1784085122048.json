@@ -1,0 +1,25 @@
+{
+  "id": "automation-1784085122048",
+  "name": "GitHub Trending 每日精选",
+  "prompt": "运行 GitHub Trending 智能筛选脚本，生成今日精选推荐报告。\n\n执行步骤：\n1. 运行脚本：`\"C:\\Users\\kaienyang\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe\" \"G:\\project_output\\github-trending\\github_trending_scout.py\"`\n2. 读取生成的报告文件 `G:\\project_output\\github-trending\\trending_YYYY-MM-DD.md`（用今天日期）\n3. 将报告内容总结为简洁摘要，呈现给用户：\n   - 如果有推荐，列出仓库名、核心用途、今日star增量\n   - 如果无推荐，简短说明\"今日无高价值新仓库\"\n4. 如果脚本报错，报告错误信息并建议排查方向\n\n注意：脚本已内置企业微信推送逻辑，配置了 Webhook 后会自动推送。",
+  "status": "ACTIVE",
+  "scheduleType": "recurring",
+  "nextRunAt": 1787789093602,
+  "lastRunAt": 1787702801492,
+  "cwds": [
+    "G:\\project_output\\github-trending"
+  ],
+  "rrule": "FREQ=DAILY;BYHOUR=8;BYMINUTE=0",
+  "modelId": "custom-local:mimo-v2.5-pro",
+  "modelIsThinking": true,
+  "skills": [],
+  "pushToWeChat": false,
+  "pushToWecomBot": false,
+  "ownerUserId": "8f943414-6a26-4aa0-9c0c-9fcb7e59a6c6",
+  "ownerStatus": "confirmed",
+  "ownerSource": "created",
+  "connectorIds": [],
+  "permissionMode": "fullAccess",
+  "createdAt": 1784085122048,
+  "updatedAt": 1787702801495
+}

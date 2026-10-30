@@ -1,0 +1,25 @@
+{
+  "id": "workbuddy",
+  "name": "WorkBuddy 双周自省",
+  "prompt": "你是 WorkBuddy 的自省引擎。执行双周架构自省，检查当前配置是否有优化空间。\n\n## 执行步骤\n\n1. 读取当前 SOUL.md、USER.md、IDENTITY.md\n2. 读取最近 2 周的 daily memory 文件和 MEMORY.md\n3. 逐项检查：\n   - 有没有重复出现的问题模式没被沉淀成规则或 pattern？\n   - 有没有规则/pattern 从未被触发过，应该清理或降级？\n   - 用户画像（USER.md 偏好画像）是否需要更新（新偏好、变化的关注点）？\n   - Quality Gates 的风险划分是否需要调整？\n   - 有没有新的 Skill 需求信号？\n   - 记忆保护机制（钉住/冷存储）运行是否正常？\n   - 大任务状态文件是否有未完成的需要提醒？\n4. 搜索 Agent/Harness/Skill 领域最近 2 周的新实践和趋势（用 web_search）\n5. 产出完整报告到 G:\\project_output\\self-reflect\\YYYY-MM-DD.md，格式：\n   - 发现（具体问题描述）\n   - 建议（具体改动方案）\n   - 风险评估（改动影响范围）\n   - 推荐优先级（🟢高/🟡中/🔵低）\n6. 在 memory 中标记 [PENDING_REVIEW] self-reflect 报告待审阅\n7. 不执行任何改动，只出报告\n8. 在对话回复中输出摘要（这条消息会推送到用户微信），格式：\n   🔧 双周自省完成\n   发现 N 条优化建议（高优 X 条）\n   逐条列出建议摘要\n   完整报告路径\n   请在周五 sync 前确认是否执行",
+  "status": "ACTIVE",
+  "scheduleType": "recurring",
+  "nextRunAt": 1788429600000,
+  "lastRunAt": 1787220104460,
+  "cwds": [
+    "G:\\project_output"
+  ],
+  "rrule": "FREQ=WEEKLY;INTERVAL=2;BYDAY=TH;BYHOUR=18;BYMINUTE=0",
+  "modelId": "deepseek-v4-flash-ioa",
+  "modelIsThinking": true,
+  "skills": [],
+  "pushToWeChat": false,
+  "pushToWecomBot": false,
+  "ownerUserId": "8f943414-6a26-4aa0-9c0c-9fcb7e59a6c6",
+  "ownerStatus": "inferred",
+  "ownerSource": "history_unique",
+  "connectorIds": [],
+  "permissionMode": "fullAccess",
+  "createdAt": 1777376489295,
+  "updatedAt": 1787220104462
+}

@@ -1,0 +1,25 @@
+{
+  "id": "workbuddy-sync",
+  "name": "WorkBuddy Sync",
+  "prompt": "powershell -ExecutionPolicy Bypass -File \"G:\\workbuddy-sync\\sync.ps1\" sync",
+  "status": "ACTIVE",
+  "scheduleType": "recurring",
+  "nextRunAt": 1788516000000,
+  "lastRunAt": 1787306438063,
+  "cwds": [
+    "G:\\workbuddy-sync"
+  ],
+  "rrule": "FREQ=WEEKLY;INTERVAL=2;BYDAY=FR;BYHOUR=18;BYMINUTE=0",
+  "modelId": "deepseek-v4-flash-ioa",
+  "modelIsThinking": true,
+  "skills": [],
+  "pushToWeChat": false,
+  "pushToWecomBot": false,
+  "ownerUserId": "8f943414-6a26-4aa0-9c0c-9fcb7e59a6c6",
+  "ownerStatus": "inferred",
+  "ownerSource": "history_unique",
+  "connectorIds": [],
+  "permissionMode": "fullAccess",
+  "createdAt": 1777348070158,
+  "updatedAt": 1787306438065
+}

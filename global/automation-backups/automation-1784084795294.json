@@ -1,0 +1,25 @@
+{
+  "id": "automation-1784084795294",
+  "name": "GitHub Trending 每日精选",
+  "prompt": "运行 GitHub Trending 监控脚本，筛选出与用户兴趣领域（AI Agent、LLM 应用、游戏 AI、多模态/视频生成、AI 编程、MCP 工具集成）高度相关的开源仓库，生成结构化报告推送给用户。\n\n执行步骤：\n1. 运行脚本：`C:\\Users\\kaienyang\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe g:\\gpt_test\\github_trending_monitor.py`\n2. 读取脚本的标准输出（Markdown 报告）\n3. 对高匹配（score ≥ 5）的仓库，逐个给出一句话价值判断：这个项目对用户（游戏策划 + AI 产品经理）有什么具体用处\n4. 如果发现特别值得关注的项目（score ≥ 8 或今日 stars ≥ 500），用醒目方式标注\n5. 将报告保存到 `G:\\project_output\\github-trending\\github_trending_YYYY-MM-DD.md`\n\n输出格式要求：\n- 中文回复\n- 先给高匹配仓库的精华摘要（3-5 句话概括今日最值得关注的方向）\n- 再附完整报告\n- 对每个高匹配仓库加一句「与你相关」的点评",
+  "status": "ACTIVE",
+  "scheduleType": "recurring",
+  "nextRunAt": 1787794248429,
+  "lastRunAt": 1787708092093,
+  "cwds": [
+    "g:\\gpt_test"
+  ],
+  "rrule": "RRULE:FREQ=DAILY;BYHOUR=9;BYMINUTE=30",
+  "modelId": "custom-local:mimo-v2.5-pro",
+  "modelIsThinking": false,
+  "skills": [],
+  "pushToWeChat": false,
+  "pushToWecomBot": false,
+  "ownerUserId": "8f943414-6a26-4aa0-9c0c-9fcb7e59a6c6",
+  "ownerStatus": "confirmed",
+  "ownerSource": "created",
+  "connectorIds": [],
+  "permissionMode": "fullAccess",
+  "createdAt": 1784084795294,
+  "updatedAt": 1787708092095
+}

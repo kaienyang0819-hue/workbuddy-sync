@@ -39,6 +39,12 @@ $MemoryMap = [ordered]@{
     "global\memory"                   = "$WB\memory"
 }
 
+# --- B2: Automations (scheduled task definitions + run memory) ---
+$AutomationsMap = [ordered]@{
+    "global\automation-backups"       = "$WB\automation-backups"
+    "global\automations"              = "$WB\automations"
+}
+
 # --- C: Skills (auto-scan, no manual list needed) ---
 # Gather: scan local skills dir -> repo
 # Scatter: scan repo skills dir -> local
@@ -60,7 +66,7 @@ $KnowledgeMap = [ordered]@{
 
 # Combined static map (A+B, E only; C and D are auto-scanned)
 $SyncMap = [ordered]@{}
-foreach ($m in @($StaticMap, $MemoryMap, $KnowledgeMap)) {
+foreach ($m in @($StaticMap, $MemoryMap, $AutomationsMap, $KnowledgeMap)) {
     foreach ($entry in $m.GetEnumerator()) {
         $SyncMap[$entry.Key] = $entry.Value
     }
@@ -93,6 +99,47 @@ function Write-Log($msg) {
     Write-Host "[$ts] $msg"
 }
 
+# Resolve robocopy. Some hosts (restricted PATH / sandboxed shells) do not expose
+# robocopy as a command; fall back to a native PowerShell recursive copy there.
+$script:Robocopy = $null
+if ($env:WB_SYNC_FORCE_PS_COPY -ne "1") {
+    $rcCmd = Get-Command robocopy -ErrorAction SilentlyContinue
+    if ($rcCmd) {
+        $script:Robocopy = $rcCmd.Source
+    } elseif (Test-Path "C:\Windows\System32\robocopy.exe") {
+        $script:Robocopy = "C:\Windows\System32\robocopy.exe"
+    }
+}
+if (-not $script:Robocopy) {
+    Write-Log "NOTE: robocopy unavailable, using native PowerShell copy fallback"
+}
+
+# Mirrors robocopy /E /XO with the same directory exclusions.
+$ExcludeDirs = @('__pycache__', 'node_modules', '.git')
+
+function Copy-DirNewer($src, $dst) {
+    if (-not (Test-Path $dst)) {
+        New-Item -ItemType Directory -Path $dst -Force | Out-Null
+    }
+    Get-ChildItem -LiteralPath $src -Force -ErrorAction SilentlyContinue | ForEach-Object {
+        if ($_.PSIsContainer) {
+            if ($ExcludeDirs -notcontains $_.Name) {
+                Copy-DirNewer $_.FullName (Join-Path $dst $_.Name)
+            }
+        } else {
+            $target = Join-Path $dst $_.Name
+            $doCopy = $true
+            if (Test-Path -LiteralPath $target) {
+                $t = Get-Item -LiteralPath $target
+                if ($_.LastWriteTime -le $t.LastWriteTime) { $doCopy = $false }
+            }
+            if ($doCopy) {
+                Copy-Item -LiteralPath $_.FullName -Destination $target -Force
+            }
+        }
+    }
+}
+
 function Copy-SyncItem($src, $dst) {
     if (-not (Test-Path $src)) {
         Write-Log "  SKIP (not found): $src"
@@ -106,7 +153,11 @@ function Copy-SyncItem($src, $dst) {
         if (-not (Test-Path $dst)) {
             New-Item -ItemType Directory -Path $dst -Force | Out-Null
         }
-        robocopy $src $dst /E /XO /NJH /NJS /NDL /NFL /NC /NS /NP /XD __pycache__ node_modules .git | Out-Null
+        if ($script:Robocopy) {
+            & $script:Robocopy $src $dst /E /XO /NJH /NJS /NDL /NFL /NC /NS /NP /XD __pycache__ node_modules .git | Out-Null
+        } else {
+            Copy-DirNewer $src $dst
+        }
         Write-Log "  DIR: $src"
     } else {
         $srcInfo = Get-Item $src

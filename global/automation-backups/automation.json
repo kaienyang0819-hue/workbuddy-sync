@@ -1,0 +1,25 @@
+{
+  "id": "automation",
+  "name": "学习闭环周度自省",
+  "prompt": "执行学习闭环的周期性自省任务：\n\n1. 运行 `python -X utf8 g:\\workclaw\\.workbuddy\\scripts\\nudge.py --execute`\n2. 读取生成的周报文件（learning/reports/ 目录下最新的 weekly-*.md）\n3. 如果有 pattern 被剪枝或 episode 被归档，记录到当日的 memory 文件中\n4. 如果周报中发现异常（如记忆膨胀风险为⚠️），在下次用户对话时主动提醒",
+  "status": "ACTIVE",
+  "scheduleType": "recurring",
+  "nextRunAt": 1788138204892,
+  "lastRunAt": 1787533555538,
+  "cwds": [
+    "g:\\workclaw"
+  ],
+  "rrule": "FREQ=WEEKLY;BYDAY=MO;BYHOUR=9;BYMINUTE=0",
+  "modelId": "deepseek-v4-flash-ioa",
+  "modelIsThinking": true,
+  "skills": [],
+  "pushToWeChat": false,
+  "pushToWecomBot": false,
+  "ownerUserId": "8f943414-6a26-4aa0-9c0c-9fcb7e59a6c6",
+  "ownerStatus": "inferred",
+  "ownerSource": "history_unique",
+  "connectorIds": [],
+  "permissionMode": "fullAccess",
+  "createdAt": 1776138948223,
+  "updatedAt": 1787533555541
+}

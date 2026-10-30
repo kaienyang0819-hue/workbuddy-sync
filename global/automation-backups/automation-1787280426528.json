@@ -1,0 +1,27 @@
+{
+  "id": "automation-1787280426528",
+  "name": "周一15点同步AI大事件提醒",
+  "prompt": "通过企业微信（wecom）向本人杨凯发送一条文本消息提醒，内容为：需要同步本周AI大事件到老板群",
+  "status": "ACTIVE",
+  "scheduleType": "recurring",
+  "nextRunAt": 1788159600000,
+  "lastRunAt": 1787554858587,
+  "cwds": [
+    "g:\\others"
+  ],
+  "rrule": "FREQ=WEEKLY;BYDAY=MO;BYHOUR=15;BYMINUTE=0",
+  "modelId": "deepseek-v4-pro-ioa",
+  "modelIsThinking": false,
+  "skills": [],
+  "pushToWeChat": false,
+  "pushToWecomBot": false,
+  "ownerUserId": "8f943414-6a26-4aa0-9c0c-9fcb7e59a6c6",
+  "ownerStatus": "confirmed",
+  "ownerSource": "created",
+  "connectorIds": [
+    "wecom"
+  ],
+  "permissionMode": "fullAccess",
+  "createdAt": 1787280426528,
+  "updatedAt": 1787554858590
+}

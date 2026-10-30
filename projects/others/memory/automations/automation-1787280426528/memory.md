@@ -43,3 +43,15 @@
 - ⚠️ 重大环境变化：wecom-cli 1.3.4 已移除 `message` 子命令（`--help` 顶层命令列表中无 message），消息发送能力已完全迁移到 A2A 的 wecom_message_agent（Dayuan）通道
 - A2A 通道发送结果：任务被用户取消（CANCELED），原因「企业微信确认面板打开失败：企业微信版本过低，请升级后重试」
 - 结论：本次发送失败，非脚本问题，阻塞在客户端版本过低；待用户升级企业微信后重试
+
+### 2026-10-19
+- 发送通道：A2A wecom_message_agent（Dayuan）
+- 踩坑：第一次委派被 Dayuan 判定为「提醒我」类请求，仅回显提醒文字、未实际发送；需在 message 中明确「执行发送动作，而非输出提醒文字」
+- 第二次委派：Dayuan 发起发送，但「因审批超时未能执行」，消息未发出
+- 结论：Dayuan 发送需要用户在对话界面交互审批，自动化无人值守环境下无法自动完成审批，本次发送失败；需人工在企微/Daoyuan 界面重发或同意操作
+
+### 2026-10-26
+- 发送通道：A2A wecom_message_agent（Dayuan，agent_id wecom-message-agent-019a2aec）
+- wecom-cli 顶层命令已确认无 `message` 子命令，消息发送完全走 A2A 通道
+- 委派 message 中明确「执行发送动作而非回显提醒文字」，Dayuan 本次实际完成发送
+- 发送结果：success（1 任务，成功 1 条，无失败），消息内容「需要同步本周AI大事件到老板群」

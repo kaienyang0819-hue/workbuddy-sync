@@ -1,0 +1,27 @@
+{
+  "id": "automation-1787280426951",
+  "name": "周一11点收集AI讯息提醒",
+  "prompt": "通过企业微信（wecom）向本人杨凯发送一条文本消息提醒，内容为：在[AI观察群]收集本周AI讯息",
+  "status": "ACTIVE",
+  "scheduleType": "recurring",
+  "nextRunAt": 1788145200000,
+  "lastRunAt": 1787540498814,
+  "cwds": [
+    "g:\\others"
+  ],
+  "rrule": "FREQ=WEEKLY;BYDAY=MO;BYHOUR=11;BYMINUTE=0",
+  "modelId": "deepseek-v4-pro-ioa",
+  "modelIsThinking": false,
+  "skills": [],
+  "pushToWeChat": false,
+  "pushToWecomBot": false,
+  "ownerUserId": "8f943414-6a26-4aa0-9c0c-9fcb7e59a6c6",
+  "ownerStatus": "confirmed",
+  "ownerSource": "created",
+  "connectorIds": [
+    "wecom"
+  ],
+  "permissionMode": "fullAccess",
+  "createdAt": 1787280426951,
+  "updatedAt": 1787540498817
+}

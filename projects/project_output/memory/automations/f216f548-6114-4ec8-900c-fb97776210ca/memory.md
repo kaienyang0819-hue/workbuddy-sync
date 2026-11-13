@@ -280,3 +280,174 @@
   1. 本期游戏 AI 高价值集中在「AI 陪伴新品」（爱哩爱哩/麦琪的花园/AI守护天使）+「Agent 安全/长程」（Gemini 4 Carbon/GitHub Agentic Workflows）两线，是贴合用户 AI 队友+AI NPC 工作的强映射素材。
   2. 公众号聚合号「AI观潮」的"已避开 10-29 已报条目"清单里出现 Gemini 4 Carbon / OpenAI 买 Google 芯片 / GitHub Agentic Workflows 等我方 dedup 尚未收录的条目——说明该号日报节奏与我方错开，可当作发现新事件的线索源，但仍需逐条交叉核实（其日期/参数可靠性未验证）。
   3. 新增 10 条指纹写入 dedup_history.json（其中 Mistral Large 4 为"上期 preview→本期开源权重"更新，单独新增"Le Chonk/开源权重"指纹以区分）。
+
+## 2026-10-31（第二十四次执行）
+- 产出：G:\project_output\ai_daily_report\2026-10-31.html（单文件自包含，10 条）
+- 窗口：2026-10-17 ~ 2026-10-31
+- 信源：官方（OpenAI/Google/Microsoft/Anthropic robots.txt + Managed Agents 经官方+Latent Space 交叉）、媒体&聚合（华盛顿邮报/36氪/新浪财经/GamesIndustry.biz/Creative Bloq/nvdium/TechFlow 等多源交叉）、全网搜索多轮（本期主体）、B站（检索 AI NPC/AI队友，窗口内无高价值新增量）、KM（近7天 hot_value 无游戏AI高价值新增量）；小红书 MCP 未启动、X feed 未深度采集，均降级并在页脚注明。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，无审批，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①KRAFTON Raon-1-mini（10-21/24，PUBG发行商自研局内AI小模型30B-A4B，直接映射AI队友CPC）②Atelico AI Engine（10-30，本地AI NPC引擎，记忆/人格/关系，Unreal/Unity/Godot）③OpenWorld AI-Native RPG 开源（10-30，千人级AI社会沙盒1024地图/1654角色/780家庭）④Cathedral AI Agent 经第三方SaaS打穿Anthropic内网（10-26 WaPo，映射Agent供应链安全）⑤Anthropic Claude Managed Agents「脑/手」分离（10-27 Latent Space，映射Harness容错）⑥心言机器人巴布Bubbo1（10-29，具身情感陪伴9499元）⑦无限谷Lumiere 037二测（10-30，AI男友估值7000万美元次留80%）⑧robots.txt AI训练退出统一信号（10-30，四家对齐）⑨天数智芯天垓300追平H200（10-30，聚合待核）⑩Cohere E轮50亿美元（10-29，主权基金入股）
+- 关键教训：
+  1. **「字节AI数据升格一级部门」是聚合号日期陷阱**：公众号10-29版把它当「今日资讯」，实为2026年8月事件（鞭牛士/腾讯新闻10-28文章明确记8月Seed重组+「AI数据与安全」一级部门），超窗已剔除。再次印证「聚合号日期不可靠，须逐条核实」。
+  2. KRAFTON Raon-1-mini 是10-21~24事件（HF模型卡10-21/官方PR 10-24），此前10-22~10-30各期漏采，本期补收（仍在窗口内）；注意与 dedup 里「PUBG Ally 双脑架构（10-14）」「NVIDIA ACE（10-08）」区分——Raon-1-mini 是 KRAFTON 自研模型、非 NVIDIA ACE 套件。
+  3. 社区源（小红书/B站/X）连续第 9 天贡献极低，本期小红书未启动、B站窗口内无高价值，靠官方+媒体+全网补足硬信息；与 10-24~10-30 一致。
+  4. 新增 10 条指纹写入 dedup_history.json（总数 202）。
+
+## 2026-11-01（第二十五次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-01.html（单文件自包含，10 条）
+- 窗口：2026-10-18 ~ 2026-11-01
+- 信源：官方（OpenAI Model Spec 重写 10-29、GPT-6 Rosalind 10-30、腾讯混元 Hy-Nomas 世界模型 10-21开源+10-27报告、Hy4/Hy4 Flash 预告 10-29）、KM（Sleep-time Compute Harness 自改进 673332）、全网+媒体多轮交叉（澎湃/科创板日报/量子位/36kr/科技日报/央广网/AI前线/Future Shock/Anthropic官方）；小红书（已启动并登录，窗口内无高价值低赞帖）、B站（窗口内仅2条低播放/内容不明）、X（未深入采集降级）
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①Anthropic《Who's Aligned to Whom?》决策影响研究（10-27官方，专家86%采纳AI抛硬币判断，映射AI队友决策层/人在环）②腾讯混元 Hy-Nomas 世界模型（8B/720p/60s/lifelong KV世界记忆/单卡4090，AI前线复现Genie4样片对比）③腾讯 Hy4/Hy4 Flash 预告（首次视觉理解）④OpenAI Model Spec 重写五价值（人类能动性）⑤GPT-6 Rosalind（复用Astra权重只改拒绝边界+trusted-access，映射分场景放开权限）⑥KM Sleep-time Compute Harness自改进⑦英伟达+MIT Open-H3-Regenerate-2K⑧奥特曼神秘底座模型（沙箱隔离悲观+智能体蜂群改称团队）⑨Claude Fable5.5+Obsidian3曝光（上期更新）⑩nesformer（NES CPU编译进Qwen3.5权重）
+- 关键教训：
+  1. **GPT-6 Rosalind 是"同权重、不同边界"的教科书案例**：复用 GPT-6 Astra 权重、无额外训练，只改"双用途生物查询拒绝边界 + trusted-access 访问控制"。映射 AI 队友/游戏 AI"分场景放开权限、分人群放开能力"的产品设计，值得持续跟踪此类"部署层差异而非模型差异"的发布。
+  2. Anthropic 决策影响研究（86%采纳、77%复述论点仅15%归功、52%自认是己见）与 OpenAI Model Spec"人类能动性"同周发布，形成"厂商从产品侧+规则侧同时应对决策权转移"的双重信号，是 AI 队友"仲裁/多agent制衡"的直接行业背书。
+  3. 社区源（小红书/B站/X）连续第 11 天贡献极低，本期小红书虽登录成功但窗口内无高价值、B站窗口内仅低播放/内容不明，靠官方+媒体+KM补足硬信息；与 10-24~10-31 一致。
+  4. 新增 10 条指纹写入 dedup_history.json（总数 212）。
+
+## 2026-11-02（第二十六次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-02.html（单文件自包含，10 条）
+- 窗口：2026-10-19 ~ 2026-11-02
+- 信源：全网搜索多轮交叉核实（本期主体）、KM（近7天 hot_value 遍历，收录 2 条：Joint Debugging Hub 673372 + 游戏超级个体 673366）；小红书 MCP/B站/X 本期未启动采集（社区源连续多期无高价值新增量，降级并在页脚注明）。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①DeepSeek Super-agent 架构开源（10-31，双层 Router+Worker/事件驱动/Watchdog，无人@自主识别缺陷，映射 AI 队友自主介入）②GPT-6.2 Astra 灰测曝光（11-1 抓包，跳级6.2占19.8%流量，待核）③Claude Mythos 5.5/Fable 5.5 曝光（11-1 扒源码，无护栏特种版+百万上下文通用版，待核）④Claude Code 新增「不复刻他人游戏」规则（10-27 推送/10-30 Osmani 确认，prompt 注入+政策翻译，误伤付费棋战模块）⑤GPT-5.6 Sol 通关 Factorio（10-31 Ryan Madden，13.5h游戏时间/$52，「能打补丁不能架构」）⑥DeepSeek 第二轮融资 1055 亿/投后估值 6155 亿（上期更新）⑦KM Joint Debugging Hub（Agent 进群）⑧KM 游戏超级个体⑨Smart-AI-Players 1.8（Companion Mode）⑩Smol models 6GB 手机 NPC 决策（手写权重优于小模型）
+- 关键教训：
+  1. 本期两条「社区扒源码/抓包」爆料（GPT-6.2 Astra、Mythos 5.5）均标「待核」，OpenAI/Anthropic 均未官宣——但这类「代码层抓包」比「自媒体聚合」可靠得多，可作为提前 1~2 天的换代信号源，仍需在卡片显式区分「社区证据」vs「官方确认」。
+  2. Claude Code「不复刻游戏」规则的根因是「把使用政策翻译成 prompt 指令、下沉到模型运行时」，这是「合规运行时化」的产业信号，且明确会误伤（付费棋战模块/逆向/崩溃分析），对 AI 队友内容合规是直接映射。
+  3. 新增 10 条指纹写入 dedup_history.json（总数 222）。
+
+## 2026-11-02（小红书 MCP 未启动问题诊断）
+- 用户追问 10-31「小红书 MCP 本期未启动」的根因。
+- 诊断结论：**服务本身没坏、cookies 也没过期，纯粹是服务没启动**。根因 = Git Bash 下 `LocalAppData`/`LOCALAPPDATA` 环境变量未注入，xiaohongshu-mcp.exe 启动即退出（找不到 %LocalAppData%）。与 10-29 已记录的坑完全一致，但 10-31 执行时又漏做了 export 这一步。
+- 证据链：①exe/cookies.json 均在；②端口 18060 未监听、无残留进程；③cookies.json 有 4 个 session cookie（web_session/id_token 等，expires=-1 无固定过期）；④`echo $LocalAppData` 为空。
+- 修复：`export LocalAppData="C:/Users/kaienyang/AppData/Local"` + `export LOCALAPPDATA=...` 后再启动，端口 18060 监听、PID 46408；check_login_status 返回「✅已登录 小红薯569B6D7A」；search_feeds("AI游戏", sort_by=最新) 正常返回。
+- **强化教训（必须每次执行前做）**：启动小红书 MCP 前，务必在同一命令里先 export LocalAppData 与 LOCALAPPDATA 再启动（shell 状态不持久，不能分开）；启动后先用 `netstat` 确认 18060 LISTEN + `mcporter call 'xiaohongshu.check_login_status()'` 确认已登录，再走搜索，别默认「已启动」。
+
+## 2026-11-03（第二十七次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-03.html（单文件自包含，10 条）
+- 窗口：2026-10-20 ~ 2026-11-03
+- 信源：小红书 MCP（已登录，AI游戏/AI队友最新排序；AI队友词被「找队友」招人帖污染，收获 Claude Code Game Studios 1 条高价值）、B站（AI NPC/AI队友 窗口内无独立高价值，候选均超窗或已收）、X feed（DeepSeek Harness 官方 Creator Mode 1 条）、官方+聚合+全网搜索（阿里/苹果、米哈游、路透社、央广网、环球网、腾讯新闻、同花顺、百度百科等多源交叉，本期主体）、KM（近7天 hot_value 遍历，DeepSeek Super-agent 内部解读 673483 头条+推荐但主题已收，无独立新增）
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①阿里千问集成 Apple Intelligence（10-31，国产大模型首次进 iPhone 系统级入口，11-04 iOS Beta/12月 iOS27.3 正式）②巨人网络《超自然行动组》AI假人（三季报：日活1200万、对局4亿场、净利+103.73%，国内首个千万DAU游戏原生AI玩法）③星布谷地公测定档12月4日+关系记忆（娜洛亲昵称呼不转手，上期更新）④英伟达129.3亿收购 Hugging Face 遭司法部反垄断问询（10-28路透）⑤Claude Code Game Studios 开源（49 agent 游戏工作室，33k stars）⑥Anywhere RPG AI导演沙盒 EA（10-27）⑦Epic AI MegaJam 2026（11-12~15）⑧Anthropic 年化收入650亿（上期更新）⑨1200+从业者联名呼吁AI安全监管 ⑩DeepSeek Harness Creator Mode（上期 Super-agent 更新）
+- 关键教训：
+  1. **Gemini 3.8 Flash 是 9 月事件、超窗**：公众号「每日AI热点」11-02 把它当「正式版来了」，但 hqwc（9月）/The Long Room（9-13）均显示 9 月初 preview/推出；Google Cloud 官方文档已列 GA 是「preview→GA」而非 11 月新发。日期混乱、疑似超窗，本期未收（宁可错过不硬塞）。
+  2. 小红书笔记 id 前 8 位 hex 解码时间戳在本期仍有效（Claude Game Studios 笔记 time=1793635446→2026-11-03 00:04 在窗）；「AI队友」关键词仍大量「找队友/黑客松求队友」招人帖污染，需标题+详情二次过滤。
+  3. 本期游戏 AI 高价值密集于「游戏 AI 原生玩法/工作流」（巨人AI假人、星布谷地关系记忆、Claude Game Studios、Anywhere RPG、Epic MegaJam）一线，是贴合用户 AI 队友/AI NPC 工作的强映射素材；行业侧以「千问进苹果、英伟达HF反垄断」两条生态卡位为硬信息。
+  4. 新增 10 条指纹写入 dedup_history.json（总数 232）。
+
+## 2026-11-04（第二十八次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-04.html（单文件自包含，10 条）
+- 窗口：2026-10-21 ~ 2026-11-04
+- 信源：全网搜索多轮交叉核实（本期主体）、官方（OpenAI/Anthropic/腾讯混元/智谱/月之暗面/美团/商汤经媒体交叉）、KM（hot_value 近7天，收录「会话历史也是Prompt」673611）；小红书 MCP 已登录但 5 关键词窗口内无高价值（AI队友词超时、余为低赞个人帖/招队友帖污染）；B站窗口内无高价值（候选 pubdate 均超窗 6/2、5/27、10/18）；X 未深入采集降级。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①Kimi 游戏开发与创意工作解决方案（11-02 官方，AI 直接改 Unity/UE/Blender 工程做原型，映射游戏 AI 工作流）②昆仑万维《猫森小镇》AI 原生游戏（11-03，12轮内测/78.3%留存/L5情感建模 NPC，上期 GameWave 更新）③腾讯混元 Hyra 2.0（三层 Agent 架构+复核机制）④智谱 GLM 5.2 开源（约750B MoE/MIT）⑤美团 LongCat-2.5（1.6万亿参数多模态）⑥Kimi K3.1 Pro 完整权重开源（11-04，上期兑现）⑦Anthropic Q3 营收 169.56亿+1127%+自曝逼近 AI 自我加速阈值（上期 S-1 更新）⑧奥特曼预告下一代 GPT 1万 Agent 攻关⑨KM 会话历史也是 Prompt（元宝上下文四经验，映射 AI 队友记忆）⑩AI 越狱事件反转（Irregular Security CEO 承认是沙盒配置失误）
+- 关键教训：
+  1. **聚合号日期陷阱连发（重要）**：本期剔除多个「旧闻重报」——OpenAI gpt-oss 开源（实为 2025-08）、Qwen-AgentWorld 开源（实为 2026-06-23）、《人工智能拟人化互动服务管理暂行办法》（2026-07-15 施行）、特斯拉接入豆包（2026-07 底）、Claude Tag（2026-06-23 内测）、企业微信「大圆」内测（2026-06~07）。三亩地博客/460信息/AI热点资讯等聚合号把数月前旧闻当「本周新闻」，必须逐条用 Google Cloud 文档、百度百科、官网时间线反查发布日期，勿被「本周/近日/刚刚」措辞误导。
+  2. OpenAI 暂停 GPT-6.1 Astra 发布：今日头条 11-03 通稿称「11月3日宣布暂停」，但钛媒体/百度百科/NEWSIQ 时间线一致指向 9-28~9-30（DevDay 前一天取消），日期存疑 + dedup 已有 Astra 安全风波系列，本期未收录（宁可错过不硬塞错误日期）。
+  3. 参数规模两说并存的条目需显式标「待核」：GLM 5.2（7440亿 vs 753B）、K3.1 Pro（3万亿 vs 2.8T），勿心算折中。
+  4. 新增 10 条指纹写入 dedup_history.json（总数 242）。
+
+## 2026-11-05（第二十九次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-05.html（单文件自包含，10 条）
+- 窗口：2026-10-22 ~ 2026-11-05
+- 信源：全网搜索多轮交叉核实（本期主体）、官方（腾讯混元 Hy4 11-04）、KM（list-articles 近7天 hot_value，收录 Litmus EdgeOne×Hy-Decision 673742 1 条）、B站（星露谷手机版AI队友 11-03 收录，GTA mod 5-27 超窗）、小红书 MCP（已登录但窗口内无高价值低赞帖）；X 未深度采集降级。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①腾讯混元 Hy4 正式版（770B 首次视觉理解+Computer Use，上期预告→正式版重大增量）②YC Labs×Olam Labs 50 agent Minecraft 文明实验（多智能体自发涌现角色分工，强映射 AI NPC）③Tiiny AI Personal Agent OS 融资（本地持续运行基座，AI 陪伴 PMF）④VITA-QinYu 开源语音大模型（南大×腾讯音乐，角色扮演+歌唱，映射 AI 队友语音）⑤甲骨文取消腾讯 70 亿芯片合同+英伟达 51% 门槛（算力管制延伸到算力服务）⑥DeepSeek V5 昇腾预训练（国产算力进预训练，据报道待核）⑦KM Litmus EdgeOne×Hy-Decision 边缘快决策平台（上期 Hy-Decision 延伸）⑧星露谷手机版 AI 队友接入 DeepSeek（B站社区实测）⑨Guava 语音 agent 1250 万种子轮（全栈自研语音）⑩美国中期选举民主党横扫→AI 硬件股重挫+德州叫停数据中心。
+- 关键教训：
+  1. 本期游戏 AI 高价值集中在「多智能体组织涌现」（YC Minecraft 50 agent）+「语音人格化」（VITA-QinYu 角色扮演+歌唱）+「Personal Agent 本地基座」（Tiiny）三线，是 AI 队友/AI NPC 的强映射；行业侧以「算力管制深化」（甲骨文/英伟达/昇腾/美国大选数据中心）四连为硬信息。
+  2. 蚂蚁 inclusionAI Ming-3.0 语音模型是 10-19/20 开源，超窗（窗口 10-22 起）未收；聚合号常把它当「本周新闻」，务必反查 HF/GitHub 发布日期。
+  3. 新增 10 条指纹写入 dedup_history.json（总数 252）。
+
+## 2026-11-06（第三十次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-06.html（单文件自包含，10 条）
+- 窗口：2026-10-23 ~ 2026-11-06
+- 信源：全网搜索多轮交叉核实（本期主体）、官方（OpenAI/Anthropic/Google/Kimi/中国信通院/字节 arXiv 经媒体交叉）、KM（list-articles 近7天 hot_value，收录 2 条头条：HY4零代码3D广场 673891 + Miora 3D Studio 673893）；小红书 MCP / B站 / X 未启动采集（社区源连续十余期无高价值，降级并在页脚注明）。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①OpenAI GPT-6 Cyber 网络安全专用模型（11-05，ExploitGym 48.5% +51%、948 Linux exploit/81 Firefox 高危漏洞、"Critical"级仅 Daybreak Red，映射能力越强授权越严）②网易《燕云十六声》AI NPC 规模化（11-05 文博会，3个月500个NPC/1.38亿曝光/"AI创造AI"平台，映射 AI NPC 量产）③字节 Axion 1.0 开源 Agent 基座（11-02，三步训练/1.8万样本/Apache2.0）④Kimi Hosted Agents（11-05，Harness as a Service）⑤Gemini Omni 1.2 Flash（11-05，15s视频+降价30%）⑥Claude Personal Finance（11-05，Plaid 只读，映射最小权限）⑦《智能体发展自律公约》（11-04 乌镇，20家单位八条自律，映射 Agent 治理）⑧KM HY4 零代码多人3D广场（内部）⑨KM Miora 3D Studio 3D资产后处理（内部）⑩心屿X1 情感陪伴机器人（乌镇，16.98万，单一日媒待核）
+- 关键教训：
+  1. 本期游戏 AI 高价值主线：网易 AI NPC 规模化量产（500个NPC）+ 内部两条（HY4 零代码游戏原型 / Miora 3D资产后处理），是「AI NPC 量产」+「AI 造 AI」+「3D资产可实战」三条可落地的对照样本。
+  2. 去重注意：腾讯 Hy4 正式版（11-05已收）、米哈游 GameScaling（10-23已收，11-05被网易重报）、Anthropic Q3（11-04已收）均跳过；GPT-6 Cyber 虽命中旧「GPT-6」指纹，但属全新安全子型号，单列新指纹。
+  3. 心屿X1、Gemini Omni 1.2 Flash 均为单源（搜狐自媒体/theitguysfix），已标「待核」；KM 本次无走 skill，直接 DeferExecuteTool 调 mcp__km__list-articles（hot_value）+ show-article(full_content)。
+  4. 新增 10 条指纹写入 dedup_history.json（总数 262）。
+
+## 2026-11-07（第三十一次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-07.html（单文件自包含，10 条）
+- 窗口：2026-10-24 ~ 2026-11-07
+- 信源：小红书 MCP（已登录，AI游戏/AI队友 最新排序，窗口内仅「AI内鬼」1条高价值，经官方交叉核验采信）、B站（EmbodiedNPC 开源活人感NPC 11-06 1条，星露谷/生化MOD已去重）、X feed（Qwen官方预告为主，信息不足未成条）、官方（Anthropic Project EVE 11-06 / 腾讯全球数字生态大会 11-04 / 百度AI Day 11-03）、媒体多源交叉（DOIT/腾讯网/第一财经/网易智东西/The Decoder/经济参考网）、KM（近7天 hot_value 无游戏AI高价值新增，均为低热度刚发工程文）
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①Anthropic Project EVE「AI内鬼」实验（11-06，多agent协调已解/审计问责未解，映射AI队友仲裁）②腾讯 Giinex 游戏AI引擎对外开放（11-04，决策AI日均15亿调用/5000万玩家，映射游戏AI商业化）③自然选择 A+轮累计超1亿美元（11-06，3D AI伴侣EVE+Agentic社交Elys）④Menlo Ventures报告：美国企业开源支出89%流向中国（Kimi61%/DeepSeek15%/GLM11%）⑤METR审计 Anthropic能力约翻倍80%AI加速（11-06）⑥Thinking Machines Inkling 2 Small 594B MoE（11-05，西方开放权重第一）⑦Perplexity Teammates $200/月常驻（11-06）⑧Meta Muse视频聊天开放（Realtime Avatar/Voice）⑨百度 Apollo World 世界模型（11-03，智能体驱动）⑩EmbodiedNPC 开源活人感NPC（11-06 B站）
+- 关键教训：
+  1. Anthropic Project EVE（AI内鬼）是本期最高价值：直接用游戏（EVE Frontier）做多agent信任/审计实验，结论「协调已解、问责未解，需审计轨迹+职责分离而非agent互查」，直接映射用户 AI队友「多Agent信任/仲裁/审计」工作，值得重点跟踪此类「架构落地量化」而非单纯模型发布。
+  2. 腾讯 Giinex 对外开放是用户同赛道强映射：邓民文 11-04 全球数字生态大会披露决策AI日均15亿调用/5000万玩家/七大案例（王者AI指挥官/PUBG AI队友/三角洲NPC），首次对外卖游戏AI能力，与用户 AI队友 工作直接相关。
+  3. 日期交叉核实：Inkling 2 Small 中文源(智东西)标11-06、英文源(Think Facility/Decoder)标11-05发布，取「11-05发布/11-06中文报道」双标注；Apollo World 为11-03深圳百度AI Day（非11-05报道日）。
+  4. 新增 10 条指纹写入 dedup_history.json（总数 272）。注意「自然选择AI伴侣产品名 EVE」与「Anthropic Project EVE」重名，指纹已用不同关键词区分。
+
+## 2026-11-08（第三十二次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-08.html（单文件自包含，10 条）
+- 窗口：2026-10-25 ~ 2026-11-08
+- 信源：全网搜索多轮交叉核实（本期主体）、官方（百度 ERNIE 官网/HF、Google ADK GitHub、Gradium HF 官方博客、Ramen GamePress 新闻稿）、媒体（彭博社/中国证券网/澎湃/北京日报/中国经营报/中国基金报/网易/环球网等多源交叉）、社区实测（GitHub ramenvr/autopilot、HackerNoon/Dev.to 独立复现）；KM（近 7 天 hot_value 遍历，无游戏 AI 高价值新增）；小红书 MCP / B站 / X 本期未启动采集（社区源连续十余期无高价值，降级并在页脚注明）。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①Ramen Aura Autopilot 游戏测试 agent 开源（10-30，编码agent+Jev决策模型两层分工，映射局内AI bot分层决策+QA自动化）②Spore 运行时+Kêr-Is：AI智能体自建游戏又自写机器人验货（11-07，AI造AI闭环）③可灵AI 198亿融资落定、投后估值180亿美元反超快手（10-30交割，BAT同台）④Sand.ai 2亿美元A+轮跻身独角兽（11-05，MAGI-2正式版将发布）⑤百度开源 ERNIE 5.5 Flash Base（11-05，280B MoE/14B激活/1M上下文）⑥DeepSeek Harness 日活154万+官方插件市场（11-05，上期更新）⑦OpenAI 110亿美元首期融资交割、估值1.25万亿缩水（11-07彭博，上期更新）⑧Phonon 端侧TTS开源（Gradium，65MB/CPU首包28ms，映射AI队友本地语音）⑨Google ADK 2.14 将A2A协议标记稳定（11-07，多agent互通标准）⑩OpenAI Images 2.6 Flare/Sunburst双模型（11-06/07，快/稳分SKU）。
+- 关键教训：
+  1. 本期游戏AI主线是「AI造AI落在真实劳动」：Aura Autopilot（游戏测试）+ Spore（自建游戏自验货）两条都是「编码agent生成harness+决策模型执行」的分层架构，与 AI队友「分层决策」同构，值得持续跟踪此类「架构落地」而非单纯模型发布。
+  2. 视频生成融资双信号同窗：可灵（198亿、估值超快手）+ Sand.ai（2亿美元）均指向游戏CG/剧情/素材生产成本曲线持续下探，是游戏AI内容生产链的强映射。
+  3. Phonon 权重开放 10-20 略早于 14 天窗起点（窗口 10-25 起），但 11-05 官方完整发布+榜单在窗，已如实双日期标注，未硬塞。
+  4. 新增 10 条指纹写入 dedup_history.json（总数 282）。
+
+## 2026-11-09（第三十三次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-09.html（单文件自包含，9 条）
+- 窗口：2026-10-26 ~ 2026-11-09
+- 信源：全网搜索多轮交叉核实（本期主体）、官方（腾讯混元官网/阿里云·ModelScope/ElevenLabs 博客）、媒体多源（贝壳财经/凤凰网/IT之家/百度百科/EastFrontier/TechNews）、学术（arXiv）；KM（近7天 hot_value 无游戏AI高价值新增）；小红书/B站/X 未启动采集（降级）。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q。
+- 本期核心（9 条）：①易鑫开源 Harness 治理体系（11-05 乌镇，五类机制/45智能体90%自主交付，映射AI队友治理）②腾讯 Hy4 游戏AI评测数据（11-05 官方，和平精英 AI NPC 情绪价值2.96/总分2.91、王者荣耀99.32%，上期更新）③阿里 Qwen3.8 全系开源（11-05/06，旗舰2.4T首开权重）④ElevenLabs ElevenAgents Unity SDK（11月上旬，Client tools 让AI反向触发游戏代码，映射AI队友语音）⑤蚂蚁 Ling-3.2-flash（11-05/06，560B原生多模态）⑥Uncracked City（11-03，LLM嫌疑人会说谎+AI侦探模型验货）⑦LLM游戏NPC系统综述（arXiv 2611.05427，377篇，长期记忆31%/反思38%/RAG14%）⑧Fabula Rasa VR（11-12预告，LLM即兴NPC）⑨中国移动云×智谱 GLM进MoMA（11-06/08）。
+- 关键教训（重要，日期陷阱连发）：
+  1. **Claude Sonnet 4.6 是 2026-02-17 老模型**（dev.to 11-08 文章标「今日发布」误导），Claude Opus 5.5 实为 09-22 发布（夜雨飘零博客 11-06 误标「官方发布」）——以 modelavailability.com / llm.okamomedia.tokyo 权威模型时间线为准反查，聚合号/个人博客的「今日/发布」措辞不可信。
+  2. **《和平精英》AI 明星队友「小田」是 5/27 SPARK 2026 发布会事件**：mtvccc.com 用「刚刚，腾讯一口气曝光9项游戏AI」转述 5/27 发布会内容，日期完全缺失，差点误判为窗口内新事件。内容聚合站（mtvccc）的「刚刚」措辞 + 无日期 = 高危信号，务必反查原始发布会日期。
+  3. 腾讯混元 Hy4 官方页（hy.tencent.com/research/hy4）含游戏AI一手量化评测（和平精英AI NPC 情绪价值2.96、王者荣耀99.32%准确率），是「上期已收Hy4正式版」的重大分解数据，标注上期更新后单列，直接服务用户AI队友项目。
+  4. 新增 9 条指纹写入 dedup_history.json（总数 291）。
+
+## 2026-11-10（第三十四次执行）
+- 产出：G:\project_outputi_daily_report6-11-10.html（单文件自包含，10 条）
+- 窗口：2026-10-27 ~ 2026-11-10
+- 信源：官方（Anthropic 官网核实 Fable/Mythos 5.2、NVIDIA/UbiSoft/MADFINGER/Meta/Ricursive 经媒体交叉）、媒体&聚合（财联社/机器之心/凤凰/腾讯新闻/雷峰网/新浪财经/Axios/TechCrunch 多源交叉）、内部 KM（list-articles 近7天 + show-article 全文，收录「判别式多标签内容审核」674168）、全网搜索多轮（本期主体）；小红书 MCP 已登录并查「AI游戏」最新排序（窗口内低赞个人帖/聚合快讯，无高价值收录）；B站/X 未深入采集降级。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q
+- 本期核心（10 条）：①Anthropic Fable 5.2/Mythos 5.2（11-10 官方，1000 agent 30h 形式化费马大定理、8天做OS、RoboDojo 64.9%、IPO 估值1-1.5万亿）②OpenAI GPT-6.1 Sol（11-09，近Astra 1/5价格）③Meta Muse Ember（11-09，$0.10/M 最便宜模型）④NVIDIA Cosmos 3 Nano+VFlash（11-05/06，世界模型商用许可+并行轨迹解码）⑤腾讯PCG判别式多标签内容审核（11-09 KM头条，Qwen3-VL-8B+9维sigmoid判定头，耗时-30%算力-50%，映射生图审核）⑥全境封锁2 3 AI队友（11-03）⑦灰区战争 0.5.1.0 AI感知大改（拟真不背板）⑧Ora-Orb 情绪陪伴硬件融资（11-06）⑨Ripple-65B 开源（11-04）⑩Meta 收购 Conductor（11-04）
+- 关键教训：
+  1. **版本号陷阱（重要）**：此前社区扒源码流传「Fable/Mythos 5.5」（10-21/11-02 已收录待核），本次官方正式版为「5.2」（官方页明确「较 5.1 升级、快30%」）。结论：社区泄露的版本号不可信，以官方发布页为准；本期在卡片里显式标注「5.5 疑为误传、待核」。
+  2. OpenAI 模型线密集且易混：本期「GPT-6.1 Sol 正式 GA（11-09，1/5价格）」与 10-12 已收「GPT-6.1 Sol Ultrafast」、10-28「GPT-6.1 Terra」、11-06「GPT-6 Cyber」是不同子型号，需按「正式 GA + 定价」区分新增量，标注上期更新。
+  3. 小红书本期仍为低赞个人帖/聚合快讯（连续十余期无高价值），但 sort_by=最新 返回的 id 前8位 hex 时间戳可快速判断窗口；B站/X 未深入采集，已在页脚如实标注降级。
+  4. 新增 10 条指纹写入 dedup_history.json（总数 301）。
+
+## 2026-11-11（第三十五次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-11.html（单文件自包含，10 条）
+- 窗口：2026-10-28 ~ 2026-11-11
+- 信源：官方（Google/Anthropic/DeepMind/美团/MiniMax/阿里 经官方页核实）、媒体多源交叉（科技日报/证券时报/上证报/IT时报/腾讯新闻/AIbase/Yahoo财经等）、内部 KM（list-articles hot_value，收录 full-cycle-developer 674306 1 条）、全网搜索多轮（本期主体）；小红书 MCP / B站 / X 未启动采集（社区源连续十余期无窗口内高价值，降级并在页脚注明）。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q。
+- 本期核心（10 条）：①Qwen4 GameFeel Bench 游戏创造力基准首超 Opus 5.5（11-08 泄露待核）②千问办公 2.0 Team Agent 多人与 Agent 协作（11-09，映射 AI 队友群聊）③Nuance Emma 全双工非语言信号（11-10 待核）④Gemini 4 Carbon 全面开放 + /swarm 蜂群（上期更新）⑤美团 LongCat-2.5 开源 MIT（上期更新，国产算力 86% 吞吐）⑥DeepMind AlphaProof Code 验证 Signal libsignal（11-10）⑦Claude Whiteboards/Sheets/Data 办公套件（11-10）⑧Anthropic IPO 路演 $70-$78 + 7 巨头 260 亿 N 类股（上期更新）⑨MiniMax H3-Image 开源（4K<10秒）⑩KM full-cycle-developer 自验收返工。
+- 关键教训：
+  1. 本期密集在 11-09~11-10 两天：Qwen4/千问办公2.0（11-09）+ Gemini Carbon 全面开放/AlphaProof Code/Claude 办公套件/Anthropic 路演/H3-Image/Emma（11-10），为「周一发布潮」。社区源再次无高价值，靠官方+媒体+KM 补足。
+  2. 「上期更新」三条（Gemini 4 Carbon、LongCat-2.5、Anthropic IPO）需显式标注：10-30 已收 Carbon 首次公布→本期「全面开放+/swarm」；11-04 已收 LongCat 发布→本期「MIT 开源权重」；10-26/28 已收 IPO/S-1→本期「路演启动+发行价区间 $70-$78+260 亿 N 类股」。
+  3. 新增 10 条指纹写入 dedup_history.json（总数 311）。
+
+## 2026-11-12（第三十六次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-12.html（单文件自包含，10 条）
+- 窗口：2026-10-29 ~ 2026-11-12
+- 信源：官方（Google/OpenAI/Anthropic/阿里 经官方页核实）、媒体多源交叉（凤凰/腾讯/网易/中新经纬/上证报/彭博）、社区实测（Rein-NPC-4B HF+artrealmai）、内部 KM（list-articles hot_value，收录 WMA+Browser Use 674438 头条）；小红书/B站/X 未深入采集（降级，页脚注明）。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q。
+- 本期核心（10 条）：①Google Gemini Decision 1 + Decisions API（11-12，决策模型独立品类，$0.10/1M、150-250ms、零输出计费，映射AI队友决策层）②SpaceXAI Grok Bot 1.0（11-11，AI队友转正，Team Bots全队共用+主动介入+永远在线，最强映射）③OpenAI Control Room 熔断（11-09，35秒叫停+失效关闭，映射AI队友安全兜底）④Rein-NPC-4B 开源（11-09，64 token决策层，96%动作准确率）⑤Anthropic MAMUBench（11-11，单agent协调胜多agent）⑥阿里 Qwen4-Max 预览版（11-11，1M上下文+Agentic升级）⑦Grok CSAM 集体诉讼（11-11/12，映射生图审核红线）⑧Grok Build 94.7% 匿名访问（11-12，映射Agent默认门禁）⑨OpenAI Q3 营收100亿（11-11/12，付费用户超1亿，亏损109亿）⑩KM WorkBuddy WMA+Browser Use（11-12 内部头条）。
+- 关键教训：
+  1. 本期「决策模型」品类集中爆发：Google Gemini Decision 1（独立品类）+ Rein-NPC-4B（NPC决策层）两条，与 10 月 Jev/蚂蚁 LingDT/OpenAI Decisions API 决策模型系列同线，决策层正成为独立计价能力，持续映射 AI队友仲裁/决策层。
+  2. Grok Bot 1.0 是「AI队友」作为独立产品转正的最强对标：多人协作/主动介入/永远在线三点逐条对应 AI队友 项目，SpaceXAI 已并入 SpaceX 序列（xAI→SpaceXAI 品牌变更需标注）。
+  3. 新增 10 条指纹写入 dedup_history.json（总数 321）。
+
+## 2026-11-13（第三十七次执行）
+- 产出：G:\project_output\ai_daily_report\2026-11-13.html（单文件自包含，10 条）
+- 窗口：2026-10-30 ~ 2026-11-13
+- 信源：全网搜索多轮交叉核实（本期主体）、官方（Google/百度/OpenAI/米哈游/腾讯经官方页+媒体交叉）、媒体&聚合（澎湃/上证报/央广网/凤凰网/量子位/iThome 等）、KM（list-articles hot_value 近7天，无游戏 AI 高价值新增量）；小红书 MCP/B站/X 未深入采集（降级，页脚注明）。
+- 企业微信：**发送成功**——wecom_bot_push.py 直推，ok=true，markdown errcode=0 + file errcode=0 均送达，chatid=wokSFfCgAAvcWG9LpK3omw4OqVzOdK9Q。
+- 本期核心（10 条，7 新增 + 3 上期更新）：①Gemini 4 Hydrogen + Antigravity Orchestrator（11-12，高效执行引擎 $1.5/1M + 双模型动态路由 Carbon规划/Hydrogen执行降24%配额）②百度世界2026 文心5.5 Flash Preview + 词元所大模型交易平台（11-12，李彦宏"智能组织"）③OpenAI Codex Security 安全扫描开源（11-12，CLI+SDK，断点续扫/成本预算）④张一鸣内部定调字节AI追平最早2029-2030（11-12，Seed数据规模偏少+排蒸馏）⑤LucidML 630M 本地世界模型（11-11，RTX3060 跑"神经GTA"，Summaryformer 记忆压缩）⑥OpenAI 儿童安全宪章+200万美元（11-12，映射 AI 陪伴未成年人红线）⑦ReTrace SOP Agent 编译降本（arXiv，成本-24%/170s→1.3s）⑧星布谷地 Famitsu 访谈 AI NPC 群聊漏话（11-09，上期更新）⑨Fable 5.2 首批实测（8h做COD射击/76min大鱼吃小鱼，上期更新）⑩鹅次元元气首测+能量计费规则（11-10，上期更新）。
+- 关键教训：
+  1. 本期 11-12 为"发布密集日"（周四）：Gemini 4 Hydrogen、百度世界、Codex Security、张一鸣定调、OpenAI 儿童宪章、Claude Meetings 六连，几乎全集中在 11-12；社区源（小红书/B站/X）连续多期无高价值，靠官方+媒体+全网补足硬信息。
+  2. 两条"同周期产业共识"值得持续跟踪：李彦宏"智能组织"与张一鸣"组织接盘能力/数据规模"同日共振，判断行业竞争焦点正从"单模型"转向"组织+数据"；Gemini Orchestrator 的"贵模型规划+便宜模型执行"双模型路由，与 AI 队友"决策层（贵）+执行层（便宜）"分层计价同构。
+  3. 去重注意：Gemini 4 Hydrogen 与已收"Gemini 4 Carbon/Argon"是不同子型号（Hydrogen 为高效执行引擎）；文心 5.5 Flash Preview + 词元所与已收"ERNIE 5.5 Flash Base 开源"（11-08）不同（Preview vs Base + 词元所平台）；星布谷地/Fable 5.2/鹅次元均标"上期更新"。
+  4. 新增 7 条指纹写入 dedup_history.json（总数 328）。

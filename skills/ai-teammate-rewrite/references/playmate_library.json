@@ -1,0 +1,6316 @@
+{
+  "version": "3.0",
+  "source_root": "G:\\project_output\\ai_teammate_陪玩语料调研",
+  "evidence_note": "连续行不保证未剪辑或ASR无误。完整来源已阅读，但片段库是精选而非所有发言全索引；没有模型训练或留存验证。",
+  "sources": [
+    {
+      "file": "BV14UBSB7E3k_转写.txt",
+      "read_complete": true,
+      "source_type": "timestamped",
+      "notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "line_count": 447
+    },
+    {
+      "file": "BV15GuM6zEWm_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–19行。内部培训方法论摘要，不是实战互动记录；仅保留失误处理的假设性示范，并标记不实归因风险。与其他培训、质检摘要有方法论呼应，不能据此认定独立效果证据；没有真实玩家输入及后续反应，未原声核验，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV15GuM6zEWm_转写.txt",
+      "sha256": "e263ca4ec9b6ac20e01d8a20a106747530a31c06e85d88199fb1e80ddbc81fa9",
+      "line_count": 18
+    },
+    {
+      "file": "BV16VckzqEvx_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–16行。内容为娱乐陪玩测评要点及作者迁移结论；选择共同兴趣与空泛夸赞反例。第9行包含摘要转述的负面评价，但无法还原对应输入和时序；第12–15行不是连续原话。未原声核验，游戏未核实，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV16VckzqEvx_转写.txt",
+      "sha256": "1a2441f2702e366db5798137fe37376ee5ac8a65a3b89ffc9c3dbee43b434b4d",
+      "line_count": 15
+    },
+    {
+      "file": "BV198krYQEkr_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–18行。内容为不同服务表现的对比摘要；选择沉默反例、事件关联夸赞、默契邀约与自嘲参考。未选取带身体亲密指向的内容。第7行的玩家感受只视为摘要转述，第16–17行比较结论未独立验证；无连续对话或效果验证，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV198krYQEkr_转写.txt",
+      "sha256": "0e46afab7696c11a3ea36a2e8e884fdbdcd71927356c9543b910d2449a2075a1",
+      "line_count": 17
+    },
+    {
+      "file": "BV19tWE6uECC_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–22行。包含投诉案例摘要、店长教学示范及作者迁移结论。选择反驳与突然退队反例、围绕兴趣追问的教学参考；投诉叙述不是可复原的连续三轮互动，教学示范也不是成功实录。保留可表达不同观点的边界，不迁移惩罚做法；未原声核验，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV19tWE6uECC_转写.txt",
+      "sha256": "19ab2548c9f5a65c7cca37cf06e1b35eeadcf8086c1d464996e8ad61bd352102",
+      "line_count": 21
+    },
+    {
+      "file": "BV1JDY46fEEM_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–20行。内部培训定义、反例与方法建议摘要；选择公式化夸赞反例和主动聊天建议，不收博彩类比及作者扩展目标。释放现实压力只是教学期望，不是观察到的结果；可能与其他培训摘要存在机制重复，无连续玩家输入及反馈，未原声核验，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1JDY46fEEM_转写.txt",
+      "sha256": "753078b340042469a31523344ca0577514775bc9781f0d39d6fd894224dc4c04",
+      "line_count": 19
+    },
+    {
+      "file": "BV1JPNkzEEDd_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–17行。三角洲陪伴式互动摘录与迁移建议；选择状态关心、开箱机会让渡及玩家动态反馈。第3行时长和全程关注、第13行陪伴效果均为摘要叙述，不能证明持续注意或玩家主观感受。未选择绝对生存保证，未原声及游戏状态核验，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1JPNkzEEDd_转写.txt",
+      "sha256": "8c7b4779129673dc2431e6d63e5063cc96d336cd8e962951d227b0a1ffdb0168",
+      "line_count": 16
+    },
+    {
+      "file": "BV1UnGw6SEc7_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–13行。摘要明确为剧情演绎且价值有限；仅选择第6行解决问题能力这一非亲密主题参考，排除恋爱、暧昧及性化段落。即使保留该行，也不得作为真实玩家认可、实战解决问题或连续正例证据；未原声核验，游戏未核实，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1UnGw6SEc7_转写.txt",
+      "sha256": "50fba4364cd0eb0a61470415d99ef8c3c3bf8866c0df788488a227341cb5e308",
+      "line_count": 12
+    },
+    {
+      "file": "BV1cKNdzsEV6_转写.txt",
+      "read_complete": true,
+      "source_type": "timestamped",
+      "notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "line_count": 216
+    },
+    {
+      "file": "BV1htosB8EpN_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–20行。质检原则与迁移建议摘要；仅选第6–7行真实性与反虚假表达参考，排除亲密称呼、恋爱暗示及外貌展示相关段落。第11行注明与培训来源同源，不视作新增独立证据；无人设一致性效果验证，未原声核验，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1htosB8EpN_转写.txt",
+      "sha256": "51735237d28497568f43df9d5d470f3f8e74512294325437d0f72955dfd0bb83",
+      "line_count": 19
+    },
+    {
+      "file": "BV1ib4y1j71Y_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–21行。内容为话术模式摘录与可迁移句式，不是连续原转写；第15–20行属于摘要作者的迁移建议，未选作原始互动证据。保留让渡成就、情绪承诺边界和保护行动参考；没有可配对的连续玩家输入及后续反应，未原声核验，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1ib4y1j71Y_转写.txt",
+      "sha256": "c11c34efbdde410d26b2b9ceccf4ebd8a6ace39a2c5c83a24c48b1a3ea3a3a05",
+      "line_count": 20
+    },
+    {
+      "file": "BV1mG411x7VW_转写.txt",
+      "read_complete": true,
+      "source_type": "timestamped",
+      "notes": "已用Read完整阅读第1—94行。第49—51行出现虚岁18的自述，存在未成年人可能；全文件不提取暧昧恋爱、外貌调侃、性化内容，也不以这些内容作为正向或反向示例。唯一入选为第25—33行普通邀请入队与模式澄清。文件头标无畏契约，但正文有白金、2.0、TTP/FP等可能误识或不一致线索，仅据本txt不能可靠核实游戏，标未核实，不改判为和平精英。其他区域包含刻板归因和偏离游戏的对话，未收录；模式问题在入选范围内未获完整明确回答，保留该局限。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1mG411x7VW_转写.txt",
+      "sha256": "fba4bfa21df9f3d2f0dfc5415a617e4aa92b74883df5dd211cceb728cd060392",
+      "line_count": 93
+    },
+    {
+      "file": "BV1rqa8zHE5k_转写.txt",
+      "read_complete": true,
+      "source_type": "timestamped",
+      "notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "line_count": 385
+    },
+    {
+      "file": "BV1wRrZY2Eb7_转写.txt",
+      "read_complete": true,
+      "source_type": "summary",
+      "notes": "完整读取第1–15行。和平精英话术与作者迁移结论摘要；仅选第6行对不嫌弃队友行为的肯定，同时标记胜利承诺过强的边界。未选恋爱相关内容及其他无关表达；摘要的全程质疑描述不等于可追踪的质疑—回应—反馈链，未原声核验，仅作低证据等级补充。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1wRrZY2Eb7_转写.txt",
+      "sha256": "98f6018456cd4dab06e74653ce6c6c43cf546f5d0ad37f5d47a191b879d7c1a2",
+      "line_count": 14
+    },
+    {
+      "file": "BV1yGF6ziERU_转写.txt",
+      "read_complete": true,
+      "source_type": "timestamped",
+      "notes": "已用Read完整阅读第1—26行。全部ASR段均标说话人0，陪玩道歉、夸赞、感谢仅由旁白转述，不能还原双方连续互动。文件头标三角洲，但正文出现开棺、鬼新娘、薇薇安、金樽等不一致线索，游戏标未核实，不猜测归属。仅收录一个旁白边界样本，用于反例或材料质量识别，禁止进入正向连续接话检索；旁白自述开心和成功撤离不能当作独立满意度或留存证据。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1yGF6ziERU_转写.txt",
+      "sha256": "83ef4a85ba476d6c6e3c3ff34b625f03e8cee8e07e45a88f1483df9d06691eb6",
+      "line_count": 25
+    },
+    {
+      "file": "BV1yNaBzLEWz_转写.txt",
+      "read_complete": true,
+      "source_type": "timestamped",
+      "notes": "已用Read完整阅读第1—155行，包括开头推广/质检评述及结尾主播评论。正文地图、保险、威龙、赛伊德线索支持三角洲，第三说话人可能包含其他玩家或系统声音，不能都视为陪玩。正文第62行自述02年、23岁，只记录为材料自述，不核验身份。按用户提供的重复关系，将所有入选片段归入BV1rqa8zHE5k；本次仅阅读指定四份txt，未读取rqa，未做逐行同源比对，不能把yNa算新增独立场景或独立证据。仅选三段不同功能的接话，未收录开头推广、恋爱话术、同一结束段的重复评论；跨库应按同源家族及文本去重。",
+      "path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1yNaBzLEWz_转写.txt",
+      "sha256": "166d211d530961ae7fa8f60ea021c3b5ebd6a3df891bfe1c96037922575b8abf",
+      "line_count": 154
+    }
+  ],
+  "clips": [
+    {
+      "start_line": 97,
+      "end_line": 106,
+      "title": "能力不足以轻松自我表达接住",
+      "intent": [
+        "询问",
+        "了解能力",
+        "闲聊"
+      ],
+      "emotion": [
+        "好奇",
+        "轻松"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "自我表达",
+        "轻调侃",
+        "共同目标"
+      ],
+      "topic": [
+        "游戏水平",
+        "一起玩"
+      ],
+      "pressure": "低",
+      "style": [
+        "短句",
+        "自嘲",
+        "不抢优势"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "问厉不厉害→坦然说不厉害→补一句但是瘾大→对方接话并邀请上号。保留短句与自我趣味，别改成技能说明书。",
+      "limits": "不迁移下单付费；不将不厉害设为所有角色固定能力。",
+      "observed_followup": "对方复述瘾大并提出一起上号，未证明能力或情绪效果。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:97-106",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 10,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "4b1cac98478f9c7b783df6ed1bbdc130937231cbf2f00aeca065894a7d5d5a7c",
+      "excerpt": [
+        {
+          "line": 97,
+          "raw": "[6:30.990,6:33.365,0] 你大你打三角洲厉害吗？",
+          "text": "你大你打三角洲厉害吗？",
+          "start_time": "6:30.990",
+          "end_time": "6:33.365",
+          "speaker_id": "0"
+        },
+        {
+          "line": 98,
+          "raw": "[6:33.365,6:35.065,2] 不厉害。",
+          "text": "不厉害。",
+          "start_time": "6:33.365",
+          "end_time": "6:35.065",
+          "speaker_id": "2"
+        },
+        {
+          "line": 99,
+          "raw": "[6:35.065,6:36.265,0] 不厉害。",
+          "text": "不厉害。",
+          "start_time": "6:35.065",
+          "end_time": "6:36.265",
+          "speaker_id": "0"
+        },
+        {
+          "line": 100,
+          "raw": "[6:36.265,6:37.940,2] 不厉害。",
+          "text": "不厉害。",
+          "start_time": "6:36.265",
+          "end_time": "6:37.940",
+          "speaker_id": "2"
+        },
+        {
+          "line": 101,
+          "raw": "[6:37.940,6:40.165,0] 不厉害，你是单。",
+          "text": "不厉害，你是单。",
+          "start_time": "6:37.940",
+          "end_time": "6:40.165",
+          "speaker_id": "0"
+        },
+        {
+          "line": 102,
+          "raw": "[6:40.165,6:41.090,2] 但是瘾大。",
+          "text": "但是瘾大。",
+          "start_time": "6:40.165",
+          "end_time": "6:41.090",
+          "speaker_id": "2"
+        },
+        {
+          "line": 103,
+          "raw": "[6:41.090,6:44.315,0] 瘾有点大。来我下你下你一单来。",
+          "text": "瘾有点大。来我下你下你一单来。",
+          "start_time": "6:41.090",
+          "end_time": "6:44.315",
+          "speaker_id": "0"
+        },
+        {
+          "line": 104,
+          "raw": "[6:44.315,6:45.040,2] 上号。",
+          "text": "上号。",
+          "start_time": "6:44.315",
+          "end_time": "6:45.040",
+          "speaker_id": "2"
+        },
+        {
+          "line": 105,
+          "raw": "[6:45.040,6:46.015,0] 你下一单啥。",
+          "text": "你下一单啥。",
+          "start_time": "6:45.040",
+          "end_time": "6:46.015",
+          "speaker_id": "0"
+        },
+        {
+          "line": 106,
+          "raw": "[6:46.015,6:46.690,2] 先挂一下。",
+          "text": "先挂一下。",
+          "start_time": "6:46.015",
+          "end_time": "6:46.690",
+          "speaker_id": "2"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 215,
+      "end_line": 226,
+      "title": "闲聊遇到敌情时收回游戏注意",
+      "intent": [
+        "闲聊",
+        "询问经验",
+        "报敌"
+      ],
+      "emotion": [
+        "好奇",
+        "警觉"
+      ],
+      "phase": [
+        "平静闲聊",
+        "实时压力"
+      ],
+      "interaction": [
+        "自我表达",
+        "共同目标"
+      ],
+      "topic": [
+        "游戏经验",
+        "敌情"
+      ],
+      "pressure": "高",
+      "style": [
+        "话题中断",
+        "信息优先"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "问玩多久→答半年→继续问技术→出现外面有人后转向方向与行动。借鉴闲聊能被局内事件自然打断。",
+      "limits": "222–223行跨说话人断句，航天术语误识，不能修造成完整真实报点；只迁移时机切换。",
+      "observed_followup": "后续转为左边及往这边走，没有继续技术访谈。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:215-226",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 12,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "97a6ebb0f05b533f2db24263a86fda8a87c57fd3020cedef47e3f99b50e1fc9c",
+      "excerpt": [
+        {
+          "line": 215,
+          "raw": "[16:23.680,16:24.805,0] 你玩这游戏多久了？",
+          "text": "你玩这游戏多久了？",
+          "start_time": "16:23.680",
+          "end_time": "16:24.805",
+          "speaker_id": "0"
+        },
+        {
+          "line": 216,
+          "raw": "[16:24.805,16:26.480,2] 我玩半年了。",
+          "text": "我玩半年了。",
+          "start_time": "16:24.805",
+          "end_time": "16:26.480",
+          "speaker_id": "2"
+        },
+        {
+          "line": 217,
+          "raw": "[16:26.480,16:27.630,0] 你玩半年了。",
+          "text": "你玩半年了。",
+          "start_time": "16:26.480",
+          "end_time": "16:27.630",
+          "speaker_id": "0"
+        },
+        {
+          "line": 218,
+          "raw": "[16:27.630,16:28.505,2] 对呀。",
+          "text": "对呀。",
+          "start_time": "16:27.630",
+          "end_time": "16:28.505",
+          "speaker_id": "2"
+        },
+        {
+          "line": 219,
+          "raw": "[16:28.505,16:32.230,0] 你航天啥技术啊？",
+          "text": "你航天啥技术啊？",
+          "start_time": "16:28.505",
+          "end_time": "16:32.230",
+          "speaker_id": "0"
+        },
+        {
+          "line": 220,
+          "raw": "[16:32.230,16:32.905,2] 呃。",
+          "text": "呃。",
+          "start_time": "16:32.230",
+          "end_time": "16:32.905",
+          "speaker_id": "2"
+        },
+        {
+          "line": 221,
+          "raw": "[16:32.905,16:33.805,0] 航天啥技术？",
+          "text": "航天啥技术？",
+          "start_time": "16:32.905",
+          "end_time": "16:33.805",
+          "speaker_id": "0"
+        },
+        {
+          "line": 222,
+          "raw": "[16:33.805,16:36.480,2] 航天外面有。",
+          "text": "航天外面有。",
+          "start_time": "16:33.805",
+          "end_time": "16:36.480",
+          "speaker_id": "2"
+        },
+        {
+          "line": 223,
+          "raw": "[16:36.560,16:36.860,0] 人。",
+          "text": "人。",
+          "start_time": "16:36.560",
+          "end_time": "16:36.860",
+          "speaker_id": "0"
+        },
+        {
+          "line": 224,
+          "raw": "[16:37.610,16:38.510,2] 哎呦，我去。",
+          "text": "哎呦，我去。",
+          "start_time": "16:37.610",
+          "end_time": "16:38.510",
+          "speaker_id": "2"
+        },
+        {
+          "line": 225,
+          "raw": "[16:38.510,16:40.460,0] 左边。",
+          "text": "左边。",
+          "start_time": "16:38.510",
+          "end_time": "16:40.460",
+          "speaker_id": "0"
+        },
+        {
+          "line": 226,
+          "raw": "[16:41.160,16:41.960,4] 往这边走。",
+          "text": "往这边走。",
+          "start_time": "16:41.160",
+          "end_time": "16:41.960",
+          "speaker_id": "4"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 232,
+      "end_line": 240,
+      "title": "求援时先处理缺药与封烟分工",
+      "intent": [
+        "求助",
+        "协作",
+        "封烟"
+      ],
+      "emotion": [
+        "紧张",
+        "急迫"
+      ],
+      "phase": [
+        "实时压力"
+      ],
+      "interaction": [
+        "共同目标",
+        "澄清"
+      ],
+      "topic": [
+        "救援",
+        "药品",
+        "掩护"
+      ],
+      "pressure": "高",
+      "style": [
+        "简短状态",
+        "分工"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "问能不能拉→告知药用完→说明左边情况→提出左侧封烟→队友确认。把安慰落到可做的配合而非泛夸。",
+      "limits": "不明确谁最终救到谁；系统与队友混录，不能声称已投烟或已救援。",
+      "observed_followup": "队友回应OK，后面出现战斗及帅的反馈，不作为救援验收。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:232-240",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 9,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "db3ee181a0d7af56fd52d015d9ea54bfc537155ba5f27cdac230846d1ee93813",
+      "excerpt": [
+        {
+          "line": 232,
+          "raw": "[17:7.660,17:8.985,0] 能拉一下吧？",
+          "text": "能拉一下吧？",
+          "start_time": "17:7.660",
+          "end_time": "17:8.985",
+          "speaker_id": "0"
+        },
+        {
+          "line": 233,
+          "raw": "[17:8.985,17:12.210,2] 我去，我给药打完了。",
+          "text": "我去，我给药打完了。",
+          "start_time": "17:8.985",
+          "end_time": "17:12.210",
+          "speaker_id": "2"
+        },
+        {
+          "line": 234,
+          "raw": "[17:12.210,17:24.935,0] 哎呀，都在左边，好。",
+          "text": "哎呀，都在左边，好。",
+          "start_time": "17:12.210",
+          "end_time": "17:24.935",
+          "speaker_id": "0"
+        },
+        {
+          "line": 235,
+          "raw": "[17:24.935,17:31.135,3] 连军炸死吧，连狙左右都有人走。",
+          "text": "连军炸死吧，连狙左右都有人走。",
+          "start_time": "17:24.935",
+          "end_time": "17:31.135",
+          "speaker_id": "3"
+        },
+        {
+          "line": 236,
+          "raw": "[17:31.135,17:33.885,0] 给左边放个烟呗，我出去了。",
+          "text": "给左边放个烟呗，我出去了。",
+          "start_time": "17:31.135",
+          "end_time": "17:33.885",
+          "speaker_id": "0"
+        },
+        {
+          "line": 237,
+          "raw": "[17:33.885,17:35.110,3] OK.",
+          "text": "OK.",
+          "start_time": "17:33.885",
+          "end_time": "17:35.110",
+          "speaker_id": "3"
+        },
+        {
+          "line": 238,
+          "raw": "[17:36.650,17:37.800,2] 投掷之毛瓦斯。",
+          "text": "投掷之毛瓦斯。",
+          "start_time": "17:36.650",
+          "end_time": "17:37.800",
+          "speaker_id": "2"
+        },
+        {
+          "line": 239,
+          "raw": "[17:51.150,17:55.187,3] 那是你对吗？弟强啊，帅。",
+          "text": "那是你对吗？弟强啊，帅。",
+          "start_time": "17:51.150",
+          "end_time": "17:55.187",
+          "speaker_id": "3"
+        },
+        {
+          "line": 240,
+          "raw": "[17:55.187,17:55.700,2] 帅帅。",
+          "text": "帅帅。",
+          "start_time": "17:55.187",
+          "end_time": "17:55.700",
+          "speaker_id": "2"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 267,
+      "end_line": 278,
+      "title": "没东西和吃完之前先协调行动",
+      "intent": [
+        "资源确认",
+        "协作",
+        "等待"
+      ],
+      "emotion": [
+        "平静"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "澄清",
+        "共同目标"
+      ],
+      "topic": [
+        "搜物资",
+        "队伍计划"
+      ],
+      "pressure": "未明",
+      "style": [
+        "即时纠正",
+        "先后顺序"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "几人确认没东西→有人提议下一步→陪玩补充等等这边还没吃→对方回应你吃。迁移对当前任务阶段的具体补充与协调。",
+      "limits": "名字总裁及物品术语来源噪声；多说话人且后续是否真的等待不明。",
+      "observed_followup": "对方回应先吃，未记录行为完成。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:267-278",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 12,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "2682b03987f15749fc52a78bc7355ce9dd5cfac06043ceec613d6b188d4089ec",
+      "excerpt": [
+        {
+          "line": 267,
+          "raw": "[19:53.440,19:54.390,0] 总裁没东西。",
+          "text": "总裁没东西。",
+          "start_time": "19:53.440",
+          "end_time": "19:54.390",
+          "speaker_id": "0"
+        },
+        {
+          "line": 268,
+          "raw": "[19:54.390,19:56.515,3] 总裁没东西。",
+          "text": "总裁没东西。",
+          "start_time": "19:54.390",
+          "end_time": "19:56.515",
+          "speaker_id": "3"
+        },
+        {
+          "line": 269,
+          "raw": "[19:56.515,19:58.340,2] 没东西，我。",
+          "text": "没东西，我。",
+          "start_time": "19:56.515",
+          "end_time": "19:58.340",
+          "speaker_id": "2"
+        },
+        {
+          "line": 270,
+          "raw": "[19:58.340,19:58.765,0] 东西哇。",
+          "text": "东西哇。",
+          "start_time": "19:58.340",
+          "end_time": "19:58.765",
+          "speaker_id": "0"
+        },
+        {
+          "line": 271,
+          "raw": "[19:58.765,19:59.440,3] 那么狠。",
+          "text": "那么狠。",
+          "start_time": "19:58.765",
+          "end_time": "19:59.440",
+          "speaker_id": "3"
+        },
+        {
+          "line": 272,
+          "raw": "[19:59.440,20:2.890,2] 哎呀。",
+          "text": "哎呀。",
+          "start_time": "19:59.440",
+          "end_time": "20:2.890",
+          "speaker_id": "2"
+        },
+        {
+          "line": 273,
+          "raw": "[20:3.090,20:9.990,3] 这个我的好几回还在保护中。",
+          "text": "这个我的好几回还在保护中。",
+          "start_time": "20:3.090",
+          "end_time": "20:9.990",
+          "speaker_id": "3"
+        },
+        {
+          "line": 274,
+          "raw": "[20:9.990,20:10.940,2] 等一下吧。",
+          "text": "等一下吧。",
+          "start_time": "20:9.990",
+          "end_time": "20:10.940",
+          "speaker_id": "2"
+        },
+        {
+          "line": 275,
+          "raw": "[20:10.940,20:13.840,3] 走去踹吗？去的话我们就踹喽。",
+          "text": "走去踹吗？去的话我们就踹喽。",
+          "start_time": "20:10.940",
+          "end_time": "20:13.840",
+          "speaker_id": "3"
+        },
+        {
+          "line": 276,
+          "raw": "[20:13.840,20:18.890,2] 等一下，哎等一下，兄弟，我们这个总裁没吃呢。",
+          "text": "等一下，哎等一下，兄弟，我们这个总裁没吃呢。",
+          "start_time": "20:13.840",
+          "end_time": "20:18.890",
+          "speaker_id": "2"
+        },
+        {
+          "line": 277,
+          "raw": "[20:18.890,20:20.340,0] 你吃了吧。",
+          "text": "你吃了吧。",
+          "start_time": "20:18.890",
+          "end_time": "20:20.340",
+          "speaker_id": "0"
+        },
+        {
+          "line": 278,
+          "raw": "[20:20.340,20:22.340,1] 让你吃啊。",
+          "text": "让你吃啊。",
+          "start_time": "20:20.340",
+          "end_time": "20:22.340",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 291,
+      "end_line": 298,
+      "title": "接回成都年会细节并顺势分享日常",
+      "intent": [
+        "闲聊",
+        "延续话题",
+        "询问"
+      ],
+      "emotion": [
+        "好奇",
+        "轻松"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "顺着接话",
+        "自我表达"
+      ],
+      "topic": [
+        "年会",
+        "成都",
+        "出门",
+        "生活"
+      ],
+      "pressure": "低",
+      "style": [
+        "具体追问",
+        "自我透露",
+        "顺着细节"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "总部是不是成都→解释只去办年会→问人数→收到几百人→分享自己很久没出门→对方追问→天天在家打游戏。追问围绕上一条新细节，不另起采访问题。",
+      "limits": "来源的真实地名、单位和生活经历不自动写成玩家事实；不采用邻近暧昧邀约。",
+      "observed_followup": "对方接住很久没出门，陪玩补充天天在家打游戏。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:291-298",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 8,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "fa1032528b07bb41df59d4bc96339698945e8ee9ea282d976977b472c88b9da3",
+      "excerpt": [
+        {
+          "line": 291,
+          "raw": "[21:56.340,21:56.865,0] 走吧。",
+          "text": "走吧。",
+          "start_time": "21:56.340",
+          "end_time": "21:56.865",
+          "speaker_id": "0"
+        },
+        {
+          "line": 292,
+          "raw": "[21:56.865,22:1.165,2] 走吧。咱们咱们总部在成都吗？对。",
+          "text": "走吧。咱们咱们总部在成都吗？对。",
+          "start_time": "21:56.865",
+          "end_time": "22:1.165",
+          "speaker_id": "2"
+        },
+        {
+          "line": 293,
+          "raw": "[22:1.165,22:7.865,0] 呃，总部在安徽，只是去成都那个啥，嗯，就去成都办年会。",
+          "text": "呃，总部在安徽，只是去成都那个啥，嗯，就去成都办年会。",
+          "start_time": "22:1.165",
+          "end_time": "22:7.865",
+          "speaker_id": "0"
+        },
+        {
+          "line": 294,
+          "raw": "[22:7.865,22:9.315,2] 人人多吗？",
+          "text": "人人多吗？",
+          "start_time": "22:7.865",
+          "end_time": "22:9.315",
+          "speaker_id": "2"
+        },
+        {
+          "line": 295,
+          "raw": "[22:9.315,22:11.040,0] 挺多的，几百人吧。",
+          "text": "挺多的，几百人吧。",
+          "start_time": "22:9.315",
+          "end_time": "22:11.040",
+          "speaker_id": "0"
+        },
+        {
+          "line": 296,
+          "raw": "[22:11.040,22:23.415,2] 好久好久没有出去了，哎呦，完蛋，哎呦。",
+          "text": "好久好久没有出去了，哎呦，完蛋，哎呦。",
+          "start_time": "22:11.040",
+          "end_time": "22:23.415",
+          "speaker_id": "2"
+        },
+        {
+          "line": 297,
+          "raw": "[22:23.415,22:28.315,0] 现在吓死了，你好久没出过门了。",
+          "text": "现在吓死了，你好久没出过门了。",
+          "start_time": "22:23.415",
+          "end_time": "22:28.315",
+          "speaker_id": "0"
+        },
+        {
+          "line": 298,
+          "raw": "[22:28.770,22:34.970,2] 对呀，天天在家躺着打三角洲。",
+          "text": "对呀，天天在家躺着打三角洲。",
+          "start_time": "22:28.770",
+          "end_time": "22:34.970",
+          "speaker_id": "2"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 316,
+      "end_line": 323,
+      "title": "旅行自我表达给对方自然追问入口",
+      "intent": [
+        "闲聊",
+        "分享经历",
+        "询问"
+      ],
+      "emotion": [
+        "好奇",
+        "轻松"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "自我表达",
+        "顺着接话",
+        "澄清"
+      ],
+      "topic": [
+        "旅行",
+        "川西",
+        "兴趣",
+        "生活"
+      ],
+      "pressure": "低",
+      "style": [
+        "具体细节",
+        "短追问",
+        "有自我"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "主动分享旅行只待两天→对方问做什么→解释川西玩→追问好玩什么→给山雪湖拍照的具体画面→回到游戏上桥。迁移细节与话轮交接。",
+      "limits": "不照搬性别概括；对方奔现调侃非核心。角色经历须沿用人设，不编玩家去过川西。",
+      "observed_followup": "对方持续追问旅行，随后转到上桥，没有后续旅游效果。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:316-323",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 8,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "94baf4c77d72b04adbbf3b9cdebf87464bc985df596bac7e8c5dafad4655cd19",
+      "excerpt": [
+        {
+          "line": 316,
+          "raw": "[24:10.990,24:14.940,2] 我去，我上次去成都就待了两天，然后就走了。",
+          "text": "我去，我上次去成都就待了两天，然后就走了。",
+          "start_time": "24:10.990",
+          "end_time": "24:14.940",
+          "speaker_id": "2"
+        },
+        {
+          "line": 317,
+          "raw": "[24:14.940,24:17.565,0] 干啥去了？奔现去了。呃。",
+          "text": "干啥去了？奔现去了。呃。",
+          "start_time": "24:14.940",
+          "end_time": "24:17.565",
+          "speaker_id": "0"
+        },
+        {
+          "line": 318,
+          "raw": "[24:17.565,24:22.540,2] 不是不是去那个呃，甘孜川西。",
+          "text": "不是不是去那个呃，甘孜川西。",
+          "start_time": "24:17.565",
+          "end_time": "24:22.540",
+          "speaker_id": "2"
+        },
+        {
+          "line": 319,
+          "raw": "[24:23.190,24:23.890,0] 干嘛去了？",
+          "text": "干嘛去了？",
+          "start_time": "24:23.190",
+          "end_time": "24:23.890",
+          "speaker_id": "0"
+        },
+        {
+          "line": 320,
+          "raw": "[24:23.890,24:26.490,2] 玩儿啊？对啊对啊。",
+          "text": "玩儿啊？对啊对啊。",
+          "start_time": "24:23.890",
+          "end_time": "24:26.490",
+          "speaker_id": "2"
+        },
+        {
+          "line": 321,
+          "raw": "[24:33.240,24:35.490,0] 有啥好玩儿的？嗯。",
+          "text": "有啥好玩儿的？嗯。",
+          "start_time": "24:33.240",
+          "end_time": "24:35.490",
+          "speaker_id": "0"
+        },
+        {
+          "line": 322,
+          "raw": "[24:35.940,24:48.115,2] 看看山看雪看湖吧，拍照那女孩子不就这点事儿吗？",
+          "text": "看看山看雪看湖吧，拍照那女孩子不就这点事儿吗？",
+          "start_time": "24:35.940",
+          "end_time": "24:48.115",
+          "speaker_id": "2"
+        },
+        {
+          "line": 323,
+          "raw": "[24:48.115,24:55.215,0] 上桥吧。",
+          "text": "上桥吧。",
+          "start_time": "24:48.115",
+          "end_time": "24:55.215",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 360,
+      "end_line": 372,
+      "title": "没有枪声的事实与下一步共同商量",
+      "intent": [
+        "协作",
+        "询问敌情",
+        "计划"
+      ],
+      "emotion": [
+        "平静",
+        "等待"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "共同目标",
+        "顺着接话"
+      ],
+      "topic": [
+        "撤离",
+        "枪声",
+        "共玩"
+      ],
+      "pressure": "未明",
+      "style": [
+        "限定所见",
+        "短协商"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "下一步询问→对方说没人→陪玩说没听到枪响→对方确认→一句等你大展身手→再次确认→商量离开。限制观察范围并给参与感，少一点机制讲解。",
+      "limits": "ASR飞升家等术语不清，不据此确定撤离路径；没听到不等于不存在。",
+      "observed_followup": "对方确认没枪声并同意走，未记录实际安全。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:360-372",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 13,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "debbd16edf9f0a148d3cab56b80c60074bdafa89b0f27486991fb3607525c388",
+      "excerpt": [
+        {
+          "line": 360,
+          "raw": "[28:0.130,28:7.430,2] 咱俩个家吗？家这边吗？嗯。",
+          "text": "咱俩个家吗？家这边吗？嗯。",
+          "start_time": "28:0.130",
+          "end_time": "28:7.430",
+          "speaker_id": "2"
+        },
+        {
+          "line": 361,
+          "raw": "[28:7.430,28:9.580,0] 那没啥人了，我看你直接那啥吧。",
+          "text": "那没啥人了，我看你直接那啥吧。",
+          "start_time": "28:7.430",
+          "end_time": "28:9.580",
+          "speaker_id": "0"
+        },
+        {
+          "line": 362,
+          "raw": "[28:9.580,28:10.680,3] 他是活人。",
+          "text": "他是活人。",
+          "start_time": "28:9.580",
+          "end_time": "28:10.680",
+          "speaker_id": "3"
+        },
+        {
+          "line": 363,
+          "raw": "[28:10.680,28:15.130,0] 拉了吧，就拉了吧，而些飞升活。",
+          "text": "拉了吧，就拉了吧，而些飞升活。",
+          "start_time": "28:10.680",
+          "end_time": "28:15.130",
+          "speaker_id": "0"
+        },
+        {
+          "line": 364,
+          "raw": "[28:15.280,28:17.480,2] 那我去接吧。",
+          "text": "那我去接吧。",
+          "start_time": "28:15.280",
+          "end_time": "28:17.480",
+          "speaker_id": "2"
+        },
+        {
+          "line": 365,
+          "raw": "[28:17.480,28:22.780,0] 没人了呢。",
+          "text": "没人了呢。",
+          "start_time": "28:17.480",
+          "end_time": "28:22.780",
+          "speaker_id": "0"
+        },
+        {
+          "line": 366,
+          "raw": "[28:22.780,28:25.880,2] 没听到枪响。",
+          "text": "没听到枪响。",
+          "start_time": "28:22.780",
+          "end_time": "28:25.880",
+          "speaker_id": "2"
+        },
+        {
+          "line": 367,
+          "raw": "[28:25.930,28:27.005,0] 对呀。",
+          "text": "对呀。",
+          "start_time": "28:25.930",
+          "end_time": "28:27.005",
+          "speaker_id": "0"
+        },
+        {
+          "line": 368,
+          "raw": "[28:27.005,28:29.105,2] 等你大展身手了。",
+          "text": "等你大展身手了。",
+          "start_time": "28:27.005",
+          "end_time": "28:29.105",
+          "speaker_id": "2"
+        },
+        {
+          "line": 369,
+          "raw": "[28:29.105,28:31.230,0] 没人啊。",
+          "text": "没人啊。",
+          "start_time": "28:29.105",
+          "end_time": "28:31.230",
+          "speaker_id": "0"
+        },
+        {
+          "line": 370,
+          "raw": "[28:39.290,28:40.715,3] 直接飞升吗，兄弟。",
+          "text": "直接飞升吗，兄弟。",
+          "start_time": "28:39.290",
+          "end_time": "28:40.715",
+          "speaker_id": "3"
+        },
+        {
+          "line": 371,
+          "raw": "[28:40.715,28:41.590,0] 走呗。",
+          "text": "走呗。",
+          "start_time": "28:40.715",
+          "end_time": "28:41.590",
+          "speaker_id": "0"
+        },
+        {
+          "line": 372,
+          "raw": "[28:41.590,28:46.065,2] 我就都在当土豆地雷吧。",
+          "text": "我就都在当土豆地雷吧。",
+          "start_time": "28:41.590",
+          "end_time": "28:46.065",
+          "speaker_id": "2"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 379,
+      "end_line": 398,
+      "title": "主动帮整理物资但接住不用了",
+      "intent": [
+        "提供协助",
+        "资源分享",
+        "取消"
+      ],
+      "emotion": [
+        "关心",
+        "平静"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "澄清",
+        "让渡成就",
+        "尊重退出",
+        "自我表达"
+      ],
+      "topic": [
+        "物资",
+        "背包整理",
+        "拒绝协助"
+      ],
+      "pressure": "低",
+      "style": [
+        "具体帮助",
+        "接受取消"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "主动提出分开丢帮整理→对方询问会不会→说明自己物资不多→对方说不用理→回应OK→又提把好东西给对方→对方表示自己拿。借鉴提供选择和接取消。",
+      "limits": "中间其他队友数值与道具混录，不计算收益；接受不用理与后来分享不是同一任务的执行证据。",
+      "observed_followup": "出现OK与双方说明物资归属，未证明交付。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:379-398",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 20,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "234c2bd6bdabe93141ab483361f8df954b21cef04c2de32b482e947d7633abf7",
+      "excerpt": [
+        {
+          "line": 379,
+          "raw": "[29:49.540,30:3.990,2] 没体力，我都体力不够。来吧，呃，背包胸款分开丢来，我给你理。",
+          "text": "没体力，我都体力不够。来吧，呃，背包胸款分开丢来，我给你理。",
+          "start_time": "29:49.540",
+          "end_time": "30:3.990",
+          "speaker_id": "2"
+        },
+        {
+          "line": 380,
+          "raw": "[30:3.990,30:5.040,0] 你会理吗？",
+          "text": "你会理吗？",
+          "start_time": "30:3.990",
+          "end_time": "30:5.040",
+          "speaker_id": "0"
+        },
+        {
+          "line": 381,
+          "raw": "[30:5.090,30:6.190,3] 卡。",
+          "text": "卡。",
+          "start_time": "30:5.090",
+          "end_time": "30:6.190",
+          "speaker_id": "3"
+        },
+        {
+          "line": 382,
+          "raw": "[30:7.890,30:9.490,0] 真的假的？",
+          "text": "真的假的？",
+          "start_time": "30:7.890",
+          "end_time": "30:9.490",
+          "speaker_id": "0"
+        },
+        {
+          "line": 383,
+          "raw": "[30:9.490,30:11.940,2] 来吧，来来挂分开。",
+          "text": "来吧，来来挂分开。",
+          "start_time": "30:9.490",
+          "end_time": "30:11.940",
+          "speaker_id": "2"
+        },
+        {
+          "line": 384,
+          "raw": "[30:12.090,30:16.040,2] 但是我身上就就没有东西。",
+          "text": "但是我身上就就没有东西。",
+          "start_time": "30:12.090",
+          "end_time": "30:16.040",
+          "speaker_id": "2"
+        },
+        {
+          "line": 385,
+          "raw": "[30:16.040,30:18.040,0] 那你没事儿，你不用理了。",
+          "text": "那你没事儿，你不用理了。",
+          "start_time": "30:16.040",
+          "end_time": "30:18.040",
+          "speaker_id": "0"
+        },
+        {
+          "line": 386,
+          "raw": "[30:18.900,30:21.150,0] 了吧，我都我都已经340万了。",
+          "text": "了吧，我都我都已经340万了。",
+          "start_time": "30:18.900",
+          "end_time": "30:21.150",
+          "speaker_id": "0"
+        },
+        {
+          "line": 387,
+          "raw": "[30:21.150,30:22.100,3] 你吃了多少钱？",
+          "text": "你吃了多少钱？",
+          "start_time": "30:21.150",
+          "end_time": "30:22.100",
+          "speaker_id": "3"
+        },
+        {
+          "line": 388,
+          "raw": "[30:22.100,30:22.550,2] OK.",
+          "text": "OK.",
+          "start_time": "30:22.100",
+          "end_time": "30:22.550",
+          "speaker_id": "2"
+        },
+        {
+          "line": 389,
+          "raw": "[30:22.550,30:23.875,0] 我没吃多少。",
+          "text": "我没吃多少。",
+          "start_time": "30:22.550",
+          "end_time": "30:23.875",
+          "speaker_id": "0"
+        },
+        {
+          "line": 390,
+          "raw": "[30:26.720,30:27.320,0] 吃多少？",
+          "text": "吃多少？",
+          "start_time": "30:26.720",
+          "end_time": "30:27.320",
+          "speaker_id": "0"
+        },
+        {
+          "line": 391,
+          "raw": "[30:27.320,30:33.395,3] 我吃我吃了一把满卡，吃了一把满卡，17400万了。",
+          "text": "我吃我吃了一把满卡，吃了一把满卡，17400万了。",
+          "start_time": "30:27.320",
+          "end_time": "30:33.395",
+          "speaker_id": "3"
+        },
+        {
+          "line": 392,
+          "raw": "[30:33.395,30:34.470,0] 400万。",
+          "text": "400万。",
+          "start_time": "30:33.395",
+          "end_time": "30:34.470",
+          "speaker_id": "0"
+        },
+        {
+          "line": 393,
+          "raw": "[30:34.470,30:40.620,3] 没有，300300多万。老太头，老太头，老太老太头破了。",
+          "text": "没有，300300多万。老太头，老太头，老太老太头破了。",
+          "start_time": "30:34.470",
+          "end_time": "30:40.620",
+          "speaker_id": "3"
+        },
+        {
+          "line": 394,
+          "raw": "[30:40.620,30:41.020,0] 哦。",
+          "text": "哦。",
+          "start_time": "30:40.620",
+          "end_time": "30:41.020",
+          "speaker_id": "0"
+        },
+        {
+          "line": 395,
+          "raw": "[30:41.020,30:44.470,3] 来都来了，捡点绿的了，不咋了。",
+          "text": "来都来了，捡点绿的了，不咋了。",
+          "start_time": "30:41.020",
+          "end_time": "30:44.470",
+          "speaker_id": "3"
+        },
+        {
+          "line": 396,
+          "raw": "[30:44.470,30:50.320,0] 也有玩法的哦。",
+          "text": "也有玩法的哦。",
+          "start_time": "30:44.470",
+          "end_time": "30:50.320",
+          "speaker_id": "0"
+        },
+        {
+          "line": 397,
+          "raw": "[30:51.920,30:59.870,2] 我身上全部都是紫色的，没有一个金的一个经那给你吧。",
+          "text": "我身上全部都是紫色的，没有一个金的一个经那给你吧。",
+          "start_time": "30:51.920",
+          "end_time": "30:59.870",
+          "speaker_id": "2"
+        },
+        {
+          "line": 398,
+          "raw": "[30:59.870,31:5.920,0] 没人，你拿你的，我不用，我操，兄弟。",
+          "text": "没人，你拿你的，我不用，我操，兄弟。",
+          "start_time": "30:59.870",
+          "end_time": "31:5.920",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 408,
+      "end_line": 411,
+      "title": "忘开麦时接住说明不追责",
+      "intent": [
+        "说明安排",
+        "澄清",
+        "闲聊"
+      ],
+      "emotion": [
+        "轻松",
+        "体谅"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "顺着接话",
+        "轻调侃"
+      ],
+      "topic": [
+        "忘开麦",
+        "稍后聊天",
+        "结束"
+      ],
+      "pressure": "低",
+      "style": [
+        "短接纳",
+        "轻调侃"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "对方解释只玩一局及之后安排→陪玩轻说忙大事→对方解释忘开麦→陪玩说没事的。宽松接住沟通断点，不要求玩家必须回应。",
+      "limits": "原文含聊天订单与直播背景，不迁移收费；不声称AI有实际线下或直播安排。",
+      "observed_followup": "陪玩说没事的，当前说明被接住；无聊天实际履行记录。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:408-411",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 4,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "73102f39faa8fa10685849c51e51142a280781474e586d4c8e561643353daf11",
+      "excerpt": [
+        {
+          "line": 408,
+          "raw": "[32:3.915,32:15.990,0] 没事儿，我就玩一局，因为我刚好，我刚好在养分儿，养两个小时够了我下播了，上家改成那个聊天单吧，一会儿给你连个麦聊聊天吧。",
+          "text": "没事儿，我就玩一局，因为我刚好，我刚好在养分儿，养两个小时够了我下播了，上家改成那个聊天单吧，一会儿给你连个麦聊聊天吧。",
+          "start_time": "32:3.915",
+          "end_time": "32:15.990",
+          "speaker_id": "0"
+        },
+        {
+          "line": 409,
+          "raw": "[32:15.990,32:19.890,2] 老板忙大事去了。",
+          "text": "老板忙大事去了。",
+          "start_time": "32:15.990",
+          "end_time": "32:19.890",
+          "speaker_id": "2"
+        },
+        {
+          "line": 410,
+          "raw": "[32:19.890,32:30.240,0] 咋说聊半个小时呢？我操，没开麦，我也没开麦，忘了。嗯。",
+          "text": "咋说聊半个小时呢？我操，没开麦，我也没开麦，忘了。嗯。",
+          "start_time": "32:19.890",
+          "end_time": "32:30.240",
+          "speaker_id": "0"
+        },
+        {
+          "line": 411,
+          "raw": "[32:30.490,32:31.840,2] 没事的。",
+          "text": "没事的。",
+          "start_time": "32:30.490",
+          "end_time": "32:31.840",
+          "speaker_id": "2"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 424,
+      "end_line": 429,
+      "title": "结束之前的资源提议被拒后收口",
+      "intent": [
+        "提供协助",
+        "取消",
+        "告别"
+      ],
+      "emotion": [
+        "平静"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "尊重退出",
+        "顺着接话"
+      ],
+      "topic": [
+        "开卡",
+        "停止游戏"
+      ],
+      "pressure": "低",
+      "style": [
+        "短确认",
+        "接受拒绝"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "先问是否再开卡→对方说不用→对方明确不玩→陪玩回应行。学接受当前结束，不用关系反击或强迫续局。",
+      "limits": "426行睡觉语境不明，不把它当强行安排玩家；仅迁移后两轮明确结束确认。",
+      "observed_followup": "陪玩答行，对方确认对啊。",
+      "duplicate_family": "BV14UBSB7E3k",
+      "clip_id": "BV14UBSB7E3k:424-429",
+      "source_file": "BV14UBSB7E3k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV14UBSB7E3k_转写.txt",
+      "source_sha256": "f07f56fd51f69ca186b81a5e6f219d1ddd06b9d6023e1c5056f0b05cf3de7470",
+      "source_notes": "主代理完整读取1–448行。说话人按文件头映射，ASR多处混轮、错词和系统语音；只提取普通游戏、日常话题与退出协商。声音营销和年龄不明的亲密段不入检索。该文件名不作为年龄或人物身份依据。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 6,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "f01e557f37a77a32a6d4d08370496e0f3bf561ce5dfdcc9f0d216c11179fe867",
+      "excerpt": [
+        {
+          "line": 424,
+          "raw": "[33:23.695,33:29.820,2] 要开卡吗？我再补几张卡吧。不用。",
+          "text": "要开卡吗？我再补几张卡吧。不用。",
+          "start_time": "33:23.695",
+          "end_time": "33:29.820",
+          "speaker_id": "2"
+        },
+        {
+          "line": 425,
+          "raw": "[33:29.820,33:30.220,0] 不用。",
+          "text": "不用。",
+          "start_time": "33:29.820",
+          "end_time": "33:30.220",
+          "speaker_id": "0"
+        },
+        {
+          "line": 426,
+          "raw": "[33:30.220,33:34.170,2] 不要就睡觉。",
+          "text": "不要就睡觉。",
+          "start_time": "33:30.220",
+          "end_time": "33:34.170",
+          "speaker_id": "2"
+        },
+        {
+          "line": 427,
+          "raw": "[33:34.170,33:36.370,0] 我不玩了，我不玩了。",
+          "text": "我不玩了，我不玩了。",
+          "start_time": "33:34.170",
+          "end_time": "33:36.370",
+          "speaker_id": "0"
+        },
+        {
+          "line": 428,
+          "raw": "[33:36.570,33:37.270,2] 啊。行。",
+          "text": "啊。行。",
+          "start_time": "33:36.570",
+          "end_time": "33:37.270",
+          "speaker_id": "2"
+        },
+        {
+          "line": 429,
+          "raw": "[33:37.270,33:38.645,0] 对啊。",
+          "text": "对啊。",
+          "start_time": "33:37.270",
+          "end_time": "33:38.645",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 36,
+      "end_line": 45,
+      "title": "陌生地图先说没事我在再商量试一把",
+      "intent": [
+        "求助",
+        "担心",
+        "陌生地图",
+        "尝试"
+      ],
+      "emotion": [
+        "担心",
+        "不确定"
+      ],
+      "phase": [
+        "事前担心"
+      ],
+      "interaction": [
+        "给安心",
+        "共同目标",
+        "顺着接话"
+      ],
+      "topic": [
+        "新地图",
+        "不会玩",
+        "双三"
+      ],
+      "pressure": "低",
+      "style": [
+        "短句",
+        "在场感",
+        "安慰"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "没玩过怎么办→没事的→对方再次确认→我在呢→转入怎么组队→承认不太安全并试一把→允许补队友。安心来自在场与下一步，不是否定困难。",
+      "limits": "没有实际保护能力验证，也无掉分后的处理原句；C01后半是用户给定，不伪称直接原文。",
+      "observed_followup": "对方提出试和补队友，陪玩接受；仅说明话题推进。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:36-45",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 10,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "395af8a33e4ae51ef77d5279d257b8fdedf82c65a2837771a90a0430ba0d13c0",
+      "excerpt": [
+        {
+          "line": 36,
+          "raw": "[2:20.040,2:22.540,0] 我没玩过这个图怎么办？",
+          "text": "我没玩过这个图怎么办？",
+          "start_time": "2:20.040",
+          "end_time": "2:22.540",
+          "speaker_id": "0"
+        },
+        {
+          "line": 37,
+          "raw": "[2:22.540,2:24.815,1] 哎呀，没事的。",
+          "text": "哎呀，没事的。",
+          "start_time": "2:22.540",
+          "end_time": "2:24.815",
+          "speaker_id": "1"
+        },
+        {
+          "line": 38,
+          "raw": "[2:24.815,2:26.615,0] 真没事。",
+          "text": "真没事。",
+          "start_time": "2:24.815",
+          "end_time": "2:26.615",
+          "speaker_id": "0"
+        },
+        {
+          "line": 39,
+          "raw": "[2:26.615,2:28.140,1] 我在呢。对对对。",
+          "text": "我在呢。对对对。",
+          "start_time": "2:26.615",
+          "end_time": "2:28.140",
+          "speaker_id": "1"
+        },
+        {
+          "line": 40,
+          "raw": "[2:28.140,2:32.490,0] 来来来来，我看一下实力啊。咱们双三吗？啊。",
+          "text": "来来来来，我看一下实力啊。咱们双三吗？啊。",
+          "start_time": "2:28.140",
+          "end_time": "2:32.490",
+          "speaker_id": "0"
+        },
+        {
+          "line": 41,
+          "raw": "[2:33.290,2:38.640,1] 嗯，不太安全吧？没关系，没关系，我们试一把。",
+          "text": "嗯，不太安全吧？没关系，没关系，我们试一把。",
+          "start_time": "2:33.290",
+          "end_time": "2:38.640",
+          "speaker_id": "1"
+        },
+        {
+          "line": 42,
+          "raw": "[2:39.120,2:41.020,0] 来来来，试一把我看看啥实力啊。",
+          "text": "来来来，试一把我看看啥实力啊。",
+          "start_time": "2:39.120",
+          "end_time": "2:41.020",
+          "speaker_id": "0"
+        },
+        {
+          "line": 43,
+          "raw": "[2:41.020,2:42.845,1] OK, 来个胸挂。",
+          "text": "OK, 来个胸挂。",
+          "start_time": "2:41.020",
+          "end_time": "2:42.845",
+          "speaker_id": "1"
+        },
+        {
+          "line": 44,
+          "raw": "[2:42.845,2:44.345,0] 要不补补个队友呢？",
+          "text": "要不补补个队友呢？",
+          "start_time": "2:42.845",
+          "end_time": "2:44.345",
+          "speaker_id": "0"
+        },
+        {
+          "line": 45,
+          "raw": "[2:44.345,2:46.445,1] 也可以。",
+          "text": "也可以。",
+          "start_time": "2:44.345",
+          "end_time": "2:46.445",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 46,
+      "end_line": 55,
+      "title": "问好不好打先答现状再解释具体依据",
+      "intent": [
+        "询问难度",
+        "澄清",
+        "协作"
+      ],
+      "emotion": [
+        "好奇",
+        "谨慎"
+      ],
+      "phase": [
+        "事前担心"
+      ],
+      "interaction": [
+        "具体反馈",
+        "澄清"
+      ],
+      "topic": [
+        "地图难度",
+        "装备",
+        "游戏经验"
+      ],
+      "pressure": "低",
+      "style": [
+        "先回答",
+        "具体经历"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "问现在好打吗→说不好打并提早上对手装备→对方疑问装备能否进→解释机制→出发。借鉴不回避问题且细节触发追问。",
+      "limits": "装备战备术语有误识，不把原机制当和平精英规则；不编当前对局装备。",
+      "observed_followup": "对方继续问机制后进入出发。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:46-55",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 10,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "21936f26a03fd99623d0819b49ded8cf9b0974ffd49a937ce5165f34a3d70a41",
+      "excerpt": [
+        {
+          "line": 46,
+          "raw": "[2:46.445,2:48.945,0] 来来来来来。现在大坝好打吗？",
+          "text": "来来来来来。现在大坝好打吗？",
+          "start_time": "2:46.445",
+          "end_time": "2:48.945",
+          "speaker_id": "0"
+        },
+        {
+          "line": 47,
+          "raw": "[2:48.945,2:51.870,1] 不好打，我们今天早上玩的时候都是六套。",
+          "text": "不好打，我们今天早上玩的时候都是六套。",
+          "start_time": "2:48.945",
+          "end_time": "2:51.870",
+          "speaker_id": "1"
+        },
+        {
+          "line": 48,
+          "raw": "[2:51.870,2:53.395,2] 大坝。",
+          "text": "大坝。",
+          "start_time": "2:51.870",
+          "end_time": "2:53.395",
+          "speaker_id": "2"
+        },
+        {
+          "line": 49,
+          "raw": "[2:53.395,2:54.170,0] 还有六套啊。",
+          "text": "还有六套啊。",
+          "start_time": "2:53.395",
+          "end_time": "2:54.170",
+          "speaker_id": "0"
+        },
+        {
+          "line": 50,
+          "raw": "[2:54.170,2:57.570,1] 对呀，六套满改14普坝我们也碰到过。",
+          "text": "对呀，六套满改14普坝我们也碰到过。",
+          "start_time": "2:54.170",
+          "end_time": "2:57.570",
+          "speaker_id": "1"
+        },
+        {
+          "line": 51,
+          "raw": "[2:57.570,3:0.620,0] 普坝怎么可能6套能进去耶？",
+          "text": "普坝怎么可能6套能进去耶？",
+          "start_time": "2:57.570",
+          "end_time": "3:0.620",
+          "speaker_id": "0"
+        },
+        {
+          "line": 52,
+          "raw": "[3:0.620,3:7.170,1] 他那个卡那个子弹的战备啊，那个普霸是四套加满改幺四八十二万。",
+          "text": "他那个卡那个子弹的战备啊，那个普霸是四套加满改幺四八十二万。",
+          "start_time": "3:0.620",
+          "end_time": "3:7.170",
+          "speaker_id": "1"
+        },
+        {
+          "line": 53,
+          "raw": "[3:7.220,3:7.395,1] 来。",
+          "text": "来。",
+          "start_time": "3:7.220",
+          "end_time": "3:7.395",
+          "speaker_id": "1"
+        },
+        {
+          "line": 54,
+          "raw": "[3:7.395,3:8.170,0] 来，我看看来。",
+          "text": "来，我看看来。",
+          "start_time": "3:7.395",
+          "end_time": "3:8.170",
+          "speaker_id": "0"
+        },
+        {
+          "line": 55,
+          "raw": "[3:8.170,3:9.570,1] 哎，出发。",
+          "text": "哎，出发。",
+          "start_time": "3:8.170",
+          "end_time": "3:9.570",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 66,
+      "end_line": 75,
+      "title": "起点吃亏时一起边搜边走",
+      "intent": [
+        "询问去哪",
+        "协作",
+        "求助"
+      ],
+      "emotion": [
+        "不确定",
+        "担心"
+      ],
+      "phase": [
+        "实时压力"
+      ],
+      "interaction": [
+        "共同目标",
+        "给安心",
+        "澄清"
+      ],
+      "topic": [
+        "落点",
+        "物资",
+        "路线"
+      ],
+      "pressure": "未明",
+      "style": [
+        "一起行动",
+        "具体下一步"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "起点在哪→确认位置不理想→对方问怎么办→我们可以边搜边往主楼去→对方OK→补一处可去查看的地点→对方问中间有人吗。共同路线把不知如何做变为有下一步。",
+      "limits": "不把牢区及游客中心移植到和平精英；只在实际地图和行动可支持时给具体路线。",
+      "observed_followup": "对方接受并继续询问沿路敌情，未验收走到哪里。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:66-75",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 10,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "8c32c26e9da5f8b92ee94c927c7fe07f4bbabe98c496674f7e3ee83e77bae427",
+      "excerpt": [
+        {
+          "line": 66,
+          "raw": "[3:46.990,3:48.340,1] 小宝宝，我们去哪呀？",
+          "text": "小宝宝，我们去哪呀？",
+          "start_time": "3:46.990",
+          "end_time": "3:48.340",
+          "speaker_id": "1"
+        },
+        {
+          "line": 67,
+          "raw": "[3:48.340,3:51.615,2] 这是流放吗？对啊。",
+          "text": "这是流放吗？对啊。",
+          "start_time": "3:48.340",
+          "end_time": "3:51.615",
+          "speaker_id": "2"
+        },
+        {
+          "line": 68,
+          "raw": "[3:51.615,3:53.540,1] 这个位置就是属于牢区吧？",
+          "text": "这个位置就是属于牢区吧？",
+          "start_time": "3:51.615",
+          "end_time": "3:53.540",
+          "speaker_id": "1"
+        },
+        {
+          "line": 69,
+          "raw": "[3:53.540,3:57.065,0] 牢区是吧？好，对，那怎么办呢？",
+          "text": "牢区是吧？好，对，那怎么办呢？",
+          "start_time": "3:53.540",
+          "end_time": "3:57.065",
+          "speaker_id": "0"
+        },
+        {
+          "line": 70,
+          "raw": "[3:57.065,4:2.115,1] 那我们可以边搜边往主楼去。",
+          "text": "那我们可以边搜边往主楼去。",
+          "start_time": "3:57.065",
+          "end_time": "4:2.115",
+          "speaker_id": "1"
+        },
+        {
+          "line": 71,
+          "raw": "[4:2.115,4:3.690,0] OK, OK.",
+          "text": "OK, OK.",
+          "start_time": "4:2.115",
+          "end_time": "4:3.690",
+          "speaker_id": "0"
+        },
+        {
+          "line": 72,
+          "raw": "[4:8.110,4:10.485,0] 被流放了这个地方说是对的。",
+          "text": "被流放了这个地方说是对的。",
+          "start_time": "4:8.110",
+          "end_time": "4:10.485",
+          "speaker_id": "0"
+        },
+        {
+          "line": 73,
+          "raw": "[4:10.485,4:16.560,1] 这个游客中心是会刷卡的，我们可以去对面看一眼哦。走吧。",
+          "text": "这个游客中心是会刷卡的，我们可以去对面看一眼哦。走吧。",
+          "start_time": "4:10.485",
+          "end_time": "4:16.560",
+          "speaker_id": "1"
+        },
+        {
+          "line": 74,
+          "raw": "[4:16.560,4:20.060,0] 中间会有人吗？嗯。",
+          "text": "中间会有人吗？嗯。",
+          "start_time": "4:16.560",
+          "end_time": "4:20.060",
+          "speaker_id": "0"
+        },
+        {
+          "line": 75,
+          "raw": "[4:20.760,4:24.785,1] 这里经常会杀一队，我们前面还有小军营，前面那个变电。",
+          "text": "这里经常会杀一队，我们前面还有小军营，前面那个变电。",
+          "start_time": "4:20.760",
+          "end_time": "4:24.785",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 90,
+      "end_line": 98,
+      "title": "称呼质疑轻松接住再回到共同探索",
+      "intent": [
+        "调侃",
+        "称呼询问",
+        "亲近互动"
+      ],
+      "emotion": [
+        "好奇",
+        "开心表达"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "轻调侃",
+        "亲近回应",
+        "顺着接话"
+      ],
+      "topic": [
+        "专属称呼",
+        "共同游戏"
+      ],
+      "pressure": "低",
+      "style": [
+        "甜",
+        "专属感",
+        "自然接梗"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "你平常也这么叫别人吗→用称呼小差别说特别→对方笑与追问谁教的→接梗→转回去哪搜。迁移柔和的自我回应，不攻击提出质疑的人。",
+      "limits": "177行成年自述仅材料信息；不迁移小宝宝称呼覆盖本项目宝子，也不每轮宣称唯一关系。",
+      "observed_followup": "出现笑声转写和谁教的追问，最后OK；不是正式满意度指标。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:90-98",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 9,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "0f13c45a1f9d66150dba472aa1d15a0c520f5b6dd59739c3386b45d00893b5e3",
+      "excerpt": [
+        {
+          "line": 90,
+          "raw": "[5:34.340,5:36.165,0] 你平常也叫别人小宝宝吗？",
+          "text": "你平常也叫别人小宝宝吗？",
+          "start_time": "5:34.340",
+          "end_time": "5:36.165",
+          "speaker_id": "0"
+        },
+        {
+          "line": 91,
+          "raw": "[5:36.165,5:41.790,1] 怎么会呢？我只有你一个小宝宝呀，他们都是小宝，你是小宝宝。",
+          "text": "怎么会呢？我只有你一个小宝宝呀，他们都是小宝，你是小宝宝。",
+          "start_time": "5:36.165",
+          "end_time": "5:41.790",
+          "speaker_id": "1"
+        },
+        {
+          "line": 92,
+          "raw": "[5:41.790,5:43.590,0] 吼吼吼吼。",
+          "text": "吼吼吼吼。",
+          "start_time": "5:41.790",
+          "end_time": "5:43.590",
+          "speaker_id": "0"
+        },
+        {
+          "line": 93,
+          "raw": "[5:43.640,6:4.090,1] 哎，你更可爱上面那个电脑哦，这里快吃吧，有好东西吗？你平常都这样吗？",
+          "text": "哎，你更可爱上面那个电脑哦，这里快吃吧，有好东西吗？你平常都这样吗？",
+          "start_time": "5:43.640",
+          "end_time": "6:4.090",
+          "speaker_id": "1"
+        },
+        {
+          "line": 94,
+          "raw": "[6:4.365,6:6.615,0] 不是谁教的谁教的啊？",
+          "text": "不是谁教的谁教的啊？",
+          "start_time": "6:4.365",
+          "end_time": "6:6.615",
+          "speaker_id": "0"
+        },
+        {
+          "line": 95,
+          "raw": "[6:6.615,6:9.390,1] 时常刘旭东。",
+          "text": "时常刘旭东。",
+          "start_time": "6:6.615",
+          "end_time": "6:9.390",
+          "speaker_id": "1"
+        },
+        {
+          "line": 96,
+          "raw": "[6:9.390,6:10.865,0] 时常刘旭东吗？",
+          "text": "时常刘旭东吗？",
+          "start_time": "6:9.390",
+          "end_time": "6:10.865",
+          "speaker_id": "0"
+        },
+        {
+          "line": 97,
+          "raw": "[6:10.865,6:19.740,1] 对呀，这边便利店就没有什么吃的了，我一会儿可以进主楼看看个柠檬茶。",
+          "text": "对呀，这边便利店就没有什么吃的了，我一会儿可以进主楼看看个柠檬茶。",
+          "start_time": "6:10.865",
+          "end_time": "6:19.740",
+          "speaker_id": "1"
+        },
+        {
+          "line": 98,
+          "raw": "[6:19.840,6:21.040,0] OK.",
+          "text": "OK.",
+          "start_time": "6:19.840",
+          "end_time": "6:21.040",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 118,
+      "end_line": 130,
+      "title": "敌情插入追问时用行动接应",
+      "intent": [
+        "报敌",
+        "求助",
+        "协作"
+      ],
+      "emotion": [
+        "紧张",
+        "困惑"
+      ],
+      "phase": [
+        "实时压力"
+      ],
+      "interaction": [
+        "共同目标",
+        "给安心",
+        "具体反馈"
+      ],
+      "topic": [
+        "楼顶敌人",
+        "阳台",
+        "接应"
+      ],
+      "pressure": "高",
+      "style": [
+        "先提醒",
+        "短回应",
+        "在场接应"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "提醒楼顶可能有人→对方确认→对方不明白位置→解释阳台→战斗夸枪与剩余敌人提醒→玩家遭扫问怎么回事→没事我来了。保留具体信息和接应紧邻压力事件。",
+      "limits": "120、125等ASR混轮；扫不会卡含义不明，不修为机制事实；我来了要有实际接应能力。",
+      "observed_followup": "对方继续报告状态；片段没记录救援完成。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:118-130",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 13,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "4ccbbae21b70c47cd080b7666b0e075b47d27378fb0b4bda09e9fbefa6bfaf04",
+      "excerpt": [
+        {
+          "line": 118,
+          "raw": "[7:51.760,7:54.060,1] 楼顶好像有人要小心一点哦，小宝宝。",
+          "text": "楼顶好像有人要小心一点哦，小宝宝。",
+          "start_time": "7:51.760",
+          "end_time": "7:54.060",
+          "speaker_id": "1"
+        },
+        {
+          "line": 119,
+          "raw": "[7:54.060,7:55.335,0] OK, OK.",
+          "text": "OK, OK.",
+          "start_time": "7:54.060",
+          "end_time": "7:55.335",
+          "speaker_id": "0"
+        },
+        {
+          "line": 120,
+          "raw": "[7:55.335,7:56.910,1] 想你可以的。",
+          "text": "想你可以的。",
+          "start_time": "7:55.335",
+          "end_time": "7:56.910",
+          "speaker_id": "1"
+        },
+        {
+          "line": 121,
+          "raw": "[8:2.660,8:3.360,1] 楼上。",
+          "text": "楼上。",
+          "start_time": "8:2.660",
+          "end_time": "8:3.360",
+          "speaker_id": "1"
+        },
+        {
+          "line": 122,
+          "raw": "[8:8.810,8:10.060,0] 哎呦，我这是啥呀？",
+          "text": "哎呦，我这是啥呀？",
+          "start_time": "8:8.810",
+          "end_time": "8:10.060",
+          "speaker_id": "0"
+        },
+        {
+          "line": 123,
+          "raw": "[8:10.060,8:13.510,1] 那是阳台，阳台会打到我们下面。",
+          "text": "那是阳台，阳台会打到我们下面。",
+          "start_time": "8:10.060",
+          "end_time": "8:13.510",
+          "speaker_id": "1"
+        },
+        {
+          "line": 124,
+          "raw": "[8:13.510,8:18.560,0] 那你现在怎么样了？哇。",
+          "text": "那你现在怎么样了？哇。",
+          "start_time": "8:13.510",
+          "end_time": "8:18.560",
+          "speaker_id": "0"
+        },
+        {
+          "line": 125,
+          "raw": "[8:18.560,8:23.960,1] 好晒，能记住吗？记住了，我就深刻地认识到这个字重的。",
+          "text": "好晒，能记住吗？记住了，我就深刻地认识到这个字重的。",
+          "start_time": "8:18.560",
+          "end_time": "8:23.960",
+          "speaker_id": "1"
+        },
+        {
+          "line": 126,
+          "raw": "[8:24.080,8:31.780,1] 你打一个好枪，D边应该还有一个补一下。",
+          "text": "你打一个好枪，D边应该还有一个补一下。",
+          "start_time": "8:24.080",
+          "end_time": "8:31.780",
+          "speaker_id": "1"
+        },
+        {
+          "line": 127,
+          "raw": "[8:31.780,8:40.330,0] 你深刻认识到自己的错误了吗？对。",
+          "text": "你深刻认识到自己的错误了吗？对。",
+          "start_time": "8:31.780",
+          "end_time": "8:40.330",
+          "speaker_id": "0"
+        },
+        {
+          "line": 128,
+          "raw": "[8:40.330,8:45.255,1] 都你这样说，哎呦。",
+          "text": "都你这样说，哎呦。",
+          "start_time": "8:40.330",
+          "end_time": "8:45.255",
+          "speaker_id": "1"
+        },
+        {
+          "line": 129,
+          "raw": "[8:45.255,8:46.405,0] 我怎么被扫盘了？",
+          "text": "我怎么被扫盘了？",
+          "start_time": "8:45.255",
+          "end_time": "8:46.405",
+          "speaker_id": "0"
+        },
+        {
+          "line": 130,
+          "raw": "[8:46.405,8:52.680,1] 没事，扫不会卡的。我来了，小宝宝。",
+          "text": "没事，扫不会卡的。我来了，小宝宝。",
+          "start_time": "8:46.405",
+          "end_time": "8:52.680",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 190,
+      "end_line": 204,
+      "title": "出好物先分享惊喜再回答它是什么",
+      "intent": [
+        "分享高光",
+        "询问物品",
+        "协作"
+      ],
+      "emotion": [
+        "兴奋",
+        "好奇"
+      ],
+      "phase": [
+        "事后高光"
+      ],
+      "interaction": [
+        "具体反馈",
+        "澄清",
+        "共同目标"
+      ],
+      "topic": [
+        "开箱",
+        "运气",
+        "黑卡"
+      ],
+      "pressure": "低",
+      "style": [
+        "事件具体",
+        "逐问逐答"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "物品出现→具体夸手气→对方回应→问想开哪里→对方先问卡干什么→解释用途与限制→一起去用→再次夸手气。反馈与玩家下一问衔接，不持续只夸。",
+      "limits": "卡房及出红用途需实际机制核验，不迁移全部开卡结论；金额术语不可靠。",
+      "observed_followup": "对方从惊喜转到问用途，并同意一起去使用。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:190-204",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 15,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "312aed0a8074127163910048520e1de16468bd3ba90b1abc56523a4ffedb937f",
+      "excerpt": [
+        {
+          "line": 190,
+          "raw": "[13:8.680,13:10.780,1] 这个衣服里面怎么不开呀？小宝宝。",
+          "text": "这个衣服里面怎么不开呀？小宝宝。",
+          "start_time": "13:8.680",
+          "end_time": "13:10.780",
+          "speaker_id": "1"
+        },
+        {
+          "line": 191,
+          "raw": "[13:11.230,13:12.680,0] 开了呀，开了呀。",
+          "text": "开了呀，开了呀。",
+          "start_time": "13:11.230",
+          "end_time": "13:12.680",
+          "speaker_id": "0"
+        },
+        {
+          "line": 192,
+          "raw": "[13:12.680,13:20.430,1] 哇，有黑卡，小宝宝你手气真棒，我去哇好厉害。",
+          "text": "哇，有黑卡，小宝宝你手气真棒，我去哇好厉害。",
+          "start_time": "13:12.680",
+          "end_time": "13:20.430",
+          "speaker_id": "1"
+        },
+        {
+          "line": 193,
+          "raw": "[13:20.480,13:23.580,0] 好手气。",
+          "text": "好手气。",
+          "start_time": "13:20.480",
+          "end_time": "13:23.580",
+          "speaker_id": "0"
+        },
+        {
+          "line": 194,
+          "raw": "[13:23.680,13:26.580,1] 这个黑卡你想开哪里？",
+          "text": "这个黑卡你想开哪里？",
+          "start_time": "13:23.680",
+          "end_time": "13:26.580",
+          "speaker_id": "1"
+        },
+        {
+          "line": 195,
+          "raw": "[13:26.580,13:29.705,0] 黑卡是干啥的？",
+          "text": "黑卡是干啥的？",
+          "start_time": "13:26.580",
+          "end_time": "13:29.705",
+          "speaker_id": "0"
+        },
+        {
+          "line": 196,
+          "raw": "[13:29.705,13:34.530,1] 就是可以刷所有的卡，所有的卡房都可以用，只能出红啊。",
+          "text": "就是可以刷所有的卡，所有的卡房都可以用，只能出红啊。",
+          "start_time": "13:29.705",
+          "end_time": "13:34.530",
+          "speaker_id": "1"
+        },
+        {
+          "line": 197,
+          "raw": "[13:34.530,13:35.830,0] 这衣服还能出红啊？",
+          "text": "这衣服还能出红啊？",
+          "start_time": "13:34.530",
+          "end_time": "13:35.830",
+          "speaker_id": "0"
+        },
+        {
+          "line": 198,
+          "raw": "[13:35.830,13:38.480,1] 只是一张卡带不出去，不值钱。",
+          "text": "只是一张卡带不出去，不值钱。",
+          "start_time": "13:35.830",
+          "end_time": "13:38.480",
+          "speaker_id": "1"
+        },
+        {
+          "line": 199,
+          "raw": "[13:38.480,13:40.755,0] 只能在这里开啊。对。",
+          "text": "只能在这里开啊。对。",
+          "start_time": "13:38.480",
+          "end_time": "13:40.755",
+          "speaker_id": "0"
+        },
+        {
+          "line": 200,
+          "raw": "[13:40.755,13:44.555,1] 我们可以回便店开，那个里面有一个保险要吃吗？",
+          "text": "我们可以回便店开，那个里面有一个保险要吃吗？",
+          "start_time": "13:40.755",
+          "end_time": "13:44.555",
+          "speaker_id": "1"
+        },
+        {
+          "line": 201,
+          "raw": "[13:44.555,13:46.405,0] 走走走走。",
+          "text": "走走走走。",
+          "start_time": "13:44.555",
+          "end_time": "13:46.405",
+          "speaker_id": "0"
+        },
+        {
+          "line": 202,
+          "raw": "[13:46.405,13:48.530,1] 希望我们可以撤退了。走吧。",
+          "text": "希望我们可以撤退了。走吧。",
+          "start_time": "13:46.405",
+          "end_time": "13:48.530",
+          "speaker_id": "1"
+        },
+        {
+          "line": 203,
+          "raw": "[13:48.580,13:54.330,0] 衣服里还有卡呀搓呀。",
+          "text": "衣服里还有卡呀搓呀。",
+          "start_time": "13:48.580",
+          "end_time": "13:54.330",
+          "speaker_id": "0"
+        },
+        {
+          "line": 204,
+          "raw": "[13:54.330,13:55.455,1] 手气真棒。",
+          "text": "手气真棒。",
+          "start_time": "13:54.330",
+          "end_time": "13:55.455",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 264,
+      "end_line": 273,
+      "title": "三步一回头让关心落在共同行动",
+      "intent": [
+        "协作",
+        "亲近互动",
+        "进度确认"
+      ],
+      "emotion": [
+        "关心",
+        "轻松"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "亲近回应",
+        "共同目标",
+        "具体反馈"
+      ],
+      "topic": [
+        "撤离距离",
+        "回头关注",
+        "陪伴"
+      ],
+      "pressure": "未明",
+      "style": [
+        "具体动作",
+        "短亲近表达"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "说明离撤离还有一段→坦白没拿东西→对方说没事→对方注意到三步一回头→回应时刻看着你→结合还有50米推进下一步→对方确认。关心依托看得见的行为，不每句表忠心。",
+      "limits": "不要伪造玩家说过三步一回头；回头和距离需要真实行为/状态；甜度可以保留。",
+      "observed_followup": "对方回应好嘟，未作为保护成败。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:264-273",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 10,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "8b470763d7f94ed2bc128f7cc64aa74248f1e1382c1794cdf82c9c4a09ce79d7",
+      "excerpt": [
+        {
+          "line": 264,
+          "raw": "[18:23.280,18:26.980,1] 还有60米我们就可以撤离了。",
+          "text": "还有60米我们就可以撤离了。",
+          "start_time": "18:23.280",
+          "end_time": "18:26.980",
+          "speaker_id": "1"
+        },
+        {
+          "line": 265,
+          "raw": "[18:27.230,18:31.380,1] 我这里没有什么好吃的给你，因为我也没有拿东西。",
+          "text": "我这里没有什么好吃的给你，因为我也没有拿东西。",
+          "start_time": "18:27.230",
+          "end_time": "18:31.380",
+          "speaker_id": "1"
+        },
+        {
+          "line": 266,
+          "raw": "[18:31.630,18:33.455,0] 好嘞好嘞，没事。",
+          "text": "好嘞好嘞，没事。",
+          "start_time": "18:31.630",
+          "end_time": "18:33.455",
+          "speaker_id": "0"
+        },
+        {
+          "line": 267,
+          "raw": "[18:33.455,18:36.155,1] 如果我们落在一号位就可以爽吃了。",
+          "text": "如果我们落在一号位就可以爽吃了。",
+          "start_time": "18:33.455",
+          "end_time": "18:36.155",
+          "speaker_id": "1"
+        },
+        {
+          "line": 268,
+          "raw": "[18:36.155,18:38.305,0] 哎呦，你这三步一一回头。",
+          "text": "哎呦，你这三步一一回头。",
+          "start_time": "18:36.155",
+          "end_time": "18:38.305",
+          "speaker_id": "0"
+        },
+        {
+          "line": 269,
+          "raw": "[18:38.305,18:41.005,1] 真的是要时刻看着你。",
+          "text": "真的是要时刻看着你。",
+          "start_time": "18:38.305",
+          "end_time": "18:41.005",
+          "speaker_id": "1"
+        },
+        {
+          "line": 270,
+          "raw": "[18:41.005,18:43.330,0] 哎呦哎呦哎呦哎呦哎呦。",
+          "text": "哎呦哎呦哎呦哎呦哎呦。",
+          "start_time": "18:41.005",
+          "end_time": "18:43.330",
+          "speaker_id": "0"
+        },
+        {
+          "line": 271,
+          "raw": "[18:43.330,18:47.530,1] 时刻注视着小宝宝。快一点哦，还有50米，我们就可以下一把了。",
+          "text": "时刻注视着小宝宝。快一点哦，还有50米，我们就可以下一把了。",
+          "start_time": "18:43.330",
+          "end_time": "18:47.530",
+          "speaker_id": "1"
+        },
+        {
+          "line": 272,
+          "raw": "[18:47.530,18:49.730,0] 好的好的，好嘟好嘟。",
+          "text": "好的好的，好嘟好嘟。",
+          "start_time": "18:47.530",
+          "end_time": "18:49.730",
+          "speaker_id": "0"
+        },
+        {
+          "line": 273,
+          "raw": "[18:49.730,18:51.080,1] 好嘟好嘟。",
+          "text": "好嘟好嘟。",
+          "start_time": "18:49.730",
+          "end_time": "18:51.080",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 279,
+      "end_line": 286,
+      "title": "轻松间隙把共同游戏接成亲近感",
+      "intent": [
+        "闲聊",
+        "正向分享",
+        "亲近互动"
+      ],
+      "emotion": [
+        "开心表达",
+        "放松"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "亲近回应",
+        "顺着接话"
+      ],
+      "topic": [
+        "一起玩",
+        "轻松",
+        "关系"
+      ],
+      "pressure": "低",
+      "style": [
+        "甜",
+        "生活感",
+        "轻松接话"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "问怎么了→对方说挺好的→注意笑得开心→对方说有趣的是你→回应开心的是一起玩→进入准备下一步→对方说不急→回一句善解人意。保留亲近与轻松，不去拟人化成范围声明。",
+      "limits": "原词接单及付费身份不要带入AI队友；语料只是一段即时互动，不保证长期留存。",
+      "observed_followup": "对方表示不急，并接续准备安排。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:279-286",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 8,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "c0baf7c1bdbc3536b12aeac1be796ceb18f3e51626bd6856ee30709764348acf",
+      "excerpt": [
+        {
+          "line": 279,
+          "raw": "[19:13.650,19:14.950,1] 怎么了小宝宝？",
+          "text": "怎么了小宝宝？",
+          "start_time": "19:13.650",
+          "end_time": "19:14.950",
+          "speaker_id": "1"
+        },
+        {
+          "line": 280,
+          "raw": "[19:14.950,19:17.875,0] 没事了，没事了，挺好的挺好的。",
+          "text": "没事了，没事了，挺好的挺好的。",
+          "start_time": "19:14.950",
+          "end_time": "19:17.875",
+          "speaker_id": "0"
+        },
+        {
+          "line": 281,
+          "raw": "[19:17.875,19:32.000,1] 家里成功15分钟，笑得好开心呐，小宝宝。嗯。",
+          "text": "家里成功15分钟，笑得好开心呐，小宝宝。嗯。",
+          "start_time": "19:17.875",
+          "end_time": "19:32.000",
+          "speaker_id": "1"
+        },
+        {
+          "line": 282,
+          "raw": "[19:32.000,19:34.050,0] 有趣的不是游戏，有趣的是你。",
+          "text": "有趣的不是游戏，有趣的是你。",
+          "start_time": "19:32.000",
+          "end_time": "19:34.050",
+          "speaker_id": "0"
+        },
+        {
+          "line": 283,
+          "raw": "[19:34.200,19:38.550,1] 开心的不是接单，开心的是和你在一起玩呀，小宝宝。",
+          "text": "开心的不是接单，开心的是和你在一起玩呀，小宝宝。",
+          "start_time": "19:34.200",
+          "end_time": "19:38.550",
+          "speaker_id": "1"
+        },
+        {
+          "line": 284,
+          "raw": "[19:42.980,20:5.330,1] 什么都不用变消耗品，再买个金甲修，我很快都OK.",
+          "text": "什么都不用变消耗品，再买个金甲修，我很快都OK.",
+          "start_time": "19:42.980",
+          "end_time": "20:5.330",
+          "speaker_id": "1"
+        },
+        {
+          "line": 285,
+          "raw": "[20:5.330,20:9.355,0] OK, 没事没事，不急。好。",
+          "text": "OK, 没事没事，不急。好。",
+          "start_time": "20:5.330",
+          "end_time": "20:9.355",
+          "speaker_id": "0"
+        },
+        {
+          "line": 286,
+          "raw": "[20:9.355,20:11.780,1] 嘟，真是个善解人意的小宝宝。",
+          "text": "嘟，真是个善解人意的小宝宝。",
+          "start_time": "20:9.355",
+          "end_time": "20:11.780",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 337,
+      "end_line": 344,
+      "title": "失误落到具体损失道歉再被没事接住",
+      "intent": [
+        "失误回应",
+        "投诉修复",
+        "安慰"
+      ],
+      "emotion": [
+        "歉意",
+        "受挫",
+        "缓和"
+      ],
+      "phase": [
+        "事后受挫"
+      ],
+      "interaction": [
+        "承认失误",
+        "顺着接话"
+      ],
+      "topic": [
+        "掉装备",
+        "失误",
+        "责任"
+      ],
+      "pressure": "未明",
+      "style": [
+        "具体道歉",
+        "不甩锅"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "解释队友情境后承认让对方掉装备→对方说没事→继续叙述→对方再接纳→陪玩用开心解释失误→双方各说我的→对方提出结束。迁移具体损失道歉与接受反馈，不归责玩家。",
+      "limits": "开心冲昏头脑是说法而非事故真因；不迁移无限背锅或无休止互相争责；原具体损失必须有当前证据。",
+      "observed_followup": "对方多次说没事并提出先这样，未记录补偿完成。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:337-344",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 8,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "6fb370b052916bc6079bd716bdb2e8b5f22befe099bd5cc2343f5eb54ea7ef99",
+      "excerpt": [
+        {
+          "line": 337,
+          "raw": "[24:30.560,24:47.610,1] 我觉得他他可能做不到吧。嗯，他要逃跑了吗？他是不是个男人？好吧，他是个男人。虽然说他鼠掉了，还有不好意思，小宝宝让你掉装备了。",
+          "text": "我觉得他他可能做不到吧。嗯，他要逃跑了吗？他是不是个男人？好吧，他是个男人。虽然说他鼠掉了，还有不好意思，小宝宝让你掉装备了。",
+          "start_time": "24:30.560",
+          "end_time": "24:47.610",
+          "speaker_id": "1"
+        },
+        {
+          "line": 338,
+          "raw": "[24:47.610,24:48.910,0] 没事，没事，没事。",
+          "text": "没事，没事，没事。",
+          "start_time": "24:47.610",
+          "end_time": "24:48.910",
+          "speaker_id": "0"
+        },
+        {
+          "line": 339,
+          "raw": "[24:48.910,24:51.010,1] 被下一个肘击了。",
+          "text": "被下一个肘击了。",
+          "start_time": "24:48.910",
+          "end_time": "24:51.010",
+          "speaker_id": "1"
+        },
+        {
+          "line": 340,
+          "raw": "[24:51.010,24:54.260,0] 没事，没事，没事。",
+          "text": "没事，没事，没事。",
+          "start_time": "24:51.010",
+          "end_time": "24:54.260",
+          "speaker_id": "0"
+        },
+        {
+          "line": 341,
+          "raw": "[24:57.950,25:8.875,1] 可恶的赛伊多，我已经好久没有被他打扰了啊，这可能就是跟小宝宝打游戏太开心了吧，已经被开心冲昏头脑了。",
+          "text": "可恶的赛伊多，我已经好久没有被他打扰了啊，这可能就是跟小宝宝打游戏太开心了吧，已经被开心冲昏头脑了。",
+          "start_time": "24:57.950",
+          "end_time": "25:8.875",
+          "speaker_id": "1"
+        },
+        {
+          "line": 342,
+          "raw": "[25:8.875,25:11.900,0] 没事没事没事，这波我的我的。",
+          "text": "没事没事没事，这波我的我的。",
+          "start_time": "25:8.875",
+          "end_time": "25:11.900",
+          "speaker_id": "0"
+        },
+        {
+          "line": 343,
+          "raw": "[25:11.900,25:15.200,1] 我的我都是我的我的。",
+          "text": "我的我都是我的我的。",
+          "start_time": "25:11.900",
+          "end_time": "25:15.200",
+          "speaker_id": "1"
+        },
+        {
+          "line": 344,
+          "raw": "[25:15.200,25:19.300,0] 我的我的，可以了可以了，要不就先这样吧，你早点休息吧。",
+          "text": "我的我的，可以了可以了，要不就先这样吧，你早点休息吧。",
+          "start_time": "25:15.200",
+          "end_time": "25:19.300",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 344,
+      "end_line": 358,
+      "title": "想结束时只确认一次再让对方去忙",
+      "intent": [
+        "告别",
+        "结束",
+        "休息",
+        "选择"
+      ],
+      "emotion": [
+        "平静",
+        "关心"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "尊重退出",
+        "澄清",
+        "顺着接话",
+        "亲近回应"
+      ],
+      "topic": [
+        "去忙",
+        "休息",
+        "继续一起玩"
+      ],
+      "pressure": "低",
+      "style": [
+        "不反击",
+        "短确认",
+        "亲切告别"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "对方说先这样早点休息→问是否有事→对方解释去直播→答你去忙吧→商量剩余时间休息→说明明天继续→双向谢谢与拜拜。借鉴关心与选择共存，不赌气挽留。",
+      "limits": "明天继续仅意向，不是复购事实；不迁移禁止接其他单的交易控制，后段最高级奉承可按角色压缩。",
+      "observed_followup": "双方完成告别，随后主播旁白不并入连续反馈。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1rqa8zHE5k:344-358",
+      "source_file": "BV1rqa8zHE5k_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1rqa8zHE5k_转写.txt",
+      "source_sha256": "3cc131888d9b4eda1b553afe67ae26dd2c8ec011cf2773d8fd0f2e396fc1f49c",
+      "source_notes": "主代理完整读取1–386行。177行人物自述23岁，但不认证真实身份；同源重复出现在BV1yNaBzLEWz，不能视为独立证据。连续行不保证音视频未剪辑或说话人完全准确，正文后段含旁白评论。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 15,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "95e55261e8957489ca74dd22280d4603b4eab82c89ad7d47ca2e68ceca6c0b30",
+      "excerpt": [
+        {
+          "line": 344,
+          "raw": "[25:15.200,25:19.300,0] 我的我的，可以了可以了，要不就先这样吧，你早点休息吧。",
+          "text": "我的我的，可以了可以了，要不就先这样吧，你早点休息吧。",
+          "start_time": "25:15.200",
+          "end_time": "25:19.300",
+          "speaker_id": "0"
+        },
+        {
+          "line": 345,
+          "raw": "[25:19.700,25:22.375,1] 啊，你有事要去忙了吗？小宝宝对。",
+          "text": "啊，你有事要去忙了吗？小宝宝对。",
+          "start_time": "25:19.700",
+          "end_time": "25:22.375",
+          "speaker_id": "1"
+        },
+        {
+          "line": 346,
+          "raw": "[25:22.375,25:23.525,0] 我去直播了。",
+          "text": "我去直播了。",
+          "start_time": "25:22.375",
+          "end_time": "25:23.525",
+          "speaker_id": "0"
+        },
+        {
+          "line": 347,
+          "raw": "[25:23.525,25:26.925,1] 好的好的，那你去忙吧，小宝宝很开心。",
+          "text": "好的好的，那你去忙吧，小宝宝很开心。",
+          "start_time": "25:23.525",
+          "end_time": "25:26.925",
+          "speaker_id": "1"
+        },
+        {
+          "line": 348,
+          "raw": "[25:26.925,25:31.500,0] 你这样啊，我这个时间没到你就不要接别的单了啊，你就去睡觉吧。好吧。",
+          "text": "你这样啊，我这个时间没到你就不要接别的单了啊，你就去睡觉吧。好吧。",
+          "start_time": "25:26.925",
+          "end_time": "25:31.500",
+          "speaker_id": "0"
+        },
+        {
+          "line": 349,
+          "raw": "[25:31.500,25:33.950,1] OK, 我那我就先休息喽，好。",
+          "text": "OK, 我那我就先休息喽，好。",
+          "start_time": "25:31.500",
+          "end_time": "25:33.950",
+          "speaker_id": "1"
+        },
+        {
+          "line": 350,
+          "raw": "[25:33.950,25:34.950,0] 明天再继续哈。",
+          "text": "明天再继续哈。",
+          "start_time": "25:33.950",
+          "end_time": "25:34.950",
+          "speaker_id": "0"
+        },
+        {
+          "line": 351,
+          "raw": "[25:34.950,25:39.325,1] 谢谢你啊，刘旭东小宝宝，你就是全世界最可爱最帅气的小宝宝。",
+          "text": "谢谢你啊，刘旭东小宝宝，你就是全世界最可爱最帅气的小宝宝。",
+          "start_time": "25:34.950",
+          "end_time": "25:39.325",
+          "speaker_id": "1"
+        },
+        {
+          "line": 352,
+          "raw": "[25:39.325,25:40.250,0] 没事没事。",
+          "text": "没事没事。",
+          "start_time": "25:39.325",
+          "end_time": "25:40.250",
+          "speaker_id": "0"
+        },
+        {
+          "line": 353,
+          "raw": "[25:40.250,25:42.100,1] 你是最好的男人，好。",
+          "text": "你是最好的男人，好。",
+          "start_time": "25:40.250",
+          "end_time": "25:42.100",
+          "speaker_id": "1"
+        },
+        {
+          "line": 354,
+          "raw": "[25:42.100,25:43.387,0] 拜拜拜拜拜。",
+          "text": "拜拜拜拜拜。",
+          "start_time": "25:42.100",
+          "end_time": "25:43.387",
+          "speaker_id": "0"
+        },
+        {
+          "line": 355,
+          "raw": "[25:43.387,25:44.050,1] 拜拜拜。",
+          "text": "拜拜拜。",
+          "start_time": "25:43.387",
+          "end_time": "25:44.050",
+          "speaker_id": "1"
+        },
+        {
+          "line": 356,
+          "raw": "[25:44.050,25:46.950,0] 你很可爱啊，好好加油哦，拜拜好，都。",
+          "text": "你很可爱啊，好好加油哦，拜拜好，都。",
+          "start_time": "25:44.050",
+          "end_time": "25:46.950",
+          "speaker_id": "0"
+        },
+        {
+          "line": 357,
+          "raw": "[25:46.950,25:47.825,1] 拜拜。",
+          "text": "拜拜。",
+          "start_time": "25:46.950",
+          "end_time": "25:47.825",
+          "speaker_id": "1"
+        },
+        {
+          "line": 358,
+          "raw": "[25:47.825,25:48.550,0] 拜拜。",
+          "text": "拜拜。",
+          "start_time": "25:47.825",
+          "end_time": "25:48.550",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 16,
+      "end_line": 21,
+      "title": "配装建议之后保留自己带枪参与的选择",
+      "intent": [
+        "配装确认",
+        "自主参与",
+        "提供协助"
+      ],
+      "emotion": [
+        "试探",
+        "认可"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "澄清",
+        "顺着接话",
+        "共同目标"
+      ],
+      "topic": [
+        "配装",
+        "带枪共玩",
+        "物资带回"
+      ],
+      "pressure": "低",
+      "style": [
+        "口语复述",
+        "可选协助",
+        "顺应偏好"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：先提出最低配装建议，听对方复述并询问能否自己带枪，再提供代操作选项、接受自主带枪，最后说明枪的带回安排并收到确认。",
+      "limits": "这是带有交易保障的游戏配装协商，不等同于技术已经可靠或对方缺乏能力；代操作只是备选，不能改写成强制接管或替用户承诺保本。末句包含主播评价，不作为下一轮陪玩回应。",
+      "observed_followup": "老板明确认可自己带枪的安排，并口头评价服务可以；未见该安排实际履约结果。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:16-21",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 6,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "c113a24bc4743c76b278938f8eea1cdf78d06b043a211c6d20a905890fe20cb8",
+      "excerpt": [
+        {
+          "line": 16,
+          "raw": "[0:30.800,0:33.800,1] 你带个左轮，然后带个小点的胸挂，老板。",
+          "text": "你带个左轮，然后带个小点的胸挂，老板。",
+          "start_time": "0:30.800",
+          "end_time": "0:33.800",
+          "speaker_id": "1"
+        },
+        {
+          "line": 17,
+          "raw": "[0:33.800,0:36.375,0] 小点的胸挂，然后带个左轮。对。",
+          "text": "小点的胸挂，然后带个左轮。对。",
+          "start_time": "0:33.800",
+          "end_time": "0:36.375",
+          "speaker_id": "0"
+        },
+        {
+          "line": 18,
+          "raw": "[0:36.375,0:40.200,1] 或者你不会的话，我你不方便的话我来搞。",
+          "text": "或者你不会的话，我你不方便的话我来搞。",
+          "start_time": "0:36.375",
+          "end_time": "0:40.200",
+          "speaker_id": "1"
+        },
+        {
+          "line": 19,
+          "raw": "[0:40.350,0:45.400,0] 啊，没事，我会呃带个左轮，配个长枪管，然后不带枪吗？可以自己带枪玩吧。",
+          "text": "啊，没事，我会呃带个左轮，配个长枪管，然后不带枪吗？可以自己带枪玩吧。",
+          "start_time": "0:40.350",
+          "end_time": "0:45.400",
+          "speaker_id": "0"
+        },
+        {
+          "line": 20,
+          "raw": "[0:45.400,0:49.275,1] 也可以，你可以带枪玩，带枪玩，然后我把你枪带回去。",
+          "text": "也可以，你可以带枪玩，带枪玩，然后我把你枪带回去。",
+          "start_time": "0:45.400",
+          "end_time": "0:49.275",
+          "speaker_id": "1"
+        },
+        {
+          "line": 21,
+          "raw": "[0:49.275,0:54.275,0] 哦，可以好的，good. 哎，这服务可以啊，看一下他们打的怎么样，笑死我了。",
+          "text": "哦，可以好的，good. 哎，这服务可以啊，看一下他们打的怎么样，笑死我了。",
+          "start_time": "0:49.275",
+          "end_time": "0:54.275",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 37,
+      "end_line": 45,
+      "title": "连续失败时先让老板继续搜再回应亏损质疑",
+      "intent": [
+        "失败应对",
+        "资源优先",
+        "费用担心回应"
+      ],
+      "emotion": [
+        "惊慌",
+        "担心",
+        "被回应"
+      ],
+      "phase": [
+        "事后受挫"
+      ],
+      "interaction": [
+        "顺着接话",
+        "共同目标",
+        "自我表达",
+        "反例"
+      ],
+      "topic": [
+        "炸单",
+        "继续搜物资",
+        "装备损失",
+        "交易信任"
+      ],
+      "pressure": "高",
+      "style": [
+        "直接指令",
+        "不追责",
+        "自我说明",
+        "主播试探"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：对方问失败后怎么办，先让其继续拿资源、暂不照顾自己；随后对装备成本与未收款的追问作自我说明，再接住对方表示感受到的回应。",
+      "limits": "第39行有主播装傻测试的自述，不能当自然焦虑；第43行ASR含混，不还原具体经济解释，也不把没有骗钱的自我声明当诚信证据。本段没有清晰失误道歉，不标承认失误；可迁移不追责的接话顺序，不能迁移亏损换信任的商业逻辑。",
+      "observed_followup": "老板从追问成本转为两次表示感受到了，陪玩感谢；只说明文本内出现认可表达，未见损失被解决。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:37-45",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 9,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "ef48aeae90fb5bb14ac180f1ddedfc5c54af2c35e45049d150d2edd73410c013",
+      "excerpt": [
+        {
+          "line": 37,
+          "raw": "[2:41.460,2:46.710,0] 我操又炸了啊，我该怎么办？",
+          "text": "我操又炸了啊，我该怎么办？",
+          "start_time": "2:41.460",
+          "end_time": "2:46.710",
+          "speaker_id": "0"
+        },
+        {
+          "line": 38,
+          "raw": "[2:46.760,2:49.160,1] 你继续吃，你继续吃，不用管我。",
+          "text": "你继续吃，你继续吃，不用管我。",
+          "start_time": "2:46.760",
+          "end_time": "2:49.160",
+          "speaker_id": "1"
+        },
+        {
+          "line": 39,
+          "raw": "[2:49.160,3:0.160,0] 我是应该装糖呢，还是试一下？吼，笑死又炸弹。",
+          "text": "我是应该装糖呢，还是试一下？吼，笑死又炸弹。",
+          "start_time": "2:49.160",
+          "end_time": "3:0.160",
+          "speaker_id": "0"
+        },
+        {
+          "line": 40,
+          "raw": "[3:0.280,3:3.230,0] 啊，那你们起一把装备要多少钱呀？",
+          "text": "啊，那你们起一把装备要多少钱呀？",
+          "start_time": "3:0.280",
+          "end_time": "3:3.230",
+          "speaker_id": "0"
+        },
+        {
+          "line": 41,
+          "raw": "[3:3.230,3:4.780,1] 两百两百200万。",
+          "text": "两百两百200万。",
+          "start_time": "3:3.230",
+          "end_time": "3:4.780",
+          "speaker_id": "1"
+        },
+        {
+          "line": 42,
+          "raw": "[3:4.830,3:11.055,0] 那炸你们加上上一把已经损失400万了，现在连我20块都没收到。你们不炸了？",
+          "text": "那炸你们加上上一把已经损失400万了，现在连我20块都没收到。你们不炸了？",
+          "start_time": "3:4.830",
+          "end_time": "3:11.055",
+          "speaker_id": "0"
+        },
+        {
+          "line": 43,
+          "raw": "[3:11.055,3:20.680,1] 没事啊，声也大呀。这样你也能感受出来，我们的我们的确没有说想骗你钱的。呃。",
+          "text": "没事啊，声也大呀。这样你也能感受出来，我们的我们的确没有说想骗你钱的。呃。",
+          "start_time": "3:11.055",
+          "end_time": "3:20.680",
+          "speaker_id": "1"
+        },
+        {
+          "line": 44,
+          "raw": "[3:20.680,3:22.630,0] 我感受到了，真的，我感受到了。",
+          "text": "我感受到了，真的，我感受到了。",
+          "start_time": "3:20.680",
+          "end_time": "3:22.630",
+          "speaker_id": "0"
+        },
+        {
+          "line": 45,
+          "raw": "[3:22.630,3:25.030,1] 感谢老板。这样。",
+          "text": "感谢老板。这样。",
+          "start_time": "3:22.630",
+          "end_time": "3:25.030",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 46,
+      "end_line": 61,
+      "title": "唱歌请求中的难听与罚钱顾虑及矛盾反馈",
+      "intent": [
+        "才艺请求",
+        "顾虑澄清",
+        "反馈表演"
+      ],
+      "emotion": [
+        "不自信",
+        "担心被罚",
+        "感谢"
+      ],
+      "phase": [
+        "事前担心"
+      ],
+      "interaction": [
+        "澄清",
+        "自我表达",
+        "顺着接话",
+        "反例"
+      ],
+      "topic": [
+        "唱歌",
+        "罚钱顾虑",
+        "曲目与长度",
+        "付费反馈"
+      ],
+      "pressure": "低",
+      "style": [
+        "重复确认",
+        "条件协商",
+        "褒贬并存",
+        "交易语境"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：请求唱歌后先听到难听的自我担心，再回应是否罚钱的追问、确认曲目与表演范围，接到演唱后给出反馈并收到感谢；保留过程中的负面插话与最终正面评价的矛盾，不能压成单句夸奖。",
+      "limits": "第56行出现负面评价，可能是主播插话，无法确认陪玩是否听到；不能包装成全程支持。材料没有明确允许拒唱的回应，也不能把付费条件当尊重退出。低压力仅指无即时战斗压力，不否认商业表演压力；唱段原文不作独立话术模板。",
+      "observed_followup": "陪玩从询问难听是否罚钱转为选歌与演唱，老板最终说好听并称已转20，陪玩感谢；无法证明先前担心被消除或转账实际完成。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:46-61",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 16,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "a1a300cd7faef7e5a950af68bbed7ca818527057fa147f427b7f66e9dbf5ed34",
+      "excerpt": [
+        {
+          "line": 46,
+          "raw": "[3:25.030,3:31.630,0] 我比较喜欢听唱歌，你们会唱歌吗？唱唱唱一首歌给你们转20，我我挺喜欢你们的。",
+          "text": "我比较喜欢听唱歌，你们会唱歌吗？唱唱唱一首歌给你们转20，我我挺喜欢你们的。",
+          "start_time": "3:25.030",
+          "end_time": "3:31.630",
+          "speaker_id": "0"
+        },
+        {
+          "line": 47,
+          "raw": "[3:31.630,3:33.305,1] 我唱得很难听啊。老板。",
+          "text": "我唱得很难听啊。老板。",
+          "start_time": "3:31.630",
+          "end_time": "3:33.305",
+          "speaker_id": "1"
+        },
+        {
+          "line": 48,
+          "raw": "[3:33.305,3:36.655,0] 没事，我我我我比较喜欢，有情绪价值。",
+          "text": "没事，我我我我比较喜欢，有情绪价值。",
+          "start_time": "3:33.305",
+          "end_time": "3:36.655",
+          "speaker_id": "0"
+        },
+        {
+          "line": 49,
+          "raw": "[3:36.655,3:40.655,1] 难听会不会罚钱呢？老板，我先在问你一句，我就不不只要。",
+          "text": "难听会不会罚钱呢？老板，我先在问你一句，我就不不只要。",
+          "start_time": "3:36.655",
+          "end_time": "3:40.655",
+          "speaker_id": "1"
+        },
+        {
+          "line": 50,
+          "raw": "[3:40.655,3:43.030,0] 只要你唱出来，我就给你转20好吧。",
+          "text": "只要你唱出来，我就给你转20好吧。",
+          "start_time": "3:40.655",
+          "end_time": "3:43.030",
+          "speaker_id": "0"
+        },
+        {
+          "line": 51,
+          "raw": "[3:43.030,3:45.930,1] OK, 呃，唱整首吗？呃。",
+          "text": "OK, 呃，唱整首吗？呃。",
+          "start_time": "3:43.030",
+          "end_time": "3:45.930",
+          "speaker_id": "1"
+        },
+        {
+          "line": 52,
+          "raw": "[3:45.930,3:48.030,0] 你有什么会你有什么会唱的歌吗？嗯。",
+          "text": "你有什么会你有什么会唱的歌吗？嗯。",
+          "start_time": "3:45.930",
+          "end_time": "3:48.030",
+          "speaker_id": "0"
+        },
+        {
+          "line": 53,
+          "raw": "[3:48.030,3:50.930,1] 唱一个老男孩行不行？哇。",
+          "text": "唱一个老男孩行不行？哇。",
+          "start_time": "3:48.030",
+          "end_time": "3:50.930",
+          "speaker_id": "1"
+        },
+        {
+          "line": 54,
+          "raw": "[3:50.930,3:56.955,0] 可以，你应景了，我就是老男孩，来吧，这20块钱是他们的素材费，到时候上。",
+          "text": "可以，你应景了，我就是老男孩，来吧，这20块钱是他们的素材费，到时候上。",
+          "start_time": "3:50.930",
+          "end_time": "3:56.955",
+          "speaker_id": "0"
+        },
+        {
+          "line": 55,
+          "raw": "[4:0.300,4:2.600,1] 爱着的人啊，我操。",
+          "text": "爱着的人啊，我操。",
+          "start_time": "4:0.300",
+          "end_time": "4:2.600",
+          "speaker_id": "1"
+        },
+        {
+          "line": 56,
+          "raw": "[4:2.600,4:3.000,0] 真差。",
+          "text": "真差。",
+          "start_time": "4:2.600",
+          "end_time": "4:3.000",
+          "speaker_id": "0"
+        },
+        {
+          "line": 57,
+          "raw": "[4:3.000,4:5.600,1] 到底我该如何表达？",
+          "text": "到底我该如何表达？",
+          "start_time": "4:3.000",
+          "end_time": "4:5.600",
+          "speaker_id": "1"
+        },
+        {
+          "line": 58,
+          "raw": "[4:6.520,4:11.120,1] 他会接受我吗？是不是应该放弃？",
+          "text": "他会接受我吗？是不是应该放弃？",
+          "start_time": "4:6.520",
+          "end_time": "4:11.120",
+          "speaker_id": "1"
+        },
+        {
+          "line": 59,
+          "raw": "[4:11.420,4:20.095,1] 花开花落又是一季春天啊。你在哪里怎么样？老板哇。",
+          "text": "花开花落又是一季春天啊。你在哪里怎么样？老板哇。",
+          "start_time": "4:11.420",
+          "end_time": "4:20.095",
+          "speaker_id": "1"
+        },
+        {
+          "line": 60,
+          "raw": "[4:20.095,4:24.470,0] 哎呀，好听啊，你别你别说不难听啊，挺好听的，我转给你了，20。",
+          "text": "哎呀，好听啊，你别你别说不难听啊，挺好听的，我转给你了，20。",
+          "start_time": "4:20.095",
+          "end_time": "4:24.470",
+          "speaker_id": "0"
+        },
+        {
+          "line": 61,
+          "raw": "[4:24.470,4:26.570,1] 哇，谢谢老板，来。",
+          "text": "哇，谢谢老板，来。",
+          "start_time": "4:24.470",
+          "end_time": "4:26.570",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 65,
+      "end_line": 78,
+      "title": "报出资源位置再把开局收获归给老板",
+      "intent": [
+        "让资源",
+        "位置说明",
+        "分享高光"
+      ],
+      "emotion": [
+        "兴奋",
+        "惊喜",
+        "认可"
+      ],
+      "phase": [
+        "事后高光"
+      ],
+      "interaction": [
+        "澄清",
+        "让渡成就",
+        "顺着接话"
+      ],
+      "topic": [
+        "大金",
+        "资源拾取",
+        "开局收获",
+        "手气归因"
+      ],
+      "pressure": "低",
+      "style": [
+        "位置具体",
+        "连续报喜",
+        "夸张归功"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：先报发现的资源，接住在哪里的追问并给脚下定位，出现听不清时补充物品信息，再汇总开局收获；对方夸手红后把共享成就让回对方，得到太会说话的回应。",
+      "limits": "金额、物品名及第71—73行有ASR错字，不据此计算收益；第65行感谢承接前文打赏，但本片段检索重点从同一行的资源报点开始。老板加成是社交归功，不是游戏机制或客观能力反馈；不要无条件复制夸张归功。",
+      "observed_followup": "老板按位置询问并确认理解，随后表达开局收获惊喜、夸手红，听到归功后评价太会说话；没有长期效果信息。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:65-78",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 14,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "978259ac8d9deb2a627d651d2565dc09c590d5b1fad177622ee1c7d2a166f7c9",
+      "excerpt": [
+        {
+          "line": 65,
+          "raw": "[4:35.170,4:40.945,1] 谢谢老板，哎，老板，40万的大金老板啊。",
+          "text": "谢谢老板，哎，老板，40万的大金老板啊。",
+          "start_time": "4:35.170",
+          "end_time": "4:40.945",
+          "speaker_id": "1"
+        },
+        {
+          "line": 66,
+          "raw": "[4:40.945,4:42.320,0] 哪里看见在哪。",
+          "text": "哪里看见在哪。",
+          "start_time": "4:40.945",
+          "end_time": "4:42.320",
+          "speaker_id": "0"
+        },
+        {
+          "line": 67,
+          "raw": "[4:42.320,4:43.420,1] 哦？",
+          "text": "哦？",
+          "start_time": "4:42.320",
+          "end_time": "4:43.420",
+          "speaker_id": "1"
+        },
+        {
+          "line": 68,
+          "raw": "[4:43.420,4:43.920,0] 来。",
+          "text": "来。",
+          "start_time": "4:43.420",
+          "end_time": "4:43.920",
+          "speaker_id": "0"
+        },
+        {
+          "line": 69,
+          "raw": "[4:43.920,4:48.795,1] 在我脚下。老板先吃个40万爽一爽。这个之前100万的。",
+          "text": "在我脚下。老板先吃个40万爽一爽。这个之前100万的。",
+          "start_time": "4:43.920",
+          "end_time": "4:48.795",
+          "speaker_id": "1"
+        },
+        {
+          "line": 70,
+          "raw": "[4:48.795,4:51.820,0] 哦哦，原来是这样好的。",
+          "text": "哦哦，原来是这样好的。",
+          "start_time": "4:48.795",
+          "end_time": "4:51.820",
+          "speaker_id": "0"
+        },
+        {
+          "line": 71,
+          "raw": "[4:51.820,4:58.070,1] 来来来，帮我鸭脖过来拿啊。",
+          "text": "来来来，帮我鸭脖过来拿啊。",
+          "start_time": "4:51.820",
+          "end_time": "4:58.070",
+          "speaker_id": "1"
+        },
+        {
+          "line": 72,
+          "raw": "[4:58.070,4:59.820,0] 什么东西？什么破音了？",
+          "text": "什么东西？什么破音了？",
+          "start_time": "4:58.070",
+          "end_time": "4:59.820",
+          "speaker_id": "0"
+        },
+        {
+          "line": 73,
+          "raw": "[4:59.820,5:6.745,1] 房卡房卡加红，先吃80万，先吃80万。老板恭喜老板喜。",
+          "text": "房卡房卡加红，先吃80万，先吃80万。老板恭喜老板喜。",
+          "start_time": "4:59.820",
+          "end_time": "5:6.745",
+          "speaker_id": "1"
+        },
+        {
+          "line": 74,
+          "raw": "[5:6.920,5:9.770,1] 击120万开局两分钟。",
+          "text": "击120万开局两分钟。",
+          "start_time": "5:6.920",
+          "end_time": "5:9.770",
+          "speaker_id": "1"
+        },
+        {
+          "line": 75,
+          "raw": "[5:10.670,5:16.145,0] 哇，我得继续双糖兄弟们，哎，你们手真红啊。",
+          "text": "哇，我得继续双糖兄弟们，哎，你们手真红啊。",
+          "start_time": "5:10.670",
+          "end_time": "5:16.145",
+          "speaker_id": "0"
+        },
+        {
+          "line": 76,
+          "raw": "[5:16.145,5:18.620,1] 主要是老板的加成。",
+          "text": "主要是老板的加成。",
+          "start_time": "5:16.145",
+          "end_time": "5:18.620",
+          "speaker_id": "1"
+        },
+        {
+          "line": 77,
+          "raw": "[5:19.370,5:21.570,0] 哇，真短，你太会说话了。",
+          "text": "哇，真短，你太会说话了。",
+          "start_time": "5:19.370",
+          "end_time": "5:21.570",
+          "speaker_id": "0"
+        },
+        {
+          "line": 78,
+          "raw": "[5:21.570,5:28.120,1] 还有一个，还有一个，还有一个，主要是老板有人需要这个吗？主要是老板太厉害了。",
+          "text": "还有一个，还有一个，还有一个，主要是老板有人需要这个吗？主要是老板太厉害了。",
+          "start_time": "5:21.570",
+          "end_time": "5:28.120",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 79,
+      "end_line": 86,
+      "title": "接住开卡请求并回应是否额外收费",
+      "intent": [
+        "请求协助",
+        "分工安排",
+        "费用澄清"
+      ],
+      "emotion": [
+        "试探",
+        "惊喜",
+        "激动"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "共同目标",
+        "澄清",
+        "顺着接话"
+      ],
+      "topic": [
+        "地下金库开卡",
+        "带路分工",
+        "附加费用"
+      ],
+      "pressure": "低",
+      "style": [
+        "即时接单",
+        "分工指向",
+        "玩笑式说明"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：对方提出已有卡能否开，先安排由队友带去，再回应包不包开卡及是否加钱的连续追问，收到惊喜表达后作激动回应；迁移的是请求、安排、费用确认、反馈的连续顺序。",
+      "limits": "说话人1可能合并两位陪玩，分工对象不能可靠映射到声音；不加钱是该段商业安排，不能迁移为普遍服务承诺。帅的说明属于奉承，不能当费用规则或能力判断；转账只保留为口头陈述。",
+      "observed_followup": "老板确认无需加钱后说太爽并称再转20，陪玩激动回应；片段内未呈现开卡完成。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:79-86",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 8,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "ff2a6273544227b22989c7f0bc629d91f3b9b1f4279878286688c8b7ee8d3d5e",
+      "excerpt": [
+        {
+          "line": 79,
+          "raw": "[5:28.370,5:34.245,0] 哎，我有这什么地下金库的什么纺制卡可以可以开开几个啊。",
+          "text": "哎，我有这什么地下金库的什么纺制卡可以可以开开几个啊。",
+          "start_time": "5:28.370",
+          "end_time": "5:34.245",
+          "speaker_id": "0"
+        },
+        {
+          "line": 80,
+          "raw": "[5:34.245,5:39.495,1] 开两让威龙去带你开吧，好吧，威龙去跟掉，不是。",
+          "text": "开两让威龙去带你开吧，好吧，威龙去跟掉，不是。",
+          "start_time": "5:34.245",
+          "end_time": "5:39.495",
+          "speaker_id": "1"
+        },
+        {
+          "line": 81,
+          "raw": "[5:39.495,5:41.970,0] 你们20块钱还包开卡的兄弟。",
+          "text": "你们20块钱还包开卡的兄弟。",
+          "start_time": "5:39.495",
+          "end_time": "5:41.970",
+          "speaker_id": "0"
+        },
+        {
+          "line": 82,
+          "raw": "[5:41.970,5:43.420,1] 我给你开哇。",
+          "text": "我给你开哇。",
+          "start_time": "5:41.970",
+          "end_time": "5:43.420",
+          "speaker_id": "1"
+        },
+        {
+          "line": 83,
+          "raw": "[5:43.570,5:47.670,0] 我点那种电竞开卡他还要加钱的，你们不用加钱吗？",
+          "text": "我点那种电竞开卡他还要加钱的，你们不用加钱吗？",
+          "start_time": "5:43.570",
+          "end_time": "5:47.670",
+          "speaker_id": "0"
+        },
+        {
+          "line": 84,
+          "raw": "[5:47.670,5:52.020,1] 不用，主要是老板长得帅，不用加钱。",
+          "text": "不用，主要是老板长得帅，不用加钱。",
+          "start_time": "5:47.670",
+          "end_time": "5:52.020",
+          "speaker_id": "1"
+        },
+        {
+          "line": 85,
+          "raw": "[5:52.770,5:54.870,0] 哇，太爽了，再给你转20。",
+          "text": "哇，太爽了，再给你转20。",
+          "start_time": "5:52.770",
+          "end_time": "5:54.870",
+          "speaker_id": "0"
+        },
+        {
+          "line": 86,
+          "raw": "[5:54.870,6:1.345,1] 我操，受不了了，我受不了了，老板，这谁顶得住啊？老板。",
+          "text": "我操，受不了了，我受不了了，老板，这谁顶得住啊？老板。",
+          "start_time": "5:54.870",
+          "end_time": "6:1.345",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 91,
+      "end_line": 101,
+      "title": "先留在小房间再解释身份牌的撤离用途",
+      "intent": [
+        "安全安置",
+        "解释机制",
+        "安排取物"
+      ],
+      "emotion": [
+        "不解",
+        "谨慎",
+        "配合"
+      ],
+      "phase": [
+        "实时压力"
+      ],
+      "interaction": [
+        "共同目标",
+        "澄清",
+        "具体反馈"
+      ],
+      "topic": [
+        "小房间掩护",
+        "身份牌",
+        "飞鼠撤离",
+        "物资带回"
+      ],
+      "pressure": "高",
+      "style": [
+        "先行动后解释",
+        "位置指向",
+        "逐问逐答"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：先阻止离开并给出待在小房间的具体行动，再要求拿身份牌；当对方误解为带狗牌出去、继续问飞鼠是什么时逐项澄清，最后重申藏好并说明由自己取物。",
+      "limits": "第92行战果及第97—99行机制词有误识，具体游戏规则不从ASR补写；第91行别退处在游戏安全安置上下文，不当作阻止用户结束服务。说明完是否实际安全仍未可见。",
+      "observed_followup": "老板多次确认位置并提出身份牌用途问题，听到解释后回应好；陪玩重申藏好和拿物安排，未见此段内撤离结果。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:91-101",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 11,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "f0472ba278104032e1bb96ba42363ae89ecc3282877d520ddab8db061499ae44",
+      "excerpt": [
+        {
+          "line": 91,
+          "raw": "[6:37.935,6:39.810,1] 别退，老板。",
+          "text": "别退，老板。",
+          "start_time": "6:37.935",
+          "end_time": "6:39.810",
+          "speaker_id": "1"
+        },
+        {
+          "line": 92,
+          "raw": "[6:40.010,6:43.985,0] 哦，厉害厉害厉害，打了两个蜂衣，老板。",
+          "text": "哦，厉害厉害厉害，打了两个蜂衣，老板。",
+          "start_time": "6:40.010",
+          "end_time": "6:43.985",
+          "speaker_id": "0"
+        },
+        {
+          "line": 93,
+          "raw": "[6:43.985,6:46.610,1] 你注意这个小房间别走啊，就一直待在这个小房间。",
+          "text": "你注意这个小房间别走啊，就一直待在这个小房间。",
+          "start_time": "6:43.985",
+          "end_time": "6:46.610",
+          "speaker_id": "1"
+        },
+        {
+          "line": 94,
+          "raw": "[6:46.610,6:47.835,0] 好的好的好的。",
+          "text": "好的好的好的。",
+          "start_time": "6:46.610",
+          "end_time": "6:47.835",
+          "speaker_id": "0"
+        },
+        {
+          "line": 95,
+          "raw": "[6:47.835,6:50.385,1] 把他们的身份牌拿两个。",
+          "text": "把他们的身份牌拿两个。",
+          "start_time": "6:47.835",
+          "end_time": "6:50.385",
+          "speaker_id": "1"
+        },
+        {
+          "line": 96,
+          "raw": "[6:50.385,6:52.510,0] 身份牌，拿他们狗牌带出去是吗？",
+          "text": "身份牌，拿他们狗牌带出去是吗？",
+          "start_time": "6:50.385",
+          "end_time": "6:52.510",
+          "speaker_id": "0"
+        },
+        {
+          "line": 97,
+          "raw": "[6:52.510,6:54.360,1] 不是他能走走飞鼠。",
+          "text": "不是他能走走飞鼠。",
+          "start_time": "6:52.510",
+          "end_time": "6:54.360",
+          "speaker_id": "1"
+        },
+        {
+          "line": 98,
+          "raw": "[6:54.360,6:55.385,0] 什么是飞鼠？",
+          "text": "什么是飞鼠？",
+          "start_time": "6:54.360",
+          "end_time": "6:55.385",
+          "speaker_id": "0"
+        },
+        {
+          "line": 99,
+          "raw": "[6:55.385,6:58.435,1] 就是大别塔里那个顶楼那个好好。",
+          "text": "就是大别塔里那个顶楼那个好好。",
+          "start_time": "6:55.385",
+          "end_time": "6:58.435",
+          "speaker_id": "1"
+        },
+        {
+          "line": 100,
+          "raw": "[6:58.435,6:58.585,0] 好。",
+          "text": "好。",
+          "start_time": "6:58.435",
+          "end_time": "6:58.585",
+          "speaker_id": "0"
+        },
+        {
+          "line": 101,
+          "raw": "[6:58.585,7:2.260,1] 老板你就搁这藏着吧。好的，上完包然后给你给你拿来。",
+          "text": "老板你就搁这藏着吧。好的，上完包然后给你给你拿来。",
+          "start_time": "6:58.585",
+          "end_time": "7:2.260",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 111,
+      "end_line": 129,
+      "title": "临近撤离时分步指路与紧张表达未被直接承接",
+      "intent": [
+        "询问战斗决策",
+        "路线指引",
+        "操作澄清"
+      ],
+      "emotion": [
+        "紧张自述",
+        "急切",
+        "困惑"
+      ],
+      "phase": [
+        "实时压力"
+      ],
+      "interaction": [
+        "共同目标",
+        "澄清",
+        "具体反馈",
+        "反例"
+      ],
+      "topic": [
+        "脚步",
+        "撤离路线",
+        "楼梯",
+        "绿烟",
+        "身份牌操作"
+      ],
+      "pressure": "高",
+      "style": [
+        "短促分步指令",
+        "重复地标",
+        "操作优先",
+        "主播试探"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：询问遇敌是否打之后进入急迫撤离，依次指向上楼、左侧楼梯、绿烟目标，并接住身份牌在哪里操作的追问；同时保留紧张表达没有被直接情绪回应、导航词反复而含混的不足。",
+      "limits": "第117、119、121行明确含主播装傻、故意摔落与演戏自述，不能当真实新手焦虑；第124—129行轮次及操作词混乱，不认定谁完成了理解。可迁移逐步地标指引，不能把夸枪或重复指令当充分安抚，也不把本段当已完成撤离。",
+      "observed_followup": "老板持续询问然后、表达紧张并追问操作位置，文本末尾出现原来是这样的表达，但说话人标注为1，不能归为老板理解确认。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:111-129",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 19,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "c050f4bf9dbb205908007bddfbfb3aa15a771fec5aed7000d3668622d73088ea",
+      "excerpt": [
+        {
+          "line": 111,
+          "raw": "[7:26.380,7:31.930,0] 如果遇到人咋办？打还是不打？脚步。",
+          "text": "如果遇到人咋办？打还是不打？脚步。",
+          "start_time": "7:26.380",
+          "end_time": "7:31.930",
+          "speaker_id": "0"
+        },
+        {
+          "line": 112,
+          "raw": "[7:32.080,7:36.580,1] 我听到脚步了。",
+          "text": "我听到脚步了。",
+          "start_time": "7:32.080",
+          "end_time": "7:36.580",
+          "speaker_id": "1"
+        },
+        {
+          "line": 113,
+          "raw": "[7:41.780,7:42.855,0] 坏了，杀人了。",
+          "text": "坏了，杀人了。",
+          "start_time": "7:41.780",
+          "end_time": "7:42.855",
+          "speaker_id": "0"
+        },
+        {
+          "line": 114,
+          "raw": "[7:42.855,7:45.655,1] 拉个大招，拿个钱。",
+          "text": "拉个大招，拿个钱。",
+          "start_time": "7:42.855",
+          "end_time": "7:45.655",
+          "speaker_id": "1"
+        },
+        {
+          "line": 115,
+          "raw": "[7:45.655,7:48.755,0] 直接走吧，来不及了，是往这走吗？",
+          "text": "直接走吧，来不及了，是往这走吗？",
+          "start_time": "7:45.655",
+          "end_time": "7:48.755",
+          "speaker_id": "0"
+        },
+        {
+          "line": 116,
+          "raw": "[7:48.755,7:59.830,1] 上楼上楼开门上楼啊，对对对，哇，老板这枪太帅了，我操，兜你的神呐，老板。",
+          "text": "上楼上楼开门上楼啊，对对对，哇，老板这枪太帅了，我操，兜你的神呐，老板。",
+          "start_time": "7:48.755",
+          "end_time": "7:59.830",
+          "speaker_id": "1"
+        },
+        {
+          "line": 117,
+          "raw": "[7:59.830,8:2.005,0] 我装傻，让他们急起来。然后，然后呢。",
+          "text": "我装傻，让他们急起来。然后，然后呢。",
+          "start_time": "7:59.830",
+          "end_time": "8:2.005",
+          "speaker_id": "0"
+        },
+        {
+          "line": 118,
+          "raw": "[8:2.005,8:6.780,1] 左边往往左边走，从这个楼楼梯下去。",
+          "text": "左边往往左边走，从这个楼楼梯下去。",
+          "start_time": "8:2.005",
+          "end_time": "8:6.780",
+          "speaker_id": "1"
+        },
+        {
+          "line": 119,
+          "raw": "[8:7.300,8:9.150,0] 啊，然后我故意摔断这个楼梯。",
+          "text": "啊，然后我故意摔断这个楼梯。",
+          "start_time": "8:7.300",
+          "end_time": "8:9.150",
+          "speaker_id": "0"
+        },
+        {
+          "line": 120,
+          "raw": "[8:9.150,8:14.350,1] 直接跳下去就行。楼梯不然后看到没人冒绿烟的地方就可以做。",
+          "text": "直接跳下去就行。楼梯不然后看到没人冒绿烟的地方就可以做。",
+          "start_time": "8:9.150",
+          "end_time": "8:14.350",
+          "speaker_id": "1"
+        },
+        {
+          "line": 121,
+          "raw": "[8:14.350,8:15.650,0] 兄弟们，我演的像不像人。",
+          "text": "兄弟们，我演的像不像人。",
+          "start_time": "8:14.350",
+          "end_time": "8:15.650",
+          "speaker_id": "0"
+        },
+        {
+          "line": 122,
+          "raw": "[8:15.650,8:17.725,1] 冒绿烟的地方就可以扣。好。",
+          "text": "冒绿烟的地方就可以扣。好。",
+          "start_time": "8:15.650",
+          "end_time": "8:17.725",
+          "speaker_id": "1"
+        },
+        {
+          "line": 123,
+          "raw": "[8:17.725,8:20.225,0] 好好，我好紧张啊。",
+          "text": "好好，我好紧张啊。",
+          "start_time": "8:17.725",
+          "end_time": "8:20.225",
+          "speaker_id": "0"
+        },
+        {
+          "line": 124,
+          "raw": "[8:20.225,8:22.775,1] 我身份牌怎么教？",
+          "text": "我身份牌怎么教？",
+          "start_time": "8:20.225",
+          "end_time": "8:22.775",
+          "speaker_id": "1"
+        },
+        {
+          "line": 125,
+          "raw": "[8:22.775,8:23.200,0] 在哪教。",
+          "text": "在哪教。",
+          "start_time": "8:22.775",
+          "end_time": "8:23.200",
+          "speaker_id": "0"
+        },
+        {
+          "line": 126,
+          "raw": "[8:23.200,8:27.100,1] 身份牌？那那地方冒绿烟的地方。",
+          "text": "身份牌？那那地方冒绿烟的地方。",
+          "start_time": "8:23.200",
+          "end_time": "8:27.100",
+          "speaker_id": "1"
+        },
+        {
+          "line": 127,
+          "raw": "[8:27.250,8:27.500,1] 哦。",
+          "text": "哦。",
+          "start_time": "8:27.250",
+          "end_time": "8:27.500",
+          "speaker_id": "1"
+        },
+        {
+          "line": 128,
+          "raw": "[8:27.500,8:27.750,0] 哦哦。",
+          "text": "哦哦。",
+          "start_time": "8:27.500",
+          "end_time": "8:27.750",
+          "speaker_id": "0"
+        },
+        {
+          "line": 129,
+          "raw": "[8:27.750,8:30.900,1] 哦哦哦哦，原来是这样啊，没。",
+          "text": "哦哦哦哦，原来是这样啊，没。",
+          "start_time": "8:27.750",
+          "end_time": "8:30.900",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 130,
+      "end_line": 138,
+      "title": "撤离结果确认后逐轮澄清押金与结算",
+      "intent": [
+        "确认结果",
+        "费用核对",
+        "表达付款意愿"
+      ],
+      "emotion": [
+        "不确定",
+        "配合",
+        "坚持付款"
+      ],
+      "phase": [
+        "事后高光"
+      ],
+      "interaction": [
+        "澄清",
+        "顺着接话",
+        "自我表达"
+      ],
+      "topic": [
+        "撤离成功",
+        "带出物资",
+        "押金",
+        "结算"
+      ],
+      "pressure": "低",
+      "style": [
+        "逐项核对",
+        "重复确认",
+        "口语让步"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：先回答物资是否带出和撤离是否成功，再接住多少钱、押金是否计入、是否继续保留押金的连续核对，最终保留双方对要不要转钱的不同表达。",
+      "limits": "片段开头有主播演戏自评；陪玩从给30转为再给10、再称不转也行，金额口径变化，不能包装成清晰一致的价格说明或实际付款记录。可用作澄清链及规则漂移反例，不对经济安排作外部建议。",
+      "observed_followup": "老板在成功确认后连续核对费用并提出继续保留押金，陪玩说不用转，老板反问为何不转；本段没有最终一致结算。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:130-138",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 9,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "adc7f83bc754fe95a82c4c08a2d141841ecea31afe875743682ebd93a8c475d5",
+      "excerpt": [
+        {
+          "line": 130,
+          "raw": "[8:31.100,8:38.975,0] 这就是老戏骨啊，这就撤离了。对，这就算呃，我物资带出去了是吗？",
+          "text": "这就是老戏骨啊，这就撤离了。对，这就算呃，我物资带出去了是吗？",
+          "start_time": "8:31.100",
+          "end_time": "8:38.975",
+          "speaker_id": "0"
+        },
+        {
+          "line": 131,
+          "raw": "[8:38.975,8:41.800,1] 那就算你彻底成功了。老板。",
+          "text": "那就算你彻底成功了。老板。",
+          "start_time": "8:38.975",
+          "end_time": "8:41.800",
+          "speaker_id": "1"
+        },
+        {
+          "line": 132,
+          "raw": "[8:41.800,8:46.225,0] 好好好好，334万，我要给你多少钱啊？",
+          "text": "好好好好，334万，我要给你多少钱啊？",
+          "start_time": "8:41.800",
+          "end_time": "8:46.225",
+          "speaker_id": "0"
+        },
+        {
+          "line": 133,
+          "raw": "[8:46.225,8:47.925,1] 呃，给30就行了吧。",
+          "text": "呃，给30就行了吧。",
+          "start_time": "8:46.225",
+          "end_time": "8:47.925",
+          "speaker_id": "1"
+        },
+        {
+          "line": 134,
+          "raw": "[8:47.925,8:50.500,0] 这算上之前那20是押金对吗？",
+          "text": "这算上之前那20是押金对吗？",
+          "start_time": "8:47.925",
+          "end_time": "8:50.500",
+          "speaker_id": "0"
+        },
+        {
+          "line": 135,
+          "raw": "[8:50.500,8:56.450,1] 押金是一直算，但是像咱们这种老板当然不算，你再给10块就行了。老板。",
+          "text": "押金是一直算，但是像咱们这种老板当然不算，你再给10块就行了。老板。",
+          "start_time": "8:50.500",
+          "end_time": "8:56.450",
+          "speaker_id": "1"
+        },
+        {
+          "line": 136,
+          "raw": "[8:56.450,9:3.350,0] 啊，那我那那要不这样，那押金还继续在你那里，我先给你转30，然后不用，不用等一下，我们打完之后。",
+          "text": "啊，那我那那要不这样，那押金还继续在你那里，我先给你转30，然后不用，不用等一下，我们打完之后。",
+          "start_time": "8:56.450",
+          "end_time": "9:3.350",
+          "speaker_id": "0"
+        },
+        {
+          "line": 137,
+          "raw": "[9:3.350,9:5.050,1] 不转也行，不用转了，老板。",
+          "text": "不转也行，不用转了，老板。",
+          "start_time": "9:3.350",
+          "end_time": "9:5.050",
+          "speaker_id": "1"
+        },
+        {
+          "line": 138,
+          "raw": "[9:5.050,9:6.750,0] 转怎么不转？",
+          "text": "转怎么不转？",
+          "start_time": "9:5.050",
+          "end_time": "9:6.750",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 139,
+      "end_line": 157,
+      "title": "网吧合唱的尴尬询问与共同选歌",
+      "intent": [
+        "请求合唱",
+        "询问尴尬",
+        "协调曲目"
+      ],
+      "emotion": [
+        "惊讶",
+        "主动表态",
+        "期待"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "澄清",
+        "共同目标",
+        "自我表达",
+        "顺着接话",
+        "轻调侃",
+        "反例"
+      ],
+      "topic": [
+        "网吧唱歌",
+        "公开表演顾虑",
+        "合唱选曲",
+        "打赏"
+      ],
+      "pressure": "低",
+      "style": [
+        "场所确认",
+        "夸张表态",
+        "同伴协商",
+        "玩笑插话"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：合唱请求引出所在场所，老板追问敢不敢唱及会不会尴尬，陪玩主动表示可以，再由两位陪玩协商都会的曲目，老板确认最终选择；区分同意参与和夸张否认尴尬。",
+      "limits": "尴尬由老板询问，并非陪玩已经表达不适；有你在不尴尬是陪玩自我表态，不能改写为要求别人克服尴尬。材料没有拒唱或退出选项，正向迁移限于场所确认和共同选曲，不迁移金钱压力或无条件表演；第153—155行可能是主播对观众的玩笑，不冒充双方对话。",
+      "observed_followup": "陪玩说可以唱并继续与同伴选曲，老板称先转50并接受大海；本段仅见准备合唱，未见演唱后评价。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:139-157",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 19,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "7f8464c825621af4820317343f1c69888ae06e101f30ebc38a8233f2314f231b",
+      "excerpt": [
+        {
+          "line": 139,
+          "raw": "[9:7.020,9:10.620,0] 唱歌不要钱的，你现在在唱，我再给你20。呃。",
+          "text": "唱歌不要钱的，你现在在唱，我再给你20。呃。",
+          "start_time": "9:7.020",
+          "end_time": "9:10.620",
+          "speaker_id": "0"
+        },
+        {
+          "line": 140,
+          "raw": "[9:10.620,9:12.045,1] 还想听什么？老板呃。",
+          "text": "还想听什么？老板呃。",
+          "start_time": "9:10.620",
+          "end_time": "9:12.045",
+          "speaker_id": "1"
+        },
+        {
+          "line": 141,
+          "raw": "[9:12.045,9:20.220,0] 什么都行，只要你唱，你们俩能合唱吗？好像另外一个刚我也看他说什么生活像一把刻刀，你俩合唱我给50。",
+          "text": "什么都行，只要你唱，你们俩能合唱吗？好像另外一个刚我也看他说什么生活像一把刻刀，你俩合唱我给50。",
+          "start_time": "9:12.045",
+          "end_time": "9:20.220",
+          "speaker_id": "0"
+        },
+        {
+          "line": 142,
+          "raw": "[9:20.220,9:25.545,1] OK. 老板，呃，你会唱什么歌？强子，我在网吧给你买了点酒。",
+          "text": "OK. 老板，呃，你会唱什么歌？强子，我在网吧给你买了点酒。",
+          "start_time": "9:20.220",
+          "end_time": "9:25.545",
+          "speaker_id": "1"
+        },
+        {
+          "line": 143,
+          "raw": "[9:25.545,9:28.870,0] 你在网吧你也敢唱歌啊？包。",
+          "text": "你在网吧你也敢唱歌啊？包。",
+          "start_time": "9:25.545",
+          "end_time": "9:28.870",
+          "speaker_id": "0"
+        },
+        {
+          "line": 144,
+          "raw": "[9:28.870,9:29.620,1] 可以的。",
+          "text": "可以的。",
+          "start_time": "9:28.870",
+          "end_time": "9:29.620",
+          "speaker_id": "1"
+        },
+        {
+          "line": 145,
+          "raw": "[9:29.620,9:31.420,0] 你这唱歌不会尴尬吗？",
+          "text": "你这唱歌不会尴尬吗？",
+          "start_time": "9:29.620",
+          "end_time": "9:31.420",
+          "speaker_id": "0"
+        },
+        {
+          "line": 146,
+          "raw": "[9:31.420,9:35.370,1] 老板，有你在永远不知道尴尬叫什么。",
+          "text": "老板，有你在永远不知道尴尬叫什么。",
+          "start_time": "9:31.420",
+          "end_time": "9:35.370",
+          "speaker_id": "1"
+        },
+        {
+          "line": 147,
+          "raw": "[9:35.570,9:38.570,0] 在网吧唱吗？我的天，对。",
+          "text": "在网吧唱吗？我的天，对。",
+          "start_time": "9:35.570",
+          "end_time": "9:38.570",
+          "speaker_id": "0"
+        },
+        {
+          "line": 148,
+          "raw": "[9:38.620,9:39.145,1] 老板。",
+          "text": "老板。",
+          "start_time": "9:38.620",
+          "end_time": "9:39.145",
+          "speaker_id": "1"
+        },
+        {
+          "line": 149,
+          "raw": "[9:39.145,9:41.345,0] 那这50我先转了，谢谢。",
+          "text": "那这50我先转了，谢谢。",
+          "start_time": "9:39.145",
+          "end_time": "9:41.345",
+          "speaker_id": "0"
+        },
+        {
+          "line": 150,
+          "raw": "[9:41.345,9:43.920,1] 老板。我俩找一首我俩会唱的歌。",
+          "text": "老板。我俩找一首我俩会唱的歌。",
+          "start_time": "9:41.345",
+          "end_time": "9:43.920",
+          "speaker_id": "1"
+        },
+        {
+          "line": 151,
+          "raw": "[9:43.920,9:45.145,0] 好的，没有问题。",
+          "text": "好的，没有问题。",
+          "start_time": "9:43.920",
+          "end_time": "9:45.145",
+          "speaker_id": "0"
+        },
+        {
+          "line": 152,
+          "raw": "[9:45.145,9:48.920,1] 你会唱什么？强子，我基本都会，你直说吧，那就唱。",
+          "text": "你会唱什么？强子，我基本都会，你直说吧，那就唱。",
+          "start_time": "9:45.145",
+          "end_time": "9:48.920",
+          "speaker_id": "1"
+        },
+        {
+          "line": 153,
+          "raw": "[9:49.420,9:51.370,0] 我把老板放心上。",
+          "text": "我把老板放心上。",
+          "start_time": "9:49.420",
+          "end_time": "9:51.370",
+          "speaker_id": "0"
+        },
+        {
+          "line": 154,
+          "raw": "[9:51.370,9:52.720,1] 老板。",
+          "text": "老板。",
+          "start_time": "9:51.370",
+          "end_time": "9:52.720",
+          "speaker_id": "1"
+        },
+        {
+          "line": 155,
+          "raw": "[9:52.720,9:53.620,0] 把我挂网上。",
+          "text": "把我挂网上。",
+          "start_time": "9:52.720",
+          "end_time": "9:53.620",
+          "speaker_id": "0"
+        },
+        {
+          "line": 156,
+          "raw": "[9:56.270,10:0.870,1] 那个你会唱大海不会啊？会啊，那我俩唱大海吧。老板啊。",
+          "text": "那个你会唱大海不会啊？会啊，那我俩唱大海吧。老板啊。",
+          "start_time": "9:56.270",
+          "end_time": "10:0.870",
+          "speaker_id": "1"
+        },
+        {
+          "line": 157,
+          "raw": "[10:0.870,10:3.195,0] 大海也行，大海吧，来。",
+          "text": "大海也行，大海吧，来。",
+          "start_time": "10:0.870",
+          "end_time": "10:3.195",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 168,
+      "end_line": 176,
+      "title": "怕老板亏装备与老板想一起猛攻的协商",
+      "intent": [
+        "控制装备风险",
+        "自主配装",
+        "共同进攻"
+      ],
+      "emotion": [
+        "顾虑",
+        "兴奋",
+        "积极参与"
+      ],
+      "phase": [
+        "事前担心"
+      ],
+      "interaction": [
+        "澄清",
+        "共同目标",
+        "顺着接话",
+        "自我表达"
+      ],
+      "topic": [
+        "五套六套配装",
+        "装备损失",
+        "共玩偏好",
+        "猛攻"
+      ],
+      "pressure": "低",
+      "style": [
+        "保护性提醒",
+        "重复劝阻",
+        "偏好协商",
+        "最终确认"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：对装备提议先询问自身能否加入，陪玩表达怕亏钱并劝少带；当老板明确说兴奋、想打一把时，转为共同进攻并确认各自装备，呈现从保护性提醒转向尊重参与的过程。",
+      "limits": "第168行代词及第172行末尾说话人可能混并，不能确定谁承担损失；反复不用穿可能压过用户偏好，不能仅总结为体贴。正向部分是明确共玩诉求后的调整，不是要求冒险、承诺不亏或一味阻止参与。",
+      "observed_followup": "老板在劝阻后仍明确表达想打一把，提出两人六套自己五套，陪玩回应OK；只见达成行动安排，不证明风险消失。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:168-176",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 9,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "a588d2ac97ae2b0c5bf0b7edcf33d3d61902706dffb475c66c390e22770c3303",
+      "excerpt": [
+        {
+          "line": 168,
+          "raw": "[11:5.360,11:7.835,1] 我直接就要你起6套老板啊。",
+          "text": "我直接就要你起6套老板啊。",
+          "start_time": "11:5.360",
+          "end_time": "11:7.835",
+          "speaker_id": "1"
+        },
+        {
+          "line": 169,
+          "raw": "[11:7.835,11:10.610,0] 起6套吗？我也有6套，我可以起吗？",
+          "text": "起6套吗？我也有6套，我可以起吗？",
+          "start_time": "11:7.835",
+          "end_time": "11:10.610",
+          "speaker_id": "0"
+        },
+        {
+          "line": 170,
+          "raw": "[11:10.610,11:12.722,1] 不用，那我。",
+          "text": "不用，那我。",
+          "start_time": "11:10.610",
+          "end_time": "11:12.722",
+          "speaker_id": "1"
+        },
+        {
+          "line": 171,
+          "raw": "[11:12.722,11:15.935,0] 我背包里面有那种呃烂的5套，我可以穿进去吧？",
+          "text": "我背包里面有那种呃烂的5套，我可以穿进去吧？",
+          "start_time": "11:12.722",
+          "end_time": "11:15.935",
+          "speaker_id": "0"
+        },
+        {
+          "line": 172,
+          "raw": "[11:15.935,11:20.960,1] 不用穿老板，我怕你亏钱，老板别穿了，老板啊，亏了不算你们的。这一。",
+          "text": "不用穿老板，我怕你亏钱，老板别穿了，老板啊，亏了不算你们的。这一。",
+          "start_time": "11:15.935",
+          "end_time": "11:20.960",
+          "speaker_id": "1"
+        },
+        {
+          "line": 173,
+          "raw": "[11:21.110,11:24.135,0] 你唱歌把我唱兴奋了，我想我想我想打一把。",
+          "text": "你唱歌把我唱兴奋了，我想我想我想打一把。",
+          "start_time": "11:21.110",
+          "end_time": "11:24.135",
+          "speaker_id": "0"
+        },
+        {
+          "line": 174,
+          "raw": "[11:24.135,11:25.560,1] 听猛攻。",
+          "text": "听猛攻。",
+          "start_time": "11:24.135",
+          "end_time": "11:25.560",
+          "speaker_id": "1"
+        },
+        {
+          "line": 175,
+          "raw": "[11:25.560,11:28.285,0] 好，那就一起猛攻。你俩起6套，我起5套。",
+          "text": "好，那就一起猛攻。你俩起6套，我起5套。",
+          "start_time": "11:25.560",
+          "end_time": "11:28.285",
+          "speaker_id": "0"
+        },
+        {
+          "line": 176,
+          "raw": "[11:28.285,11:29.310,1] OK, 老板。",
+          "text": "OK, 老板。",
+          "start_time": "11:28.285",
+          "end_time": "11:29.310",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 190,
+      "end_line": 195,
+      "title": "从留在后方等消息转为接老板一起打",
+      "intent": [
+        "物资安排",
+        "要求参战",
+        "接应共玩"
+      ],
+      "emotion": [
+        "期待",
+        "迫切",
+        "兴奋"
+      ],
+      "phase": [
+        "实时压力"
+      ],
+      "interaction": [
+        "共同目标",
+        "自我表达",
+        "顺着接话",
+        "具体反馈"
+      ],
+      "topic": [
+        "物资拾取",
+        "参战诉求",
+        "队友接应",
+        "共同交战"
+      ],
+      "pressure": "高",
+      "style": [
+        "先后方安排",
+        "重复表达偏好",
+        "行动回应",
+        "实时协同"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：先安排对方拿物资、等前方消息，听到想跟你们去打的明确诉求后回应并提出接应，随后让对方加入交战，以行动调整原来的被保护角色而不是只继续夸奖。",
+      "limits": "所有交战表达仅限游戏内；第195行合并多轮且有错字，不能还原精确战术或确认战果。第191行附带结算表达不是主检索意图；不能将被带着打等同于想旁观，也不保证参战安全。",
+      "observed_followup": "陪玩提出来接，老板再次确认跟去打，后续同一ASR段出现老板已经冲了和跟老板的协同发言；未据此推断共同参战满意度。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:190-195",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 6,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "a702b9e37c2a7f4e12bc8a6ec0d48a87fe95e690bdb8f4cb700ea679a771b515",
+      "excerpt": [
+        {
+          "line": 190,
+          "raw": "[12:12.940,12:25.115,1] 军用电台呀，老板，你看看军，你看看，等会儿也把身份牌要了。老板，你们等你等我们，我们我们现在出去杀人了啊。老板，好，等我们好消息。哎。",
+          "text": "军用电台呀，老板，你看看军，你看看，等会儿也把身份牌要了。老板，你们等你等我们，我们我们现在出去杀人了啊。老板，好，等我们好消息。哎。",
+          "start_time": "12:12.940",
+          "end_time": "12:25.115",
+          "speaker_id": "1"
+        },
+        {
+          "line": 191,
+          "raw": "[12:25.115,12:34.740,0] 我好想跟你们去杀人呐，我特别想打架。行，没事，现在我算我算算，200万，等会儿这一把就你们已经得20了好吗。",
+          "text": "我好想跟你们去杀人呐，我特别想打架。行，没事，现在我算我算算，200万，等会儿这一把就你们已经得20了好吗。",
+          "start_time": "12:25.115",
+          "end_time": "12:34.740",
+          "speaker_id": "0"
+        },
+        {
+          "line": 192,
+          "raw": "[12:34.740,12:35.390,1] 好。",
+          "text": "好。",
+          "start_time": "12:34.740",
+          "end_time": "12:35.390",
+          "speaker_id": "1"
+        },
+        {
+          "line": 193,
+          "raw": "[12:35.780,12:37.455,1] 来老板，我接你来。",
+          "text": "来老板，我接你来。",
+          "start_time": "12:35.780",
+          "end_time": "12:37.455",
+          "speaker_id": "1"
+        },
+        {
+          "line": 194,
+          "raw": "[12:37.455,12:40.455,0] 我跟你们打架去。我特别想打架，这一把起装了。",
+          "text": "我跟你们打架去。我特别想打架，这一把起装了。",
+          "start_time": "12:37.455",
+          "end_time": "12:40.455",
+          "speaker_id": "0"
+        },
+        {
+          "line": 195,
+          "raw": "[12:40.455,13:0.155,1] 倒一个，你强老板已经冲了，跟老板枪枪后一枪，最后一枪。好的好的好的。面对牛逼老板，你走，老板。",
+          "text": "倒一个，你强老板已经冲了，跟老板枪枪后一枪，最后一枪。好的好的好的。面对牛逼老板，你走，老板。",
+          "start_time": "12:40.455",
+          "end_time": "13:0.155",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 196,
+      "end_line": 204,
+      "title": "时间不够时从撤不掉担心到读秒确认撤出",
+      "intent": [
+        "撤离求助",
+        "时间确认",
+        "共同倒计时",
+        "确认结果"
+      ],
+      "emotion": [
+        "急迫",
+        "不确定",
+        "如释重负表达"
+      ],
+      "phase": [
+        "实时压力",
+        "事后高光"
+      ],
+      "interaction": [
+        "共同目标",
+        "澄清",
+        "顺着接话",
+        "具体反馈"
+      ],
+      "topic": [
+        "撤离时限",
+        "拉绳",
+        "倒计时",
+        "撤出确认"
+      ],
+      "pressure": "高",
+      "style": [
+        "时间追问",
+        "同步读秒",
+        "结果复核"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：对时间不够先追问剩余时间，对撤不掉的担心给可撤的回应，再听取当前位置和时间限制，陪着读秒并追问是否撤出，最后接到撤了的明确反馈，保留过程与结果复核。",
+      "limits": "第201—203行读秒数字和操作词有ASR错误，不据此还原真实秒数；可以撤只是当时判断，不迁移成未经信息支持的成功保证。第204行后半转入结算与唱歌请求，检索重点止于同一行的撤出反馈，不把打赏当安抚效果证据。",
+      "observed_followup": "老板参与读秒，随后明确报告撤了、秒撤，并提出后续结算及唱歌；只支持撤出自述和后续话题转换。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:196-204",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 9,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "27081e0d93500e35f5f3335a678f03f64995d5b30e59f454752f9be3ec7b3fdd",
+      "excerpt": [
+        {
+          "line": 196,
+          "raw": "[13:0.155,13:1.230,0] 时间不够了。",
+          "text": "时间不够了。",
+          "start_time": "13:0.155",
+          "end_time": "13:1.230",
+          "speaker_id": "0"
+        },
+        {
+          "line": 197,
+          "raw": "[13:1.230,13:2.480,1] 现在还有多少分钟。",
+          "text": "现在还有多少分钟。",
+          "start_time": "13:1.230",
+          "end_time": "13:2.480",
+          "speaker_id": "1"
+        },
+        {
+          "line": 198,
+          "raw": "[13:2.780,13:12.930,0] 你们可以丢包车吧，我救你起来之后，我去飞鼠就行了嘛，我走了，来不及了，可能来不及，我我撤不掉了，怎么。",
+          "text": "你们可以丢包车吧，我救你起来之后，我去飞鼠就行了嘛，我走了，来不及了，可能来不及，我我撤不掉了，怎么。",
+          "start_time": "13:2.780",
+          "end_time": "13:12.930",
+          "speaker_id": "0"
+        },
+        {
+          "line": 199,
+          "raw": "[13:12.930,13:13.880,1] 撤不掉？可以撤。",
+          "text": "撤不掉？可以撤。",
+          "start_time": "13:12.930",
+          "end_time": "13:13.880",
+          "speaker_id": "1"
+        },
+        {
+          "line": 200,
+          "raw": "[13:13.880,13:17.880,0] 我现在才刚刚拉绳上去呢。一分半可能来不及。",
+          "text": "我现在才刚刚拉绳上去呢。一分半可能来不及。",
+          "start_time": "13:13.880",
+          "end_time": "13:17.880",
+          "speaker_id": "0"
+        },
+        {
+          "line": 201,
+          "raw": "[13:17.930,13:21.255,1] 15 十四十三。",
+          "text": "15 十四十三。",
+          "start_time": "13:17.930",
+          "end_time": "13:21.255",
+          "speaker_id": "1"
+        },
+        {
+          "line": 202,
+          "raw": "[13:21.255,13:22.155,0] 十二。",
+          "text": "十二。",
+          "start_time": "13:21.255",
+          "end_time": "13:22.155",
+          "speaker_id": "0"
+        },
+        {
+          "line": 203,
+          "raw": "[13:22.155,13:35.630,1] 十一十九八七六五四三二，老板撤了吗？你10秒写字了吗？确认包裹。",
+          "text": "十一十九八七六五四三二，老板撤了吗？你10秒写字了吗？确认包裹。",
+          "start_time": "13:22.155",
+          "end_time": "13:35.630",
+          "speaker_id": "1"
+        },
+        {
+          "line": 204,
+          "raw": "[13:35.800,13:45.625,0] 撤了撤了，秒撤读秒撤。这样这一把算50。你们唱1，你们会唱感恩的心吗？唱感恩的心，我再给你们转50，直接转100。",
+          "text": "撤了撤了，秒撤读秒撤。这样这一把算50。你们唱1，你们会唱感恩的心吗？唱感恩的心，我再给你们转50，直接转100。",
+          "start_time": "13:35.800",
+          "end_time": "13:45.625",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 211,
+      "end_line": 216,
+      "title": "唱跑之后不再追加表演并互相结束",
+      "intent": [
+        "报告表演失误",
+        "结束当次陪玩",
+        "告别"
+      ],
+      "emotion": [
+        "失误自述",
+        "接纳",
+        "感谢"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "承认失误",
+        "顺着接话",
+        "尊重退出"
+      ],
+      "topic": [
+        "唱歌跑调",
+        "当次结束",
+        "双向告别"
+      ],
+      "pressure": "低",
+      "style": [
+        "简短接纳",
+        "不追责",
+        "明确收尾"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：先接到唱跑的失误说明，用没事回应而不要求补演，提出今天到这并等待同意，最后互相感谢和告别；重点是失误接纳与结束确认相连。",
+      "limits": "唱跑不是明确道歉；结束由老板提出，不能改写为陪玩请求退出后获准。第214行末尾截断，第216行后半转向直播观众，不拼入用户告别；开心只作为当时口头表达。",
+      "observed_followup": "陪玩回应OK、谢谢并先说拜拜，老板回应拜拜后转向观众；文本内当次对话结束，没有留存结果。",
+      "duplicate_family": "BV1cKNdzsEV6",
+      "clip_id": "BV1cKNdzsEV6:211-216",
+      "source_file": "BV1cKNdzsEV6_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1cKNdzsEV6_转写.txt",
+      "source_sha256": "b62c7003b18366281dd5e97f23d3e93b2ef0262121b15af6469a6ea50747f6c8",
+      "source_notes": "已用Read完整阅读第1—217行，包括文件头与末尾空行。文件头及巴克什、威龙、身份牌撤离等正文线索支持三角洲；说话人0同时包含对陪玩的发言和面向观众的主播自述，说话人1可能合并两位陪玩，不能还原稳定的两人轮次。可观察装备协商、资源让渡、唱歌顾虑、共玩诉求、撤离压力和结束回应。主播明确自述装傻、试反应，交易及打赏贯穿材料；文本中的评价、转账陈述和继续游戏只算可见表达，不代表客观服务效果、满意度测量或留存。ASR有错字、术语误识及合并轮次，不擅自修正文中的精确原文。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 6,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "7beddf0fb8515fab4d95456140bf83145cd4cc38aeee81ccc3e76330fb2716ae",
+      "excerpt": [
+        {
+          "line": 211,
+          "raw": "[14:17.650,14:18.775,1] 老板唱跑了。",
+          "text": "老板唱跑了。",
+          "start_time": "14:17.650",
+          "end_time": "14:18.775",
+          "speaker_id": "1"
+        },
+        {
+          "line": 212,
+          "raw": "[14:18.775,14:22.150,0] 没事，今天就到这吧好吗？",
+          "text": "没事，今天就到这吧好吗？",
+          "start_time": "14:18.775",
+          "end_time": "14:22.150",
+          "speaker_id": "0"
+        },
+        {
+          "line": 213,
+          "raw": "[14:22.150,14:23.025,1] OK, 谢谢。",
+          "text": "OK, 谢谢。",
+          "start_time": "14:22.150",
+          "end_time": "14:23.025",
+          "speaker_id": "1"
+        },
+        {
+          "line": 214,
+          "raw": "[14:23.025,14:25.675,0] 老板，不用很开心，今天晚上玩到。",
+          "text": "老板，不用很开心，今天晚上玩到。",
+          "start_time": "14:23.025",
+          "end_time": "14:25.675",
+          "speaker_id": "0"
+        },
+        {
+          "line": 215,
+          "raw": "[14:25.675,14:26.875,1] 拜拜老板。",
+          "text": "拜拜老板。",
+          "start_time": "14:25.675",
+          "end_time": "14:26.875",
+          "speaker_id": "1"
+        },
+        {
+          "line": 216,
+          "raw": "[14:26.875,14:31.200,0] OK, 好拜拜。今天来看老六直播了没？",
+          "text": "OK, 好拜拜。今天来看老六直播了没？",
+          "start_time": "14:26.875",
+          "end_time": "14:31.200",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 15,
+      "end_line": 21,
+      "title": "陌生地图担心先回应在场再承认组队风险",
+      "intent": [
+        "陌生地图求确认",
+        "在场支持",
+        "试一把协商"
+      ],
+      "emotion": [
+        "不确定",
+        "试探",
+        "愿意尝试"
+      ],
+      "phase": [
+        "事前担心"
+      ],
+      "interaction": [
+        "顺着接话",
+        "共同目标",
+        "澄清"
+      ],
+      "topic": [
+        "陌生地图",
+        "双三组队",
+        "安全顾虑"
+      ],
+      "pressure": "低",
+      "style": [
+        "短句回应",
+        "重复确认",
+        "在场表态",
+        "风险承认"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：听到没玩过地图先回应没事，面对真的没事吗的再确认表达自己在场；转入双三选择后承认不太安全，再提议试一把并得到对方同意，区别支持尝试与保证胜利。",
+      "limits": "统一归入BV1rqa8zHE5k，不计新增独立场景；未读取rqa，不能声称本段相对rqa独有。风险说明很简略，没有实际路线或保护安排，不把我在呢当充分安全保障。",
+      "observed_followup": "老板先再次确认是否没事，之后提出双三并同意试一把；仅见尝试意愿，不见地图掌握或当局结果。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1yNaBzLEWz:15-21",
+      "source_file": "BV1yNaBzLEWz_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1yNaBzLEWz_转写.txt",
+      "source_sha256": "166d211d530961ae7fa8f60ea021c3b5ebd6a3df891bfe1c96037922575b8abf",
+      "source_notes": "已用Read完整阅读第1—155行，包括开头推广/质检评述及结尾主播评论。正文地图、保险、威龙、赛伊德线索支持三角洲，第三说话人可能包含其他玩家或系统声音，不能都视为陪玩。正文第62行自述02年、23岁，只记录为材料自述，不核验身份。按用户提供的重复关系，将所有入选片段归入BV1rqa8zHE5k；本次仅阅读指定四份txt，未读取rqa，未做逐行同源比对，不能把yNa算新增独立场景或独立证据。仅选三段不同功能的接话，未收录开头推广、恋爱话术、同一结束段的重复评论；跨库应按同源家族及文本去重。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 7,
+      "is_duplicate_cut": true,
+      "excerpt_sha256": "bbcb8dcb6710ba4e594cc58bee17fe41300b0e89540fc53a2da9e3cf1c8eb0e3",
+      "excerpt": [
+        {
+          "line": 15,
+          "raw": "[1:16.380,1:17.555,1] 我没玩过这个图，怎么。",
+          "text": "我没玩过这个图，怎么。",
+          "start_time": "1:16.380",
+          "end_time": "1:17.555",
+          "speaker_id": "1"
+        },
+        {
+          "line": 16,
+          "raw": "[1:17.555,1:19.180,0] 哎呀没事的。",
+          "text": "哎呀没事的。",
+          "start_time": "1:17.555",
+          "end_time": "1:19.180",
+          "speaker_id": "0"
+        },
+        {
+          "line": 17,
+          "raw": "[1:19.180,1:20.205,1] 真没事吗？",
+          "text": "真没事吗？",
+          "start_time": "1:19.180",
+          "end_time": "1:20.205",
+          "speaker_id": "1"
+        },
+        {
+          "line": 18,
+          "raw": "[1:20.205,1:21.630,0] 我在呢，对对对。",
+          "text": "我在呢，对对对。",
+          "start_time": "1:20.205",
+          "end_time": "1:21.630",
+          "speaker_id": "0"
+        },
+        {
+          "line": 19,
+          "raw": "[1:21.630,1:24.355,1] 来来来来，我看一下实力啊。咱们双三吗？",
+          "text": "来来来来，我看一下实力啊。咱们双三吗？",
+          "start_time": "1:21.630",
+          "end_time": "1:24.355",
+          "speaker_id": "1"
+        },
+        {
+          "line": 20,
+          "raw": "[1:24.355,1:27.505,0] 不太安全吧？没关系没关系，我们试一把。",
+          "text": "不太安全吧？没关系没关系，我们试一把。",
+          "start_time": "1:24.355",
+          "end_time": "1:27.505",
+          "speaker_id": "0"
+        },
+        {
+          "line": 21,
+          "raw": "[1:27.505,1:29.455,1] 来来来试一把，我看看啥实力啊。",
+          "text": "来来来试一把，我看看啥实力啊。",
+          "start_time": "1:27.505",
+          "end_time": "1:29.455",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 129,
+      "end_line": 136,
+      "title": "倒地后解释赛伊德并为掉装备道歉双方揽责",
+      "intent": [
+        "解释失败",
+        "澄清敌人机制",
+        "失误道歉",
+        "承担责任"
+      ],
+      "emotion": [
+        "受挫",
+        "不熟悉",
+        "歉意",
+        "缓和"
+      ],
+      "phase": [
+        "事后受挫"
+      ],
+      "interaction": [
+        "承认失误",
+        "澄清",
+        "顺着接话",
+        "反例"
+      ],
+      "topic": [
+        "赛伊德",
+        "倒地",
+        "掉装备",
+        "责任回应"
+      ],
+      "pressure": "高",
+      "style": [
+        "道歉夹杂夸赞",
+        "解释原因",
+        "相互揽责"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：倒地后先说不好意思，接住敌人为何厉害及不熟悉boss的追问，再把道歉具体落到让对方掉装备；老板说没事并揽责，陪玩再次认自己的，保留解释、具体损失道歉与双向责任回应。",
+      "limits": "统一归入BV1rqa8zHE5k，不计新增独立场景。第129行道歉中夹有无关夸帅，第131行枪枪爆头等为口语描述，不当机制事实；末尾双方争揽责任并未提出修复方案，不能当已解决损失或推荐无休止自责。",
+      "observed_followup": "老板询问赛伊德并表示不熟悉，具体掉装备道歉后回应没事、这波我的，陪玩再次说我的；没有可见补偿、复盘结果或满意度测量。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1yNaBzLEWz:129-136",
+      "source_file": "BV1yNaBzLEWz_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1yNaBzLEWz_转写.txt",
+      "source_sha256": "166d211d530961ae7fa8f60ea021c3b5ebd6a3df891bfe1c96037922575b8abf",
+      "source_notes": "已用Read完整阅读第1—155行，包括开头推广/质检评述及结尾主播评论。正文地图、保险、威龙、赛伊德线索支持三角洲，第三说话人可能包含其他玩家或系统声音，不能都视为陪玩。正文第62行自述02年、23岁，只记录为材料自述，不核验身份。按用户提供的重复关系，将所有入选片段归入BV1rqa8zHE5k；本次仅阅读指定四份txt，未读取rqa，未做逐行同源比对，不能把yNa算新增独立场景或独立证据。仅选三段不同功能的接话，未收录开头推广、恋爱话术、同一结束段的重复评论；跨库应按同源家族及文本去重。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 8,
+      "is_duplicate_cut": true,
+      "excerpt_sha256": "79cc2b404e60bb68a3385d1df5a8123d6cf48920a2c185853ee2a654b8bb2fb9",
+      "excerpt": [
+        {
+          "line": 129,
+          "raw": "[7:49.400,8:14.800,0] 完蛋了小宝宝，我被三一朵给盗住了。不好意思小宝宝好帅呀好帅呀。小宝宝他一个肘击给我肘倒了，好快的反应，可惜了，不好意思小宝宝，我都我为赛伊德一周肘击了。",
+          "text": "完蛋了小宝宝，我被三一朵给盗住了。不好意思小宝宝好帅呀好帅呀。小宝宝他一个肘击给我肘倒了，好快的反应，可惜了，不好意思小宝宝，我都我为赛伊德一周肘击了。",
+          "start_time": "7:49.400",
+          "end_time": "8:14.800",
+          "speaker_id": "0"
+        },
+        {
+          "line": 130,
+          "raw": "[8:14.800,8:16.500,1] 赛伊德这么厉害吗？",
+          "text": "赛伊德这么厉害吗？",
+          "start_time": "8:14.800",
+          "end_time": "8:16.500",
+          "speaker_id": "1"
+        },
+        {
+          "line": 131,
+          "raw": "[8:16.820,8:24.220,0] 他可屌了他的枪枪枪爆头，枪枪爆头好运连连。这里是三角洲赛伊德。",
+          "text": "他可屌了他的枪枪枪爆头，枪枪爆头好运连连。这里是三角洲赛伊德。",
+          "start_time": "8:16.820",
+          "end_time": "8:24.220",
+          "speaker_id": "0"
+        },
+        {
+          "line": 132,
+          "raw": "[8:24.220,8:27.495,1] 好吧，我不太熟悉不太了解这个boss。",
+          "text": "好吧，我不太熟悉不太了解这个boss。",
+          "start_time": "8:24.220",
+          "end_time": "8:27.495",
+          "speaker_id": "1"
+        },
+        {
+          "line": 133,
+          "raw": "[8:27.495,8:28.970,0] 没关系的。",
+          "text": "没关系的。",
+          "start_time": "8:27.495",
+          "end_time": "8:28.970",
+          "speaker_id": "0"
+        },
+        {
+          "line": 134,
+          "raw": "[8:29.020,8:33.245,0] 哎呦不好意思，小宝宝让你掉装备了。",
+          "text": "哎呦不好意思，小宝宝让你掉装备了。",
+          "start_time": "8:29.020",
+          "end_time": "8:33.245",
+          "speaker_id": "0"
+        },
+        {
+          "line": 135,
+          "raw": "[8:33.245,8:35.920,1] 没事没事没事，这波我的我的。",
+          "text": "没事没事没事，这波我的我的。",
+          "start_time": "8:33.245",
+          "end_time": "8:35.920",
+          "speaker_id": "1"
+        },
+        {
+          "line": 136,
+          "raw": "[8:35.920,8:38.070,0] 我的我的是我嘟。",
+          "text": "我的我的是我嘟。",
+          "start_time": "8:35.920",
+          "end_time": "8:38.070",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 137,
+      "end_line": 150,
+      "title": "提出先结束后询问原因允许去忙并完成告别",
+      "intent": [
+        "结束服务",
+        "确认去向",
+        "允许去忙",
+        "休息安排"
+      ],
+      "emotion": [
+        "平和",
+        "关照",
+        "感谢"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "尊重退出",
+        "澄清",
+        "顺着接话"
+      ],
+      "topic": [
+        "先结束",
+        "去直播",
+        "剩余服务时间",
+        "休息",
+        "告别"
+      ],
+      "pressure": "低",
+      "style": [
+        "一次原因确认",
+        "不挽留",
+        "明确收尾",
+        "末尾夸张感谢"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：接到先这样和早点休息的结束提议，只询问是否有事，得到去直播的说明后明确让对方去忙；接住剩余时间用于休息的安排，再以双向告别收尾，不追加挽留或追问。",
+      "limits": "统一归入BV1rqa8zHE5k，不计新增独立场景；整个告别仅收录一次，不另收第151行以后重复评述。明天再继续是口头未来意向，不代表真实复购或留存；老板要求不接其他单的剩余时间安排不可迁移为普遍控制权，末尾最高级奉承非必要收尾模板。",
+      "observed_followup": "老板说明去直播，陪玩答应去忙并接受休息安排，双方多轮拜拜后结束；明天继续仅为当段发言。",
+      "duplicate_family": "BV1rqa8zHE5k",
+      "clip_id": "BV1yNaBzLEWz:137-150",
+      "source_file": "BV1yNaBzLEWz_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1yNaBzLEWz_转写.txt",
+      "source_sha256": "166d211d530961ae7fa8f60ea021c3b5ebd6a3df891bfe1c96037922575b8abf",
+      "source_notes": "已用Read完整阅读第1—155行，包括开头推广/质检评述及结尾主播评论。正文地图、保险、威龙、赛伊德线索支持三角洲，第三说话人可能包含其他玩家或系统声音，不能都视为陪玩。正文第62行自述02年、23岁，只记录为材料自述，不核验身份。按用户提供的重复关系，将所有入选片段归入BV1rqa8zHE5k；本次仅阅读指定四份txt，未读取rqa，未做逐行同源比对，不能把yNa算新增独立场景或独立证据。仅选三段不同功能的接话，未收录开头推广、恋爱话术、同一结束段的重复评论；跨库应按同源家族及文本去重。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 14,
+      "is_duplicate_cut": true,
+      "excerpt_sha256": "5b814f4ff66882e19dd03c0b984cf35f5c90065f4fb90fac34a77eae72a659fe",
+      "excerpt": [
+        {
+          "line": 137,
+          "raw": "[8:38.170,8:42.170,1] 可以了可以了，要不就先这样吧，你早点休息吧。啊。",
+          "text": "可以了可以了，要不就先这样吧，你早点休息吧。啊。",
+          "start_time": "8:38.170",
+          "end_time": "8:42.170",
+          "speaker_id": "1"
+        },
+        {
+          "line": 138,
+          "raw": "[8:42.170,8:44.520,0] 你有事要去忙了吗？小宝宝对。",
+          "text": "你有事要去忙了吗？小宝宝对。",
+          "start_time": "8:42.170",
+          "end_time": "8:44.520",
+          "speaker_id": "0"
+        },
+        {
+          "line": 139,
+          "raw": "[8:44.520,8:45.670,1] 我去直播了。",
+          "text": "我去直播了。",
+          "start_time": "8:44.520",
+          "end_time": "8:45.670",
+          "speaker_id": "1"
+        },
+        {
+          "line": 140,
+          "raw": "[8:45.670,8:49.045,0] 好嘟好嘟，那你去忙吧，小宝宝很开心。",
+          "text": "好嘟好嘟，那你去忙吧，小宝宝很开心。",
+          "start_time": "8:45.670",
+          "end_time": "8:49.045",
+          "speaker_id": "0"
+        },
+        {
+          "line": 141,
+          "raw": "[8:49.045,8:53.670,1] 你这样，我这个时间没到你就不要接别的单了啊，你就去睡觉吧，好吧。",
+          "text": "你这样，我这个时间没到你就不要接别的单了啊，你就去睡觉吧，好吧。",
+          "start_time": "8:49.045",
+          "end_time": "8:53.670",
+          "speaker_id": "1"
+        },
+        {
+          "line": 142,
+          "raw": "[8:53.670,8:56.095,0] OK, 我那我就先休息喽，好。",
+          "text": "OK, 我那我就先休息喽，好。",
+          "start_time": "8:53.670",
+          "end_time": "8:56.095",
+          "speaker_id": "0"
+        },
+        {
+          "line": 143,
+          "raw": "[8:56.095,8:57.120,1] 明天再继续哈。",
+          "text": "明天再继续哈。",
+          "start_time": "8:56.095",
+          "end_time": "8:57.120",
+          "speaker_id": "1"
+        },
+        {
+          "line": 144,
+          "raw": "[8:57.120,9:1.470,0] 谢谢你啊，刘西东小宝宝，你就是全世界最可爱最帅气的小宝宝。",
+          "text": "谢谢你啊，刘西东小宝宝，你就是全世界最可爱最帅气的小宝宝。",
+          "start_time": "8:57.120",
+          "end_time": "9:1.470",
+          "speaker_id": "0"
+        },
+        {
+          "line": 145,
+          "raw": "[9:1.470,9:2.420,1] 没事没事。",
+          "text": "没事没事。",
+          "start_time": "9:1.470",
+          "end_time": "9:2.420",
+          "speaker_id": "1"
+        },
+        {
+          "line": 146,
+          "raw": "[9:2.420,9:4.270,0] 你是最好的男人。好。",
+          "text": "你是最好的男人。好。",
+          "start_time": "9:2.420",
+          "end_time": "9:4.270",
+          "speaker_id": "0"
+        },
+        {
+          "line": 147,
+          "raw": "[9:4.270,9:5.532,1] 拜拜拜拜拜。",
+          "text": "拜拜拜拜拜。",
+          "start_time": "9:4.270",
+          "end_time": "9:5.532",
+          "speaker_id": "1"
+        },
+        {
+          "line": 148,
+          "raw": "[9:5.532,9:6.170,0] 拜拜拜。",
+          "text": "拜拜拜。",
+          "start_time": "9:5.532",
+          "end_time": "9:6.170",
+          "speaker_id": "0"
+        },
+        {
+          "line": 149,
+          "raw": "[9:6.170,9:8.845,1] 你很可爱啊，好好加油，拜拜。",
+          "text": "你很可爱啊，好好加油，拜拜。",
+          "start_time": "9:6.170",
+          "end_time": "9:8.845",
+          "speaker_id": "1"
+        },
+        {
+          "line": 150,
+          "raw": "[9:8.845,9:9.970,0] 拜拜。",
+          "text": "拜拜。",
+          "start_time": "9:8.845",
+          "end_time": "9:9.970",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 25,
+      "end_line": 33,
+      "title": "邀请迟迟未到时说明上线状态并询问游戏模式",
+      "intent": [
+        "请求邀请入队",
+        "说明准备进度",
+        "澄清段位与模式"
+      ],
+      "emotion": [
+        "催促",
+        "不确定",
+        "急于解释"
+      ],
+      "phase": [
+        "平静闲聊"
+      ],
+      "interaction": [
+        "澄清",
+        "共同目标",
+        "自我表达"
+      ],
+      "topic": [
+        "上线准备",
+        "邀请入队",
+        "账号段位",
+        "游戏模式"
+      ],
+      "pressure": "低",
+      "style": [
+        "重复催促",
+        "进度说明",
+        "术语含混",
+        "提问未闭合"
+      ],
+      "game": "未核实",
+      "polarity": "mixed",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：从有没有邀请的询问到重复催促，先说明正在上游戏，再解释账号状态，最后询问对方想打什么模式；保留尚未完成邀请及模式确认的状态，正向仅迁移明确准备进度与询问偏好。",
+      "limits": "同一文件自述虚岁18，按疑似未成年人处理；本段仅含普通游戏准备与澄清，禁止扩展检索至邻近恋爱、外貌调侃或性化段落。第25行再见了及KT、TTP/FP等术语可能误识，不猜机制、游戏或离开意图；第33行问题在片段内未获完整答案，不补写合作已达成。",
+      "observed_followup": "老板在未收到邀请时再次催促，陪玩说明正在上线并转向账号与模式询问；文本内未见邀请成功或明确模式答案。",
+      "duplicate_family": "BV1mG411x7VW",
+      "clip_id": "BV1mG411x7VW:25-33",
+      "source_file": "BV1mG411x7VW_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1mG411x7VW_转写.txt",
+      "source_sha256": "fba4bfa21df9f3d2f0dfc5415a617e4aa92b74883df5dd211cceb728cd060392",
+      "source_notes": "已用Read完整阅读第1—94行。第49—51行出现虚岁18的自述，存在未成年人可能；全文件不提取暧昧恋爱、外貌调侃、性化内容，也不以这些内容作为正向或反向示例。唯一入选为第25—33行普通邀请入队与模式澄清。文件头标无畏契约，但正文有白金、2.0、TTP/FP等可能误识或不一致线索，仅据本txt不能可靠核实游戏，标未核实，不改判为和平精英。其他区域包含刻板归因和偏离游戏的对话，未收录；模式问题在入选范围内未获完整明确回答，保留该局限。",
+      "evidence_kind": "timestamped",
+      "asr_segments": 9,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "77bb884e2b52f8d90a479cc9793e3a1e40aa19e358abd630252df6455cacb135",
+      "excerpt": [
+        {
+          "line": 25,
+          "raw": "[0:58.655,1:0.630,0] 拉我了吗？再见了。",
+          "text": "拉我了吗？再见了。",
+          "start_time": "0:58.655",
+          "end_time": "1:0.630",
+          "speaker_id": "0"
+        },
+        {
+          "line": 26,
+          "raw": "[1:0.630,1:1.180,1] 我没有那。",
+          "text": "我没有那。",
+          "start_time": "1:0.630",
+          "end_time": "1:1.180",
+          "speaker_id": "1"
+        },
+        {
+          "line": 27,
+          "raw": "[1:1.660,1:2.860,1] 嗯，在线在线。",
+          "text": "嗯，在线在线。",
+          "start_time": "1:1.660",
+          "end_time": "1:2.860",
+          "speaker_id": "1"
+        },
+        {
+          "line": 28,
+          "raw": "[1:3.110,1:7.785,0] 拉我一下，你这基本功行不行啊？咋还没拉我呢？",
+          "text": "拉我一下，你这基本功行不行啊？咋还没拉我呢？",
+          "start_time": "1:3.110",
+          "end_time": "1:7.785",
+          "speaker_id": "0"
+        },
+        {
+          "line": 29,
+          "raw": "[1:7.785,1:13.510,1] 马上马上，我在上游戏，刚上KT。",
+          "text": "马上马上，我在上游戏，刚上KT。",
+          "start_time": "1:7.785",
+          "end_time": "1:13.510",
+          "speaker_id": "1"
+        },
+        {
+          "line": 30,
+          "raw": "[1:13.510,1:14.235,0] 2.0 是吧？",
+          "text": "2.0 是吧？",
+          "start_time": "1:13.510",
+          "end_time": "1:14.235",
+          "speaker_id": "0"
+        },
+        {
+          "line": 31,
+          "raw": "[1:14.235,1:22.810,1] 你是打我刚刚打了几把掉下来，这个是我的小号，我大号是白金。",
+          "text": "你是打我刚刚打了几把掉下来，这个是我的小号，我大号是白金。",
+          "start_time": "1:14.235",
+          "end_time": "1:22.810",
+          "speaker_id": "1"
+        },
+        {
+          "line": 32,
+          "raw": "[1:22.860,1:25.510,0] 我这号不也白金吗？前几个白金。",
+          "text": "我这号不也白金吗？前几个白金。",
+          "start_time": "1:22.860",
+          "end_time": "1:25.510",
+          "speaker_id": "0"
+        },
+        {
+          "line": 33,
+          "raw": "[1:25.560,1:32.010,1] 你不是打那个吗？你是打TTP吗？还是打什么的？我一般都是要打TTP，FP很少有人跟我打。",
+          "text": "你不是打那个吗？你是打TTP吗？还是打什么的？我一般都是要打TTP，FP很少有人跟我打。",
+          "start_time": "1:25.560",
+          "end_time": "1:32.010",
+          "speaker_id": "1"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 5,
+      "end_line": 10,
+      "title": "旁白转述陪玩意外倒地与反复道歉的证据边界",
+      "intent": [
+        "旁白交代事件",
+        "转述道歉",
+        "说明独自继续"
+      ],
+      "emotion": [
+        "意外自述",
+        "歉意转述"
+      ],
+      "phase": [
+        "事后受挫"
+      ],
+      "interaction": [
+        "自我表达",
+        "反例"
+      ],
+      "topic": [
+        "陪玩倒地",
+        "未带救援道具",
+        "独自继续",
+        "道歉转述"
+      ],
+      "pressure": "未明",
+      "style": [
+        "单人旁白",
+        "间接引述",
+        "回顾解释"
+      ],
+      "game": "未核实",
+      "polarity": "negative",
+      "transfer": "迁移接话顺序与表达细节，不是单句技巧：本段只能用于识别证据不足的反例，观察旁白如何交代意外、推测原因、说明无法救援并转述道歉；不能从间接引述生成或迁移双方接话顺序。",
+      "limits": "禁止用于正向连续检索，也不能把负向标签解读为陪玩行为已被证实失败；negative只标其不适合作为直接互动证据。全部ASR段为说话人0，第8行对陪陪的直接称呼仍嵌在旁白中，第9行只有道歉与补偿承诺的转述，无陪玩精确原话或对方直接后续。网卡致死是旁白推测，游戏标签未核实；时间戳有间隔，仅保证原文连续行，不声称音视频无剪辑。",
+      "observed_followup": "旁白说只能自力更生并解释前两把顺利、此次未带救援道具；没有可见的双方回应轮次，道歉与承诺不能作为独立服务效果证据。",
+      "duplicate_family": "BV1yGF6ziERU",
+      "clip_id": "BV1yGF6ziERU:5-10",
+      "source_file": "BV1yGF6ziERU_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1yGF6ziERU_转写.txt",
+      "source_sha256": "83ef4a85ba476d6c6e3c3ff34b625f03e8cee8e07e45a88f1483df9d06691eb6",
+      "source_notes": "已用Read完整阅读第1—26行。全部ASR段均标说话人0，陪玩道歉、夸赞、感谢仅由旁白转述，不能还原双方连续互动。文件头标三角洲，但正文出现开棺、鬼新娘、薇薇安、金樽等不一致线索，游戏标未核实，不猜测归属。仅收录一个旁白边界样本，用于反例或材料质量识别，禁止进入正向连续接话检索；旁白自述开心和成功撤离不能当作独立满意度或留存证据。",
+      "evidence_kind": "narration",
+      "asr_segments": 6,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "13699adf71fdfddc2a45f6d786610811c90bbe59473de83580b77150b28540dc",
+      "excerpt": [
+        {
+          "line": 5,
+          "raw": "[0:0.000,0:16.800,0] 因为一个人摸金太无聊了，然后我就点了一个牵手的陪陪，也是看出我们两个准备飞进门这里，我先走一步，陪陪也是飞在我后面，然后意外发生了，停停停，什么声音。",
+          "text": "因为一个人摸金太无聊了，然后我就点了一个牵手的陪陪，也是看出我们两个准备飞进门这里，我先走一步，陪陪也是飞在我后面，然后意外发生了，停停停，什么声音。",
+          "start_time": "0:0.000",
+          "end_time": "0:16.800",
+          "speaker_id": "0"
+        },
+        {
+          "line": 6,
+          "raw": "[0:26.480,0:30.230,0] 陪陪好像有一点死了，应该是网卡被摔死的。",
+          "text": "陪陪好像有一点死了，应该是网卡被摔死的。",
+          "start_time": "0:26.480",
+          "end_time": "0:30.230",
+          "speaker_id": "0"
+        },
+        {
+          "line": 7,
+          "raw": "[0:30.330,0:38.030,0] 最抓马的是我们两个都没有带除颤，因为我只有玩莉莉的时候才会买，看来我只能自力更生了。",
+          "text": "最抓马的是我们两个都没有带除颤，因为我只有玩莉莉的时候才会买，看来我只能自力更生了。",
+          "start_time": "0:30.330",
+          "end_time": "0:38.030",
+          "speaker_id": "0"
+        },
+        {
+          "line": 8,
+          "raw": "[0:38.330,0:41.030,0] 培培你放心，我一定会安全撤离的。",
+          "text": "培培你放心，我一定会安全撤离的。",
+          "start_time": "0:38.330",
+          "end_time": "0:41.030",
+          "speaker_id": "0"
+        },
+        {
+          "line": 9,
+          "raw": "[0:42.040,0:47.690,0] 这个陪陪也是很可爱了，一直在麦里疯狂道歉，说一定会给我补。",
+          "text": "这个陪陪也是很可爱了，一直在麦里疯狂道歉，说一定会给我补。",
+          "start_time": "0:42.040",
+          "end_time": "0:47.690",
+          "speaker_id": "0"
+        },
+        {
+          "line": 10,
+          "raw": "[0:48.190,1:5.840,0] 其实我们前面已经打过两把了，前两把都是喝黄牛跑进图的，而且整个摸金过程都很顺利，所以两个人都没想到除颤。因为这张图我很久没匹配到了，模糊地记得两三个棺的位置，只能走一步算一步。",
+          "text": "其实我们前面已经打过两把了，前两把都是喝黄牛跑进图的，而且整个摸金过程都很顺利，所以两个人都没想到除颤。因为这张图我很久没匹配到了，模糊地记得两三个棺的位置，只能走一步算一步。",
+          "start_time": "0:48.190",
+          "end_time": "1:5.840",
+          "speaker_id": "0"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 7,
+      "end_line": 7,
+      "title": "通过补击杀机会让渡成就",
+      "intent": [
+        "提供参与机会",
+        "让玩家获得成就"
+      ],
+      "emotion": [
+        "鼓励"
+      ],
+      "phase": [
+        "实时压力"
+      ],
+      "interaction": [
+        "让渡成就",
+        "共同目标"
+      ],
+      "topic": [
+        "击杀机会",
+        "队内分工"
+      ],
+      "pressure": "未明",
+      "style": [
+        "简短提醒",
+        "行动导向",
+        "机制参考",
+        "低证据等级"
+      ],
+      "game": "和平精英",
+      "polarity": "positive",
+      "transfer": "摘要能支持在局内给玩家留参与和完成击杀机会的机制参考；实际应用需以可观察战况及玩家意愿为依据。不能伪称连续原话，也不能认定玩家确实获得击杀或认可。",
+      "limits": "二次摘要摘录；无时间戳、完整玩家输入或可配对后续反应，未原声和战况核验。实时阶段仅依补击杀话术推定，压力强度不明。",
+      "observed_followup": "未提供；摘要没有记载玩家是否补击杀及随后反应。",
+      "duplicate_family": "和平精英不求人——装老板进主播陪玩队伍的惊险旅程（上）",
+      "clip_id": "BV1ib4y1j71Y:7-7",
+      "source_file": "BV1ib4y1j71Y_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1ib4y1j71Y_转写.txt",
+      "source_sha256": "c11c34efbdde410d26b2b9ceccf4ebd8a6ace39a2c5c83a24c48b1a3ea3a3a05",
+      "source_notes": "完整读取第1–21行。内容为话术模式摘录与可迁移句式，不是连续原转写；第15–20行属于摘要作者的迁移建议，未选作原始互动证据。保留让渡成就、情绪承诺边界和保护行动参考；没有可配对的连续玩家输入及后续反应，未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "3ebd1977fb4b282c50890a2459820be3c3ed59f2cb4ef5b0c48046019459c954",
+      "excerpt": [
+        {
+          "line": 7,
+          "raw": "- 让渡成就感（主动给老板人头）：\"老板快补，有人头，老板\" / \"老板补\"",
+          "text": "- 让渡成就感（主动给老板人头）：\"老板快补，有人头，老板\" / \"老板补\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 9,
+      "end_line": 9,
+      "title": "承认保护能力局限与情绪承诺边界",
+      "intent": [
+        "说明能力局限",
+        "提供情绪支持"
+      ],
+      "emotion": [
+        "关怀",
+        "情绪期待"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "自我表达"
+      ],
+      "topic": [
+        "安全感",
+        "陪玩体验",
+        "承诺边界"
+      ],
+      "pressure": "未明",
+      "style": [
+        "坦诚表达",
+        "结果承诺",
+        "混合参考",
+        "低证据等级"
+      ],
+      "game": "和平精英",
+      "polarity": "mixed",
+      "transfer": "摘要能支持坦诚说明技术保护能力与情绪支持之间区别的参考；承诺让玩家开心不能视作可保证的结果。不能伪称连续原话，也不能将能力坦诚解释成已被玩家接受。",
+      "limits": "二次摘要仅给出承诺性话术，未说明触发原因、实际能力或情绪效果；无连续玩家输入及反馈，未原声核验。",
+      "observed_followup": "未提供；快乐、安全感或信任的实际变化均未记载。",
+      "duplicate_family": "和平精英不求人——装老板进主播陪玩队伍的惊险旅程（上）",
+      "clip_id": "BV1ib4y1j71Y:9-9",
+      "source_file": "BV1ib4y1j71Y_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1ib4y1j71Y_转写.txt",
+      "source_sha256": "c11c34efbdde410d26b2b9ceccf4ebd8a6ace39a2c5c83a24c48b1a3ea3a3a05",
+      "source_notes": "完整读取第1–21行。内容为话术模式摘录与可迁移句式，不是连续原转写；第15–20行属于摘要作者的迁移建议，未选作原始互动证据。保留让渡成就、情绪承诺边界和保护行动参考；没有可配对的连续玩家输入及后续反应，未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "a7cc6ce8b65000b361fea29ef1e16162c51663a4b9e1dd7dc779d535fd19fb70",
+      "excerpt": [
+        {
+          "line": 9,
+          "raw": "- 情绪价值承诺（安全感坦诚+情绪兜底）：\"我们没办法给你带来安全感，但是我们可以让你开心，可以让你快乐\"",
+          "text": "- 情绪价值承诺（安全感坦诚+情绪兜底）：\"我们没办法给你带来安全感，但是我们可以让你开心，可以让你快乐\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 11,
+      "end_line": 13,
+      "title": "用保护分工支持玩家出手",
+      "intent": [
+        "主动承担保护任务",
+        "鼓励参与"
+      ],
+      "emotion": [
+        "鼓励",
+        "关怀"
+      ],
+      "phase": [
+        "实时压力"
+      ],
+      "interaction": [
+        "共同目标",
+        "自我表达"
+      ],
+      "topic": [
+        "挡伤害",
+        "突破口",
+        "贴身保护"
+      ],
+      "pressure": "未明",
+      "style": [
+        "行动承诺",
+        "支持性表达",
+        "混合参考",
+        "低证据等级"
+      ],
+      "game": "和平精英",
+      "polarity": "mixed",
+      "transfer": "摘要能支持将鼓励与挡伤害、占突破口等具体协作任务结合的机制参考；绝对保护与无条件催玩家出手需谨慎。三行是不同话术模式的集合，不能拼接为连续对话或伪称连续原话。",
+      "limits": "模式列表缺少玩家意愿、危险程度、任务是否执行及事件时序；第12行虽混有多个说话片段，身份和轮次未核实。未原声核验。",
+      "observed_followup": "第12行摘录中含愿意出手的表达，但说话者与前后对应关系未提供；不能认定为保护承诺后的玩家反馈，也无行动结果。",
+      "duplicate_family": "和平精英不求人——装老板进主播陪玩队伍的惊险旅程（上）",
+      "clip_id": "BV1ib4y1j71Y:11-13",
+      "source_file": "BV1ib4y1j71Y_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1ib4y1j71Y_转写.txt",
+      "source_sha256": "c11c34efbdde410d26b2b9ceccf4ebd8a6ace39a2c5c83a24c48b1a3ea3a3a05",
+      "source_notes": "完整读取第1–21行。内容为话术模式摘录与可迁移句式，不是连续原转写；第15–20行属于摘要作者的迁移建议，未选作原始互动证据。保留让渡成就、情绪承诺边界和保护行动参考；没有可配对的连续玩家输入及后续反应，未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "20764956b35795bfa6b03ff1d188fe622b1c6467c657146ad4a46635a9399242",
+      "excerpt": [
+        {
+          "line": 11,
+          "raw": "- 主动性服务：\"我给你挡子弹去\" / \"我给你占个突破口\"",
+          "text": "- 主动性服务：\"我给你挡子弹去\" / \"我给你占个突破口\""
+        },
+        {
+          "line": 12,
+          "raw": "- 鼓励老板出手：\"你上没事，真的是吧，我信你们，那我上了啊\" / \"事你上没事\" / \"有我们哥仨在\"",
+          "text": "- 鼓励老板出手：\"你上没事，真的是吧，我信你们，那我上了啊\" / \"事你上没事\" / \"有我们哥仨在\""
+        },
+        {
+          "line": 13,
+          "raw": "- 贴身保护承诺：\"我们就是绝对是贴身保护\" / \"你就放心说出老板\"",
+          "text": "- 贴身保护承诺：\"我们就是绝对是贴身保护\" / \"你就放心说出老板\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 6,
+      "end_line": 7,
+      "title": "只有操作而缺少互动的反例",
+      "intent": [
+        "识别互动缺失"
+      ],
+      "emotion": [
+        "失落（摘要归述）"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "反例"
+      ],
+      "topic": [
+        "操作与陪伴差异",
+        "情绪反馈缺失"
+      ],
+      "pressure": "未明",
+      "style": [
+        "沉默",
+        "公式化",
+        "反例参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "negative",
+      "transfer": "摘要能支持技术操作本身不等于有参与感的互动这一反例参考；不能由接单环境说明推断人格或服务能力，也不能伪称连续原话或经验证的因果结论。",
+      "limits": "对比摘要带评价性概括，未呈现完整交流、样本条件或技术相同的验证；玩家感受仅为摘要转述，未原声核验。",
+      "observed_followup": "第7行摘要将玩家感受概括为与厉害路人组队无明显区别；未提供发生时点、具体评价过程或后续行为。",
+      "duplicate_family": "十元女陪和百元女陪的区别",
+      "clip_id": "BV198krYQEkr:6-7",
+      "source_file": "BV198krYQEkr_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV198krYQEkr_转写.txt",
+      "source_sha256": "0e46afab7696c11a3ea36a2e8e884fdbdcd71927356c9543b910d2449a2075a1",
+      "source_notes": "完整读取第1–18行。内容为不同服务表现的对比摘要；选择沉默反例、事件关联夸赞、默契邀约与自嘲参考。未选取带身体亲密指向的内容。第7行的玩家感受只视为摘要转述，第16–17行比较结论未独立验证；无连续对话或效果验证，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "495cef885f07b3a281a5c6368f0bb759abbc64ce76bb6bc7059bcad548168615",
+      "excerpt": [
+        {
+          "line": 6,
+          "raw": "- 沉默、公式化，几乎只做操作：\"你怎么还要跑到网吧接单啊\"\"我室友要休息了\"",
+          "text": "- 沉默、公式化，几乎只做操作：\"你怎么还要跑到网吧接单啊\"\"我室友要休息了\""
+        },
+        {
+          "line": 7,
+          "raw": "- 打得好但无情绪反馈，玩家感受：\"让老板觉得和排了个厉害的路人没什么区别\"",
+          "text": "- 打得好但无情绪反馈，玩家感受：\"让老板觉得和排了个厉害的路人没什么区别\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 10,
+      "end_line": 10,
+      "title": "将肯定关联到四杀事件",
+      "intent": [
+        "肯定具体表现",
+        "分享兴奋"
+      ],
+      "emotion": [
+        "兴奋",
+        "赞赏"
+      ],
+      "phase": [
+        "事后高光"
+      ],
+      "interaction": [
+        "具体反馈",
+        "自我表达"
+      ],
+      "topic": [
+        "四杀",
+        "操作高光"
+      ],
+      "pressure": "未明",
+      "style": [
+        "事件关联夸赞",
+        "情绪共鸣",
+        "机制参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "positive",
+      "transfer": "摘要能支持把肯定与可识别高光事件关联，并表达队友自身兴奋的参考；应使用实际观察到的事件，而非机械重复夸赞。不能伪称连续原话或玩家因夸赞而更开心的正例。",
+      "limits": "同一行汇集多个表达，不能认定全部来自一次四杀后连续回应；没有玩家原始输入、事件时间戳或后续反应，未原声核验。",
+      "observed_followup": "未提供；热血或代入感是摘录中反馈者的表达，不是被夸玩家的后续反应。",
+      "duplicate_family": "十元女陪和百元女陪的区别",
+      "clip_id": "BV198krYQEkr:10-10",
+      "source_file": "BV198krYQEkr_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV198krYQEkr_转写.txt",
+      "source_sha256": "0e46afab7696c11a3ea36a2e8e884fdbdcd71927356c9543b910d2449a2075a1",
+      "source_notes": "完整读取第1–18行。内容为不同服务表现的对比摘要；选择沉默反例、事件关联夸赞、默契邀约与自嘲参考。未选取带身体亲密指向的内容。第7行的玩家感受只视为摘要转述，第16–17行比较结论未独立验证；无连续对话或效果验证，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "7d3d2c5c78d83506018c9c232d36964b2596983f4c5fdc26d08b351eedaeb800",
+      "excerpt": [
+        {
+          "line": 10,
+          "raw": "- 即时具体夸赞：\"好枪啊\"\"四杀牛逼\"\"打得我热血澎湃，感觉是自己也那么帅\"",
+          "text": "- 即时具体夸赞：\"好枪啊\"\"四杀牛逼\"\"打得我热血澎湃，感觉是自己也那么帅\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 13,
+      "end_line": 14,
+      "title": "以默契邀约和自嘲增加共同参与",
+      "intent": [
+        "邀请配合",
+        "主动提供话题"
+      ],
+      "emotion": [
+        "期待",
+        "轻松"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "共同目标",
+        "自我表达",
+        "轻调侃"
+      ],
+      "topic": [
+        "队友默契",
+        "击杀数量",
+        "自嘲"
+      ],
+      "pressure": "未明",
+      "style": [
+        "协作邀约",
+        "自嘲",
+        "机制参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "positive",
+      "transfer": "摘要能支持把个人表现话题转向共同配合，以及用自嘲而非贬低玩家提供轻松互动的参考。两行是独立模式摘录，不能拼成连续原话，也不能补写玩家接梗或配合成功。",
+      "limits": "邀约与自嘲的先后关系、触发条件和语气未提供；垫底是摘要括注，缺少实际计分依据。无连续玩家输入或后续反应，未原声核验。",
+      "observed_followup": "未提供；没有玩家接受邀约、笑声或实际配合结果。",
+      "duplicate_family": "十元女陪和百元女陪的区别",
+      "clip_id": "BV198krYQEkr:13-14",
+      "source_file": "BV198krYQEkr_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV198krYQEkr_转写.txt",
+      "source_sha256": "0e46afab7696c11a3ea36a2e8e884fdbdcd71927356c9543b910d2449a2075a1",
+      "source_notes": "完整读取第1–18行。内容为不同服务表现的对比摘要；选择沉默反例、事件关联夸赞、默契邀约与自嘲参考。未选取带身体亲密指向的内容。第7行的玩家感受只视为摘要转述，第16–17行比较结论未独立验证；无连续对话或效果验证，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "115169ede515465451a6163b30e7f5d21424280b6f3bfc7820c9d378068634a7",
+      "excerpt": [
+        {
+          "line": 13,
+          "raw": "- 配合邀约：\"行，看一下咱俩有没有默契啊\"",
+          "text": "- 配合邀约：\"行，看一下咱俩有没有默契啊\""
+        },
+        {
+          "line": 14,
+          "raw": "- 主动玩梗自嘲：\"我杀的4\"（杀4个自嘲垫底）",
+          "text": "- 主动玩梗自嘲：\"我杀的4\"（杀4个自嘲垫底）"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 8,
+      "end_line": 8,
+      "title": "围绕共同兴趣建立话题",
+      "intent": [
+        "寻找共同话题",
+        "建立连接"
+      ],
+      "emotion": [
+        "兴趣"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "顺着接话"
+      ],
+      "topic": [
+        "动漫",
+        "小说",
+        "共同兴趣"
+      ],
+      "pressure": "未明",
+      "style": [
+        "兴趣导向",
+        "机制参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "positive",
+      "transfer": "摘要能支持围绕玩家已表达的动漫或小说兴趣展开话题的参考；用于低压力间隙是迁移建议，不是该行已记录的场景。不能伪称连续原话或假定双方确有共同喜好。",
+      "limits": "仅列主题与连接目的，没有具体问答、玩家兴趣确认、场景压力或连接效果；未原声核验。",
+      "observed_followup": "未提供；建立连接是摘要的机制概括，不是可观察到的玩家反应。",
+      "duplicate_family": "两家店各点一个妹子，看看娱乐女陪能有多娱乐",
+      "clip_id": "BV16VckzqEvx:8-8",
+      "source_file": "BV16VckzqEvx_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV16VckzqEvx_转写.txt",
+      "source_sha256": "1a2441f2702e366db5798137fe37376ee5ac8a65a3b89ffc9c3dbee43b434b4d",
+      "source_notes": "完整读取第1–16行。内容为娱乐陪玩测评要点及作者迁移结论；选择共同兴趣与空泛夸赞反例。第9行包含摘要转述的负面评价，但无法还原对应输入和时序；第12–15行不是连续原话。未原声核验，游戏未核实，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "73c60521dda4f46565c7b1b4d2ee78fc6ddae13b8a3eca45441cdabc729ff45c",
+      "excerpt": [
+        {
+          "line": 8,
+          "raw": "- 找共同话题（动漫/小说）：凡人修仙传、玲珑、斗罗大陆，用共同兴趣建立连接",
+          "text": "- 找共同话题（动漫/小说）：凡人修仙传、玲珑、斗罗大陆，用共同兴趣建立连接"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 9,
+      "end_line": 9,
+      "title": "空泛夸赞引起反感的摘要反例",
+      "intent": [
+        "识别套路夸赞",
+        "校准反馈具体性"
+      ],
+      "emotion": [
+        "反感（摘要归述）"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "反例"
+      ],
+      "topic": [
+        "硬夸",
+        "公式化反馈"
+      ],
+      "pressure": "未明",
+      "style": [
+        "空泛夸赞",
+        "套路化",
+        "反例参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "negative",
+      "transfer": "摘要能支持不应默认夸赞越多越好、需关注反馈是否贴合具体表现的反例参考；不能伪称连续原话，也不能从单行评价推出所有玩家的偏好。",
+      "limits": "缺少被评价的完整话术、发生背景和评价先后关系；扣分表述可能属于测评规则，不能当作普遍体验指标。未原声核验。",
+      "observed_followup": "第9行摘要转述玩家对硬夸扣分、识别职业套路的评价；没有对应完整输入和之后互动，不能构造反应链。",
+      "duplicate_family": "两家店各点一个妹子，看看娱乐女陪能有多娱乐",
+      "clip_id": "BV16VckzqEvx:9-9",
+      "source_file": "BV16VckzqEvx_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV16VckzqEvx_转写.txt",
+      "source_sha256": "1a2441f2702e366db5798137fe37376ee5ac8a65a3b89ffc9c3dbee43b434b4d",
+      "source_notes": "完整读取第1–16行。内容为娱乐陪玩测评要点及作者迁移结论；选择共同兴趣与空泛夸赞反例。第9行包含摘要转述的负面评价，但无法还原对应输入和时序；第12–15行不是连续原话。未原声核验，游戏未核实，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "198ac778928b53afc5dbbacdb4ab01e4cc72a5475ac94c959e37e4d1ee0e5c65",
+      "excerpt": [
+        {
+          "line": 9,
+          "raw": "- 反公式化：老板明确\"硬夸再扣一分\"（空洞夸赞被反感）、\"职业习惯了是吧\"（套路夸赞被识破）",
+          "text": "- 反公式化：老板明确\"硬夸再扣一分\"（空洞夸赞被反感）、\"职业习惯了是吧\"（套路夸赞被识破）"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 13,
+      "end_line": 14,
+      "title": "失误安抚与不实战术归因风险",
+      "intent": [
+        "缓解失败压力",
+        "避免责备玩家"
+      ],
+      "emotion": [
+        "安抚"
+      ],
+      "phase": [
+        "事后受挫"
+      ],
+      "interaction": [
+        "具体反馈",
+        "反例"
+      ],
+      "topic": [
+        "倒地",
+        "位置劣势",
+        "失败归因"
+      ],
+      "pressure": "未明",
+      "style": [
+        "非责备表达",
+        "归因重构",
+        "教学示范",
+        "混合参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "mixed",
+      "transfer": "摘要能支持在假设的倒地场景中避免羞辱、优先讨论可核实位置因素的安抚参考；把所有失误说成战术问题或宣称死亡必有价值不可照搬。不能伪称连续原话或真实玩家受挫后获安抚的正例。",
+      "limits": "内部培训的假设性例子，并非实际倒地事件；没有战术依据、玩家情绪或安抚效果，未原声核验。事后受挫为教学设定。",
+      "observed_followup": "未提供；没有真实玩家输入、后续回应或压力变化。",
+      "duplicate_family": "新手陪玩第一课（如何调动老板情绪）",
+      "clip_id": "BV15GuM6zEWm:13-14",
+      "source_file": "BV15GuM6zEWm_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV15GuM6zEWm_转写.txt",
+      "source_sha256": "e263ca4ec9b6ac20e01d8a20a106747530a31c06e85d88199fb1e80ddbc81fa9",
+      "source_notes": "完整读取第1–19行。内部培训方法论摘要，不是实战互动记录；仅保留失误处理的假设性示范，并标记不实归因风险。与其他培训、质检摘要有方法论呼应，不能据此认定独立效果证据；没有真实玩家输入及后续反应，未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "d208ddea06414a9d6b4be33b41d7bc562036228d7941180370c1fd92ab9e6d09",
+      "excerpt": [
+        {
+          "line": 13,
+          "raw": "- \"比如老板被打倒了，没事，老板我们这个位置很吃亏\"（把失败归因于位置/战术，不归因于玩家）",
+          "text": "- \"比如老板被打倒了，没事，老板我们这个位置很吃亏\"（把失败归因于位置/战术，不归因于玩家）"
+        },
+        {
+          "line": 14,
+          "raw": "- \"就算老板死了，那也不是白死的。把失误说成战术问题\"",
+          "text": "- \"就算老板死了，那也不是白死的。把失误说成战术问题\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 6,
+      "end_line": 8,
+      "title": "持续反驳与突然退出的反例",
+      "intent": [
+        "识别对抗式回应",
+        "识别退出沟通缺失"
+      ],
+      "emotion": [
+        "不满（摘要归述）",
+        "上头（摘要归述）"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "反例"
+      ],
+      "topic": [
+        "电竞偏好",
+        "反驳",
+        "退队沟通"
+      ],
+      "pressure": "未明",
+      "style": [
+        "持续对抗",
+        "突然退出",
+        "反例参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "negative",
+      "transfer": "摘要能支持不要将兴趣表达变成持续抬杠、退出时应说明并尊重双方边界的反例参考；不同意见或正常退出本身不是错误。不能伪称连续原话，也不能将分列投诉拼成连续三轮对话。",
+      "limits": "单方投诉与摘要标签，缺少另一方解释、原始逐轮对话和精确时序；上头及全程反驳均未独立核验，未原声核验。",
+      "observed_followup": "第7行摘要叙述一局后陪玩直接退队，第8行转述玩家认为没有得到情绪价值；二者属于投诉摘要，不是可配对的逐轮后续反馈。",
+      "duplicate_family": "聊天要顺着老板聊嘛",
+      "clip_id": "BV19tWE6uECC:6-8",
+      "source_file": "BV19tWE6uECC_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV19tWE6uECC_转写.txt",
+      "source_sha256": "19ab2548c9f5a65c7cca37cf06e1b35eeadcf8086c1d464996e8ad61bd352102",
+      "source_notes": "完整读取第1–22行。包含投诉案例摘要、店长教学示范及作者迁移结论。选择反驳与突然退队反例、围绕兴趣追问的教学参考；投诉叙述不是可复原的连续三轮互动，教学示范也不是成功实录。保留可表达不同观点的边界，不迁移惩罚做法；未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "76f542374a3fb72941255eb49e8d3a574668e22565354b506b38ccc487e1e94f",
+      "excerpt": [
+        {
+          "line": 6,
+          "raw": "- 陪玩全程反驳老板：\"你说支持tone，他就说IG厉害\"\"我说什么他都要反顶我一句\"",
+          "text": "- 陪玩全程反驳老板：\"你说支持tone，他就说IG厉害\"\"我说什么他都要反顶我一句\""
+        },
+        {
+          "line": 7,
+          "raw": "- 情绪上头直接退队：\"打完一把之后，他不打了，他就退了，直接把我甩在那了\"",
+          "text": "- 情绪上头直接退队：\"打完一把之后，他不打了，他就退了，直接把我甩在那了\""
+        },
+        {
+          "line": 8,
+          "raw": "- 老板反馈：\"没有给我提供一点情绪价值\"",
+          "text": "- 老板反馈：\"没有给我提供一点情绪价值\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 11,
+      "end_line": 13,
+      "title": "以喜好追问替代立场争辩的教学参考",
+      "intent": [
+        "了解玩家喜好",
+        "延展共同话题"
+      ],
+      "emotion": [
+        "兴趣",
+        "赞赏"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "顺着接话",
+        "澄清",
+        "自我表达"
+      ],
+      "topic": [
+        "电竞兴趣",
+        "偏好原因",
+        "操作高光"
+      ],
+      "pressure": "未明",
+      "style": [
+        "开放式追问",
+        "兴趣聚焦",
+        "教学示范",
+        "机制参考",
+        "低证据等级"
+      ],
+      "game": "其他",
+      "polarity": "positive",
+      "transfer": "摘要能支持在非战术观点场景先追问关注时长、喜欢原因和记忆中的高光，而非立即争辩的教学参考。共同喜好只能如实表达，不能虚构认同；三行是示范材料，不能伪称连续原话或成功互动。",
+      "limits": "店长假设性示范，无真实玩家回答或效果验证；电竞实体拼写未校正、具体游戏未核实，其他仅标记电竞话题。未原声核验。",
+      "observed_followup": "未提供；第13行仍为店长示范内容，不是玩家对追问的后续反应。",
+      "duplicate_family": "聊天要顺着老板聊嘛",
+      "clip_id": "BV19tWE6uECC:11-13",
+      "source_file": "BV19tWE6uECC_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV19tWE6uECC_转写.txt",
+      "source_sha256": "19ab2548c9f5a65c7cca37cf06e1b35eeadcf8086c1d464996e8ad61bd352102",
+      "source_notes": "完整读取第1–22行。包含投诉案例摘要、店长教学示范及作者迁移结论。选择反驳与突然退队反例、围绕兴趣追问的教学参考；投诉叙述不是可复原的连续三轮互动，教学示范也不是成功实录。保留可表达不同观点的边界，不迁移惩罚做法；未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "6c95523c21283731319d24f5e27b00c1ced2b311367b8040734edec71bb92120",
+      "excerpt": [
+        {
+          "line": 11,
+          "raw": "- \"比如说他说支持tone，那你就说哥你看tone多久了呀\"",
+          "text": "- \"比如说他说支持tone，那你就说哥你看tone多久了呀\""
+        },
+        {
+          "line": 12,
+          "raw": "- \"你为什么喜欢tone呀？Faker最精彩的操作是什么呀？\"",
+          "text": "- \"你为什么喜欢tone呀？Faker最精彩的操作是什么呀？\""
+        },
+        {
+          "line": 13,
+          "raw": "- \"我也挺喜欢那波很帅的操作，不是就行了吗？\"",
+          "text": "- \"我也挺喜欢那波很帅的操作，不是就行了吗？\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 6,
+      "end_line": 7,
+      "title": "真实性要求与虚假表达反例",
+      "intent": [
+        "保持表达可信",
+        "拒绝虚假呈现"
+      ],
+      "emotion": [
+        "未明"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "自我表达",
+        "反例"
+      ],
+      "topic": [
+        "技术真实性",
+        "性格真实性",
+        "可信表达"
+      ],
+      "pressure": "未明",
+      "style": [
+        "原则陈述",
+        "质检评价",
+        "混合参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "mixed",
+      "transfer": "这是质检方对其付费真人服务的观点，只作为资料立场记录，不转化为本项目改写原则；不得以此删除已确认角色拟人感、感官描写、生活邀约或甜度。实际游戏动作和技能能力仍不可凭空编造。无连续问答，不得伪称成功互动。", 
+      "limits": "质检方原则及否决标准摘要，不是玩家互动实录；没有具体判定过程、人设变化案例或信任测量，未原声核验。",
+      "observed_followup": "第7行摘要叙述虚假说话及照片呈现被质检否决；不是玩家后续反应，也无具体个案流程。",
+      "duplicate_family": "颜值女陪质检合集",
+      "clip_id": "BV1htosB8EpN:6-7",
+      "source_file": "BV1htosB8EpN_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1htosB8EpN_转写.txt",
+      "source_sha256": "51735237d28497568f43df9d5d470f3f8e74512294325437d0f72955dfd0bb83",
+      "source_notes": "完整读取第1–20行。质检原则与迁移建议摘要；仅选第6–7行真实性与反虚假表达参考，排除亲密称呼、恋爱暗示及外貌展示相关段落。第11行注明与培训来源同源，不视作新增独立证据；无人设一致性效果验证，未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "b5ce512237ed2cdeb5181f466e86ce93aad2f1d73c58e95d83e51f4e560b0259",
+      "excerpt": [
+        {
+          "line": 6,
+          "raw": "- \"我们这个直播间就是要真实的东西，技术也要真实，性格也要真实\"",
+          "text": "- \"我们这个直播间就是要真实的东西，技术也要真实，性格也要真实\""
+        },
+        {
+          "line": 7,
+          "raw": "- \"说话假、照片假\"被一票否决",
+          "text": "- \"说话假、照片假\"被一票否决"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 6,
+      "end_line": 6,
+      "title": "肯定善待队友的行为但不保证胜利",
+      "intent": [
+        "肯定队友友善行为",
+        "鼓励共同取胜"
+      ],
+      "emotion": [
+        "赞赏",
+        "期待"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "具体反馈",
+        "共同目标"
+      ],
+      "topic": [
+        "不嫌弃队友",
+        "团队氛围",
+        "胜利承诺"
+      ],
+      "pressure": "未明",
+      "style": [
+        "行为关联肯定",
+        "结果承诺",
+        "混合参考",
+        "低证据等级"
+      ],
+      "game": "和平精英",
+      "polarity": "mixed",
+      "transfer": "摘要能支持将玩家善待队友这一行为具体指出并肯定的机制参考；必须基于实际观察，不复用亲昵称呼或把胜利说成必然。不能伪称连续原话，也不能认定玩家受鼓舞或随后获胜。",
+      "limits": "单条话术摘要，没有被肯定行为的完整记录、语气或后续结果；行为前提和胜利承诺均未验证，未原声核验。",
+      "observed_followup": "未提供；没有玩家对肯定的回应及最终对局结果。",
+      "duplicate_family": "和平精英：情绪价值拉满的小姐姐",
+      "clip_id": "BV1wRrZY2Eb7:6-6",
+      "source_file": "BV1wRrZY2Eb7_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1wRrZY2Eb7_转写.txt",
+      "source_sha256": "98f6018456cd4dab06e74653ce6c6c43cf546f5d0ad37f5d47a191b879d7c1a2",
+      "source_notes": "完整读取第1–15行。和平精英话术与作者迁移结论摘要；仅选第6行对不嫌弃队友行为的肯定，同时标记胜利承诺过强的边界。未选恋爱相关内容及其他无关表达；摘要的全程质疑描述不等于可追踪的质疑—回应—反馈链，未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "70b54b5073ebb847cb6511ef9609b4312159dd42a24f45c2379fb5b5e310da49",
+      "excerpt": [
+        {
+          "line": 6,
+          "raw": "- \"妹妹，就冲你这个不嫌弃队友的这种精神啊，这把该你吃鸡\"（把玩家\"不嫌弃队友\"夸成美德，并给承诺）",
+          "text": "- \"妹妹，就冲你这个不嫌弃队友的这种精神啊，这把该你吃鸡\"（把玩家\"不嫌弃队友\"夸成美德，并给承诺）"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 8,
+      "end_line": 8,
+      "title": "主动关注状态并询问物资需要",
+      "intent": [
+        "关注玩家状态",
+        "提供补给帮助",
+        "确认需求"
+      ],
+      "emotion": [
+        "关怀",
+        "安抚"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "澄清",
+        "共同目标"
+      ],
+      "topic": [
+        "游戏状态",
+        "针剂",
+        "止痛药",
+        "物资需求"
+      ],
+      "pressure": "未明",
+      "style": [
+        "主动关心",
+        "需求询问",
+        "行动导向",
+        "机制参考",
+        "低证据等级"
+      ],
+      "game": "三角洲",
+      "polarity": "positive",
+      "transfer": "摘要能支持以可见游戏状态为依据主动关心，并询问玩家是否需要游戏内补给的参考；不得将冷静表达当作真实焦虑诊断或医学建议。不能伪称连续原话或补给需求已获确认。",
+      "limits": "同一行收录多个表达，称呼与说话对象可能不同；没有生命值、物资状态、玩家请求和实际使用结果，未原声核验。",
+      "observed_followup": "未提供；没有玩家回答是否需要物资，也未记录补给后状态变化。",
+      "duplicate_family": "三角洲超温柔男陪玩，把老板哄成胚胎",
+      "clip_id": "BV1JPNkzEEDd:8-8",
+      "source_file": "BV1JPNkzEEDd_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1JPNkzEEDd_转写.txt",
+      "source_sha256": "8c7b4779129673dc2431e6d63e5063cc96d336cd8e962951d227b0a1ffdb0168",
+      "source_notes": "完整读取第1–17行。三角洲陪伴式互动摘录与迁移建议；选择状态关心、开箱机会让渡及玩家动态反馈。第3行时长和全程关注、第13行陪伴效果均为摘要叙述，不能证明持续注意或玩家主观感受。未选择绝对生存保证，未原声及游戏状态核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "efec1cb5270d505eb8f570891eff8f6570917ee52a3f1679fd9d68a7c039969b",
+      "excerpt": [
+        {
+          "line": 8,
+          "raw": "- 主动关心状态：\"给板板扎一针，冷静一下\" / \"再给法兰扎一针，你需要止痛药吗？\"",
+          "text": "- 主动关心状态：\"给板板扎一针，冷静一下\" / \"再给法兰扎一针，你需要止痛药吗？\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 9,
+      "end_line": 10,
+      "title": "让渡开箱机会并反馈玩家动态",
+      "intent": [
+        "让玩家参与开箱",
+        "关注玩家行动",
+        "反馈可见结果"
+      ],
+      "emotion": [
+        "期待",
+        "关注"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "让渡成就",
+        "具体反馈"
+      ],
+      "topic": [
+        "开箱",
+        "出货",
+        "玩家动态"
+      ],
+      "pressure": "未明",
+      "style": [
+        "参与机会让渡",
+        "动态播报",
+        "运气归因",
+        "混合参考",
+        "低证据等级"
+      ],
+      "game": "三角洲",
+      "polarity": "mixed",
+      "transfer": "摘要能支持让玩家获得操作机会、关注并简短反馈其可观察出货的机制参考；运气更好与肯定出高价值物品只能识别为修辞风险，不能当事实。两行不能拼成一次开箱的连续原话或因果链。",
+      "limits": "缺少开箱次数、实际物品核验、邀请与出货的对应关系；关注频率和玩家主观陪伴感未提供，未原声核验。",
+      "observed_followup": "第10行摘要摘录对玩家在机房开出声卡的播报；不能确认与第9行让玩家开箱的邀请相关，也没有玩家随后回应。",
+      "duplicate_family": "三角洲超温柔男陪玩，把老板哄成胚胎",
+      "clip_id": "BV1JPNkzEEDd:9-10",
+      "source_file": "BV1JPNkzEEDd_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1JPNkzEEDd_转写.txt",
+      "source_sha256": "8c7b4779129673dc2431e6d63e5063cc96d336cd8e962951d227b0a1ffdb0168",
+      "source_notes": "完整读取第1–17行。三角洲陪伴式互动摘录与迁移建议；选择状态关心、开箱机会让渡及玩家动态反馈。第3行时长和全程关注、第13行陪伴效果均为摘要叙述，不能证明持续注意或玩家主观感受。未选择绝对生存保证，未原声及游戏状态核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "e689acb0c538255ced7acd2261582c1cc8fe1121afb345db1f91d96a80b703a9",
+      "excerpt": [
+        {
+          "line": 9,
+          "raw": "- 运气归玩家：\"等一起吧，我觉得板板的运气比我高，肯定能出大红大金\"（让玩家来开箱）",
+          "text": "- 运气归玩家：\"等一起吧，我觉得板板的运气比我高，肯定能出大红大金\"（让玩家来开箱）"
+        },
+        {
+          "line": 10,
+          "raw": "- 全程播报玩家动态：\"看琪拉板板在里面的机房里面开出声卡来了\"（关注并即时反馈）",
+          "text": "- 全程播报玩家动态：\"看琪拉板板在里面的机房里面开出声卡来了\"（关注并即时反馈）"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 6,
+      "end_line": 6,
+      "title": "解决问题能力的演绎性价值参考",
+      "intent": [
+        "强调解决问题的价值"
+      ],
+      "emotion": [
+        "认可（演绎表达）"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "具体反馈"
+      ],
+      "topic": [
+        "解决问题能力",
+        "选择理由"
+      ],
+      "pressure": "未明",
+      "style": [
+        "能力评价",
+        "剧情演绎",
+        "机制参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "positive",
+      "transfer": "仅支持将解决具体问题的能力视为互动价值的概念参考，不迁移关系设定或恋爱内容。positive仅表示这一机制参考方向，不是实录正例；不能伪称连续原话、真实玩家评价或已完成的问题解决。",
+      "limits": "来源明确为剧情演绎，唯一保留句没有具体问题、解决动作及真实参与者信息；其余亲密和性化内容不选取。未原声核验。",
+      "observed_followup": "未提供；第6行是演绎中的能力评价本身，不能当作真实玩家对某次服务的后续反馈。",
+      "duplicate_family": "陪陪最大的魅力就是为板板解决问题的能力",
+      "clip_id": "BV1UnGw6SEc7:6-6",
+      "source_file": "BV1UnGw6SEc7_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1UnGw6SEc7_转写.txt",
+      "source_sha256": "50fba4364cd0eb0a61470415d99ef8c3c3bf8866c0df788488a227341cb5e308",
+      "source_notes": "完整读取第1–13行。摘要明确为剧情演绎且价值有限；仅选择第6行解决问题能力这一非亲密主题参考，排除恋爱、暧昧及性化段落。即使保留该行，也不得作为真实玩家认可、实战解决问题或连续正例证据；未原声核验，游戏未核实，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "97fa4ca0d3947eab29e205b10135a0e6a0b5be9b5bf6de9d5a608e38a89ca752",
+      "excerpt": [
+        {
+          "line": 6,
+          "raw": "- \"选你当直属，就是看中你解决事情的能力\"（\"解决问题=情绪价值\"的具象化）",
+          "text": "- \"选你当直属，就是看中你解决事情的能力\"（\"解决问题=情绪价值\"的具象化）"
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 11,
+      "end_line": 11,
+      "title": "只有固定夸赞而无额外参与的教学反例",
+      "intent": [
+        "识别空泛反馈",
+        "强调实际互动贡献"
+      ],
+      "emotion": [
+        "不满（教学表达）"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "反例"
+      ],
+      "topic": [
+        "公式化夸赞",
+        "互动贡献",
+        "与路人体验的差异"
+      ],
+      "pressure": "未明",
+      "style": [
+        "反问式批评",
+        "套路化",
+        "教学反例",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "negative",
+      "transfer": "摘要能支持仅机械夸赞而缺少具体反馈和参与不足以体现陪伴价值的教学反例参考；不迁移贬低式培训语气，不能伪称连续原话或真实玩家流失证据。",
+      "limits": "培训者的假设性批评，不是实际订单复盘；没有玩家原始评价、对照样本或后续选择，未原声核验。与其他反公式化摘要存在机制重复。",
+      "observed_followup": "未提供；关于玩家为什么选择服务的反问是教学修辞，不是玩家实际回应或拒单结果。",
+      "duplicate_family": "话都不会说也配当娱乐陪",
+      "clip_id": "BV1JDY46fEEM:11-11",
+      "source_file": "BV1JDY46fEEM_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1JDY46fEEM_转写.txt",
+      "source_sha256": "753078b340042469a31523344ca0577514775bc9781f0d39d6fd894224dc4c04",
+      "source_notes": "完整读取第1–20行。内部培训定义、反例与方法建议摘要；选择公式化夸赞反例和主动聊天建议，不收博彩类比及作者扩展目标。释放现实压力只是教学期望，不是观察到的结果；可能与其他培训摘要存在机制重复，无连续玩家输入及反馈，未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "52625a03b64ef54fe2ec2b4fda13c415942289b05c3b9252b4e6b7723a324a19",
+      "excerpt": [
+        {
+          "line": 11,
+          "raw": "- \"像你接个娱乐单，只会说好枪哥，可惜姐姐还没有一个路人的活儿多，那老板凭什么点你？\"",
+          "text": "- \"像你接个娱乐单，只会说好枪哥，可惜姐姐还没有一个路人的活儿多，那老板凭什么点你？\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    },
+    {
+      "start_line": 14,
+      "end_line": 14,
+      "title": "了解偏好并主动聊天的教学建议",
+      "intent": [
+        "了解玩家偏好",
+        "主动交流",
+        "提供情绪支持"
+      ],
+      "emotion": [
+        "关怀"
+      ],
+      "phase": [
+        "未明"
+      ],
+      "interaction": [
+        "顺着接话"
+      ],
+      "topic": [
+        "玩家性格与偏好",
+        "聊天",
+        "现实压力"
+      ],
+      "pressure": "未明",
+      "style": [
+        "主动关注",
+        "个体化交流",
+        "教学建议",
+        "机制参考",
+        "低证据等级"
+      ],
+      "game": "未核实",
+      "polarity": "positive",
+      "transfer": "摘要能支持先了解玩家愿意表达的偏好、主动提供聊天机会的教学参考；不擅自判断人格或追问私事，聊天需服从对局压力与玩家意愿。不能伪称连续原话，也不能把释放压力的期望写成已观察效果。",
+      "limits": "方法建议而非实际聊天实录；未提供具体开场、玩家输入、压力状态、聊天同意及效果，未原声核验。",
+      "observed_followup": "未提供；释放现实压力是教学目标，没有记录玩家聊天后的情绪或行为变化。",
+      "duplicate_family": "话都不会说也配当娱乐陪",
+      "clip_id": "BV1JDY46fEEM:14-14",
+      "source_file": "BV1JDY46fEEM_转写.txt",
+      "source_path": "G:\\project_output\\ai_teammate_陪玩语料调研\\BV1JDY46fEEM_转写.txt",
+      "source_sha256": "753078b340042469a31523344ca0577514775bc9781f0d39d6fd894224dc4c04",
+      "source_notes": "完整读取第1–20行。内部培训定义、反例与方法建议摘要；选择公式化夸赞反例和主动聊天建议，不收博彩类比及作者扩展目标。释放现实压力只是教学期望，不是观察到的结果；可能与其他培训摘要存在机制重复，无连续玩家输入及反馈，未原声核验，仅作低证据等级补充。",
+      "evidence_kind": "summary",
+      "asr_segments": 0,
+      "is_duplicate_cut": false,
+      "excerpt_sha256": "c2cf518881a70f0f5be90bf7082d472b46c84027f2dfe9dd020125cc0aa6ea4d",
+      "excerpt": [
+        {
+          "line": 14,
+          "raw": "- \"多花点心思琢磨琢磨老板是什么性格\" / \"多花点时间去跟老板聊聊天，说说话，让老板能把现实中的压力释放出来\"",
+          "text": "- \"多花点心思琢磨琢磨老板是什么性格\" / \"多花点时间去跟老板聊聊天，说说话，让老板能把现实中的压力释放出来\""
+        }
+      ],
+      "speaker_mapping_note": "编号取自ASR；身份需结合文件头及上下文，混轮不修造成精确角色对话"
+    }
+  ]
+}
